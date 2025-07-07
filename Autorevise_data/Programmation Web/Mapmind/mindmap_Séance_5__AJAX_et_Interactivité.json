@@ -1,0 +1,276 @@
+{
+  "title": "Séance 5 : AJAX et Interactivité",
+  "nodes": [
+    {
+      "title": "LE WEB ORIENTE CLIENT & DYNAMIQUE",
+      "children": [
+        {
+          "title": "Principes du Web Dynamique",
+          "children": [
+            {
+              "title": "Site Statique vs Site Dynamique"
+            },
+            {
+              "title": "Génération de pages à la volée"
+            },
+            {
+              "title": "Interactivité avec l'utilisateur"
+            }
+          ]
+        },
+        {
+          "title": "DHTML (Dynamic HTML)",
+          "children": [
+            {
+              "title": "Définition : HTML + CSS + JavaScript"
+            },
+            {
+              "title": "Rôles des technologies",
+              "children": [
+                {
+                  "title": "HTML : Contenu et structure"
+                },
+                {
+                  "title": "CSS : Présentation et style"
+                },
+                {
+                  "title": "JavaScript : Comportement et interactivité"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pseudo-protocole JavaScript",
+          "children": [
+            {
+              "title": "Syntaxe : `javascript:code...` dans une URL"
+            },
+            {
+              "title": "Usage : Exécuter du code via un événement (clic sur un lien, bouton)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "INTRODUCTION À JAVASCRIPT",
+      "children": [
+        {
+          "title": "Implémentation",
+          "children": [
+            {
+              "title": "Interne : dans la balise <script>"
+            },
+            {
+              "title": "Externe : dans un fichier .js (bonne pratique)"
+            }
+          ]
+        },
+        {
+          "title": "Syntaxe de Base",
+          "children": [
+            {
+              "title": "Instructions terminées par un point-virgule (;)"
+            },
+            {
+              "title": "Commentaires : // (monoligne) et /* */ (multiligne)"
+            },
+            {
+              "title": "Sensibilité à la casse (case-sensitive)"
+            },
+            {
+              "title": "Variables : déclaration avec 'var'"
+            }
+          ]
+        },
+        {
+          "title": "Interaction avec l'utilisateur",
+          "children": [
+            {
+              "title": "Affichage : document.write(), console.log()"
+            },
+            {
+              "title": "Boîtes de dialogue : alert(), confirm(), prompt()"
+            }
+          ]
+        },
+        {
+          "title": "Opérateurs",
+          "children": [
+            {
+              "title": "Mathématiques (+, -, *, /, %)"
+            },
+            {
+              "title": "Comparaison (==, !=, >, <, >=, <=)"
+            },
+            {
+              "title": "Logiques (&&, ||, !)"
+            }
+          ]
+        },
+        {
+          "title": "Structures de Contrôle",
+          "children": [
+            {
+              "title": "Conditions : if...else, switch"
+            },
+            {
+              "title": "Boucles : while, do...while, for"
+            }
+          ]
+        },
+        {
+          "title": "Structures de Données",
+          "children": [
+            {
+              "title": "Tableaux (Array)"
+            },
+            {
+              "title": "Objets littéraux (tableaux associatifs)"
+            }
+          ]
+        },
+        {
+          "title": "Fonctions",
+          "children": [
+            {
+              "title": "Déclaration de fonction"
+            },
+            {
+              "title": "Expression de fonction (anonyme)"
+            },
+            {
+              "title": "Concept de Callback"
+            }
+          ]
+        },
+        {
+          "title": "Débogage",
+          "children": [
+            {
+              "title": "Outils : Console du navigateur, Firebug"
+            },
+            {
+              "title": "Objet 'console' (log, info, warn, error)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ÉCHANGE DE DONNÉES ET SERVICES WEB",
+      "children": [
+        {
+          "title": "XML (eXtensible Markup Language)",
+          "children": [
+            {
+              "title": "Définition et usage"
+            },
+            {
+              "title": "Structure d'un fichier XML (prologue, racine, balises, attributs)"
+            },
+            {
+              "title": "Avantages et inconvénients"
+            },
+            {
+              "title": "Manipulation en PHP avec SimpleXML"
+            }
+          ]
+        },
+        {
+          "title": "cURL",
+          "children": [
+            {
+              "title": "Principe : Client HTTP en ligne de commande/librairie PHP"
+            },
+            {
+              "title": "Usage : Récupérer des pages, interagir avec des API"
+            },
+            {
+              "title": "Méthodes : GET, POST"
+            },
+            {
+              "title": "Gestion des cookies"
+            }
+          ]
+        },
+        {
+          "title": "Services Web REST",
+          "children": [
+            {
+              "title": "Principe : REpresentational State Transfer"
+            },
+            {
+              "title": "Basé sur les verbes HTTP (GET, POST, PUT, DELETE)"
+            },
+            {
+              "title": "Exemple de création d'un client et serveur REST"
+            }
+          ]
+        },
+        {
+          "title": "Services Web SOAP & WSDL",
+          "children": [
+            {
+              "title": "SOAP : Protocole d'accès aux objets distants"
+            },
+            {
+              "title": "WSDL : Langage de description des services web"
+            },
+            {
+              "title": "Implémentation en PHP (classe SoapClient)"
+            },
+            {
+              "title": "Complexité et alternatives (REST)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ARCHITECTURES ET CONCEPTS AVANCÉS",
+      "children": [
+        {
+          "title": "MVC (Model-View-Controller)",
+          "children": [
+            {
+              "title": "Principe : Séparation des préoccupations"
+            },
+            {
+              "title": "Model : Données et logique métier"
+            },
+            {
+              "title": "View : Présentation, interface utilisateur"
+            },
+            {
+              "title": "Controller : Gestion des requêtes, liaison M-V"
+            },
+            {
+              "title": "Avantages : Maintenance, réutilisabilité, clarté"
+            }
+          ]
+        },
+        {
+          "title": "Sécurité des API REST",
+          "children": [
+            {
+              "title": "JWT (JSON Web Tokens) pour l'authentification"
+            },
+            {
+              "title": "Autres usages des JWT",
+              "children": [
+                {
+                  "title": "Formulaires en plusieurs étapes"
+                },
+                {
+                  "title": "Liens de confirmation (email)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

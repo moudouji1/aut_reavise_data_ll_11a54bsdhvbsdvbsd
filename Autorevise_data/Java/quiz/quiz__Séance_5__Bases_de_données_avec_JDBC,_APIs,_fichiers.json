@@ -1,0 +1,93 @@
+{
+  "title": "Séance 5 : Bases de données avec JDBC, APIs, fichiers",
+  "questions": [
+    {
+      "question": "Quel est le rôle principal d'un composant `QueryDataSet` dans l'architecture DataExpress de JBuilder ?",
+      "options": [
+        "Gérer la connexion physique à la base de données.",
+        "Exécuter une requête SQL et stocker les résultats.",
+        "Afficher les données dans un tableau à l'utilisateur.",
+        "Définir la structure d'une table sans y stocker de données."
+      ],
+      "answer": "Exécuter une requête SQL et stocker les résultats.",
+      "explanation": "Le composant `QueryDataSet` est utilisé pour exécuter une instruction de requête (généralement SELECT) sur une base de données et pour stocker l'ensemble des résultats de cette requête."
+    },
+    {
+      "question": "Quelle est la démarche correcte pour gérer un événement (par exemple, un clic de bouton) en Java AWT/Swing ?",
+      "options": [
+        "Créer une méthode `handleEvent()` dans la classe du composant.",
+        "Hériter de la classe `Event` et redéfinir la méthode `process()`.",
+        "Implémenter l'interface `Listener` appropriée et enregistrer un écouteur auprès du composant avec `add...Listener()`.",
+        "Appeler directement la méthode `fireEvent()` sur le composant."
+      ],
+      "answer": "Implémenter l'interface `Listener` appropriée et enregistrer un écouteur auprès du composant avec `add...Listener()`.",
+      "explanation": "La gestion d'événements en Java se fait en implémentant une interface 'Listener' (comme `ActionListener`) et en enregistrant une instance de cette classe auprès du composant source via sa méthode `add...Listener()`."
+    },
+    {
+      "question": "Comment le gestionnaire de placement `BorderLayout` organise-t-il les composants dans un conteneur ?",
+      "options": [
+        "En une grille de taille fixe où chaque composant a la même taille.",
+        "De gauche à droite, en passant à la ligne suivante si nécessaire.",
+        "En cinq zones : Nord, Sud, Est, Ouest et Centre.",
+        "En fiches superposées, où une seule est visible à la fois."
+      ],
+      "answer": "En cinq zones : Nord, Sud, Est, Ouest et Centre.",
+      "explanation": "`BorderLayout` divise l'espace du conteneur en cinq régions distinctes : NORTH, SOUTH, EAST, WEST, et CENTER, permettant de placer un composant dans chacune d'elles."
+    },
+    {
+      "question": "Quelle condition une classe Java doit-elle remplir pour que ses objets puissent être sérialisés ?",
+      "options": [
+        "Avoir un constructeur sans arguments.",
+        "Implémenter l'interface `java.io.Serializable`.",
+        "Redéfinir la méthode `toString()`.",
+        "Avoir tous ses attributs de type `public`."
+      ],
+      "answer": "Implémenter l'interface `java.io.Serializable`.",
+      "explanation": "Une classe doit implémenter l'interface `java.io.Serializable` pour indiquer à la JVM que ses objets peuvent être convertis en un flux d'octets. C'est une interface 'marqueur' qui ne contient aucune méthode à implémenter."
+    },
+    {
+      "question": "Que produit la commande `javac Programme.java` et comment exécute-t-on le programme résultant ?",
+      "options": [
+        "Produit `Programme.exe` ; on l'exécute avec `run Programme.exe`.",
+        "Produit `Programme.class` ; on l'exécute avec `java Programme.class`.",
+        "Produit `Programme.obj` ; on l'exécute après l'édition des liens.",
+        "Produit `Programme.class` ; on l'exécute avec `java Programme`."
+      ],
+      "answer": "Produit `Programme.class` ; on l'exécute avec `java Programme`.",
+      "explanation": "Le compilateur `javac` transforme le fichier source `.java` en bytecode dans un fichier `.class`. La machine virtuelle Java (JVM), lancée par la commande `java`, exécute ensuite ce bytecode en spécifiant le nom de la classe sans l'extension."
+    },
+    {
+      "question": "Quel est le rôle principal d'un outil ORM (Object-Relational Mapping) comme Hibernate ?",
+      "options": [
+        "Remplacer complètement le besoin d'une base de données relationnelle.",
+        "Convertir les données entre une base de données relationnelle et un modèle d'objets Java.",
+        "Optimiser la performance des requêtes SQL écrites manuellement.",
+        "Fournir une interface graphique pour naviguer dans la base de données."
+      ],
+      "answer": "Convertir les données entre une base de données relationnelle et un modèle d'objets Java.",
+      "explanation": "Un ORM fait le 'mapping' (la correspondance) entre les tables d'une base de données relationnelle et les classes d'une application orientée objet, permettant de manipuler les données via des objets plutôt que des requêtes SQL directes."
+    },
+    {
+      "question": "Pour rendre un objet transmissible sur le réseau sans inclure certains de ses attributs (comme un mot de passe), quelle combinaison est correcte ?",
+      "options": [
+        "La classe implémente `Communicable` et les attributs à exclure sont `private`.",
+        "La classe implémente `Serializable` et les attributs à exclure sont marqués `transient`.",
+        "La classe étend `NetworkObject` et les attributs à exclure sont marqués `static`.",
+        "La classe implémente `Externalizable` et les attributs à exclure sont omis de la méthode `writeExternal`."
+      ],
+      "answer": "La classe implémente `Serializable` et les attributs à exclure sont marqués `transient`.",
+      "explanation": "Pour qu'un objet soit sérialisable, sa classe doit implémenter l'interface `Serializable`. Le mot-clé `transient` est utilisé pour marquer les attributs qui ne doivent pas faire partie de la représentation sérialisée de l'objet."
+    },
+    {
+      "question": "Dans le contexte des interfaces graphiques Java, quel événement est généré par un clic sur un `Button` ou l'appui sur 'Entrée' dans un `TextField` ?",
+      "options": [
+        "MouseEvent",
+        "KeyEvent",
+        "FocusEvent",
+        "ActionEvent"
+      ],
+      "answer": "ActionEvent",
+      "explanation": "Un `ActionEvent` est généré pour indiquer une action sémantique de haut niveau, comme le clic sur un bouton ou la validation dans un champ de texte."
+    }
+  ]
+}

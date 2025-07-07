@@ -1,0 +1,93 @@
+{
+  "title": "Séance 5 : AJAX et Interactivité",
+  "questions": [
+    {
+      "question": "Selon le contenu du cours, de quelle combinaison de technologies le DHTML (Dynamic HTML) est-il constitué ?",
+      "options": [
+        "HTML, PHP et MySQL",
+        "HTML, CSS et JavaScript",
+        "XML, AJAX et PHP",
+        "Java, Flash et HTML"
+      ],
+      "answer": "HTML, CSS et JavaScript",
+      "explanation": "Le cours stipule clairement que DHTML = HTML + CSS + JavaScript. HTML structure le contenu, CSS définit la présentation, et JavaScript gère le comportement dynamique et l'interactivité."
+    },
+    {
+      "question": "Quelle est une caractéristique fondamentale du langage XML (eXtensible Markup Language) ?",
+      "options": [
+        "Il utilise un ensemble de balises prédéfinies comme en HTML.",
+        "Il est principalement conçu pour définir le style visuel d'une page.",
+        "Il permet de créer ses propres balises pour structurer et échanger des données.",
+        "C'est un langage de script exécuté par le navigateur."
+      ],
+      "answer": "Il permet de créer ses propres balises pour structurer et échanger des données.",
+      "explanation": "XML est un langage de balisage générique né pour l'échange de données. Contrairement au HTML, il n'a pas de balises prédéfinies ; l'utilisateur crée ses propres balises en fonction des données à structurer."
+    },
+    {
+      "question": "Quel est le rôle principal de la bibliothèque cURL utilisée avec PHP, tel que décrit dans le document ?",
+      "options": [
+        "Analyser et transformer des documents XML avec SimpleXML.",
+        "Permettre à un script PHP d'agir comme un client web pour se connecter à d'autres serveurs.",
+        "Gérer les sessions utilisateur avec des cookies côté serveur.",
+        "Créer des interfaces graphiques pour les applications web."
+      ],
+      "answer": "Permettre à un script PHP d'agir comme un client web pour se connecter à d'autres serveurs.",
+      "explanation": "Le texte explique que cURL permet aux scripts PHP d'agir comme des clients (similaires à un navigateur) pour se connecter à d'autres sites, récupérer des pages web, ou interroger des services web via HTTP."
+    },
+    {
+      "question": "Quel est l'un des avantages majeurs de l'architecture MVC (Modèle-Vue-Contrôleur) mis en avant dans le cours ?",
+      "options": [
+        "Augmenter la vitesse d'exécution du code côté serveur.",
+        "Fournir une sécurité renforcée contre les injections SQL.",
+        "La séparation des préoccupations (le visuel, la logique et les données).",
+        "Éliminer le besoin d'utiliser une base de données."
+      ],
+      "answer": "La séparation des préoccupations (le visuel, la logique et les données).",
+      "explanation": "L'avantage principal de MVC est la séparation des préoccupations : le modèle gère les données, la vue gère l'affichage, et le contrôleur gère la logique. Cela permet une meilleure organisation et maintenance du code."
+    },
+    {
+      "question": "Quel protocole de service web est décrit comme utilisant un document WSDL (Web Services Description Language) pour définir son interface ?",
+      "options": [
+        "REST",
+        "SOAP",
+        "FTP",
+        "XML-RPC"
+      ],
+      "answer": "SOAP",
+      "explanation": "Le cours précise que SOAP (Simple Object Access Protocol) place les détails d'un service web dans un document WSDL, ce qui permet de générer automatiquement une interface de programmation pour appeler le service."
+    },
+    {
+      "question": "Quelle est la méthode considérée comme une \"bonne pratique\" pour intégrer du code JavaScript dans une page web ?",
+      "options": [
+        "Placer le code directement dans les balises `<body>` à l'aide de `<script>`.",
+        "L'écrire dans une feuille de style CSS avec la propriété `@import`.",
+        "L'inclure via un fichier externe avec l'extension `.js`.",
+        "Utiliser le pseudo-protocole `javascript:` dans une URL."
+      ],
+      "answer": "L'inclure via un fichier externe avec l'extension `.js`.",
+      "explanation": "Le document mentionne explicitement que l'implémentation dans un fichier externe (`.js`) est une \"bonne pratique\", car elle sépare le code de la structure HTML et facilite la réutilisation et la maintenance."
+    },
+    {
+      "question": "Pour qu'un fichier XML soit \"bien formé\", quelle règle doit-il impérativement respecter ?",
+      "options": [
+        "Toutes les valeurs d'attributs doivent être écrites sans guillemets.",
+        "Il doit commencer par la balise `<html>`.",
+        "Il ne doit contenir qu'une seule balise racine.",
+        "Le nom des balises ne doit pas contenir de chiffres."
+      ],
+      "answer": "Il ne doit contenir qu'une seule balise racine.",
+      "explanation": "Le cours liste plusieurs règles pour un fichier XML bien formé, dont la présence d'une et une seule balise racine qui englobe tout le reste du document."
+    },
+    {
+      "question": "Quel outil, présenté comme un add-on pour Firefox, est particulièrement recommandé pour le débogage de JavaScript, CSS et HTML ?",
+      "options": [
+        "Microsoft Script Editor",
+        "PHP cURL",
+        "Wampserver",
+        "Firebug"
+      ],
+      "answer": "Firebug",
+      "explanation": "Le texte décrit Firebug comme un add-on pour Firefox très utile pour déboguer JavaScript (avec points d'arrêt, console, etc.), mais aussi pour inspecter et modifier en temps réel le HTML et le CSS."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Autres",
+  "questions": [
+    {
+      "question": "Dans le contexte de JBuilder, quel est le rôle principal d'un composant `TableDataSet` ?",
+      "options": [
+        "Spécifier l'emplacement d'un fichier texte sur le disque.",
+        "Stocker en mémoire des données importées pour les visualiser et les modifier.",
+        "Exécuter des procédures stockées sur une base de données.",
+        "Résoudre les modifications de données vers une table SQL."
+      ],
+      "answer": "Stocker en mémoire des données importées pour les visualiser et les modifier.",
+      "explanation": "Le `TableDataSet` est un composant de type `StorageDataSet` qui permet de stocker localement (en mémoire) les données importées, par exemple depuis un fichier texte, afin de pouvoir les manipuler dans l'application."
+    },
+    {
+      "question": "En programmation orientée objet Java, quelle est la conséquence principale de la déclaration d'une classe comme `abstract` ?",
+      "options": [
+        "Elle ne peut pas être héritée par d'autres classes.",
+        "Toutes ses méthodes doivent également être déclarées `abstract`.",
+        "Il est impossible de créer une instance (un objet) de cette classe.",
+        "Elle ne peut contenir que des attributs `static`."
+      ],
+      "answer": "Il est impossible de créer une instance (un objet) de cette classe.",
+      "explanation": "Une classe abstraite sert de modèle pour ses sous-classes mais ne peut pas être instanciée directement. Elle est destinée à être étendue, et ses sous-classes concrètes fourniront l'implémentation de ses éventuelles méthodes abstraites."
+    },
+    {
+      "question": "Quel est le but de l'interface `Serializable` en Java ?",
+      "options": [
+        "Améliorer les performances de lecture de fichiers grâce à un tampon.",
+        "Indiquer à la JVM qu'un objet peut être sauvegardé dans un flux (par exemple, un fichier).",
+        "Définir des méthodes pour lire et écrire des types de données primitifs.",
+        "Permettre l'exécution d'un objet dans un thread séparé."
+      ],
+      "answer": "Indiquer à la JVM qu'un objet peut être sauvegardé dans un flux (par exemple, un fichier).",
+      "explanation": "L'interface `Serializable` est une interface 'marqueur'. Elle ne contient aucune méthode à implémenter mais signale que les objets de la classe peuvent être convertis en un flux d'octets (sérialisation) pour être sauvegardés ou transmis."
+    },
+    {
+      "question": "Que se passe-t-il lors de l'appel de la méthode `clone()` sur un tableau d'objets en Java ?",
+      "options": [
+        "Un nouveau tableau est créé avec des copies complètes (en profondeur) de tous les objets.",
+        "Un nouveau tableau est créé, mais il contient uniquement les références vers les objets originaux.",
+        "La méthode renvoie une référence vers le tableau original, sans créer de copie.",
+        "Une erreur de compilation est générée car `clone()` n'est pas applicable aux tableaux."
+      ],
+      "answer": "Un nouveau tableau est créé, mais il contient uniquement les références vers les objets originaux.",
+      "explanation": "La méthode `clone()` sur un tableau effectue une copie superficielle (shallow copy). Le tableau lui-même est dupliqué, mais les éléments du nouveau tableau sont des références qui pointent vers les mêmes objets que le tableau original."
+    },
+    {
+      "question": "Comment peut-on déterminer le nombre de colonnes d'un `ResultSet` en JDBC ?",
+      "options": [
+        "En appelant la méthode `resultat.size()`.",
+        "En parcourant toutes les lignes et en comptant les colonnes manuellement.",
+        "Il n'existe aucun moyen de connaître le nombre de colonnes.",
+        "En obtenant le `ResultSetMetaData` et en appelant sa méthode `getColumnCount()`."
+      ],
+      "answer": "En obtenant le `ResultSetMetaData` et en appelant sa méthode `getColumnCount()`.",
+      "explanation": "Pour obtenir des informations sur la structure d'un `ResultSet` (comme le nombre de colonnes, leurs noms ou leurs types), il faut d'abord récupérer son objet `ResultSetMetaData` via la méthode `getMetaData()`."
+    },
+    {
+      "question": "Quel est le principal avantage du package `java.nio` (New I/O) par rapport à `java.io` ?",
+      "options": [
+        "Il offre des performances améliorées en traitant les données par blocs via des 'channels' et des 'buffers'.",
+        "Il est le seul à permettre la sérialisation d'objets.",
+        "Sa syntaxe est beaucoup plus simple pour les opérations de base.",
+        "Il introduit la gestion des exceptions pour les flux de données."
+      ],
+      "answer": "Il offre des performances améliorées en traitant les données par blocs via des 'channels' et des 'buffers'.",
+      "explanation": "Contrairement à `java.io` qui travaille sur des flux (streams) octet par octet, `java.nio` utilise des canaux (channels) et des tampons (buffers) pour lire et écrire des blocs de données, ce qui est plus efficace et performant, notamment pour les gros fichiers."
+    },
+    {
+      "question": "Quel mot-clé Java est utilisé pour empêcher qu'un attribut d'objet ne soit sauvegardé lors de la sérialisation ?",
+      "options": [
+        "static",
+        "final",
+        "transient",
+        "volatile"
+      ],
+      "answer": "transient",
+      "explanation": "Le mot-clé `transient` indique que l'attribut concerné ne fait pas partie de l'état persistant de l'objet et doit être ignoré par le mécanisme de sérialisation. Sa valeur ne sera pas sauvegardée."
+    },
+    {
+      "question": "Quelle est la caractéristique des méthodes virtuelles (ou polymorphisme) en Java ?",
+      "options": [
+        "Une méthode déclarée `final` ne peut pas être virtuelle.",
+        "L'appel d'une méthode sur un objet exécute la version de la méthode définie dans la classe de la référence, et non celle de l'objet réel.",
+        "La liaison entre l'appel de la méthode et le code à exécuter se fait à la compilation (liaison statique).",
+        "C'est la méthode de la classe la plus précise (la classe de l'objet réel) qui est exécutée au moment de l'appel, même si la référence est d'un type plus général."
+      ],
+      "answer": "C'est la méthode de la classe la plus précise (la classe de l'objet réel) qui est exécutée au moment de l'appel, même si la référence est d'un type plus général.",
+      "explanation": "C'est le principe de la liaison dynamique (dynamic binding). Au moment de l'exécution, la JVM détermine le type réel de l'objet et appelle la méthode correspondante, ce qui permet un comportement polymorphe."
+    }
+  ]
+}

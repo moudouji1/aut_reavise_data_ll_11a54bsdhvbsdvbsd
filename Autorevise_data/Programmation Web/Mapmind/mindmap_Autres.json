@@ -1,0 +1,766 @@
+{
+  "title": "Autres",
+  "nodes": [
+    {
+      "title": "Introduction (1)",
+      "children": [
+        {
+          "title": "HTML",
+          "children": [
+            {
+              "title": "Langage de description pour publier sur Internet"
+            },
+            {
+              "title": "N'est pas un langage de programmation (pas de calculs ou conditions)"
+            }
+          ]
+        },
+        {
+          "title": "Évolution des sites web",
+          "children": [
+            {
+              "title": "Contenu de plus en plus riche"
+            },
+            {
+              "title": "Nécessité d'automatiser les mises à jour"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Introduction (8): Langages de création de pages web dynamiques côté serveur",
+      "children": [
+        {
+          "title": "Les CGI (Common Gateway Interface)",
+          "children": [
+            {
+              "title": "Composants exécutables (.exe, .dll) produisant de l'HTML"
+            },
+            {
+              "title": "Avantages : Rapides"
+            },
+            {
+              "title": "Inconvénients : Fortement liés à la plateforme, Surcharge rapide du serveur"
+            },
+            {
+              "title": "Exemple : Perl",
+              "children": [
+                {
+                  "title": "Orienté objet"
+                },
+                {
+                  "title": "Inconvénients : Abord difficile, faible lisibilité"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Introduction (10): JSP",
+      "children": [
+        {
+          "title": "JSP (JavaServer Pages)",
+          "children": [
+            {
+              "title": "Réponse de Sun aux ASP de Microsoft"
+            },
+            {
+              "title": "Basé sur Java"
+            },
+            {
+              "title": "Inconvénient : Lenteur relative"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Introduction (11): PHP",
+      "children": [
+        {
+          "title": "PHP (Hypertext Preprocessor)",
+          "children": [
+            {
+              "title": "Concurrent important d'ASP"
+            },
+            {
+              "title": "Solution robuste avec Linux, Apache, MySQL"
+            },
+            {
+              "title": "Gratuit (Open Source)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PARTIE II : L'interactivité en PHP",
+      "children": []
+    },
+    {
+      "title": "Les en-têtes HTTP (4)",
+      "children": [
+        {
+          "title": "Fonctions PHP",
+          "children": [
+            {
+              "title": "header(chaîne) : envoie une entête HTTP"
+            },
+            {
+              "title": "headers_sent() : vérifie si les entêtes ont été envoyés"
+            },
+            {
+              "title": "setcookie(...) : envoie un cookie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Création d'images à la volée",
+      "children": [
+        {
+          "title": "Capacités de PHP",
+          "children": [
+            {
+              "title": "Génération et manipulation de documents autres que HTML"
+            },
+            {
+              "title": "Création d'images (GIF, PNG, JPEG) avec la bibliothèque GD"
+            }
+          ]
+        },
+        {
+          "title": "Fonctions de dessin",
+          "children": [
+            {
+              "title": "imagechar()"
+            },
+            {
+              "title": "imagecharup()"
+            },
+            {
+              "title": "imagearc()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L'environnement PHP/MySQL",
+      "children": [
+        {
+          "title": "Histoire et origine de PHP",
+          "children": [
+            {
+              "title": "PHP 5.0.0 (2004)"
+            },
+            {
+              "title": "PHP 5.3.0 (2009)"
+            },
+            {
+              "title": "PHP 5 améliore l'orientation objet"
+            }
+          ]
+        },
+        {
+          "title": "MySQL : Définitions",
+          "children": [
+            {
+              "title": "SGBD (Système de Gestion de Bases de Données)"
+            },
+            {
+              "title": "Gratuit (Licence GPL)"
+            }
+          ]
+        },
+        {
+          "title": "Principaux atouts de PHP",
+          "children": [
+            {
+              "title": "Gratuité et Open Source"
+            },
+            {
+              "title": "Intégration facile dans l'HTML"
+            },
+            {
+              "title": "Interfaçage simple avec les bases de données (MySQL)"
+            },
+            {
+              "title": "Compatibilité avec de nombreux serveurs web"
+            }
+          ]
+        },
+        {
+          "title": "Autres technologies analogues",
+          "children": [
+            {
+              "title": "Cold Fusion"
+            },
+            {
+              "title": "JavaServer Page (JSP)"
+            },
+            {
+              "title": "Microsoft ASP"
+            },
+            {
+              "title": "CGI (Perl, C, C++)"
+            }
+          ]
+        },
+        {
+          "title": "Positionnement face aux autres langages",
+          "children": [
+            {
+              "title": "ASP : Similaire, utilise VBScript"
+            },
+            {
+              "title": "PERL : Puissant mais complexe"
+            },
+            {
+              "title": "CGI : Rapide mais dépendant de la plateforme"
+            }
+          ]
+        },
+        {
+          "title": "Au sommaire de cette partie",
+          "children": [
+            {
+              "title": "Manipulation de formulaires HTML"
+            },
+            {
+              "title": "Instructions conditionnelles"
+            },
+            {
+              "title": "Opérateurs, Tableaux, Boucles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "LANGAGES ET OUTILS DE L'ENVIRONNEMENT WEB",
+      "children": [
+        {
+          "title": "Évolution des technologies du Web",
+          "children": [
+            {
+              "title": "Web Statique (1990)"
+            },
+            {
+              "title": "Web Orienté Client (1995)"
+            },
+            {
+              "title": "Web Orienté Serveur (2000)"
+            },
+            {
+              "title": "Compromis Client-Serveur (2005 - RIA)"
+            }
+          ]
+        },
+        {
+          "title": "Fondements du Web Statique",
+          "children": [
+            {
+              "title": "Protocoles (TCP/IP, HTTP, CGI)"
+            },
+            {
+              "title": "Navigateur (Client)"
+            },
+            {
+              "title": "HTML (HyperText Markup Language)"
+            },
+            {
+              "title": "Serveur Web (Apache)"
+            }
+          ]
+        },
+        {
+          "title": "Web Orienté Client",
+          "children": [
+            {
+              "title": "Recommandation DOM"
+            },
+            {
+              "title": "Langages (JavaScript, JScript)"
+            },
+            {
+              "title": "Feuilles de style (CSS)"
+            },
+            {
+              "title": "DHTML (Dynamic HTML)"
+            }
+          ]
+        },
+        {
+          "title": "Web Orienté Serveur",
+          "children": [
+            {
+              "title": "Interface CGI (Perl)"
+            },
+            {
+              "title": "SSI (Server Side Includes)"
+            },
+            {
+              "title": "PHP"
+            }
+          ]
+        },
+        {
+          "title": "Web 2.0 et Outils",
+          "children": [
+            {
+              "title": "Concept AJAX"
+            },
+            {
+              "title": "Standard d'échange XML"
+            },
+            {
+              "title": "Systèmes de gestion de contenu (CMS)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tableaux (III)",
+      "children": [
+        {
+          "title": "Fonctions utiles",
+          "children": [
+            {
+              "title": "count(), sizeof()"
+            },
+            {
+              "title": "in_array()"
+            },
+            {
+              "title": "list()"
+            },
+            {
+              "title": "range()"
+            },
+            {
+              "title": "shuffle()"
+            },
+            {
+              "title": "sort()"
+            }
+          ]
+        },
+        {
+          "title": "Tableaux associatifs (dictionnaire, hashtable)",
+          "children": [
+            {
+              "title": "Associent une clé (chaîne) à une valeur"
+            },
+            {
+              "title": "Exemple d'initialisation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "HTML Basics",
+      "children": [
+        {
+          "title": "Structure d'un document",
+          "children": [
+            {
+              "title": "Éléments et balises (imbriqués)"
+            },
+            {
+              "title": "Sections <head> et <body>"
+            },
+            {
+              "title": "Déclaration <!DOCTYPE>"
+            }
+          ]
+        },
+        {
+          "title": "Éléments de base",
+          "children": [
+            {
+              "title": "Titres (<h1> à <h6>) et paragraphes (<p>)"
+            },
+            {
+              "title": "Liens (<a>), Images (<img>)"
+            },
+            {
+              "title": "Mise en forme (<b>, <i>, <strong>, <em>)"
+            },
+            {
+              "title": "Sections (<div>, <span>)"
+            }
+          ]
+        },
+        {
+          "title": "Attributs",
+          "children": [
+            {
+              "title": "Spécifient les propriétés (ex: href, src, alt)"
+            },
+            {
+              "title": "Attributs globaux (id, style, class, title)"
+            }
+          ]
+        },
+        {
+          "title": "HTML vs. XHTML",
+          "children": [
+            {
+              "title": "XHTML est plus strict (minuscules, toutes les balises fermées)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "CodeIgniter, le framework au service des Zéros",
+      "children": [
+        {
+          "title": "Introduction au Framework",
+          "children": [
+            {
+              "title": "Définition : kit de composants logiciels"
+            },
+            {
+              "title": "Avantages : organisation, gain de temps"
+            },
+            {
+              "title": "Critères de choix : style de programmation, fonctionnalités, communauté"
+            }
+          ]
+        },
+        {
+          "title": "CodeIgniter",
+          "children": [
+            {
+              "title": "Conçu pour être léger et rapide"
+            },
+            {
+              "title": "Bibliothèques (Libraries) et Aides (Helpers) optionnels"
+            },
+            {
+              "title": "Utilise l'architecture MVC"
+            }
+          ]
+        },
+        {
+          "title": "Architecture MVC",
+          "children": [
+            {
+              "title": "Modèle : gestion des données (base de données)"
+            },
+            {
+              "title": "Vue : affichage (HTML)"
+            },
+            {
+              "title": "Contrôleur : cœur de l'application, gère la logique"
+            }
+          ]
+        },
+        {
+          "title": "Mise en place",
+          "children": [
+            {
+              "title": "Installation et configuration (config.php, database.php, autoload.php)"
+            },
+            {
+              "title": "Structure des dossiers (application, system, assets)"
+            }
+          ]
+        },
+        {
+          "title": "Utilisations avancées",
+          "children": [
+            {
+              "title": "Outil Profiler pour le débogage et la performance"
+            },
+            {
+              "title": "Extension des classes de base (MY_Controller, MY_Model)"
+            },
+            {
+              "title": "Mise en place de thèmes (layouts)"
+            }
+          ]
+        },
+        {
+          "title": "[TP] Un livre d'or",
+          "children": [
+            {
+              "title": "Objectif : Créer un livre d'or simple avec affichage et ajout de commentaires"
+            },
+            {
+              "title": "Composants : Contrôleur, Modèle, Vues, Bibliothèque de pagination"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PHP Clés en main (76 scripts efficaces)",
+      "children": [
+        {
+          "title": "Scripts de base",
+          "children": [
+            {
+              "title": "Inclure un fichier (require_once)"
+            },
+            {
+              "title": "Alterner les couleurs d'un tableau"
+            },
+            {
+              "title": "Créer des liens Précédent/Suivant (pagination)"
+            },
+            {
+              "title": "Manipuler les tableaux (afficher, sérialiser, trier)"
+            },
+            {
+              "title": "Utiliser des templates avec Smarty"
+            }
+          ]
+        },
+        {
+          "title": "Configuration de PHP",
+          "children": [
+            {
+              "title": "Le fichier php.ini"
+            },
+            {
+              "title": "Gestion des erreurs (error_reporting)"
+            },
+            {
+              "title": "Ajuster le temps d'exécution"
+            }
+          ]
+        },
+        {
+          "title": "Sécurité et PHP",
+          "children": [
+            {
+              "title": "Ne pas faire confiance aux formulaires et utilisateurs"
+            },
+            {
+              "title": "Prévention des injections SQL (mysql_real_escape_string)"
+            },
+            {
+              "title": "Prévention des attaques XSS (htmlentities, SafeHTML)"
+            },
+            {
+              "title": "Hachage des mots de passe (md5)"
+            },
+            {
+              "title": "Chiffrement des données (Mcrypt)"
+            }
+          ]
+        },
+        {
+          "title": "Traitement des formulaires, texte, dates, fichiers"
+        },
+        {
+          "title": "Gestion du courrier électronique (PHPMailer)"
+        },
+        {
+          "title": "Traitement des images",
+          "children": [
+            {
+              "title": "Créer une image CAPTCHA"
+            },
+            {
+              "title": "Créer des vignettes (thumbnails)"
+            }
+          ]
+        },
+        {
+          "title": "Utilisation de cURL pour les services web"
+        },
+        {
+          "title": "Mise en application",
+          "children": [
+            {
+              "title": "Système de sondage"
+            },
+            {
+              "title": "Cartes postales électroniques"
+            },
+            {
+              "title": "Système de blog"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "PHP Développement web dynamique",
+      "children": [
+        {
+          "title": "Présentation du module",
+          "children": [
+            {
+              "title": "Pré-requis : Bases de la programmation et des BDD"
+            },
+            {
+              "title": "Évaluation : TPs et examen final"
+            }
+          ]
+        },
+        {
+          "title": "Plan des séances",
+          "children": [
+            {
+              "title": "Séance 1 : Intro, environnement, bases"
+            },
+            {
+              "title": "Séance 2 : Transmission de données (GET/POST)"
+            },
+            {
+              "title": "Séances 3/4 : Sessions et Cookies"
+            },
+            {
+              "title": "Séances 5/6 : Bases de données et POO"
+            },
+            {
+              "title": "Séances 7/8 : Architecture MVC"
+            },
+            {
+              "title": "Séances 9/10 : XML comme alternative à la BDD"
+            }
+          ]
+        },
+        {
+          "title": "Environnement de développement",
+          "children": [
+            {
+              "title": "Serveur local (WAMP/MAMP)"
+            },
+            {
+              "title": "Serveur distant (hébergement) et communication FTP (FileZilla)"
+            },
+            {
+              "title": "Utilisation de la documentation PHP"
+            }
+          ]
+        },
+        {
+          "title": "XML",
+          "children": [
+            {
+              "title": "eXtensible Markup Language"
+            },
+            {
+              "title": "Langage de balisage pour l'échange et le stockage de données"
+            },
+            {
+              "title": "Syntaxe proche de HTML mais avec des balises personnalisées"
+            },
+            {
+              "title": "Règles : prologue, balise racine unique, balises bien formées"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JavaScript (Plan du cours)",
+      "children": [
+        {
+          "title": "Introduction",
+          "children": [
+            {
+              "title": "Langage de script côté client"
+            },
+            {
+              "title": "Ajoute du dynamisme et de l'interaction"
+            },
+            {
+              "title": "Peut être intégré dans HTML ou dans un fichier .js"
+            }
+          ]
+        },
+        {
+          "title": "Concepts clés",
+          "children": [
+            {
+              "title": "Fonctions et portée des variables (locale vs globale)"
+            },
+            {
+              "title": "Interactions avec le DOM (Document Object Model)"
+            },
+            {
+              "title": "Gestion des événements (onclick, onload, onmouseover, etc.)"
+            },
+            {
+              "title": "Utilisation de addEventListener()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La Sécurité des Applications Web",
+      "children": [
+        {
+          "title": "Enjeux de la sécurité du SI",
+          "children": [
+            {
+              "title": "Confidentialité, Intégrité, Disponibilité (CID)"
+            },
+            {
+              "title": "Statistique : 84% des attaques ciblent la couche applicative"
+            }
+          ]
+        },
+        {
+          "title": "Terminologie",
+          "children": [
+            {
+              "title": "Vulnérabilité : Faille ou faiblesse du système"
+            },
+            {
+              "title": "Attaque (Exploit) : Moyen d'exploiter une vulnérabilité"
+            },
+            {
+              "title": "Menace : Adversaire capable de monter une attaque"
+            }
+          ]
+        },
+        {
+          "title": "Projet OWASP",
+          "children": [
+            {
+              "title": "Open Web Application Security Project"
+            },
+            {
+              "title": "Fournit des guides, outils et publications sur la sécurité web"
+            },
+            {
+              "title": "Publication du Top 10 des vulnérabilités les plus critiques"
+            }
+          ]
+        },
+        {
+          "title": "OWASP Top 10 (Exemples)",
+          "children": [
+            {
+              "title": "A1 - Injection (SQL, etc.)"
+            },
+            {
+              "title": "A3 - Cross-Site Scripting (XSS)"
+            },
+            {
+              "title": "A5 - Mauvaise configuration du serveur"
+            },
+            {
+              "title": "A9 - Utilisation de composants avec des vulnérabilités connues (ex: Heartbleed)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

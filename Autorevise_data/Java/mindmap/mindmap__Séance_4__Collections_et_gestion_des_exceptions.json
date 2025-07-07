@@ -1,0 +1,232 @@
+{
+  "title": "Séance 4 : Collections et gestion des exceptions",
+  "nodes": [
+    {
+      "title": "Collections & Java",
+      "children": [
+        {
+          "title": "Types de Collections",
+          "children": [
+            {
+              "title": "Listes (List)",
+              "children": [
+                {
+                  "title": "Collection ordonnée, autorise les doublons"
+                },
+                {
+                  "title": "Implémentations: ArrayList, Vector, LinkedList"
+                }
+              ]
+            },
+            {
+              "title": "Ensembles (Set)",
+              "children": [
+                {
+                  "title": "Collection non ordonnée, sans doublons"
+                },
+                {
+                  "title": "Implémentations: HashSet, TreeSet"
+                }
+              ]
+            },
+            {
+              "title": "Piles (Stack)",
+              "children": [
+                {
+                  "title": "Structure LIFO (Last-In, First-Out)"
+                },
+                {
+                  "title": "Méthodes: push, pop, peek, empty"
+                }
+              ]
+            },
+            {
+              "title": "Tableaux associatifs (Map)",
+              "children": [
+                {
+                  "title": "Association clé-valeur"
+                },
+                {
+                  "title": "Implémentations: HashMap, Hashtable"
+                }
+              ]
+            },
+            {
+              "title": "Tableaux Statiques",
+              "children": [
+                {
+                  "title": "Taille fixe définie à l'initialisation"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Opérations sur les collections",
+          "children": [
+            {
+              "title": "Méthodes générales",
+              "children": [
+                {
+                  "title": "add()"
+                },
+                {
+                  "title": "remove()"
+                },
+                {
+                  "title": "get()"
+                },
+                {
+                  "title": "size()"
+                },
+                {
+                  "title": "indexOf()"
+                }
+              ]
+            },
+            {
+              "title": "Parcourir une collection",
+              "children": [
+                {
+                  "title": "Itérateurs (Iterator)",
+                  "children": [
+                    {
+                      "title": "hasNext()"
+                    },
+                    {
+                      "title": "next()"
+                    }
+                  ]
+                },
+                {
+                  "title": "Boucles 'for each'"
+                },
+                {
+                  "title": "Parcours spécifique des Map",
+                  "children": [
+                    {
+                      "title": "Parcourir les clés : keySet()"
+                    },
+                    {
+                      "title": "Parcourir les paires clé-valeur : entrySet()"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Algorithmes",
+          "children": [
+            {
+              "title": "Algorithmes de Tri"
+            },
+            {
+              "title": "Autres algorithmes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gestion des Exceptions",
+      "children": [
+        {
+          "title": "Principes fondamentaux",
+          "children": [
+            {
+              "title": "Définition : Signal déclenché en cas de problème"
+            },
+            {
+              "title": "Deux phases",
+              "children": [
+                {
+                  "title": "Levée d'exception (throw)"
+                },
+                {
+                  "title": "Traitement d'exception (try...catch)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Hiérarchie des classes",
+          "children": [
+            {
+              "title": "Throwable (classe mère)",
+              "children": [
+                {
+                  "title": "Error: Erreurs fatales (non traitées)"
+                },
+                {
+                  "title": "Exception: Erreurs à traiter",
+                  "children": [
+                    {
+                      "title": "Checked Exceptions (vérifiées) : Doivent être traitées ou propagées (ex: IOException)"
+                    },
+                    {
+                      "title": "Unchecked Exceptions (non-vérifiées / RuntimeException) : Erreurs de programmation (ex: NullPointerException)"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Syntaxe et Mécanisme",
+          "children": [
+            {
+              "title": "try: Marque un bloc de code à surveiller"
+            },
+            {
+              "title": "catch: Capture et traite une exception spécifique"
+            },
+            {
+              "title": "finally: Bloc exécuté dans tous les cas (erreur ou non)"
+            },
+            {
+              "title": "throw: Lève manuellement une exception"
+            },
+            {
+              "title": "throws: Déclare qu'une méthode peut propager une exception"
+            }
+          ]
+        },
+        {
+          "title": "Stratégies de gestion",
+          "children": [
+            {
+              "title": "Traiter l'exception localement (try-catch)"
+            },
+            {
+              "title": "Relayer l'exception à l'appelant (throws)"
+            },
+            {
+              "title": "Définir ses propres classes d'exception"
+            }
+          ]
+        },
+        {
+          "title": "Exemples d'exceptions standards",
+          "children": [
+            {
+              "title": "ArrayIndexOutOfBoundsException: Accès hors des limites d'un tableau"
+            },
+            {
+              "title": "NullPointerException: Utilisation d'une référence nulle"
+            },
+            {
+              "title": "ArithmeticException: Erreur de calcul (ex: division par zéro)"
+            },
+            {
+              "title": "ClassCastException: Conversion de type (cast) impossible"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

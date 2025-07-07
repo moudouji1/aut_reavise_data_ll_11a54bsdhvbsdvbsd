@@ -1,0 +1,213 @@
+{
+  "title": "Séance 3 : Héritage, interfaces, encapsulation avancée",
+  "nodes": [
+    {
+      "title": "Héritage",
+      "children": [
+        {
+          "title": "Définition",
+          "children": [
+            {
+              "title": "Reprendre les membres d'une classe mère (superclasse) dans une classe fille (sous-classe)"
+            },
+            {
+              "title": "Mot-clé 'extends'"
+            },
+            {
+              "title": "Héritage simple en Java (une seule classe mère)"
+            },
+            {
+              "title": "Classe 'Object' : racine de toute la hiérarchie"
+            }
+          ]
+        },
+        {
+          "title": "Constructeurs",
+          "children": [
+            {
+              "title": "Le constructeur de la sous-classe appelle implicitement celui de la superclasse"
+            },
+            {
+              "title": "Appel explicite avec 'super()' comme première instruction"
+            }
+          ]
+        },
+        {
+          "title": "Redéfinition (Overriding)",
+          "children": [
+            {
+              "title": "Fournir une nouvelle implémentation pour une méthode héritée"
+            },
+            {
+              "title": "Masquage des champs (déconseillé)"
+            }
+          ]
+        },
+        {
+          "title": "Mots-clés",
+          "children": [
+            {
+              "title": "super : accéder aux membres de la superclasse"
+            },
+            {
+              "title": "this : référence à l'instance courante"
+            }
+          ]
+        },
+        {
+          "title": "Interdire l'héritage",
+          "children": [
+            {
+              "title": "Classe 'final' : ne peut pas être étendue"
+            },
+            {
+              "title": "Méthode 'final' : ne peut pas être redéfinie"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Polymorphisme",
+      "children": [
+        {
+          "title": "Définition : un objet peut prendre plusieurs formes (types)"
+        },
+        {
+          "title": "Liaison dynamique",
+          "children": [
+            {
+              "title": "La méthode à exécuter est choisie à l'exécution en fonction du type réel de l'objet"
+            }
+          ]
+        },
+        {
+          "title": "Compatibilité et Transtypage (Casting)",
+          "children": [
+            {
+              "title": "Surclassement (Upcasting) : implicite, affecter un objet fille à une référence mère"
+            },
+            {
+              "title": "Déclassement (Downcasting) : explicite, forcer une référence mère vers un type fille"
+            },
+            {
+              "title": "Opérateur 'instanceof' : vérifier le type réel d'un objet avant de déclasser pour éviter ClassCastException"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Interfaces",
+      "children": [
+        {
+          "title": "Définition : un contrat de méthodes publiques et abstraites"
+        },
+        {
+          "title": "Déclaration avec le mot-clé 'interface'"
+        },
+        {
+          "title": "Implémentation avec le mot-clé 'implements'"
+        },
+        {
+          "title": "Une classe peut implémenter plusieurs interfaces"
+        },
+        {
+          "title": "Héritage multiple entre interfaces avec 'extends'"
+        },
+        {
+          "title": "Raison d'être : Abstraction totale, pallier l'absence d'héritage multiple de classes"
+        }
+      ]
+    },
+    {
+      "title": "Classes Abstraites",
+      "children": [
+        {
+          "title": "Définition : classe qui ne peut pas être instanciée"
+        },
+        {
+          "title": "Déclaration avec le mot-clé 'abstract'"
+        },
+        {
+          "title": "Peut contenir des méthodes abstraites (sans corps) et des méthodes concrètes (avec corps)"
+        },
+        {
+          "title": "But : factoriser du code commun à plusieurs sous-classes"
+        }
+      ]
+    },
+    {
+      "title": "Encapsulation et Visibilité",
+      "children": [
+        {
+          "title": "Principe : Cacher les détails d'implémentation et ne fournir qu'une interface publique"
+        },
+        {
+          "title": "Modificateurs d'accès",
+          "children": [
+            {
+              "title": "public : accessible de partout"
+            },
+            {
+              "title": "protected : accessible dans la classe, le package et les sous-classes"
+            },
+            {
+              "title": "Défaut (package-private) : accessible uniquement dans le même package"
+            },
+            {
+              "title": "private : accessible uniquement à l'intérieur de la classe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concepts Avancés",
+      "children": [
+        {
+          "title": "Paquetages (Packages)",
+          "children": [
+            {
+              "title": "Organisation logique des classes"
+            },
+            {
+              "title": "Mot-clé 'package' pour déclarer"
+            },
+            {
+              "title": "Mot-clé 'import' pour utiliser"
+            }
+          ]
+        },
+        {
+          "title": "Classes internes",
+          "children": [
+            {
+              "title": "Classe définie à l'intérieur d'une autre classe"
+            },
+            {
+              "title": "Peut accéder aux membres privés de la classe externe"
+            },
+            {
+              "title": "Classe interne statique"
+            }
+          ]
+        },
+        {
+          "title": "Génériques (Generics)",
+          "children": [
+            {
+              "title": "Définition : types paramétrés pour les classes et méthodes (ex: List<String>)"
+            },
+            {
+              "title": "Avantage : sécurité de type à la compilation et suppression des casts"
+            },
+            {
+              "title": "Conventions de nommage : E (Element), K (Key), V (Value), T (Type)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

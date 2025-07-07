@@ -1,0 +1,229 @@
+{
+  "title": "Séance 1 : Bases d’HTML et CSS, Structure d’une page web, Introduction à CSS",
+  "nodes": [
+    {
+      "title": "Introduction au Web et ses Technologies",
+      "children": [
+        {
+          "title": "Concepts Fondamentaux",
+          "children": [
+            {
+              "title": "Internet : Réseau mondial d'ordinateurs"
+            },
+            {
+              "title": "Web (WWW) : Système d'information basé sur l'hypertexte"
+            },
+            {
+              "title": "Protocoles : HTTP, FTP"
+            }
+          ]
+        },
+        {
+          "title": "Sites Web",
+          "children": [
+            {
+              "title": "Statique : Contenu fixe (HTML, CSS), mise à jour manuelle"
+            },
+            {
+              "title": "Dynamique : Contenu généré à la volée (PHP, ASP), interactif"
+            },
+            {
+              "title": "Types de sites",
+              "children": [
+                {
+                  "title": "Carte de visite"
+                },
+                {
+                  "title": "Site vitrine"
+                },
+                {
+                  "title": "E-commerce"
+                },
+                {
+                  "title": "Site mobile"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Architecture et Outils",
+          "children": [
+            {
+              "title": "Architecture Client-Serveur"
+            },
+            {
+              "title": "Langages Côté Client : HTML, CSS, JavaScript"
+            },
+            {
+              "title": "Langages Côté Serveur : PHP, Perl, Java"
+            },
+            {
+              "title": "Outils : Serveur Web (Apache), Navigateur (Firefox), Base de données (MySQL)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bases de HTML",
+      "children": [
+        {
+          "title": "Structure d'un document HTML",
+          "children": [
+            {
+              "title": "Déclaration : <!DOCTYPE html>"
+            },
+            {
+              "title": "Balise racine : <html>"
+            },
+            {
+              "title": "En-tête : <head> (contient <title>, <meta>, <style>, <script>)"
+            },
+            {
+              "title": "Corps : <body> (contient le contenu visible)"
+            }
+          ]
+        },
+        {
+          "title": "Éléments et Balises",
+          "children": [
+            {
+              "title": "Syntaxe : <balise>contenu</balise>"
+            },
+            {
+              "title": "Attributs : <balise nom=\"valeur\">"
+            },
+            {
+              "title": "HTML vs XHTML (XHTML est plus strict)"
+            }
+          ]
+        },
+        {
+          "title": "Balises courantes",
+          "children": [
+            {
+              "title": "Titres : <h1> à <h6>"
+            },
+            {
+              "title": "Paragraphes : <p>"
+            },
+            {
+              "title": "Formatage de texte : <b>, <i>, <strong>, <em>, <u>"
+            },
+            {
+              "title": "Liens hypertextes : <a> (attribut href)"
+            },
+            {
+              "title": "Images : <img> (attributs src, alt)"
+            },
+            {
+              "title": "Sections : <div>, <span>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Intégration PHP et HTML",
+      "children": [
+        {
+          "title": "Principe : L'interpréteur PHP exécute le code entre <?php ... ?>"
+        },
+        {
+          "title": "Le reste du fichier est traité comme du HTML"
+        },
+        {
+          "title": "Génération de HTML via des instructions PHP (echo, print)"
+        },
+        {
+          "title": "Gestion des espaces blancs et sauts de ligne (<br>, \\n)"
+        },
+        {
+          "title": "Types de commentaires : //, /* */, #"
+        }
+      ]
+    },
+    {
+      "title": "Formulaires HTML",
+      "children": [
+        {
+          "title": "Structure de base : <form>",
+          "children": [
+            {
+              "title": "Attribut 'action' : URL du script de traitement"
+            },
+            {
+              "title": "Attribut 'method' : GET (données dans l'URL) vs POST (données dans le corps de la requête)"
+            }
+          ]
+        },
+        {
+          "title": "Champs de saisie",
+          "children": [
+            {
+              "title": "Texte : <input type=\"text\"> / <input type=\"password\">"
+            },
+            {
+              "title": "Choix unique : <input type=\"radio\">"
+            },
+            {
+              "title": "Choix multiples : <input type=\"checkbox\">"
+            },
+            {
+              "title": "Zone de texte multiligne : <textarea>"
+            },
+            {
+              "title": "Liste déroulante : <select> avec des balises <option>"
+            }
+          ]
+        },
+        {
+          "title": "Boutons",
+          "children": [
+            {
+              "title": "Envoi des données : <input type=\"submit\">"
+            },
+            {
+              "title": "Réinitialisation : <input type=\"reset\">"
+            }
+          ]
+        },
+        {
+          "title": "Présentation et mise en page (avec des tableaux ou des listes)"
+        }
+      ]
+    },
+    {
+      "title": "Traitement de formulaires en PHP",
+      "children": [
+        {
+          "title": "Récupération des données via les superglobales $_GET et $_POST"
+        },
+        {
+          "title": "Validation des entrées (ex: isset(), strlen())"
+        },
+        {
+          "title": "Passage de paramètres entre scripts via les sessions (PHPSESSID)"
+        }
+      ]
+    },
+    {
+      "title": "Tableaux en PHP",
+      "children": [
+        {
+          "title": "Tableaux numériques (indexés)"
+        },
+        {
+          "title": "Tableaux associatifs (clé => valeur)"
+        },
+        {
+          "title": "Initialisation avec array()"
+        },
+        {
+          "title": "Fonctions utiles : count(), in_array(), sort(), shuffle(), range()"
+        }
+      ]
+    }
+  ]
+}

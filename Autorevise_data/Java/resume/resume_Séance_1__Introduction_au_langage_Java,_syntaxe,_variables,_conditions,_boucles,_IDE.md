@@ -1,0 +1,48 @@
+```json
+{
+  "title": "Séance 1 : Introduction au langage Java, syntaxe, variables, conditions, boucles, IDE",
+  "summary": "Cette séance est une introduction au langage de programmation Java. Elle couvre les concepts fondamentaux tels que la programmation orientée objet, la syntaxe de base, le processus de compilation via la Machine Virtuelle Java (JVM), les variables, les types de données, les opérateurs, les structures de contrôle (conditions et boucles), et la manipulation des tableaux et des collections.",
+  "sections": [
+    {
+      "title": "Introduction à la Programmation Orientée Objet (POO) avec Java",
+      "summary": "La programmation par objets (POO) structure les applications autour des types de données (objets). Java est un langage orienté objet qui repose sur trois concepts clés :\n- **Objet** : Une entité possédant une identité, un état (variables) et un comportement (méthodes).\n- **Classe** : Un modèle ou 'blueprint' qui définit la structure (champs) et le comportement (méthodes) des objets. Par exemple, une classe `Robot` peut définir des variables d'état comme `X`, `Y`, `orientation` et des méthodes comme `avancer()`.\n- **Héritage** : Permet de créer de nouvelles classes (spécialisées) à partir de classes existantes (générales), favorisant la réutilisation du code.\nUne classe peut avoir un ou plusieurs **constructeurs**, des méthodes spéciales portant le même nom que la classe, utilisées pour initialiser les objets lors de leur création."
+    },
+    {
+      "title": "Cycle de Développement et Machine Virtuelle Java (JVM)",
+      "summary": "Le développement d'une application Java suit un cycle en plusieurs phases :\n1. **Édition** : Le code source est écrit dans un fichier avec l'extension `.java`.\n2. **Compilation** : Le compilateur `javac` traduit le code source (`.java`) en **bytecode**, un code intermédiaire indépendant de la plateforme, stocké dans un fichier `.class`.\n3. **Chargement** : Le chargeur de classe (Class Loader) de la JVM charge les fichiers `.class` en mémoire.\n4. **Vérification** : Le vérificateur de bytecode s'assure que le code est valide et ne viole pas les règles de sécurité de Java.\n5. **Exécution** : La Machine Virtuelle Java (JVM) interprète ou compile le bytecode à la volée (JIT - Just-In-Time compilation) pour l'exécuter sur la machine cible. C'est ce mécanisme qui rend Java portable ('Write Once, Run Anywhere')."
+    },
+    {
+      "title": "Syntaxe de Base et Premier Programme",
+      "summary": "Un programme Java est structuré en classes. Le point d'entrée d'une application est la méthode `main`.\n- **Déclaration de classe** : `public class NomDeLaClasse { ... }`. Le nom du fichier doit être `NomDeLaClasse.java`.\n- **Méthode principale** : `public static void main(String[] args) { ... }`.\n- **Affichage console** : `System.out.println(\"Texte\");`.\n**Exemple 'Hello World'** :\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, World!\");\n    }\n}\n```\n**Compilation et Exécution en ligne de commande** :\n- Compilation : `javac HelloWorld.java`\n- Exécution : `java HelloWorld`"
+    },
+    {
+      "title": "Variables et Types de Données",
+      "summary": "Java est un langage fortement typé. Il existe deux catégories de types de données :\n- **Types Primitifs** : Ils stockent directement la valeur. Il y en a huit : `boolean` (vrai/faux), `char` (caractère Unicode), `byte`, `short`, `int`, `long` (entiers de différentes tailles), `float`, `double` (nombres à virgule flottante).\n- **Types de Référence** : Ils stockent une adresse mémoire pointant vers un objet (une instance de classe, un tableau, etc.). Une variable de type référence qui n'est pas initialisée a la valeur `null`. L'affectation entre deux variables de type référence copie l'adresse, pas l'objet.\nLa déclaration d'une variable se fait avec la syntaxe `type nom_variable;` et l'initialisation avec `nom_variable = valeur;`."
+    },
+    {
+      "title": "Opérateurs",
+      "summary": "Java fournit un large éventail d'opérateurs :\n- **Arithmétiques** : `+` (addition), `-` (soustraction), `*` (multiplication), `/` (division), `%` (modulo).\n- **d'Affectation** : `=` (affectation simple), `+=`, `-=`, `*=`, `/=`, `%=` (opérations combinées).\n- **d'Incrémentation/Décrémentation** : `++` (incrémenter de 1), `--` (décrémenter de 1), en préfixe (`++a`) ou postfixe (`a++`).\n- **Relationnels (Comparaison)** : `==` (égal à), `!=` (différent de), `>` (supérieur à), `<` (inférieur à), `>=` (supérieur ou égal à), `<=` (inférieur ou égal à).\n- **Logiques** : `&&` (ET logique), `||` (OU logique), `!` (NON logique). Les opérateurs `&&` et `||` sont 'paresseux' (short-circuit) : le second opérande n'est pas évalué si le résultat est déjà connu.\n- **Ternaire** : `condition ? valeur_si_vrai : valeur_si_faux`.\n- **sur les Références** : `instanceof` teste si un objet est une instance d'une classe. `equals()` compare le contenu des objets, tandis que `==` compare leurs adresses mémoire."
+    },
+    {
+      "title": "Structures de Contrôle Conditionnelles",
+      "summary": "Les structures conditionnelles permettent d'exécuter des blocs de code en fonction de certaines conditions.\n- **`if-else`** : Permet d'exécuter un bloc de code si une condition est vraie, et un autre bloc (optionnel) si elle est fausse. Peut être enchaîné avec `else if`.\n  `if (condition) { ... } else if (autre_condition) { ... } else { ... }`\n- **`switch`** : Évalue une variable et exécute le bloc de code `case` correspondant à sa valeur. Le mot-clé `break` est essentiel pour sortir du `switch` après l'exécution d'un `case`, sinon l'exécution continue aux `case` suivants (fall-through). Un bloc `default` peut être défini pour les cas non prévus.\n  `switch (variable) { case valeur1: ...; break; case valeur2: ...; break; default: ...; }`"
+    },
+    {
+      "title": "Structures de Contrôle : Les Boucles",
+      "summary": "Les boucles permettent de répéter l'exécution d'un bloc de code.\n- **`for`** : Idéale lorsque le nombre d'itérations est connu. Sa syntaxe est `for (initialisation; condition; mise_à_jour) { ... }`.\n- **`while`** : Répète un bloc tant qu'une condition est vraie. La condition est testée au début de chaque itération. `while (condition) { ... }`.\n- **`do-while`** : Similaire à `while`, mais la condition est testée à la fin. Le bloc est donc exécuté au moins une fois. `do { ... } while (condition);`.\n- **`for-each` (enhanced for)** : Simplifie l'itération sur les éléments d'un tableau ou d'une collection. `for (Type element : collection) { ... }`.\n- **Contrôle de boucle** : `break` permet de sortir prématurément de la boucle, tandis que `continue` passe directement à l'itération suivante."
+    },
+    {
+      "title": "Tableaux (Arrays)",
+      "summary": "Un tableau est une structure de données qui stocke une collection d'éléments de même type, avec une taille fixe.\n- **Déclaration** : `type[] nomTableau;` ou `type nomTableau[];`.\n- **Création** : `nomTableau = new type[taille];`.\n- **Initialisation** : Directement à la déclaration : `int[] monTableau = {1, 2, 3};`.\n- **Accès** : Les éléments sont accessibles par un index, qui commence à 0. `monTableau[0]` accède au premier élément.\n- **Taille** : La propriété `length` donne le nombre d'éléments du tableau (`monTableau.length`).\n- **Copie** : `System.arraycopy()` copie des éléments vers un autre tableau. `clone()` crée une copie complète du tableau. L'affectation `tableau2 = tableau1;` ne copie que la référence.\n- **Tableaux multidimensionnels** : Déclarés avec plusieurs paires de crochets, ex : `int[][] matrice = new int[3][4];`."
+    },
+    {
+      "title": "Collections",
+      "summary": "Le framework des Collections (`java.util`) fournit des classes pour gérer des groupes d'objets dynamiques.\n- **Interfaces principales** :\n  - `List` : Séquence ordonnée d'éléments (avec doublons). Implémentations courantes : `ArrayList` (basé sur un tableau dynamique) et `LinkedList` (liste chaînée).\n  - `Map` : Association de paires clé-valeur. Clés uniques. Implémentations courantes : `HashMap`, `Hashtable`.\n  - `Set` : Collection d'éléments uniques non ordonnés.\n- **Pile (`Stack`)** : Structure LIFO (Last-In, First-Out) avec des méthodes comme `push()` (ajouter) et `pop()` (retirer).\n- **Itération** : \n  - **`Iterator`** : Objet permettant de parcourir une collection avec les méthodes `hasNext()` et `next()`.\n  - **Boucle `for-each`** : Manière la plus simple de parcourir une collection. `for (Type element : maListe) { ... }`.\nPour parcourir une `Map`, il est plus efficace d'itérer sur son `entrySet()` que sur son `keySet()` pour accéder à la fois aux clés et aux valeurs."
+    },
+    {
+      "title": "Commentaires et Documentation",
+      "summary": "Les commentaires permettent d'annoter le code pour le rendre plus compréhensible. Ils ne sont pas compilés.\n- **Commentaire sur une seule ligne** : Commence par `//`.\n- **Commentaire sur plusieurs lignes** : Encadré par `/*` et `*/`.\n- **Commentaire de documentation (Javadoc)** : Encadré par `/**` et `*/`. Il est utilisé pour générer automatiquement la documentation du code au format HTML via l'outil `javadoc`. Il utilise des balises spéciales comme :\n  - `@param` : pour décrire un paramètre de méthode.\n  - `@return` : pour décrire la valeur de retour.\n  - `@author`, `@version`, `@deprecated`."
+    }
+  ]
+}
+```

@@ -1,0 +1,347 @@
+{
+  "title": "Séance 1 : Introduction au langage Java, syntaxe, variables, conditions, boucles, IDE",
+  "nodes": [
+    {
+      "title": "Introduction au langage Java",
+      "children": [
+        {
+          "title": "Caractéristiques et Philosophie",
+          "children": [
+            {
+              "title": "Simple et Orienté Objet"
+            },
+            {
+              "title": "Robuste et Sécurisé"
+            },
+            {
+              "title": "Indépendant de la plateforme (Neutre architecturalement)"
+            },
+            {
+              "title": "Programmation par Objets (Classe, Objet, Héritage)"
+            }
+          ]
+        },
+        {
+          "title": "Écosystème Java",
+          "children": [
+            {
+              "title": "JVM (Java Virtual Machine)"
+            },
+            {
+              "title": "Bytecode"
+            },
+            {
+              "title": "JDK (Java Development Kit)"
+            },
+            {
+              "title": "JRE (Java Runtime Environment)"
+            },
+            {
+              "title": "API Java"
+            }
+          ]
+        },
+        {
+          "title": "Cycle de vie d'un programme",
+          "children": [
+            {
+              "title": "Édition (fichier .java)"
+            },
+            {
+              "title": "Compilation (javac -> .class)",
+              "children": [
+                {
+                  "title": "Le compilateur `javac`"
+                }
+              ]
+            },
+            {
+              "title": "Exécution (java)",
+              "children": [
+                {
+                  "title": "Chargement par le ClassLoader"
+                },
+                {
+                  "title": "Vérification du bytecode"
+                },
+                {
+                  "title": "Interprétation par la JVM"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Premier programme 'Hello World'",
+          "children": [
+            {
+              "title": "Structure d'une classe (`public class`)"
+            },
+            {
+              "title": "Point d'entrée (`public static void main(String[] args)`)"
+            },
+            {
+              "title": "Affichage console (`System.out.println`)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Syntaxe et Éléments de base",
+      "children": [
+        {
+          "title": "Identificateurs et mots-clés"
+        },
+        {
+          "title": "Commentaires",
+          "children": [
+            {
+              "title": "Fin de ligne: //"
+            },
+            {
+              "title": "Multi-lignes: /* ... */"
+            },
+            {
+              "title": "Javadoc: /** ... */"
+            }
+          ]
+        },
+        {
+          "title": "Instructions et Blocs `{}`"
+        },
+        {
+          "title": "Portée des variables (Scope)"
+        }
+      ]
+    },
+    {
+      "title": "Variables et Types de Données",
+      "children": [
+        {
+          "title": "Déclaration, Initialisation, Assignation"
+        },
+        {
+          "title": "Types primitifs",
+          "children": [
+            {
+              "title": "Entiers: byte, short, int, long"
+            },
+            {
+              "title": "Flottants: float, double"
+            },
+            {
+              "title": "Caractère: char"
+            },
+            {
+              "title": "Booléen: boolean"
+            }
+          ]
+        },
+        {
+          "title": "Types de référence",
+          "children": [
+            {
+              "title": "Objets"
+            },
+            {
+              "title": "Tableaux"
+            },
+            {
+              "title": "String"
+            },
+            {
+              "title": "Constante `null`"
+            }
+          ]
+        },
+        {
+          "title": "Conversion de type (Casting)",
+          "children": [
+            {
+              "title": "Casts entre types primitifs"
+            },
+            {
+              "title": "String vers numérique (ex: Integer.parseInt)"
+            },
+            {
+              "title": "Numérique vers String (ex: String.valueOf)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Opérateurs",
+      "children": [
+        {
+          "title": "Opérateurs Arithmétiques (+, -, *, /, %)"
+        },
+        {
+          "title": "Opérateurs d'Assignation (=, +=, -=, *=, /=)"
+        },
+        {
+          "title": "Opérateurs d'Incrémentation et Décrémentation (++, --)"
+        },
+        {
+          "title": "Opérateurs de Comparaison (==, !=, <, >, <=, >=)"
+        },
+        {
+          "title": "Opérateurs Logiques (&&, ||, !, & , |)"
+        },
+        {
+          "title": "Opérateurs au niveau du bit (&, |, ^, ~, <<, >>)"
+        },
+        {
+          "title": "Opérateur conditionnel (ternaire) `? :`"
+        },
+        {
+          "title": "Opérateur de test de type `instanceof`"
+        },
+        {
+          "title": "Priorité des opérateurs"
+        }
+      ]
+    },
+    {
+      "title": "Structures de Contrôle",
+      "children": [
+        {
+          "title": "Instructions de décision (Conditions)",
+          "children": [
+            {
+              "title": "if"
+            },
+            {
+              "title": "if-else"
+            },
+            {
+              "title": "if-else if-else (else if ladder)"
+            },
+            {
+              "title": "switch-case-default"
+            }
+          ]
+        },
+        {
+          "title": "Instructions de boucle (Itérations)",
+          "children": [
+            {
+              "title": "for"
+            },
+            {
+              "title": "while"
+            },
+            {
+              "title": "do-while"
+            },
+            {
+              "title": "for-each (pour collections et tableaux)"
+            }
+          ]
+        },
+        {
+          "title": "Instructions de saut",
+          "children": [
+            {
+              "title": "break"
+            },
+            {
+              "title": "continue"
+            },
+            {
+              "title": "return"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tableaux (Arrays)",
+      "children": [
+        {
+          "title": "Déclaration et Création",
+          "children": [
+            {
+              "title": "Syntaxe: `type[] nom;` ou `type nom[];`"
+            },
+            {
+              "title": "Instanciation: `new type[taille];`"
+            }
+          ]
+        },
+        {
+          "title": "Initialisation",
+          "children": [
+            {
+              "title": "Par assignation: `tableau[index] = valeur;`"
+            },
+            {
+              "title": "Littérale: `int[] t = {1, 2, 3};`"
+            }
+          ]
+        },
+        {
+          "title": "Accès aux éléments par index (base 0)"
+        },
+        {
+          "title": "Taille d'un tableau (`.length`)"
+        },
+        {
+          "title": "Tableaux multidimensionnels"
+        },
+        {
+          "title": "Parcours de tableau (boucle `for`, `for-each`)"
+        },
+        {
+          "title": "Copie de tableau (`System.arraycopy`, `.clone()`)"
+        }
+      ]
+    },
+    {
+      "title": "Chaînes de caractères (String)",
+      "children": [
+        {
+          "title": "Classe et non type primitif"
+        },
+        {
+          "title": "Création et initialisation"
+        },
+        {
+          "title": "Concaténation avec `+`"
+        },
+        {
+          "title": "Comparaison: `.equals()` vs `==`"
+        },
+        {
+          "title": "Méthodes utiles: `length()`, `charAt()`, `substring()`, `valueOf()`"
+        }
+      ]
+    },
+    {
+      "title": "Collections (Introduction)",
+      "children": [
+        {
+          "title": "Interfaces: List, Set, Map"
+        },
+        {
+          "title": "Classes: ArrayList, LinkedList, HashMap"
+        },
+        {
+          "title": "Itérateurs"
+        }
+      ]
+    },
+    {
+      "title": "Environnement de Développement (IDE)",
+      "children": [
+        {
+          "title": "Exemples d'IDE (JBuilder, NetBeans, Eclipse, IntelliJ IDEA)"
+        },
+        {
+          "title": "Outils du JDK (javac, java, javadoc)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "title": "Séance 2 : Introduction à PHP, Syntaxe de base, Variables, Boucles, Fonctions",
+  "nodes": [
+    {
+      "title": "Introduction à PHP",
+      "children": [
+        {
+          "title": "Qu'est-ce que PHP ? (Hypertext Preprocessor)"
+        },
+        {
+          "title": "Langage de script Open Source"
+        },
+        {
+          "title": "Exécuté côté serveur (Server-Side)"
+        },
+        {
+          "title": "Intégration facile avec HTML"
+        },
+        {
+          "title": "Syntaxe inspirée de C, Java et Perl"
+        }
+      ]
+    },
+    {
+      "title": "Syntaxe de base",
+      "children": [
+        {
+          "title": "Délimiteurs et Commentaires",
+          "children": [
+            {
+              "title": "Balises PHP : <?php ... ?>"
+            },
+            {
+              "title": "Séparateur d'instructions : ;"
+            },
+            {
+              "title": "Commentaires : //, #, /* ... */"
+            }
+          ]
+        },
+        {
+          "title": "Affichage",
+          "children": [
+            {
+              "title": "echo : Affiche une ou plusieurs chaînes"
+            },
+            {
+              "title": "print : Affiche une chaîne"
+            },
+            {
+              "title": "printf : Affiche une chaîne formatée"
+            }
+          ]
+        },
+        {
+          "title": "Variables",
+          "children": [
+            {
+              "title": "Déclaration et nommage (commence par $)"
+            },
+            {
+              "title": "Sensibilité à la casse ($var et $VAR sont différentes)"
+            },
+            {
+              "title": "Affectation par valeur (=)"
+            },
+            {
+              "title": "Variables prédéfinies (Superglobales) : $_GET, $_POST, $_FILES"
+            }
+          ]
+        },
+        {
+          "title": "Constantes",
+          "children": [
+            {
+              "title": "Définition : define(\"NOM\", \"valeur\")"
+            },
+            {
+              "title": "Convention : Nom en majuscules, pas de $"
+            },
+            {
+              "title": "Constantes prédéfinies : PHP_VERSION, PHP_OS"
+            }
+          ]
+        },
+        {
+          "title": "Types de données",
+          "children": [
+            {
+              "title": "Scalaires : string, integer, float, boolean"
+            },
+            {
+              "title": "Composés : array, object"
+            },
+            {
+              "title": "Spéciaux : resource, NULL"
+            }
+          ]
+        },
+        {
+          "title": "Opérateurs",
+          "children": [
+            {
+              "title": "Arithmétiques : +, -, *, /, % (modulo)"
+            },
+            {
+              "title": "D'affectation : =, +=, -=, .="
+            },
+            {
+              "title": "De comparaison : ==, !=, <, >, <=, >="
+            },
+            {
+              "title": "D'incrémentation/décrémentation : ++, --"
+            },
+            {
+              "title": "Logiques : && (et), || (ou), ! (non)"
+            },
+            {
+              "title": "De chaînes (Concaténation) : ."
+            }
+          ]
+        },
+        {
+          "title": "Structures de contrôle",
+          "children": [
+            {
+              "title": "Conditionnelles : if, else, elseif"
+            },
+            {
+              "title": "Conditionnelles : switch, case, break, default"
+            },
+            {
+              "title": "Boucles : for"
+            },
+            {
+              "title": "Boucles : while"
+            },
+            {
+              "title": "Boucles : foreach (pour les tableaux)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Tableaux (Arrays)",
+      "children": [
+        {
+          "title": "Types de tableaux",
+          "children": [
+            {
+              "title": "Tableaux indexés (clés numériques)"
+            },
+            {
+              "title": "Tableaux associatifs (clés chaînes de caractères)"
+            },
+            {
+              "title": "Tableaux multidimensionnels"
+            }
+          ]
+        },
+        {
+          "title": "Création et Manipulation",
+          "children": [
+            {
+              "title": "Déclaration : array(), []"
+            },
+            {
+              "title": "Parcours : boucle foreach"
+            },
+            {
+              "title": "Ajout d'éléments : $tableau[] = valeur;"
+            }
+          ]
+        },
+        {
+          "title": "Fonctions utiles",
+          "children": [
+            {
+              "title": "Comptage : count(), sizeof()"
+            },
+            {
+              "title": "Tri : sort(), rsort(), asort(), arsort(), ksort()"
+            },
+            {
+              "title": "Recherche : in_array(), array_key_exists()"
+            },
+            {
+              "title": "Autres : array_keys(), array_values(), implode(), explode()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Fonctions",
+      "children": [
+        {
+          "title": "Définition : function nom_fonction($arg1, ...) { ... }"
+        },
+        {
+          "title": "Appel de fonction"
+        },
+        {
+          "title": "Valeur de retour : return"
+        },
+        {
+          "title": "Portée des variables (locale, globale)"
+        },
+        {
+          "title": "Passage de paramètres"
+        }
+      ]
+    },
+    {
+      "title": "Programmation Orientée Objet (POO)",
+      "children": [
+        {
+          "title": "Concepts : Classe, Objet, Attribut, Méthode"
+        },
+        {
+          "title": "Création : class MaClasse {}, $objet = new MaClasse();"
+        },
+        {
+          "title": "Constructeur et Destructeur : __construct(), __destruct()"
+        },
+        {
+          "title": "Visibilité : public, private, protected"
+        },
+        {
+          "title": "Héritage : extends"
+        },
+        {
+          "title": "Sérialisation : serialize(), unserialize()"
+        }
+      ]
+    },
+    {
+      "title": "Interactions et Données",
+      "children": [
+        {
+          "title": "Formulaires HTML",
+          "children": [
+            {
+              "title": "Récupération des données : $_GET, $_POST"
+            },
+            {
+              "title": "Validation des données côté serveur"
+            },
+            {
+              "title": "Sécurité : ne pas faire confiance aux entrées"
+            }
+          ]
+        },
+        {
+          "title": "Gestion des Fichiers",
+          "children": [
+            {
+              "title": "Permissions (chmod)"
+            },
+            {
+              "title": "Ouverture/Fermeture : fopen(), fclose()"
+            },
+            {
+              "title": "Lecture/Écriture : fgets(), fputs(), file_get_contents()"
+            },
+            {
+              "title": "Téléchargement (Upload) : $_FILES"
+            },
+            {
+              "title": "Inclusion de fichiers : include(), require()"
+            }
+          ]
+        },
+        {
+          "title": "Dates et Heures",
+          "children": [
+            {
+              "title": "Timestamp Unix"
+            },
+            {
+              "title": "Fonctions : time(), date(), strftime(), mktime()"
+            },
+            {
+              "title": "Formatage des dates"
+            }
+          ]
+        },
+        {
+          "title": "Envoi d'Email",
+          "children": [
+            {
+              "title": "Fonction mail()"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

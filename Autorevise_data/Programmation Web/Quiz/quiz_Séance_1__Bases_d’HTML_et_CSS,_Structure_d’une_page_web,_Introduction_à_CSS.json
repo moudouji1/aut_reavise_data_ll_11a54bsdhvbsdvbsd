@@ -1,0 +1,93 @@
+{
+  "title": "Bases d’HTML et des formulaires",
+  "questions": [
+    {
+      "question": "Quelle est la principale différence entre un site web statique et un site web dynamique ?",
+      "options": [
+        "Un site statique utilise HTML et CSS, tandis qu'un site dynamique utilise uniquement PHP.",
+        "Le contenu d'un site statique est fixe et doit être modifié manuellement dans le code source, alors que celui d'un site dynamique peut être généré à la volée.",
+        "Un site statique ne peut pas avoir d'images, contrairement à un site dynamique.",
+        "Un site statique est hébergé sur un serveur Apache, un site dynamique sur un serveur IIS."
+      ],
+      "answer": "Le contenu d'un site statique est fixe et doit être modifié manuellement dans le code source, alors que celui d'un site dynamique peut être généré à la volée.",
+      "explanation": "Un site statique est constitué de pages dont le contenu ne change pas sans une intervention manuelle du webmaster. Un site dynamique génère ses pages en fonction de l'utilisateur ou d'une base de données, permettant une mise à jour et une personnalisation automatiques."
+    },
+    {
+      "question": "Dans un formulaire HTML, quel est le rôle de l'attribut `action` de la balise `<form>` ?",
+      "options": [
+        "Il définit la méthode d'envoi des données (GET ou POST).",
+        "Il indique la page ou le script qui traitera les données soumises.",
+        "Il spécifie le style visuel du formulaire.",
+        "Il déclenche une action JavaScript côté client."
+      ],
+      "answer": "Il indique la page ou le script qui traitera les données soumises.",
+      "explanation": "L'attribut `action` contient l'URL de la page ou du script (par exemple, un fichier PHP) qui recevra et traitera les informations envoyées par le formulaire."
+    },
+    {
+      "question": "Quelle méthode d'envoi de formulaire (`method`) ajoute les données directement dans l'URL ?",
+      "options": [
+        "POST",
+        "SEND",
+        "URL",
+        "GET"
+      ],
+      "answer": "GET",
+      "explanation": "La méthode `GET` envoie les données du formulaire sous forme de paires nom/valeur ajoutées à la fin de l'URL. Cela les rend visibles, bookmarkables, mais moins sécurisées et limitées en taille."
+    },
+    {
+      "question": "Pour créer un groupe de choix où l'utilisateur ne peut sélectionner qu'une seule option (par exemple, 'Masculin' ou 'Féminin'), quel type d'input faut-il utiliser ?",
+      "options": [
+        "<input type=\"checkbox\">",
+        "<input type=\"radio\">",
+        "<input type=\"text\">",
+        "<select>"
+      ],
+      "answer": "<input type=\"radio\">",
+      "explanation": "Les boutons radio (`<input type=\"radio\">`) sont utilisés pour des choix mutuellement exclusifs. Pour qu'ils fonctionnent en groupe, ils doivent tous partager le même attribut `name`."
+    },
+    {
+      "question": "Selon le document, quels sont les rôles respectifs de HTML et CSS ?",
+      "options": [
+        "HTML gère la logique du serveur et CSS la base de données.",
+        "HTML est pour le texte et CSS est pour les images.",
+        "HTML structure le contenu du document, tandis que CSS formate ce contenu.",
+        "HTML crée les formulaires et CSS les envoie au serveur."
+      ],
+      "answer": "HTML structure le contenu du document, tandis que CSS formate ce contenu.",
+      "explanation": "Le document précise que HTML est un langage de balisage qui structure le contenu, alors que les feuilles de style CSS sont utilisées pour définir le style et la mise en forme de ce contenu structuré."
+    },
+    {
+      "question": "Comment le serveur PHP interprète-t-il un fichier contenant à la fois du code PHP et du HTML ?",
+      "options": [
+        "Il exécute uniquement le code PHP et ignore tout le HTML.",
+        "Il convertit tout le HTML en code PHP avant exécution.",
+        "Il traite uniquement le code situé entre les balises `<?php` et `?>` et envoie le reste (HTML) tel quel au navigateur.",
+        "Il nécessite que tout le code HTML soit placé dans une instruction `echo`."
+      ],
+      "answer": "Il traite uniquement le code situé entre les balises `<?php` et `?>` et envoie le reste (HTML) tel quel au navigateur.",
+      "explanation": "L'interpréteur PHP ne travaille que sur les zones délimitées par ses balises. Tout ce qui est en dehors est considéré comme du texte à envoyer directement au navigateur, qui l'interprétera comme du HTML."
+    },
+    {
+      "question": "Pour permettre à un utilisateur de saisir un texte long sur plusieurs lignes, comme des commentaires, quelle balise est la plus appropriée ?",
+      "options": [
+        "<input type=\"text\">",
+        "<input type=\"longtext\">",
+        "<textarea>",
+        "<p>"
+      ],
+      "answer": "<textarea>",
+      "explanation": "La balise `<textarea>` est spécifiquement conçue pour créer une zone de saisie de texte multi-lignes, extensible par l'utilisateur."
+    },
+    {
+      "question": "Quelle est la structure fondamentale d'un document HTML ?",
+      "options": [
+        "Uniquement une balise `<body>`.",
+        "Une balise `<head>` suivie d'une balise `<footer>`.",
+        "Une balise `<header>` et une balise `<content>`.",
+        "Une section `<head>` pour les métadonnées et une section `<body>` pour le contenu visible."
+      ],
+      "answer": "Une section `<head>` pour les métadonnées et une section `<body>` pour le contenu visible.",
+      "explanation": "Un document HTML est principalement structuré en deux parties : la section `<head>` qui contient des informations sur la page (titre, styles, scripts) et la section `<body>` qui contient tout le contenu affiché par le navigateur."
+    }
+  ]
+}

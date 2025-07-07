@@ -1,0 +1,104 @@
+{
+  "title": "Séance 2 : Introduction à PHP, Syntaxe de base, Variables, Boucles, Fonctions",
+  "questions": [
+    {
+      "question": "Quelle est la principale caractéristique du langage PHP ?",
+      "options": [
+        "Il s'exécute directement dans le navigateur du client.",
+        "Il est principalement utilisé pour styliser les pages web.",
+        "Il s'exécute côté serveur pour générer du contenu dynamique.",
+        "C'est un système de gestion de base de données."
+      ],
+      "answer": "Il s'exécute côté serveur pour générer du contenu dynamique.",
+      "explanation": "PHP (Hypertext Preprocessor) est un langage de script côté serveur. Le code est interprété sur le serveur, qui envoie ensuite le résultat (généralement du HTML) au navigateur du client. Le client ne voit jamais le code PHP source."
+    },
+    {
+      "question": "Comment déclare-t-on correctement une variable en PHP ?",
+      "options": [
+        "var maVariable = 10;",
+        "let maVariable = 10;",
+        "maVariable := 10;",
+        "$maVariable = 10;"
+      ],
+      "answer": "$maVariable = 10;",
+      "explanation": "En PHP, tous les noms de variables doivent commencer par un signe dollar ($). L'affectation d'une valeur se fait avec l'opérateur égal (=)."
+    },
+    {
+      "question": "Quelle est la différence entre les guillemets simples (') et les guillemets doubles (\") pour définir une chaîne de caractères ?",
+      "options": [
+        "Les guillemets simples sont plus rapides mais ne peuvent pas contenir de variables.",
+        "Il n'y a aucune différence, ils sont interchangeables.",
+        "Les guillemets doubles interprètent les variables et les séquences d'échappement, tandis que les guillemets simples affichent le contenu littéralement.",
+        "Les guillemets simples sont pour les caractères uniques et les doubles pour les chaînes de plusieurs caractères."
+      ],
+      "answer": "Les guillemets doubles interprètent les variables et les séquences d'échappement, tandis que les guillemets simples affichent le contenu littéralement.",
+      "explanation": "Une chaîne entre guillemets doubles (`\"\"`) permet à PHP d'interpréter les variables (ex: `\"Bonjour $nom\"`). Une chaîne entre guillemets simples (`''`) affiche le texte tel quel (ex: `'Bonjour $nom'`)."
+    },
+    {
+      "question": "Quel opérateur est utilisé pour la concaténation de chaînes de caractères en PHP ?",
+      "options": [
+        "+",
+        "&",
+        ".",
+        "&&"
+      ],
+      "answer": ".",
+      "explanation": "L'opérateur de concaténation en PHP est le point (.). Il permet de joindre deux chaînes de caractères. Exemple : `$chaine = \"Bonjour\" . \" \" . \"Monde\";`"
+    },
+    {
+      "question": "Quelle structure de boucle est la plus adaptée pour parcourir tous les éléments d'un tableau associatif en accédant à la fois à la clé et à la valeur ?",
+      "options": [
+        "for",
+        "while",
+        "do-while",
+        "foreach"
+      ],
+      "answer": "foreach",
+      "explanation": "La boucle `foreach` est spécialement conçue pour itérer sur les tableaux. Sa syntaxe `foreach ($tableau as $cle => $valeur)` permet d'accéder facilement à chaque paire clé/valeur du tableau."
+    },
+    {
+      "question": "Quelle fonction permet de créer une constante en PHP ?",
+      "options": [
+        "constant()",
+        "define()",
+        "const()",
+        "create_constant()"
+      ],
+      "answer": "define()",
+      "explanation": "Pour créer une constante, on utilise la fonction `define()`. Par exemple : `define(\"VERSION\", \"1.0\");`. Les constantes, une fois définies, ne peuvent pas être modifiées."
+    },
+    {
+      "question": "Dans quel mode faut-il ouvrir un fichier avec `fopen()` pour écrire dedans en écrasant son contenu existant (et en le créant s'il n'existe pas) ?",
+      "options": [
+        "r",
+        "a",
+        "w",
+        "x"
+      ],
+      "answer": "w",
+      "explanation": "Le mode 'w' (write) ouvre un fichier en écriture seule. Il place le pointeur au début du fichier et efface son contenu. Si le fichier n'existe pas, il tente de le créer."
+    },
+    {
+      "question": "À quoi sert la fonction `count()` en PHP ?",
+      "options": [
+        "À compter le nombre de caractères dans une chaîne.",
+        "À compter le nombre d'éléments dans un tableau.",
+        "À compter le nombre de lignes dans un fichier.",
+        "À compter le nombre de visites sur une page."
+      ],
+      "answer": "À compter le nombre d'éléments dans un tableau.",
+      "explanation": "La fonction `count()` (ainsi que son alias `sizeof()`) est utilisée pour retourner le nombre d'éléments contenus dans un tableau."
+    },
+    {
+      "question": "Comment s'appelle un tableau dont les éléments sont référencés par des chaînes de caractères (clés) plutôt que par des indices numériques ?",
+      "options": [
+        "Tableau scalaire",
+        "Tableau multidimensionnel",
+        "Tableau associatif",
+        "Tableau d'objets"
+      ],
+      "answer": "Tableau associatif",
+      "explanation": "Un tableau associatif utilise des clés nommées (chaînes de caractères) que vous assignez pour stocker et accéder aux valeurs. Par exemple : `$age['Pierre'] = 25;`."
+    }
+  ]
+}

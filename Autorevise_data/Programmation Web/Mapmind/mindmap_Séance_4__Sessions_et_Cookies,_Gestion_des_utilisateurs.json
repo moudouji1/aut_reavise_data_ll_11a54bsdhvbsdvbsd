@@ -1,0 +1,277 @@
+{
+  "title": "Séance 4 : Sessions et Cookies, Gestion des utilisateurs",
+  "nodes": [
+    {
+      "title": "Les Cookies",
+      "children": [
+        {
+          "title": "Définition",
+          "children": [
+            {
+              "title": "Fragments de données stockés sur la machine de l'utilisateur"
+            },
+            {
+              "title": "Le navigateur renvoie les cookies valides au serveur à chaque requête"
+            }
+          ]
+        },
+        {
+          "title": "Utilisation en PHP",
+          "children": [
+            {
+              "title": "Création : setcookie(name, value, expire, path, domain, secure)"
+            },
+            {
+              "title": "Lecture : Variable superglobale $_COOKIE['NomDuCookie']"
+            },
+            {
+              "title": "Vérification : isset($_COOKIE['NomDuCookie'])"
+            },
+            {
+              "title": "Suppression : setcookie() avec une date d'expiration passée"
+            },
+            {
+              "title": "Stocker plusieurs variables : Utiliser compact() et implode()"
+            }
+          ]
+        },
+        {
+          "title": "Règles et Problèmes",
+          "children": [
+            {
+              "title": "setcookie() doit être appelée avant toute sortie HTML"
+            },
+            {
+              "title": "Le cookie n'est visible qu'au prochain chargement de page"
+            },
+            {
+              "title": "Incompatibilités possibles avec certains navigateurs (IE, Netscape)"
+            },
+            {
+              "title": "Les cookies peuvent être désactivés ou falsifiés par l'utilisateur"
+            }
+          ]
+        },
+        {
+          "title": "Avantages & Inconvénients",
+          "children": [
+            {
+              "title": "Avantages : Persistance (longue durée), fonctionne sur serveurs distribués"
+            },
+            {
+              "title": "Inconvénients : Taille limitée, peuvent être supprimés, sécurité (données côté client)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Sessions",
+      "children": [
+        {
+          "title": "Définition",
+          "children": [
+            {
+              "title": "Mécanisme pour conserver des données spécifiques à un utilisateur côté serveur"
+            },
+            {
+              "title": "Permet de suivre un utilisateur à travers plusieurs pages"
+            }
+          ]
+        },
+        {
+          "title": "Fonctionnement",
+          "children": [
+            {
+              "title": "Un identifiant de session unique (SID) est généré pour chaque visiteur"
+            },
+            {
+              "title": "Les données sont stockées dans un fichier sur le serveur"
+            },
+            {
+              "title": "Le SID est transmis via un cookie (par défaut) ou dans l'URL"
+            }
+          ]
+        },
+        {
+          "title": "Utilisation en PHP",
+          "children": [
+            {
+              "title": "Démarrer/Continuer : session_start() (au tout début du script)"
+            },
+            {
+              "title": "Stocker des données : $_SESSION['variable'] = 'valeur';"
+            },
+            {
+              "title": "Accéder aux données : $variable = $_SESSION['variable'];"
+            },
+            {
+              "title": "Détruire une session : session_destroy()"
+            },
+            {
+              "title": "Fonctions utiles : session_id(), session_name(), session_unset(), ..."
+            }
+          ]
+        },
+        {
+          "title": "Configuration (php.ini)",
+          "children": [
+            {
+              "title": "session.save_path : Emplacement des fichiers de session"
+            },
+            {
+              "title": "session.use_cookies : Utiliser les cookies pour le SID"
+            },
+            {
+              "title": "session.gc_maxlifetime : Durée de vie de la session"
+            }
+          ]
+        },
+        {
+          "title": "Avantages & Inconvénients",
+          "children": [
+            {
+              "title": "Avantages : Sécurité (données côté serveur), pas de limite de taille, fonctionne sans cookies"
+            },
+            {
+              "title": "Inconvénients : Charge serveur, complexe sur serveurs distribués (nécessite cache partagé)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gestion des Utilisateurs",
+      "children": [
+        {
+          "title": "Suivi des connexions (ignore_user_abort)"
+        },
+        {
+          "title": "Recette : Message \"Heureux de vous revoir\" avec les cookies"
+        },
+        {
+          "title": "Recette : Utiliser les sessions pour stocker des données temporaires (panier, formulaire)"
+        },
+        {
+          "title": "Recette : Vérifier si un navigateur accepte les cookies"
+        },
+        {
+          "title": "Recette : Imposer l'utilisation de pages sécurisées (SSL/HTTPS)"
+        },
+        {
+          "title": "Recette : Délais d'expiration des sessions pour la sécurité"
+        },
+        {
+          "title": "Recette : Système de connexion simple avec les sessions"
+        }
+      ]
+    },
+    {
+      "title": "JsonWeb Token (JWT)",
+      "children": [
+        {
+          "title": "Concept",
+          "children": [
+            {
+              "title": "Compact : Transmissible via URL, POST, ou en-tête HTTP"
+            },
+            {
+              "title": "Autonome : Contient toutes les infos sur l'utilisateur (évite requêtes BDD)"
+            }
+          ]
+        },
+        {
+          "title": "Structure : Header.Payload.Signature",
+          "children": [
+            {
+              "title": "Header : Type (typ) et algorithme de hachage (alg). Encodé en Base64URL."
+            },
+            {
+              "title": "Payload : Contient les 'claims' (données sur l'utilisateur, permissions, dates d'expiration...). Encodé en Base64URL."
+            },
+            {
+              "title": "Signature : Valide l'authenticité et l'intégrité du jeton."
+            }
+          ]
+        },
+        {
+          "title": "Sécurité et Stockage",
+          "children": [
+            {
+              "title": "Signature symétrique (HS256 avec secret partagé) ou asymétrique (RS256 avec clé privée/publique)"
+            },
+            {
+              "title": "Stockage côté client : Local Storage ou Cookie (avec flags HttpOnly et Secure)"
+            },
+            {
+              "title": "Prévention des attaques XSS et CSRF"
+            }
+          ]
+        },
+        {
+          "title": "Comparaison : Session ID (référence) vs JWT (valeur)"
+        }
+      ]
+    },
+    {
+      "title": "Sécurité Web (Vulnérabilités OWASP)",
+      "children": [
+        {
+          "title": "A2 - Violation d'authentification",
+          "children": [
+            {
+              "title": "Vol de cookies / Session Hijacking"
+            },
+            {
+              "title": "Permet d'usurper l'identité d'un utilisateur"
+            }
+          ]
+        },
+        {
+          "title": "XSS (Cross-Site Scripting)",
+          "children": [
+            {
+              "title": "Injection d'un script malveillant exécuté par le navigateur de la victime"
+            },
+            {
+              "title": "Prévention : Échapper les données affichées (encodage), valider les entrées"
+            }
+          ]
+        },
+        {
+          "title": "A4 - Référence directe non sécurisée à un objet",
+          "children": [
+            {
+              "title": "Modification d'un paramètre (ex: id=124) pour accéder à une ressource non autorisée (ex: id=125)"
+            }
+          ]
+        },
+        {
+          "title": "A8 - Falsification de requête intersite (CSRF)",
+          "children": [
+            {
+              "title": "Forcer le navigateur de la victime à exécuter une action à son insu sur un site où elle est authentifiée"
+            },
+            {
+              "title": "Prévention : Jeton anti-CSRF (Synchronizer Token Pattern)"
+            }
+          ]
+        },
+        {
+          "title": "Autres failles mentionnées",
+          "children": [
+            {
+              "title": "A6 - Stockage cryptographique non sécurisé"
+            },
+            {
+              "title": "A7 - Manque de restriction d'accès au niveau fonctionnel (Élévation de privilèges)"
+            },
+            {
+              "title": "A10 - Redirections et renvois non validés (Phishing)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

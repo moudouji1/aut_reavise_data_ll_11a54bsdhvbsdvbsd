@@ -1,0 +1,223 @@
+{
+  "title": "Séance 2 : Programmation orientée objet (POO)",
+  "nodes": [
+    {
+      "title": "Introduction à la POO",
+      "children": [
+        {
+          "title": "Philosophie",
+          "children": [
+            {
+              "title": "Structurer les applications selon les types de données"
+            },
+            {
+              "title": "Approche Orientée-Objet vs. Procédurale"
+            }
+          ]
+        },
+        {
+          "title": "Concepts Fondamentaux",
+          "children": [
+            {
+              "title": "Objet : Entité avec état (données) et comportement (méthodes)"
+            },
+            {
+              "title": "Classe : Modèle ou moule pour créer des objets"
+            },
+            {
+              "title": "Encapsulation : Protection des données, accès via les méthodes"
+            },
+            {
+              "title": "Héritage : Définir des classes spécialisées à partir de classes générales"
+            },
+            {
+              "title": "Polymorphisme"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Classes et Objets en Java",
+      "children": [
+        {
+          "title": "La Classe",
+          "children": [
+            {
+              "title": "Description générale d'une famille d'objets"
+            },
+            {
+              "title": "Contient des attributs (état) et des méthodes (comportement)"
+            }
+          ]
+        },
+        {
+          "title": "L'Objet",
+          "children": [
+            {
+              "title": "Instance d'une classe"
+            },
+            {
+              "title": "Possède ses propres valeurs pour les attributs définis dans la classe"
+            }
+          ]
+        },
+        {
+          "title": "Instanciation (Création d'objet)",
+          "children": [
+            {
+              "title": "1. Déclaration d'une référence : Point p;"
+            },
+            {
+              "title": "2. Allocation mémoire et initialisation avec 'new' : p = new Point();"
+            },
+            {
+              "title": "L'opérateur 'new' appelle un constructeur"
+            }
+          ]
+        },
+        {
+          "title": "Utilisation et Références",
+          "children": [
+            {
+              "title": "Accès aux membres : objet.membre (ex: montre.incrementeHeure())"
+            },
+            {
+              "title": "L'autoréférence 'this' : désigne l'instance courante"
+            },
+            {
+              "title": "La référence 'null' : la variable ne pointe vers aucun objet"
+            },
+            {
+              "title": "Destruction par le Ramasse-miettes (Garbage Collector)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Méthodes",
+      "children": [
+        {
+          "title": "Structure",
+          "children": [
+            {
+              "title": "Nom de la méthode"
+            },
+            {
+              "title": "Arguments (paramètres)"
+            },
+            {
+              "title": "Valeur de retour (y compris 'void' si aucun retour)"
+            }
+          ]
+        },
+        {
+          "title": "Surcharge (Overloading)",
+          "children": [
+            {
+              "title": "Plusieurs méthodes avec le même nom mais des paramètres différents"
+            },
+            {
+              "title": "Le type de retour seul ne suffit pas pour surcharger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Constructeurs",
+      "children": [
+        {
+          "title": "Rôle : Initialiser les attributs d'un objet à sa création"
+        },
+        {
+          "title": "Caractéristiques",
+          "children": [
+            {
+              "title": "Porte le même nom que la classe"
+            },
+            {
+              "title": "Ne retourne pas de valeur (même pas 'void')"
+            }
+          ]
+        },
+        {
+          "title": "Constructeur par défaut (si aucun n'est défini)"
+        },
+        {
+          "title": "Surcharge de constructeurs"
+        }
+      ]
+    },
+    {
+      "title": "Concepts Avancés et Modificateurs",
+      "children": [
+        {
+          "title": "Membres de classe (static)",
+          "children": [
+            {
+              "title": "Attributs ou méthodes appartenant à la classe, non à une instance"
+            },
+            {
+              "title": "Point d'entrée du programme : public static void main(String[] args)"
+            }
+          ]
+        },
+        {
+          "title": "Membres constants (final)",
+          "children": [
+            {
+              "title": "Attribut 'final' : sa valeur ne peut être changée (constante)"
+            },
+            {
+              "title": "Méthode 'final' : ne peut être redéfinie dans une sous-classe"
+            }
+          ]
+        },
+        {
+          "title": "Interfaces",
+          "children": [
+            {
+              "title": "Contrat définissant un ensemble de méthodes à implémenter"
+            },
+            {
+              "title": "Permet une forme d'héritage multiple de comportement"
+            }
+          ]
+        },
+        {
+          "title": "Génériques (Generics)",
+          "children": [
+            {
+              "title": "Classes et méthodes utilisant des types en paramètres (ex: List<String>)"
+            },
+            {
+              "title": "Assure la cohérence des types à la compilation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cycle de Vie d'un Programme Java",
+      "children": [
+        {
+          "title": "Phase 1: Édition (fichier .java)"
+        },
+        {
+          "title": "Phase 2: Compilation (javac -> bytecode en .class)"
+        },
+        {
+          "title": "Phase 3: Chargement (par le ClassLoader de la JVM)"
+        },
+        {
+          "title": "Phase 4: Vérification du bytecode"
+        },
+        {
+          "title": "Phase 5: Exécution (par la JVM)"
+        }
+      ]
+    }
+  ]
+}

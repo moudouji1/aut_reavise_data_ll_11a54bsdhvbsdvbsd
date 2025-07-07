@@ -1,0 +1,82 @@
+{
+  "title": "Séance 3 : Héritage, interfaces, encapsulation avancée",
+  "questions": [
+    {
+      "question": "Quel mot-clé est utilisé en Java pour indiquer qu'une classe hérite d'une autre classe ?",
+      "options": [
+        "implements",
+        "extends",
+        "super",
+        "inherits"
+      ],
+      "answer": "extends",
+      "explanation": "En Java, le mot-clé `extends` est utilisé pour créer une sous-classe (classe fille) qui hérite des attributs et méthodes non-privés d'une super-classe (classe mère)."
+    },
+    {
+      "question": "Comment une classe Java peut-elle hériter des comportements de plusieurs sources, sachant que l'héritage multiple de classes est interdit ?",
+      "options": [
+        "En héritant de plusieurs classes abstraites.",
+        "En utilisant le mot-clé `implements` pour appliquer plusieurs interfaces.",
+        "En utilisant le mot-clé `super` pour chaque parent.",
+        "C'est totalement impossible en Java."
+      ],
+      "answer": "En utilisant le mot-clé `implements` pour appliquer plusieurs interfaces.",
+      "explanation": "Une classe ne peut hériter que d'une seule autre classe (`extends`), mais elle peut implémenter plusieurs interfaces (`implements`). Cela permet de simuler une forme d'héritage multiple de types et de comportements."
+    },
+    {
+      "question": "À quoi sert le mot-clé `super` dans le constructeur d'une sous-classe ?",
+      "options": [
+        "À créer une nouvelle instance de la super-classe.",
+        "À appeler le constructeur de la super-classe.",
+        "À désigner l'instance courante de la sous-classe.",
+        "À empêcher l'appel au constructeur de la super-classe."
+      ],
+      "answer": "À appeler le constructeur de la super-classe.",
+      "explanation": "Le mot-clé `super()` permet d'appeler explicitement un constructeur de la classe mère. C'est souvent la première instruction dans le constructeur d'une classe fille pour initialiser les membres hérités."
+    },
+    {
+      "question": "Quelle est la visibilité d'un membre de classe (attribut ou méthode) si aucun modificateur (`public`, `private`, `protected`) n'est spécifié ?",
+      "options": [
+        "public (accessible par tous)",
+        "private (accessible uniquement dans la classe)",
+        "package-private (accessible uniquement dans le même package)",
+        "protected (accessible par les sous-classes uniquement)"
+      ],
+      "answer": "package-private (accessible uniquement dans le même package)",
+      "explanation": "L'absence de modificateur de visibilité donne un accès par défaut, appelé 'package-private'. L'élément est alors accessible par toutes les classes se trouvant dans le même package, mais pas de l'extérieur."
+    },
+    {
+      "question": "Quelle est la principale caractéristique d'une classe déclarée avec le mot-clé `abstract` ?",
+      "options": [
+        "Elle ne peut contenir que des méthodes abstraites.",
+        "Elle ne peut pas être instanciée directement.",
+        "Elle ne peut pas avoir de constructeur.",
+        "Elle ne peut pas hériter d'une autre classe."
+      ],
+      "answer": "Elle ne peut pas être instanciée directement.",
+      "explanation": "Une classe abstraite sert de modèle pour d'autres classes et ne peut pas être instanciée avec `new`. Elle peut contenir à la fois des méthodes concrètes (avec implémentation) et des méthodes abstraites (sans implémentation)."
+    },
+    {
+      "question": "Que se passe-t-il lorsqu'une méthode est déclarée avec le mot-clé `final` ?",
+      "options": [
+        "La méthode ne peut pas être redéfinie (overridden) dans une sous-classe.",
+        "La méthode ne retourne aucune valeur (équivalent de void).",
+        "La méthode est obligatoirement la dernière à être exécutée.",
+        "La méthode devient accessible depuis n'importe quelle classe."
+      ],
+      "answer": "La méthode ne peut pas être redéfinie (overridden) dans une sous-classe.",
+      "explanation": "Le modificateur `final` sur une méthode empêche les classes filles de la redéfinir. Cela garantit que le comportement de cette méthode restera constant dans toute la hiérarchie d'héritage."
+    },
+    {
+      "question": "Quel est le principal avantage de l'utilisation des génériques (Generics) en Java, comme dans `ArrayList<String>` ?",
+      "options": [
+        "Améliorer les performances d'exécution du programme.",
+        "Permettre de stocker différents types d'objets dans la même collection sans restriction.",
+        "Assurer la sécurité des types à la compilation et éviter les transtypages (casts) manuels.",
+        "Simplifier la déclaration des variables."
+      ],
+      "answer": "Assurer la sécurité des types à la compilation et éviter les transtypages (casts) manuels.",
+      "explanation": "Les génériques permettent de spécifier le type des éléments qu'une collection peut contenir. Le compilateur peut alors vérifier la cohérence des types, prévenant ainsi des erreurs qui ne surviendraient sinon qu'à l'exécution, et rendant inutile le transtypage."
+    }
+  ]
+}

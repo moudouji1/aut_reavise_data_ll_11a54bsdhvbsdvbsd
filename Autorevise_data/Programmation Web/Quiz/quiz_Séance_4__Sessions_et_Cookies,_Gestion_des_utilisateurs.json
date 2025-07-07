@@ -1,0 +1,82 @@
+{
+  "title": "Séance 4 : Sessions et Cookies, Gestion des utilisateurs",
+  "questions": [
+    {
+      "question": "Quelle est la principale différence entre une session et un cookie ?",
+      "options": [
+        "Les sessions sont stockées sur le client et les cookies sur le serveur.",
+        "Les données de session sont stockées sur le serveur, tandis que les cookies stockent les données sur le client.",
+        "Les cookies sont plus sécurisés que les sessions.",
+        "Les sessions ne peuvent stocker que du texte, alors que les cookies peuvent stocker des données complexes."
+      ],
+      "answer": "Les données de session sont stockées sur le serveur, tandis que les cookies stockent les données sur le client.",
+      "explanation": "La différence fondamentale est le lieu de stockage. Les sessions stockent les données sur le serveur et utilisent un identifiant (souvent via un cookie) pour les retrouver, tandis que les cookies stockent toutes les données directement sur la machine du client."
+    },
+    {
+      "question": "En PHP, quelle fonction doit être appelée au tout début d'un script pour démarrer ou reprendre une session ?",
+      "options": [
+        "session_begin()",
+        "init_session()",
+        "start_session()",
+        "session_start()"
+      ],
+      "answer": "session_start()",
+      "explanation": "La fonction `session_start()` est essentielle pour initialiser une nouvelle session ou reprendre une session existante. Elle doit être appelée avant toute sortie HTML car elle modifie les en-têtes HTTP."
+    },
+    {
+      "question": "Pourquoi les sessions sont-elles généralement considérées comme plus sécurisées que les cookies pour stocker des données sensibles ?",
+      "options": [
+        "Parce que les cookies sont limités en taille.",
+        "Parce que les données de session sont stockées sur le serveur, les rendant inaccessibles et non modifiables par l'utilisateur.",
+        "Parce que les cookies expirent, alors que les sessions sont permanentes.",
+        "Parce que les sessions sont toujours chiffrées par défaut."
+      ],
+      "answer": "Parce que les données de session sont stockées sur le serveur, les rendant inaccessibles et non modifiables par l'utilisateur.",
+      "explanation": "Les données sensibles stockées dans une session résident sur le serveur, à l'abri de la manipulation du client. Le client ne détient qu'un identifiant de session, ce qui réduit le risque de falsification des données."
+    },
+    {
+      "question": "Quelle est la contrainte principale lors de l'appel à la fonction `setcookie()` en PHP ?",
+      "options": [
+        "Elle doit être appelée après la balise <html>.",
+        "Elle doit être utilisée uniquement avec des connexions HTTPS.",
+        "Elle doit être appelée avant l'envoi de toute sortie HTML vers le navigateur.",
+        "Elle ne peut être appelée qu'une seule fois par script."
+      ],
+      "answer": "Elle doit être appelée avant l'envoi de toute sortie HTML vers le navigateur.",
+      "explanation": "La fonction `setcookie()` envoie des informations dans les en-têtes HTTP. Ces en-têtes doivent être envoyés avant le corps de la réponse (le contenu HTML). Par conséquent, elle doit être placée au début du script."
+    },
+    {
+      "question": "De quelles trois parties, séparées par des points, un JSON Web Token (JWT) est-il composé ?",
+      "options": [
+        "En-tête (Header), Corps (Body), Pied de page (Footer)",
+        "En-tête (Header), Charge utile (Payload), Signature",
+        "Algorithme (Algorithm), Données (Data), Clé (Key)",
+        "Identifiant (ID), Revendications (Claims), Secret"
+      ],
+      "answer": "En-tête (Header), Charge utile (Payload), Signature",
+      "explanation": "Un JWT est structuré en trois parties encodées en Base64URL et séparées par des points : l'en-tête (métadonnées du token), la charge utile (les données ou 'claims') et la signature (pour la vérification de l'intégrité)."
+    },
+    {
+      "question": "Comment peut-on supprimer un cookie en utilisant la fonction `setcookie()` ?",
+      "options": [
+        "En appelant `setcookie(\"nom_cookie\", null);`",
+        "En passant une date d'expiration dans le passé.",
+        "En utilisant une fonction `delete_cookie()` qui n'existe pas en PHP natif.",
+        "En ne spécifiant aucune valeur pour le cookie."
+      ],
+      "answer": "En passant une date d'expiration dans le passé.",
+      "explanation": "Pour supprimer un cookie, il faut le redéfinir avec la même nom, mais en lui affectant une date d'expiration passée. Par exemple, `setcookie(\"nom_cookie\", \"\", time() - 3600);`."
+    },
+    {
+      "question": "Quelle fonction PHP détruit complètement une session et toutes ses données associées ?",
+      "options": [
+        "session_unset()",
+        "session_delete()",
+        "session_destroy()",
+        "session_close()"
+      ],
+      "answer": "session_destroy()",
+      "explanation": "La fonction `session_destroy()` détruit toutes les données enregistrées dans une session sur le serveur. `session_unset()` ne fait que libérer les variables de la session, mais la session elle-même existe toujours."
+    }
+  ]
+}

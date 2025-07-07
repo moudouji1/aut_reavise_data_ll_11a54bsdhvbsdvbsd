@@ -1,0 +1,284 @@
+{
+  "title": "Séance 3 : Interaction avec les bases de données, Connexion à une base, Exécution de requêtes SQL",
+  "nodes": [
+    {
+      "title": "1. Principes d'interfaçage PHP/BDD",
+      "children": [
+        {
+          "title": "Support de nombreux SGBDR (Oracle, MySQL, PostgreSQL...)"
+        },
+        {
+          "title": "Utilisation de drivers ODBC pour compatibilité étendue"
+        },
+        {
+          "title": "Quatre étapes fondamentales",
+          "children": [
+            {
+              "title": "Connexion au serveur"
+            },
+            {
+              "title": "Sélection de la base de données"
+            },
+            {
+              "title": "Exécution de la requête"
+            },
+            {
+              "title": "Déconnexion"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Processus de Connexion",
+      "children": [
+        {
+          "title": "Paramètres de connexion",
+          "children": [
+            {
+              "title": "$host : Serveur (ex: 'localhost')"
+            },
+            {
+              "title": "$user : Nom d'utilisateur"
+            },
+            {
+              "title": "$passwd : Mot de passe"
+            },
+            {
+              "title": "$bdd : Nom de la base de données"
+            }
+          ]
+        },
+        {
+          "title": "Bonne pratique : Isoler les identifiants dans un fichier inclus (include())"
+        },
+        {
+          "title": "Fonctions de connexion par SGBD",
+          "children": [
+            {
+              "title": "MySQL: mysql_connect()"
+            },
+            {
+              "title": "PostgreSQL: pg_connect()"
+            },
+            {
+              "title": "Oracle: ocilogon()"
+            }
+          ]
+        },
+        {
+          "title": "Types de connexions",
+          "children": [
+            {
+              "title": "Non-persistantes (connect): fermées à la fin du script"
+            },
+            {
+              "title": "Persistantes (pconnect): réutilisées pour de meilleures performances"
+            }
+          ]
+        },
+        {
+          "title": "Déconnexion (mysql_close)"
+        }
+      ]
+    },
+    {
+      "title": "3. Gestion des Bases de Données (via PHP/SQL)",
+      "children": [
+        {
+          "title": "Sélectionner une base : mysql_select_db()"
+        },
+        {
+          "title": "Créer une base : mysql_create_db() ou requête 'CREATE DATABASE'"
+        },
+        {
+          "title": "Supprimer une base : mysql_drop_db() ou requête 'DROP DATABASE'"
+        },
+        {
+          "title": "Lister les bases et tables : mysql_list_dbs(), mysql_list_tables()"
+        }
+      ]
+    },
+    {
+      "title": "4. Exécution de Requêtes SQL",
+      "children": [
+        {
+          "title": "Actions principales : SELECT, INSERT, UPDATE, DELETE, CREATE..."
+        },
+        {
+          "title": "Envoi de la requête en PHP : $resultat = mysql_query($requete, $connexion);"
+        },
+        {
+          "title": "Exemple de cycle complet",
+          "children": [
+            {
+              "title": "1. Connexion (mysql_connect)"
+            },
+            {
+              "title": "2. Sélection BDD (mysql_select_db)"
+            },
+            {
+              "title": "3. Exécution requête (mysql_query)"
+            },
+            {
+              "title": "4. Traitement des résultats"
+            },
+            {
+              "title": "5. Déconnexion (mysql_close)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Traitement des Résultats",
+      "children": [
+        {
+          "title": "Parcourir les lignes : while($ligne = mysql_fetch_row($resultat))"
+        },
+        {
+          "title": "Obtenir des informations sur les champs",
+          "children": [
+            {
+              "title": "Nom : mysql_field_name()"
+            },
+            {
+              "title": "Type : mysql_field_type()"
+            },
+            {
+              "title": "Longueur : mysql_field_len()"
+            }
+          ]
+        },
+        {
+          "title": "Compter les lignes et champs",
+          "children": [
+            {
+              "title": "Nombre de lignes : mysql_num_rows()"
+            },
+            {
+              "title": "Nombre de champs : mysql_num_fields()"
+            }
+          ]
+        },
+        {
+          "title": "Accéder à une donnée spécifique : mysql_result()"
+        },
+        {
+          "title": "Libérer la mémoire : mysql_free_result()"
+        }
+      ]
+    },
+    {
+      "title": "6. Gestion des Erreurs",
+      "children": [
+        {
+          "title": "Principe : Interrompre le script pour éviter les erreurs en cascade"
+        },
+        {
+          "title": "Méthodes",
+          "children": [
+            {
+              "title": "Tester le retour de la fonction : if(!$connexion) {...}"
+            },
+            {
+              "title": "Utiliser l'opérateur 'or die()'"
+            }
+          ]
+        },
+        {
+          "title": "Fonctions de récupération d'erreur",
+          "children": [
+            {
+              "title": "Numéro de l'erreur : mysql_errno()"
+            },
+            {
+              "title": "Message de l'erreur : mysql_error()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "7. Spécificités MySQL (Commandes SQL)",
+      "children": [
+        {
+          "title": "Types de données",
+          "children": [
+            {
+              "title": "Numériques (INT, FLOAT, DECIMAL...)"
+            },
+            {
+              "title": "Date et heure (DATE, DATETIME, TIMESTAMP...)"
+            },
+            {
+              "title": "Chaînes (VARCHAR, TEXT, ENUM...)"
+            }
+          ]
+        },
+        {
+          "title": "Manipulation de bases : CREATE DATABASE, DROP DATABASE, USE"
+        },
+        {
+          "title": "Manipulation de tables : CREATE TABLE, ALTER TABLE, DROP TABLE"
+        },
+        {
+          "title": "Attributs de colonnes : PRIMARY KEY, AUTO_INCREMENT, NOT NULL, UNIQUE"
+        },
+        {
+          "title": "Gestion des Index pour l'optimisation"
+        }
+      ]
+    },
+    {
+      "title": "8. Principes de Sécurité",
+      "children": [
+        {
+          "title": "Ne jamais faire confiance aux données de l'utilisateur"
+        },
+        {
+          "title": "Prévention des Injections SQL",
+          "children": [
+            {
+              "title": "Échapper les caractères spéciaux (ex: mysql_real_escape_string())"
+            },
+            {
+              "title": "Utiliser les requêtes préparées (avec PDO ou mysqli)"
+            }
+          ]
+        },
+        {
+          "title": "Bonnes pratiques",
+          "children": [
+            {
+              "title": "Limiter les privilèges de l'utilisateur BDD"
+            },
+            {
+              "title": "Valider les données côté serveur"
+            },
+            {
+              "title": "Utiliser POST pour les données sensibles"
+            },
+            {
+              "title": "Maintenir les logiciels à jour"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "9. Outils et Configurations",
+      "children": [
+        {
+          "title": "phpMyAdmin : Interface web d'administration pour MySQL"
+        },
+        {
+          "title": "Liaison ODBC : Connecter des applications (ex: Access) à MySQL"
+        },
+        {
+          "title": "Configuration serveur (Apache .htaccess) : réécriture d'URL, sécurité"
+        }
+      ]
+    }
+  ]
+}

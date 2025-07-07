@@ -1,0 +1,248 @@
+{
+  "title": "Séance 5 : Bases de données avec JDBC, APIs, fichiers",
+  "nodes": [
+    {
+      "title": "Interfaces Utilisateurs (GUI)",
+      "children": [
+        {
+          "title": "Organisation générale",
+          "children": [
+            {
+              "title": "APIs AWT vs Swing"
+            },
+            {
+              "title": "Conteneurs (JFrame, JPanel, Window)"
+            },
+            {
+              "title": "Composants (JButton, JLabel, JTextField, JCheckBox, JMenu...)"
+            }
+          ]
+        },
+        {
+          "title": "Gestion des événements",
+          "children": [
+            {
+              "title": "Modèle Écouteur (Listener)"
+            },
+            {
+              "title": "Classes d'événements (ActionEvent, MouseEvent, KeyEvent)"
+            },
+            {
+              "title": "Interfaces Listeners (ActionListener, MouseListener)"
+            },
+            {
+              "title": "Classes Adaptateurs (MouseAdapter, KeyAdapter)"
+            }
+          ]
+        },
+        {
+          "title": "Placement des composants (Layout Managers)",
+          "children": [
+            {
+              "title": "FlowLayout"
+            },
+            {
+              "title": "BorderLayout"
+            },
+            {
+              "title": "GridLayout"
+            },
+            {
+              "title": "GridBagLayout"
+            },
+            {
+              "title": "CardLayout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gestion des Fichiers et Flux (I/O)",
+      "children": [
+        {
+          "title": "Concepts de Flux (Streams)",
+          "children": [
+            {
+              "title": "Flux binaires vs. Flux de caractères"
+            },
+            {
+              "title": "Classes de base : InputStream & OutputStream"
+            },
+            {
+              "title": "Enrobage de flux (Wrapping) : BufferedReader, DataInputStream"
+            }
+          ]
+        },
+        {
+          "title": "Manipulation de Fichiers",
+          "children": [
+            {
+              "title": "Classe java.io.File (Legacy)"
+            },
+            {
+              "title": "Classe java.nio.file.Path (Moderne)"
+            },
+            {
+              "title": "Lecture/Écriture Fichiers Texte"
+            },
+            {
+              "title": "Lecture/Écriture Fichiers Binaires"
+            }
+          ]
+        },
+        {
+          "title": "Sérialisation",
+          "children": [
+            {
+              "title": "Concept : Conversion Objet <-> Flux de bytes"
+            },
+            {
+              "title": "Interface marqueur : java.io.Serializable"
+            },
+            {
+              "title": "Mot-clé 'transient' pour exclure des champs"
+            },
+            {
+              "title": "Classes : ObjectOutputStream & ObjectInputStream"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bases de Données (JDBC & ORM)",
+      "children": [
+        {
+          "title": "JDBC (Java Database Connectivity)",
+          "children": [
+            {
+              "title": "Connexion",
+              "children": [
+                {
+                  "title": "Driver JDBC"
+                },
+                {
+                  "title": "URL de connexion"
+                },
+                {
+                  "title": "Pool de connexions (DataSource)"
+                }
+              ]
+            },
+            {
+              "title": "Exécution de requêtes",
+              "children": [
+                {
+                  "title": "Statement (requêtes statiques)"
+                },
+                {
+                  "title": "PreparedStatement (requêtes paramétrées)"
+                },
+                {
+                  "title": "CallableStatement (procédures stockées)"
+                }
+              ]
+            },
+            {
+              "title": "Traitement des résultats",
+              "children": [
+                {
+                  "title": "ResultSet (curseur, types, parcours)"
+                },
+                {
+                  "title": "RowSet (connecté vs. déconnecté)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "ORM (Object-Relational Mapping)",
+          "children": [
+            {
+              "title": "Problème : Incompatibilité Objet-Relationnel"
+            },
+            {
+              "title": "Principe : Mapper des tables vers un graphe d'objets"
+            },
+            {
+              "title": "JPA (Java Persistence API)",
+              "children": [
+                {
+                  "title": "Standard de persistance en Java"
+                },
+                {
+                  "title": "Utilisation d'annotations (@Entity, @Id, @Table...)"
+                }
+              ]
+            },
+            {
+              "title": "Hibernate (Implémentation JPA)",
+              "children": [
+                {
+                  "title": "Session Hibernate"
+                },
+                {
+                  "title": "Pattern DAO (Data Access Object)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "APIs et Communication",
+      "children": [
+        {
+          "title": "RMI (Remote Method Invocation)",
+          "children": [
+            {
+              "title": "Objets distants (interface Remote)"
+            },
+            {
+              "title": "Passage de paramètres (valeur, référence, clone)"
+            }
+          ]
+        },
+        {
+          "title": "Sockets (Réseau)",
+          "children": [
+            {
+              "title": "Mode connecté (TCP : Socket, ServerSocket)"
+            },
+            {
+              "title": "Mode non connecté (UDP : DatagramSocket, DatagramPacket)"
+            },
+            {
+              "title": "Serveurs multi-threads"
+            }
+          ]
+        },
+        {
+          "title": "Web Services REST",
+          "children": [
+            {
+              "title": "Principes et caractéristiques"
+            },
+            {
+              "title": "Basé sur le protocole HTTP"
+            }
+          ]
+        },
+        {
+          "title": "URL",
+          "children": [
+            {
+              "title": "Classe java.net.URL"
+            },
+            {
+              "title": "Classe java.net.URLConnection"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

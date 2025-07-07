@@ -1,0 +1,613 @@
+{
+  "title": "Autres",
+  "nodes": [
+    {
+      "title": "Gestion de données de fichiers texte avec JBuilder",
+      "children": [
+        {
+          "title": "Principes et Composants",
+          "children": [
+            {
+              "title": "TableDataSet : Stockage des données"
+            },
+            {
+              "title": "TextDataFile : Spécification du fichier source"
+            },
+            {
+              "title": "StorageDataSet : Cache local des données"
+            },
+            {
+              "title": "Objets Column : Définition de la structure (type, nom)"
+            }
+          ]
+        },
+        {
+          "title": "Importation de Données",
+          "children": [
+            {
+              "title": "Définir les colonnes",
+              "children": [
+                {
+                  "title": "Via l'éditeur de code"
+                },
+                {
+                  "title": "Via le concepteur d'interface utilisateur"
+                },
+                {
+                  "title": "Via un fichier SCHEMA (.schema)"
+                }
+              ]
+            },
+            {
+              "title": "Importer des données formatées (propriété exportDisplayMask)"
+            }
+          ]
+        },
+        {
+          "title": "Manipulation et Exportation",
+          "children": [
+            {
+              "title": "Récupération de données depuis une source JDBC",
+              "children": [
+                {
+                  "title": "Exemple de code : Database -> QueryDataSet -> TextDataFile"
+                }
+              ]
+            },
+            {
+              "title": "Exportation (Enregistrement des modifications)",
+              "children": [
+                {
+                  "title": "Prise en compte du tri et des filtres"
+                },
+                {
+                  "title": "Depuis un QueryDataSet vers un fichier texte"
+                },
+                {
+                  "title": "Vers une table SQL avec QueryResolver"
+                },
+                {
+                  "title": "Vers une source JDBC (setLoadAsInserted)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "VI - Méthodes Virtuelles et Polymorphisme en Java",
+      "children": [
+        {
+          "title": "Définition des méthodes virtuelles",
+          "children": [
+            {
+              "title": "Permettent des opérations similaires sur des objets de types différents"
+            },
+            {
+              "title": "Mot-clé 'abstract' pour les classes et méthodes non définies"
+            },
+            {
+              "title": "Mot-clé 'final' pour interdire la redéfinition"
+            },
+            {
+              "title": "Exemple : Figure (abstraite), Cercle, Rectangle"
+            }
+          ]
+        },
+        {
+          "title": "Liaison dynamique",
+          "children": [
+            {
+              "title": "L'appel de la méthode concrète est résolu à l'exécution"
+            },
+            {
+              "title": "Permet de manipuler des objets via une référence de leur superclasse"
+            }
+          ]
+        },
+        {
+          "title": "Exercice 6",
+          "children": [
+            {
+              "title": "Analyse d'un programme illustrant la liaison dynamique"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 6 - Procédures Stockées et Fournisseurs de Données",
+      "children": [
+        {
+          "title": "Utilisation des Procédures Stockées",
+          "children": [
+            {
+              "title": "Composants JBuilder : Database, ProcedureDataSet, ProcedureDescriptor"
+            },
+            {
+              "title": "Propriétés du ProcedureDescriptor (database, procedure, loadOption...)"
+            },
+            {
+              "title": "Méthodes d'appel : Séquence d'échappement JDBC, syntaxe spécifique au serveur"
+            }
+          ]
+        },
+        {
+          "title": "Support par Fournisseur",
+          "children": [
+            {
+              "title": "JDataStore (Fonctions Définies par l'Utilisateur - FDU)"
+            },
+            {
+              "title": "InterBase"
+            },
+            {
+              "title": "Oracle PL/SQL (type de retour CURSOR REF)"
+            },
+            {
+              "title": "Sybase (gestion du mode de transaction)"
+            }
+          ]
+        },
+        {
+          "title": "Écriture d'un Fournisseur de Données Personnalisé",
+          "children": [
+            {
+              "title": "Interfaces : Provider (acquisition) et Resolver (écriture)"
+            },
+            {
+              "title": "Implémentation de la méthode provideData()"
+            },
+            {
+              "title": "Gestion des métadonnées et chargement des données"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gestion des Entrées/Sorties (java.io et java.nio)",
+      "children": [
+        {
+          "title": "Le Pattern Decorator avec les Flux",
+          "children": [
+            {
+              "title": "Classes de base : FilterInputStream, FilterOutputStream"
+            },
+            {
+              "title": "Décorateurs : BufferedInputStream (performance), DataInputStream (types primitifs)"
+            },
+            {
+              "title": "Combinaison des décorateurs pour ajouter des fonctionnalités"
+            }
+          ]
+        },
+        {
+          "title": "Sérialisation d'Objets",
+          "children": [
+            {
+              "title": "Interface marqueur 'Serializable'"
+            },
+            {
+              "title": "Flux : ObjectOutputStream (écriture), ObjectInputStream (lecture)"
+            },
+            {
+              "title": "Mot-clé 'transient' pour exclure un champ de la sérialisation"
+            }
+          ]
+        },
+        {
+          "title": "Flux de Caractères",
+          "children": [
+            {
+              "title": "En mémoire : CharArray(Writer/Reader), String(Writer/Reader)"
+            },
+            {
+              "title": "Vers des fichiers : FileWriter, FileReader"
+            }
+          ]
+        },
+        {
+          "title": "Le package java.nio (New I/O)",
+          "children": [
+            {
+              "title": "Concepts : Channels et Buffers"
+            },
+            {
+              "title": "Performances améliorées pour les gros fichiers"
+            },
+            {
+              "title": "NIO.2 (Java 7) : Interface Path, classe utilitaire Files (copy, move...)"
+            }
+          ]
+        },
+        {
+          "title": "Gestion des Ressources (try-with-resources)",
+          "children": [
+            {
+              "title": "Fermeture automatique des flux déclarés dans le 'try'"
+            },
+            {
+              "title": "Interface AutoCloseable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Exercice : Création d'une application IHM (Calculatrice / Dessin)",
+      "children": [
+        {
+          "title": "Élaboration d'une calculatrice",
+          "children": [
+            {
+              "title": "Fonctionnalités : Calculs simples et en chaîne, reset, gestion de la division par zéro"
+            }
+          ]
+        },
+        {
+          "title": "Conception d'une calculatrice",
+          "children": [
+            {
+              "title": "Composants Swing : JButton, JLabel"
+            },
+            {
+              "title": "Logique : Classes internes ActionListener"
+            }
+          ]
+        },
+        {
+          "title": "Correction (Code pour une application de dessin)",
+          "children": [
+            {
+              "title": "Classe Point : Modélise un point avec ses propriétés (position, couleur, taille, forme)"
+            },
+            {
+              "title": "Classe DrawPanel : Zone de dessin gérant les événements de la souris"
+            },
+            {
+              "title": "Classe Fenetre : Fenêtre principale avec menus et barre d'outils"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Exercice : Création d'un jeu du pendu",
+      "children": [
+        {
+          "title": "Cahier des charges",
+          "children": [
+            {
+              "title": "Menus : Nouveau, Scores, Règles, À propos"
+            },
+            {
+              "title": "Système de points et sauvegarde du top 10"
+            },
+            {
+              "title": "Utilisation du pattern Observer"
+            }
+          ]
+        },
+        {
+          "title": "Prérequis techniques",
+          "children": [
+            {
+              "title": "Lecture d'un fichier dictionnaire via les flux"
+            },
+            {
+              "title": "Génération d'un mot aléatoire"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Introduction au Langage Java et à la POO",
+      "children": [
+        {
+          "title": "Prérequis du cours",
+          "children": [
+            {
+              "title": "Connaissances en POO (Java), bases de données (SQL) et Web (HTML)"
+            }
+          ]
+        },
+        {
+          "title": "Caractéristiques de Java",
+          "children": [
+            {
+              "title": "Orienté objet"
+            },
+            {
+              "title": "Compilé (en bytecode) et interprété (par la JVM)"
+            },
+            {
+              "title": "Portable (Write Once, Run Anywhere)"
+            },
+            {
+              "title": "API riche et gestion automatique de la mémoire (Garbage Collector)"
+            }
+          ]
+        },
+        {
+          "title": "Concepts de la Programmation Orientée Objet",
+          "children": [
+            {
+              "title": "Classe : Modèle/type d'objet (attributs et méthodes)"
+            },
+            {
+              "title": "Objet : Instance d'une classe"
+            },
+            {
+              "title": "Constructeur : Méthode d'initialisation d'un objet"
+            },
+            {
+              "title": "Héritage : Création de classes spécialisées à partir de classes générales"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Structures de Base en Java",
+      "children": [
+        {
+          "title": "Tableaux",
+          "children": [
+            {
+              "title": "Déclaration et instanciation : int[] monTableau = new int[10];"
+            },
+            {
+              "title": "Remplissage et accès par index (commence à 0)"
+            },
+            {
+              "title": "Copie : System.arraycopy() et clone()"
+            }
+          ]
+        },
+        {
+          "title": "Structures de contrôle conditionnelles",
+          "children": [
+            {
+              "title": "if / else if / else"
+            },
+            {
+              "title": "switch / case / default"
+            },
+            {
+              "title": "Opérateur ternaire : (condition) ? val_si_vrai : val_si_faux;"
+            }
+          ]
+        },
+        {
+          "title": "Structures de contrôle itératives (boucles)",
+          "children": [
+            {
+              "title": "for"
+            },
+            {
+              "title": "while"
+            },
+            {
+              "title": "do-while"
+            },
+            {
+              "title": "break (sortir de la boucle) et continue (passer à l'itération suivante)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Le Multithreading",
+      "children": [
+        {
+          "title": "Création d'un Thread",
+          "children": [
+            {
+              "title": "Étendre la classe Thread"
+            },
+            {
+              "title": "Implémenter l'interface Runnable (approche recommandée)"
+            }
+          ]
+        },
+        {
+          "title": "Gestion du cycle de vie",
+          "children": [
+            {
+              "title": "Démarrage : start()"
+            },
+            {
+              "title": "Attente de la fin : join()"
+            },
+            {
+              "title": "Priorités et threads démons"
+            }
+          ]
+        },
+        {
+          "title": "Synchronisation",
+          "children": [
+            {
+              "title": "Problème d'accès concurrent aux ressources partagées"
+            },
+            {
+              "title": "Mot-clé 'synchronized' pour créer des sections critiques (verrous)"
+            },
+            {
+              "title": "Communication inter-threads : wait(), notify(), notifyAll()"
+            },
+            {
+              "title": "Modèle Producteur/Consommateur"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fonctionnalités Avancées et APIs",
+      "children": [
+        {
+          "title": "La Réflexion (Reflection)",
+          "children": [
+            {
+              "title": "Principe : Introspection et manipulation des classes à l'exécution"
+            },
+            {
+              "title": "Classes clés : Class, Method, Field, Constructor"
+            },
+            {
+              "title": "Cas d'usage : Plugins, frameworks"
+            }
+          ]
+        },
+        {
+          "title": "Les Annotations",
+          "children": [
+            {
+              "title": "Principe : Ajout de méta-données au code"
+            },
+            {
+              "title": "Exemples : @Override, @Deprecated"
+            },
+            {
+              "title": "Utilisations : Compilation, documentation, traitement à l'exécution"
+            }
+          ]
+        },
+        {
+          "title": "Types Génériques (Generics)",
+          "children": [
+            {
+              "title": "Permettent de créer des classes, interfaces et méthodes avec des types paramétrables"
+            },
+            {
+              "title": "Assurent la sécurité de type à la compilation"
+            },
+            {
+              "title": "Exemple : ArrayList<String>"
+            }
+          ]
+        },
+        {
+          "title": "Parsing XML",
+          "children": [
+            {
+              "title": "DOM : Charge tout le document en mémoire sous forme d'arbre"
+            },
+            {
+              "title": "SAX : Approche événementielle, plus légère en mémoire"
+            },
+            {
+              "title": "JDOM : API Java-centric alternative"
+            }
+          ]
+        },
+        {
+          "title": "JNI (Java Native Interface)",
+          "children": [
+            {
+              "title": "Permet d'interfacer du code Java avec du code natif (C/C++)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Développement et Déploiement",
+      "children": [
+        {
+          "title": "La Machine Virtuelle Java (JVM)",
+          "children": [
+            {
+              "title": "Exécute le bytecode Java"
+            },
+            {
+              "title": "Assure la portabilité des applications"
+            }
+          ]
+        },
+        {
+          "title": "Outils du JDK (Java Development Kit)",
+          "children": [
+            {
+              "title": "javac : Le compilateur"
+            },
+            {
+              "title": "java : Le lanceur d'applications (JVM)"
+            },
+            {
+              "title": "jar : L'utilitaire d'archivage pour créer des fichiers .jar"
+            },
+            {
+              "title": "javadoc : Le générateur de documentation"
+            },
+            {
+              "title": "jdb : Le débogueur en ligne de commande"
+            }
+          ]
+        },
+        {
+          "title": "Déploiement d'une application",
+          "children": [
+            {
+              "title": "Création d'une archive JAR exécutable"
+            },
+            {
+              "title": "Configuration du fichier Manifest (spécification de la classe principale)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Persistance des Données",
+      "children": [
+        {
+          "title": "Problématique",
+          "children": [
+            {
+              "title": "Sauvegarder l'état des objets de manière durable"
+            }
+          ]
+        },
+        {
+          "title": "Approches en Java",
+          "children": [
+            {
+              "title": "Sérialisation (simple, limitée)"
+            },
+            {
+              "title": "JDBC (Java DataBase Connectivity)",
+              "children": [
+                {
+                  "title": "API standard pour l'accès aux bases de données relationnelles"
+                },
+                {
+                  "title": "Composants : Connection, Statement, PreparedStatement, ResultSet"
+                },
+                {
+                  "title": "ResultSetMetaData : pour obtenir des informations sur les résultats"
+                }
+              ]
+            },
+            {
+              "title": "ORM (Object-Relational Mapping)",
+              "children": [
+                {
+                  "title": "Principe : Faire correspondre les objets Java à des tables de base de données"
+                },
+                {
+                  "title": "Frameworks : Hibernate, JPA"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Séance 4 : Collections et gestion des exceptions",
+  "questions": [
+    {
+      "question": "Dans un bloc `try...catch...finally`, quel est le rôle principal du bloc `finally` ?",
+      "options": [
+        "Exécuter du code uniquement si une exception est attrapée par un bloc `catch`.",
+        "Exécuter du code que l'exception soit levée ou non.",
+        "Déclarer les types d'exceptions qui peuvent être levées par le bloc `try`.",
+        "Arrêter l'application de manière propre après une erreur."
+      ],
+      "answer": "Exécuter du code que l'exception soit levée ou non.",
+      "explanation": "Le bloc `finally`, qui est optionnel, sert à définir un bloc de code à exécuter dans tous les cas, qu'une exception ait été levée et attrapée ou non."
+    },
+    {
+      "question": "Quelle est la différence fondamentale entre les mots-clés `throw` et `throws` en Java ?",
+      "options": [
+        "`throw` est utilisé pour attraper une exception, `throws` pour en créer une.",
+        "`throw` déclare qu'une méthode peut lever une exception, `throws` la lève effectivement.",
+        "`throw` et `throws` sont utilisés de manière interchangeable pour la gestion des erreurs.",
+        "`throw` est utilisé pour lever explicitement une exception, `throws` pour déclarer qu'une méthode peut propager une exception."
+      ],
+      "answer": "`throw` est utilisé pour lever explicitement une exception, `throws` pour déclarer qu'une méthode peut propager une exception.",
+      "explanation": "L'instruction `throw` est utilisée pour lever une exception (ex: `throw new RuntimeException()`), tandis que `throws` est utilisé dans la signature d'une méthode pour indiquer qu'elle peut propager une exception à la méthode appelante."
+    },
+    {
+      "question": "Quel type d'exception n'a généralement pas besoin d'être déclaré dans la signature d'une méthode avec `throws` ?",
+      "options": [
+        "IOException",
+        "FileNotFoundException",
+        "RuntimeException",
+        "Toutes les exceptions doivent être déclarées."
+      ],
+      "answer": "RuntimeException",
+      "explanation": "Les exceptions qui dérivent de `RuntimeException` (comme `NullPointerException` ou `ArrayIndexOutOfBoundsException`) n'ont pas besoin d'être déclarées avec `throws`, car elles signalent souvent des erreurs de programmation."
+    },
+    {
+      "question": "Quelle méthode de l'interface `Map` est utilisée pour récupérer la valeur associée à une clé spécifique ?",
+      "options": [
+        "peek(key)",
+        "fetch(key)",
+        "get(key)",
+        "getValue(key)"
+      ],
+      "answer": "get(key)",
+      "explanation": "La méthode `get(Object key)` retourne la valeur associée à la clé spécifiée, ou `null` si la clé n'est pas trouvée dans la Map."
+    },
+    {
+      "question": "Dans la classe `Stack`, quelle méthode permet d'ajouter un élément au sommet de la pile (empiler) ?",
+      "options": [
+        "add(Object o)",
+        "push(Object o)",
+        "pop()",
+        "peek(Object o)"
+      ],
+      "answer": "push(Object o)",
+      "explanation": "La méthode `push(Object o)` est utilisée pour ajouter (empiler) un objet au sommet de la pile."
+    },
+    {
+      "question": "Quelle exception est levée implicitement par la JVM lorsqu'on essaie d'accéder à un indice de tableau qui n'existe pas ?",
+      "options": [
+        "NullPointerException",
+        "NumberFormatException",
+        "ArrayIndexOutOfBoundsException",
+        "IllegalStateException"
+      ],
+      "answer": "ArrayIndexOutOfBoundsException",
+      "explanation": "Une `ArrayIndexOutOfBoundsException` est levée par la machine virtuelle lorsque l'indice utilisé pour accéder à un tableau est négatif ou supérieur ou égal à la taille du tableau."
+    },
+    {
+      "question": "Pour parcourir efficacement à la fois les clés et les valeurs d'une `Map`, quelle approche est recommandée ?",
+      "options": [
+        "Itérer sur `map.keySet()` et appeler `map.get(key)` à chaque itération.",
+        "Utiliser un itérateur sur `map.entrySet()` pour obtenir les paires clé-valeur.",
+        "Convertir la Map en deux listes, une pour les clés et une pour les valeurs.",
+        "Utiliser la collection retournée par `map.values()` uniquement."
+      ],
+      "answer": "Utiliser un itérateur sur `map.entrySet()` pour obtenir les paires clé-valeur.",
+      "explanation": "Le document préconise d'itérer sur le `Set` des entrées (`map.entrySet()`) pour éviter l'appel coûteux de `map.get(key)` à l'intérieur d'une boucle qui parcourt les clés."
+    },
+    {
+      "question": "Dans la déclaration `List maListe = new ArrayList();`, que représentent `List` et `ArrayList` ?",
+      "options": [
+        "`List` est une classe et `ArrayList` est un objet.",
+        "`List` et `ArrayList` sont deux classes concrètes interchangeables.",
+        "`List` est une interface et `ArrayList` est une classe concrète qui l'implémente.",
+        "`List` est une classe abstraite et `ArrayList` est une méthode statique."
+      ],
+      "answer": "`List` est une interface et `ArrayList` est une classe concrète qui l'implémente.",
+      "explanation": "`List` est une interface qui définit le contrat pour les collections de type liste. `ArrayList` est une des implémentations concrètes de cette interface, utilisant un tableau dynamique."
+    }
+  ]
+}

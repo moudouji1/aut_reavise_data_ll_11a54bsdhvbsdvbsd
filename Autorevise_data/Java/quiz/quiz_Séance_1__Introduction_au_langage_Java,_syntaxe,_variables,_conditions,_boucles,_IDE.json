@@ -1,0 +1,93 @@
+{
+  "title": "Séance 1 : Introduction au langage Java, syntaxe, variables, conditions, boucles, IDE",
+  "questions": [
+    {
+      "question": "Quelle est la commande correcte pour compiler un fichier source Java nommé 'Programme.java' et quel fichier est généré ?",
+      "options": [
+        "java Programme.java -> Programme.class",
+        "javac Programme.java -> Programme.class",
+        "java Programme -> Programme.obj",
+        "javac Programme.java -> Programme.exe"
+      ],
+      "answer": "javac Programme.java -> Programme.class",
+      "explanation": "La commande 'javac' est le compilateur Java. Il prend un fichier source (.java) en entrée et produit un fichier de bytecode (.class) qui peut ensuite être exécuté par la Machine Virtuelle Java (JVM)."
+    },
+    {
+      "question": "Parmi les propositions suivantes sur les types de données en Java, laquelle est vraie ?",
+      "options": [
+        "Le type 'String' est un type de donnée primitif.",
+        "Une variable de type primitif contient une référence à un objet en mémoire.",
+        "Une variable de type primitif (comme 'int' ou 'boolean') contient directement sa valeur.",
+        "Tous les types de variables commencent par une majuscule."
+      ],
+      "answer": "Une variable de type primitif (comme 'int' ou 'boolean') contient directement sa valeur.",
+      "explanation": "Java distingue les types primitifs (byte, short, int, long, float, double, char, boolean) qui stockent la valeur directement, des types de référence (comme String ou tout autre objet) qui stockent une adresse mémoire pointant vers l'objet."
+    },
+    {
+      "question": "Quelle est la syntaxe correcte pour déclarer et initialiser un tableau pouvant contenir 10 entiers ?",
+      "options": [
+        "int monTableau = new int(10);",
+        "int[] monTableau = new int[10];",
+        "int monTableau[10];",
+        "array<int> monTableau = new array[10];"
+      ],
+      "answer": "int[] monTableau = new int[10];",
+      "explanation": "En Java, un tableau est un objet. On le déclare avec le type suivi de '[]', puis on l'instancie avec le mot-clé 'new' en spécifiant le type et la taille entre crochets."
+    },
+    {
+      "question": "Quelle est la différence fondamentale entre l'opérateur '==' et la méthode '.equals()' pour comparer des objets (non primitifs) ?",
+      "options": [
+        "'==' compare le contenu des objets, '.equals()' compare leurs adresses mémoire.",
+        "Ils sont parfaitement interchangeables.",
+        "'==' compare les adresses mémoire des objets, tandis que '.equals()' est conçue pour comparer leur contenu.",
+        "'.equals()' est utilisé uniquement pour les chaînes de caractères ('String')."
+      ],
+      "answer": "'==' compare les adresses mémoire des objets, tandis que '.equals()' est conçue pour comparer leur contenu.",
+      "explanation": "L'opérateur '==' vérifie si deux références pointent vers le même objet en mémoire (égalité de référence). La méthode '.equals()', si elle est correctement implémentée, vérifie si les objets ont le même contenu (égalité de valeur)."
+    },
+    {
+      "question": "Quelle structure de boucle en Java garantit que son corps de code sera exécuté au moins une fois ?",
+      "options": [
+        "La boucle 'for'",
+        "La boucle 'while'",
+        "La boucle 'do...while'",
+        "La boucle 'for-each'"
+      ],
+      "answer": "La boucle 'do...while'",
+      "explanation": "La boucle 'do...while' exécute son bloc de code une première fois, puis évalue la condition. Les autres types de boucles évaluent la condition avant la première exécution."
+    },
+    {
+      "question": "Comment obtient-on le nombre d'éléments (la taille) d'un tableau déclaré comme 'int[] tableau = new int[50];' ?",
+      "options": [
+        "tableau.size()",
+        "tableau.length",
+        "tableau.length()",
+        "size(tableau)"
+      ],
+      "answer": "tableau.length",
+      "explanation": "En Java, la taille d'un tableau est accessible via son attribut (ou champ) public 'length'. Ce n'est pas une méthode, il n'y a donc pas de parenthèses."
+    },
+    {
+      "question": "Que fait l'instruction 'continue' à l'intérieur d'une boucle ?",
+      "options": [
+        "Elle met fin immédiatement à la boucle.",
+        "Elle saute le reste des instructions de l'itération en cours et passe à la suivante.",
+        "Elle met le programme en pause.",
+        "Elle relance l'itération en cours depuis le début."
+      ],
+      "answer": "Elle saute le reste des instructions de l'itération en cours et passe à la suivante.",
+      "explanation": "L'instruction 'continue' permet d'ignorer la fin du bloc de la boucle pour l'itération actuelle et de passer directement à l'évaluation de la condition pour l'itération suivante. L'instruction 'break' met fin à la boucle."
+    },
+    {
+      "question": "Quelle est la signature correcte de la méthode principale ('main'), point d'entrée d'une application Java ?",
+      "options": [
+        "public void main(String[] args)",
+        "public static void main(String args)",
+        "static void main(String[] args)",
+        "public static void main(String[] args)"
+      ],
+      "answer": "public static void main(String[] args)",
+      "explanation": "Le point d'entrée d'une application Java doit obligatoirement être une méthode publique, statique, ne retournant rien (void), nommée 'main' et acceptant un tableau de chaînes de caractères en argument."
+    }
+  ]
+}

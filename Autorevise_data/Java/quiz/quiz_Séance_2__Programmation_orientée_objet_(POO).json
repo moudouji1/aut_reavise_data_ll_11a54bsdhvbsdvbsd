@@ -1,0 +1,93 @@
+{
+  "title": "Séance 2 : Programmation orientée objet (POO)",
+  "questions": [
+    {
+      "question": "En programmation orientée objet, qu'est-ce qu'une 'classe' ?",
+      "options": [
+        "Un objet spécifique avec des valeurs définies.",
+        "Un modèle ou un \"moule\" servant à créer des objets.",
+        "Une fonction qui exécute une série d'instructions.",
+        "Le processus de destruction d'un objet pour libérer la mémoire."
+      ],
+      "answer": "Un modèle ou un \"moule\" servant à créer des objets.",
+      "explanation": "Une classe est une description abstraite d'une famille d'objets. Elle définit les attributs (données) et les méthodes (comportements) que tous les objets créés à partir de ce modèle partageront."
+    },
+    {
+      "question": "Quel est le rôle principal d'un constructeur dans une classe ?",
+      "options": [
+        "Détruire un objet lorsque celui-ci n'est plus utilisé.",
+        "Compiler le code de la classe en bytecode.",
+        "Initialiser les attributs d'un nouvel objet lors de sa création.",
+        "Renvoyer une valeur spécifique à la fin de son exécution."
+      ],
+      "answer": "Initialiser les attributs d'un nouvel objet lors de sa création.",
+      "explanation": "Un constructeur est une méthode spéciale qui porte le même nom que la classe. Son objectif est d'initialiser l'état (les attributs) d'un objet au moment où il est instancié avec l'opérateur 'new'."
+    },
+    {
+      "question": "Que signifie le concept d'encapsulation en POO ?",
+      "options": [
+        "Permettre à une classe d'hériter des propriétés d'une autre classe.",
+        "Regrouper des données et les méthodes qui les manipulent au sein d'un même objet, en contrôlant l'accès à ces données.",
+        "Créer plusieurs méthodes avec le même nom mais des signatures différentes.",
+        "Convertir un objet d'un type à un autre."
+      ],
+      "answer": "Regrouper des données et les méthodes qui les manipulent au sein d'un même objet, en contrôlant l'accès à ces données.",
+      "explanation": "L'encapsulation consiste à cacher les détails d'implémentation d'un objet. Les données sont généralement privées et ne peuvent être modifiées que par les méthodes publiques de l'objet, ce qui garantit leur intégrité."
+    },
+    {
+      "question": "En Java, que fait l'opérateur 'new' ?",
+      "options": [
+        "Il déclare une référence qui ne pointe vers aucun objet.",
+        "Il supprime un objet de la mémoire.",
+        "Il compare deux objets pour vérifier leur égalité.",
+        "Il alloue de la mémoire pour un nouvel objet et appelle son constructeur."
+      ],
+      "answer": "Il alloue de la mémoire pour un nouvel objet et appelle son constructeur.",
+      "explanation": "L'opérateur 'new' est utilisé pour créer une instance (un objet) d'une classe. Il réserve l'espace mémoire nécessaire et exécute un constructeur pour initialiser ce nouvel objet."
+    },
+    {
+      "question": "Qu'est-ce que la surcharge de méthodes (method overloading) ?",
+      "options": [
+        "Redéfinir une méthode héritée d'une classe parente.",
+        "Changer uniquement le type de retour d'une méthode existante.",
+        "Définir plusieurs méthodes avec le même nom dans la même classe, mais avec des paramètres différents (nombre ou type).",
+        "Rendre une méthode finale pour qu'elle ne puisse pas être modifiée."
+      ],
+      "answer": "Définir plusieurs méthodes avec le même nom dans la même classe, mais avec des paramètres différents (nombre ou type).",
+      "explanation": "La surcharge permet d'offrir plusieurs manières d'appeler une méthode en fonction des arguments fournis, ce qui rend le code plus flexible et intuitif. Le compilateur choisit la bonne version à exécuter en fonction des paramètres de l'appel."
+    },
+    {
+      "question": "À quoi sert le mot-clé 'this' en Java ?",
+      "options": [
+        "Il représente la classe parente (super-classe).",
+        "Il est utilisé pour créer une nouvelle instance de la classe.",
+        "Il fait référence à l'instance courante de l'objet au sein de sa propre classe.",
+        "Il indique qu'une méthode n'a pas de valeur de retour."
+      ],
+      "answer": "Il fait référence à l'instance courante de l'objet au sein de sa propre classe.",
+      "explanation": "Le mot-clé 'this' est utilisé pour lever l'ambiguïté entre les attributs de la classe et les paramètres d'une méthode qui auraient le même nom, ou pour appeler un autre constructeur de la même classe."
+    },
+    {
+      "question": "En Java, quelle commande permet de compiler un fichier source (.java) en bytecode (.class) ?",
+      "options": [
+        "java",
+        "javac",
+        "execute",
+        "build"
+      ],
+      "answer": "javac",
+      "explanation": "La commande 'javac' (Java Compiler) est l'outil du JDK qui prend un fichier source Java en entrée et génère un fichier de bytecode (.class) qui peut ensuite être exécuté par la Machine Virtuelle Java (JVM)."
+    },
+    {
+      "question": "Que se passe-t-il si le type de retour d'une méthode est déclaré comme 'void' ?",
+      "options": [
+        "La méthode retourne obligatoirement une valeur nulle (null).",
+        "La méthode ne retourne aucune valeur.",
+        "Une erreur de compilation est générée.",
+        "La méthode peut retourner une valeur de n'importe quel type."
+      ],
+      "answer": "La méthode ne retourne aucune valeur.",
+      "explanation": "Le mot-clé 'void' est utilisé pour spécifier qu'une méthode n'a pas de valeur de retour. Elle exécute ses instructions et se termine sans renvoyer de résultat."
+    }
+  ]
+}

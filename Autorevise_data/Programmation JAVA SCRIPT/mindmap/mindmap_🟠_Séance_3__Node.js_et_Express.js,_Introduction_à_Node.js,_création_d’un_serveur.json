@@ -1,0 +1,392 @@
+{
+  "title": "🟠 Séance 3 : Node.js et Express.js, Introduction à Node.js, création d’un serveur",
+  "nodes": [
+    {
+      "title": "### Introduction générale",
+      "children": [
+        {
+          "title": "Technologies web",
+          "children": [
+            {
+              "title": "HTML : Contenu et structure"
+            },
+            {
+              "title": "CSS : Apparence et style"
+            },
+            {
+              "title": "JavaScript : Interactivité"
+            }
+          ]
+        },
+        {
+          "title": "Architecture d'une application web",
+          "children": [
+            {
+              "title": "Partie Frontend (Client) : HTML, CSS, JavaScript"
+            },
+            {
+              "title": "Partie Backend (Serveur) : Node.js, PHP, JEE, .Net"
+            },
+            {
+              "title": "Communication via le protocole HTTP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "### Comprendre Node.js",
+      "children": [
+        {
+          "title": "Qu'est-ce que Node.js ?",
+          "children": [
+            {
+              "title": "Environnement d'exécution JavaScript côté serveur"
+            },
+            {
+              "title": "Basé sur les évènements, non bloquant (asynchrone)"
+            },
+            {
+              "title": "Performant grâce à son unique thread et sa boucle d'événements"
+            }
+          ]
+        },
+        {
+          "title": "Les possibilités de NodeJS",
+          "children": [
+            {
+              "title": "Serveurs et sites web complexes"
+            },
+            {
+              "title": "APIs"
+            },
+            {
+              "title": "Applications console et outils en ligne de commande"
+            },
+            {
+              "title": "Services réseau sur mesure (Proxies, etc.)"
+            },
+            {
+              "title": "Applications avec interface graphique (GUI)"
+            },
+            {
+              "title": "Support des sockets pour la communication temps réel"
+            }
+          ]
+        },
+        {
+          "title": "Prérequis",
+          "children": [
+            {
+              "title": "Connaissance de base en Javascript"
+            },
+            {
+              "title": "Connaissance en asynchrone et architecture 'event-driven'"
+            },
+            {
+              "title": "Connaissance des modules natifs de NodeJS"
+            }
+          ]
+        },
+        {
+          "title": "Ressources",
+          "children": [
+            {
+              "title": "NodeJS API : https://nodejs.org/api/"
+            },
+            {
+              "title": "Projets sur Github"
+            },
+            {
+              "title": "Stackoverflow"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "### Installation et première application",
+      "children": [
+        {
+          "title": "Télécharger et installer Node.js (Windows, Mac, Linux)"
+        },
+        {
+          "title": "Vérifier l'installation avec une application 'Hello World'"
+        },
+        {
+          "title": "Créer une première application bas niveau",
+          "children": [
+            {
+              "title": "Gérer manuellement les requêtes HTTP"
+            },
+            {
+              "title": "Utiliser les callbacks pour les opérations asynchrones"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "### Side Project : ChatWithMe",
+      "children": [
+        {
+          "title": "Objectif : Développer une base solide d'un chat en ligne"
+        },
+        {
+          "title": "Développement par étapes",
+          "children": [
+            {
+              "title": "1. Le serveur web"
+            },
+            {
+              "title": "2. La communication en temps réel"
+            },
+            {
+              "title": "3. La sauvegarde des données"
+            },
+            {
+              "title": "4. Le monitoring de l'application"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "### HTTP et le module 'Request'",
+      "children": [
+        {
+          "title": "Le module natif 'http'",
+          "children": [
+            {
+              "title": "Requête HTTP (partie client) : Exercice GET et POST"
+            },
+            {
+              "title": "Serveur HTTP (partie serveur) : Exercice de création de serveur et gestion de routes"
+            },
+            {
+              "title": "Constat : Difficulté de créer un serveur complet avec le module natif"
+            }
+          ]
+        },
+        {
+          "title": "Le module 'Request'",
+          "children": [
+            {
+              "title": "Définition : Abstraction simple des modules natifs HTTP/HTTPS"
+            },
+            {
+              "title": "Fonctionnalités : Redirections, gestion des events/stream"
+            },
+            {
+              "title": "Exercice : Envoyer des requêtes GET et POST avec 'request'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "### Introduction à Express.js",
+      "children": [
+        {
+          "title": "Qu'est-ce qu'Express ?",
+          "children": [
+            {
+              "title": "Infrastructure web minimaliste, souple et rapide pour Node.js"
+            },
+            {
+              "title": "Fournit des fonctionnalités robustes pour applications web et mobiles"
+            },
+            {
+              "title": "Simplifie la création d'API grâce aux utilitaires HTTP et middlewares"
+            }
+          ]
+        },
+        {
+          "title": "Installation et premier serveur",
+          "children": [
+            {
+              "title": "Initialisation du projet : npm init"
+            },
+            {
+              "title": "Installation d'Express : npm install --save express"
+            },
+            {
+              "title": "Exemple de code 'Hello world'"
+            }
+          ]
+        },
+        {
+          "title": "Le 'Generator'",
+          "children": [
+            {
+              "title": "Définition : Outil pour créer rapidement un squelette d'application Express"
+            },
+            {
+              "title": "Utilisation",
+              "children": [
+                {
+                  "title": "Installation globale : npm install express-generator -g"
+                },
+                {
+                  "title": "Génération du projet : express myapp"
+                },
+                {
+                  "title": "Installation des dépendances : npm install"
+                },
+                {
+                  "title": "Lancement du serveur : npm start"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "### Le routage avec Express",
+      "children": [
+        {
+          "title": "Définir une route",
+          "children": [
+            {
+              "title": "Syntaxe : app.METHOD(PATH, HANDLER)"
+            },
+            {
+              "title": "Utilisation de Regex dans le path"
+            },
+            {
+              "title": "Chaînage des routes"
+            },
+            {
+              "title": "Modularisation avec express.Router (mini-app)"
+            }
+          ]
+        },
+        {
+          "title": "Le gestionnaire des routes (middlewares de route)",
+          "children": [
+            {
+              "title": "Principe : Fournir plusieurs fonctions callback pour une même route"
+            },
+            {
+              "title": "Mécanisme : Utiliser next() pour passer à la fonction suivante"
+            },
+            {
+              "title": "Cas d'usage : Préconditions (authentification, autorisation)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "### Les Middlewares dans Express",
+      "children": [
+        {
+          "title": "Qu'est-ce qu'un middleware ?",
+          "children": [
+            {
+              "title": "Définition : Une fonction avec les arguments (req, res, next)"
+            },
+            {
+              "title": "Rôle : Exécuter du code, modifier req/res, terminer le cycle ou appeler le middleware suivant"
+            },
+            {
+              "title": "Attention : L'ordre d'appel des middlewares est crucial"
+            }
+          ]
+        },
+        {
+          "title": "Types de middlewares",
+          "children": [
+            {
+              "title": "Logger : Afficher des informations sur la requête"
+            },
+            {
+              "title": "Time : Ajouter des informations (ex: timestamp) à la requête"
+            },
+            {
+              "title": "Authentification (OAuth, etc.)"
+            },
+            {
+              "title": "Parsing de body (pour requêtes POST)"
+            }
+          ]
+        },
+        {
+          "title": "Gestion des fichiers statiques",
+          "children": [
+            {
+              "title": "Utilisation de `express.static('public')`"
+            },
+            {
+              "title": "Possibilité de définir plusieurs répertoires statiques"
+            },
+            {
+              "title": "Définir un chemin virtuel : `app.use('/static', express.static('public'))`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "### L'asynchrone : Promesses et Modules I/O",
+      "children": [
+        {
+          "title": "Les promesses (Promises)",
+          "children": [
+            {
+              "title": "Alternative aux callbacks"
+            },
+            {
+              "title": "États : Accomplie (fulfilled), Rejetée (rejected)"
+            },
+            {
+              "title": "Exercices : `promise-it-wont-hurt`"
+            }
+          ]
+        },
+        {
+          "title": "Modules I/O avec la bibliothèque Q",
+          "children": [
+            {
+              "title": "Fonctions utiles : Q.nfcall, Q.npost, etc."
+            },
+            {
+              "title": "Permet de 'promisifier' des fonctions basées sur les callbacks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "### Communication temps réel avec Socket.io",
+      "children": [
+        {
+          "title": "Historique de la communication web",
+          "children": [
+            {
+              "title": "Ancienne méthode : Rafraîchissement périodique (polling)"
+            },
+            {
+              "title": "Amélioration : Long-polling (connexion maintenue)"
+            },
+            {
+              "title": "Solution moderne : WebSockets"
+            }
+          ]
+        },
+        {
+          "title": "Socket.io",
+          "children": [
+            {
+              "title": "Bibliothèque pour la communication temps réel bi-directionnelle"
+            },
+            {
+              "title": "Mise en œuvre : Côté serveur (Node.js) et côté client (navigateur)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

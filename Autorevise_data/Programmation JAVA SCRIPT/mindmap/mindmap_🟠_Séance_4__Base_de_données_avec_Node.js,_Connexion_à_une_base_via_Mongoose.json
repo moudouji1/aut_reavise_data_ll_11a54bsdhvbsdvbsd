@@ -1,0 +1,595 @@
+{
+  "title": "Séance 4 : Base de données avec Node.js, Connexion à une base via Mongoose",
+  "nodes": [
+    {
+      "title": "Side project: ChatWithMe",
+      "children": [
+        {
+          "title": "Intégration de socket.io"
+        },
+        {
+          "title": "Code Backend",
+          "children": [
+            {
+              "title": "Arborescence des objets et Managers"
+            },
+            {
+              "title": "Liste des requêtes",
+              "children": [
+                {
+                  "title": "JoinRoom"
+                },
+                {
+                  "title": "QuitRoom"
+                },
+                {
+                  "title": "SetName"
+                },
+                {
+                  "title": "NewMessage"
+                }
+              ]
+            },
+            {
+              "title": "Flux de communication"
+            }
+          ]
+        },
+        {
+          "title": "Code Frontend (Prochaine vidéo)"
+        }
+      ]
+    },
+    {
+      "title": "Introduction à Redis",
+      "children": [
+        {
+          "title": "Définition",
+          "children": [
+            {
+              "title": "REmote DIctionary Server"
+            },
+            {
+              "title": "Base de données clé-valeur"
+            },
+            {
+              "title": "Mouvement NoSQL"
+            }
+          ]
+        },
+        {
+          "title": "Commandes de base",
+          "children": [
+            {
+              "title": "Lancer le serveur : sudo service redis-server start"
+            },
+            {
+              "title": "Se connecter au serveur : redis-cli"
+            }
+          ]
+        },
+        {
+          "title": "Utilisation avec Node.js"
+        }
+      ]
+    },
+    {
+      "title": "Introduction à MongoDB",
+      "children": [
+        {
+          "title": "Définition",
+          "children": [
+            {
+              "title": "Orientée documents"
+            },
+            {
+              "title": "Mouvement NoSQL"
+            },
+            {
+              "title": "Écrit en C++"
+            }
+          ]
+        },
+        {
+          "title": "Commandes de base",
+          "children": [
+            {
+              "title": "Lancer le serveur : mongod --nojournal"
+            },
+            {
+              "title": "Se connecter au serveur : mongo"
+            }
+          ]
+        },
+        {
+          "title": "Utilisation avec Mongoose",
+          "children": [
+            {
+              "title": "Opérations CRUD (Create, Read, Update, Delete)"
+            },
+            {
+              "title": "Gestion des associations"
+            }
+          ]
+        },
+        {
+          "title": "Intégration dans ChatWithMe"
+        }
+      ]
+    },
+    {
+      "title": "Chapitre 6 : Node.js avec MongoDB"
+    },
+    {
+      "title": "Bases de données Node.js et NoSQL"
+    },
+    {
+      "title": "Utilisation de MongoDB et Node.js"
+    },
+    {
+      "title": "Comment construire une application noeud express avec MongoDB pour stocker et servir le contenu."
+    },
+    {
+      "title": "Les bases de données et PHP",
+      "children": [
+        {
+          "title": "SQLite",
+          "children": [
+            {
+              "title": "Caractéristiques : légère, intégrée, un simple fichier"
+            },
+            {
+              "title": "Exemple d'utilisation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bases de Données Réparties",
+      "children": [
+        {
+          "title": "Architecture et Mise en œuvre"
+        },
+        {
+          "title": "Duplication et Réplication"
+        },
+        {
+          "title": "Fonctions d'un SGBD réparti",
+          "children": [
+            {
+              "title": "Gestion d'un dictionnaire de données global"
+            },
+            {
+              "title": "Évaluation des requêtes réparties"
+            },
+            {
+              "title": "Gestion des transactions réparties"
+            }
+          ]
+        },
+        {
+          "title": "Comparatif Client-Serveur et BD répartie"
+        }
+      ]
+    },
+    {
+      "title": "Les 12 règles d'un SGBD",
+      "children": [
+        {
+          "title": "(1) Autonomie locale"
+        },
+        {
+          "title": "(2) Pas de site fédérateur"
+        },
+        {
+          "title": "(3) Exploitation en continue"
+        },
+        {
+          "title": "(4) Indépendance à la localisation"
+        },
+        {
+          "title": "(5) Règles de fragmentation"
+        },
+        {
+          "title": "(6) Duplications multiples"
+        },
+        {
+          "title": "(7) Requêtes distribuées"
+        },
+        {
+          "title": "(8) Transactions distribuées"
+        },
+        {
+          "title": "(9) Indépendance du matériel"
+        },
+        {
+          "title": "(10) Indépendance des systèmes d'exploitation"
+        },
+        {
+          "title": "(11) Indépendance du réseau"
+        },
+        {
+          "title": "(12) Indépendance du SGBD"
+        }
+      ]
+    },
+    {
+      "title": "(1) Autonomie locale",
+      "children": [
+        {
+          "title": "Les données locales sont gérées localement"
+        },
+        {
+          "title": "Administration locale et décentralisée"
+        },
+        {
+          "title": "Un site est autonome pour ses propres opérations"
+        }
+      ]
+    },
+    {
+      "title": "(3) Exploitation en continue",
+      "children": [
+        {
+          "title": "Pas d'arrêt de la BDR pour la modification d'un site"
+        },
+        {
+          "title": "Extensibilité (ajout/suppression de site)"
+        }
+      ]
+    },
+    {
+      "title": "(4) Indépendance à la localisation",
+      "children": [
+        {
+          "title": "Objectif : changer la localisation des données sans changer les programmes"
+        },
+        {
+          "title": "Nécessite un dictionnaire réparti"
+        },
+        {
+          "title": "Avantage : illusion d'une base centralisée"
+        }
+      ]
+    },
+    {
+      "title": "(7) Requêtes distribuées",
+      "children": [
+        {
+          "title": "Évaluation via un plan d'exécution réparti"
+        },
+        {
+          "title": "Optimisation (opérateurs de restriction appliqués au plus tôt)"
+        },
+        {
+          "title": "Utilisation du parallélisme"
+        }
+      ]
+    },
+    {
+      "title": "(8) Transactions distribuées",
+      "children": [
+        {
+          "title": "Gestion des pannes (transaction, site)"
+        },
+        {
+          "title": "Notion de transaction (ACID)"
+        }
+      ]
+    },
+    {
+      "title": "(12) Indépendance du SGBD",
+      "children": [
+        {
+          "title": "Difficile à atteindre"
+        },
+        {
+          "title": "Nécessite des interfaces communes"
+        },
+        {
+          "title": "Noyau standard avec SQL ANSI"
+        }
+      ]
+    },
+    {
+      "title": "Manipulation d'une base répartie les Procédures stockées",
+      "children": [
+        {
+          "title": "Encapsulation des données réparties"
+        },
+        {
+          "title": "Localisation transparente pour l'utilisateur"
+        }
+      ]
+    },
+    {
+      "title": "Manipulation d'une base répartie les Triggers INSTEAD OF",
+      "children": [
+        {
+          "title": "Application sur des vues"
+        },
+        {
+          "title": "Mise à jour des fragments distants"
+        }
+      ]
+    },
+    {
+      "title": "Duplication et Réplication des données réparties",
+      "children": [
+        {
+          "title": "Distribution vs Duplication vs Réplication"
+        },
+        {
+          "title": "Méthodes de duplication",
+          "children": [
+            {
+              "title": "Synchrone (triggers)"
+            },
+            {
+              "title": "Asynchrone (programmateur, snapshots)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Notion de Programmateur",
+      "children": [
+        {
+          "title": "Service de déclenchement d'un processus par horloge"
+        },
+        {
+          "title": "Programmateur interne (JOBS) ou externe (OS)"
+        }
+      ]
+    },
+    {
+      "title": "Connexion à la base de données"
+    },
+    {
+      "title": "Erreur de connexion"
+    },
+    {
+      "title": "La fonction closeCursor()"
+    },
+    {
+      "title": "Les requêtes préparées"
+    },
+    {
+      "title": "Modifier"
+    },
+    {
+      "title": "b. Passage du MCD au MLD"
+    },
+    {
+      "title": "c. Schéma relationnel",
+      "children": [
+        {
+          "title": "Tables : CATEGORIE, PRODUIT, CLIENT, ACHETER"
+        }
+      ]
+    },
+    {
+      "title": "2.2.1. Création de la base de données avec SQL Express",
+      "children": [
+        {
+          "title": "Procédure dans Visual Studio"
+        }
+      ]
+    },
+    {
+      "title": "2.2.2. Création des tables et relations"
+    },
+    {
+      "title": "A. CREATION DES TABLES"
+    },
+    {
+      "title": "Procédure :",
+      "children": [
+        {
+          "title": "Création via l'interface graphique"
+        },
+        {
+          "title": "Création via T-SQL"
+        },
+        {
+          "title": "Gestion des identifiants auto-incrémentés"
+        }
+      ]
+    },
+    {
+      "title": "a. Création de relation entre table",
+      "children": [
+        {
+          "title": "Ajout de clés étrangères via l'interface ou T-SQL"
+        }
+      ]
+    },
+    {
+      "title": "2.2.2. Création du modèle entity framework"
+    },
+    {
+      "title": "A. Vue d'ensemble de l'Entity Framework",
+      "children": [
+        {
+          "title": "Définition et objectifs (ORM pour ADO.NET)"
+        },
+        {
+          "title": "Approche par modèles (Conceptuel, Logique, Physique)"
+        },
+        {
+          "title": "Fichiers de mapping (CSDL, SSDL, MSL)"
+        },
+        {
+          "title": "Accès aux données (LINQ to Entities, Entity SQL)"
+        }
+      ]
+    },
+    {
+      "title": "B. CREATION DU MODELE",
+      "children": [
+        {
+          "title": "Procédure dans Visual Studio (ADO.NET Entity Data Model)"
+        },
+        {
+          "title": "Approche 'EF Designer à partir de la base de données'"
+        }
+      ]
+    },
+    {
+      "title": "2.2.3. Création d'un Controller",
+      "children": [
+        {
+          "title": "Rôle du contrôleur dans ASP.NET MVC"
+        }
+      ]
+    },
+    {
+      "title": "a. Présentation du routage ASP.NET",
+      "children": [
+        {
+          "title": "Configuration de la table de routage (Global.asax)"
+        },
+        {
+          "title": "Route par défaut : {controller}/{action}/{id?}"
+        }
+      ]
+    },
+    {
+      "title": "b. Comprendre les résultats des actions",
+      "children": [
+        {
+          "title": "Types de ActionResult (ViewResult, RedirectResult, JsonResult, etc.)"
+        }
+      ]
+    },
+    {
+      "title": "c. Comment créer un controllers",
+      "children": [
+        {
+          "title": "Procédure dans Visual Studio"
+        },
+        {
+          "title": "Utilisation de templates (génération automatique)"
+        }
+      ]
+    },
+    {
+      "title": "2.2.4. Notion de vues",
+      "children": [
+        {
+          "title": "Introduction aux vues Razor (.cshtml)"
+        },
+        {
+          "title": "Utilisation des HTML Helpers (@Html.ActionLink, @Html.BeginForm)"
+        },
+        {
+          "title": "Layouts (alternative aux Masterpages)"
+        }
+      ]
+    },
+    {
+      "title": "c. ViewStart",
+      "children": [
+        {
+          "title": "Fichier _ViewStart.cshtml pour définir un layout par défaut"
+        }
+      ]
+    },
+    {
+      "title": "d. Sections",
+      "children": [
+        {
+          "title": "Définition de zones de contenu personnalisables dans le layout (@RenderSection)"
+        },
+        {
+          "title": "Implémentation dans les vues (@section)"
+        }
+      ]
+    },
+    {
+      "title": "2.2.5. Mise en forme et appel des vues",
+      "children": [
+        {
+          "title": "Routage conventionnel"
+        },
+        {
+          "title": "Gestion de l'ambiguïté des routes (attributs [HttpPost])"
+        },
+        {
+          "title": "Génération de liens avec @Html.ActionLink"
+        },
+        {
+          "title": "Mise en forme avec Bootstrap"
+        }
+      ]
+    },
+    {
+      "title": "CHAPITRE III. ALGEBRE RELATIONNELLE"
+    },
+    {
+      "title": "CHAPITRE IV. LE LANGAGE SQL"
+    },
+    {
+      "title": "SERIE 2"
+    },
+    {
+      "title": "CHAPITRE V. ATELIER MICROSOFT ACCESS",
+      "children": [
+        {
+          "title": "I. PRESENTATION"
+        },
+        {
+          "title": "II. LES TABLES"
+        },
+        {
+          "title": "III. LES REQUÊTES"
+        },
+        {
+          "title": "IV. LES RELATIONS"
+        },
+        {
+          "title": "V. LES FORMULAIRES"
+        },
+        {
+          "title": "VI. LES ÉTATS"
+        },
+        {
+          "title": "VII. LES MACROS"
+        }
+      ]
+    },
+    {
+      "title": "4 Séq. 1 (3/3) : Accès aux données avec l'ORM Doctrine",
+      "children": [
+        {
+          "title": "4.1 L'ORM Doctrine"
+        },
+        {
+          "title": "4.3 Utiliser les classes du modèle de données"
+        }
+      ]
+    },
+    {
+      "title": "11 Séq. 7 : Contrôleurs, interactions CRUD, formulaires"
+    },
+    {
+      "title": "12 Séq. 8 : Gestion contextuelle des formulaires",
+      "children": [
+        {
+          "title": "Formulaire moderne : fusion des requêtes GET et POST"
+        },
+        {
+          "title": "Génération de CRUD : symfony console make:crud"
+        },
+        {
+          "title": "Classe gestionnaire de formulaire (Ex: TodoType)"
+        }
+      ]
+    },
+    {
+      "title": "Réplication et local repository (npm)…"
+    }
+  ]
+}

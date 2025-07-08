@@ -1,0 +1,272 @@
+{
+  "title": "Autres : titres ne correspondant pas aux mots-clés précédents (introduction, annexes, remerciements, etc.)",
+  "nodes": [
+    {
+      "title": "Sections liminaires et conclusives",
+      "children": [
+        {
+          "title": "Avant-propos",
+          "children": [
+            {
+              "title": "Objectif : Initiation à Python par l'exemple"
+            },
+            {
+              "title": "Public visé : Personnes familières avec un langage de programmation"
+            },
+            {
+              "title": "Recommandation : Utiliser le support avec un interpréteur Python"
+            }
+          ]
+        },
+        {
+          "title": "Conclusion",
+          "children": [
+            {
+              "title": "Fin du tour d'horizon du langage Python"
+            },
+            {
+              "title": "Sujets non abordés : programmation réseau, frameworks web, tests"
+            },
+            {
+              "title": "Importance de la pratique pour progresser"
+            },
+            {
+              "title": "Lutter contre le syndrome de l'imposteur"
+            }
+          ]
+        },
+        {
+          "title": "Remerciements, historique et à faire",
+          "children": [
+            {
+              "title": "Historique des versions",
+              "children": [
+                {
+                  "title": "v1.4.2 (2010): Passage à Sphinx, doctests, Sqlite3, Python 2.6"
+                },
+                {
+                  "title": "v1.3 (2007): Corrections, passage à Python 2.5"
+                },
+                {
+                  "title": "v1.1.0 (2005): Mise à jour pour Python 2.4"
+                }
+              ]
+            },
+            {
+              "title": "Roadmap (À faire)",
+              "children": [
+                {
+                  "title": "Faire un index"
+                },
+                {
+                  "title": "Améliorer les explications et ajouter des exemples"
+                },
+                {
+                  "title": "Ajouter des chapitres sur les tests, frameworks web, etc."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Présentation des auteurs et organismes",
+          "children": [
+            {
+              "title": "Jedha (école de Data Science)",
+              "children": [
+                {
+                  "title": "Auteurs : Antoine Krajnc-Rosenthal & Anaïs Armandy"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concepts de programmation et chapitres techniques",
+      "children": [
+        {
+          "title": "Interaction utilisateur-machine",
+          "children": [
+            {
+              "title": "Principe : Observateur d'événements (clavier, souris)"
+            },
+            {
+              "title": "Exemple avec Alice : Création d'événements et appel de méthodes"
+            },
+            {
+              "title": "Exercices pratiques (scènes interactives)"
+            }
+          ]
+        },
+        {
+          "title": "Structures itératives : L'instruction 'while'",
+          "children": [
+            {
+              "title": "Rappel sur la boucle `loop` (répétition N fois)"
+            },
+            {
+              "title": "Boucle `while` : Condition basée sur un booléen"
+            },
+            {
+              "title": "Gestionnaire d'événements : `while something is true`",
+              "children": [
+                {
+                  "title": "Instructions `Begin`, `During`, `End`"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Analyse numérique (extraits)",
+          "children": [
+            {
+              "title": "Calculs d'intégrales : Méthode de quadrature"
+            },
+            {
+              "title": "Résolution numérique d'équations : Dichotomie, Newton"
+            },
+            {
+              "title": "Résolution d'équations différentielles : Méthode d'Euler"
+            }
+          ]
+        },
+        {
+          "title": "Manipulation de tableaux (NumPy)",
+          "children": [
+            {
+              "title": "Création de tableaux (np.array, np.ones, np.eye)"
+            },
+            {
+              "title": "Génération de séquences (np.linspace, np.arange)"
+            },
+            {
+              "title": "Attributs (shape, rank)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Environnement et outils de développement",
+      "children": [
+        {
+          "title": "Installation de Python",
+          "children": [
+            {
+              "title": "Recommandation : Anaconda (pour le Machine Learning)"
+            },
+            {
+              "title": "Autres options : Python.org"
+            }
+          ]
+        },
+        {
+          "title": "Éditeurs et IDE",
+          "children": [
+            {
+              "title": "Jupyter Notebook : Application web pour créer et partager du code"
+            },
+            {
+              "title": "PyCharm"
+            },
+            {
+              "title": "IDLE"
+            },
+            {
+              "title": "Pyzo"
+            }
+          ]
+        },
+        {
+          "title": "Utilisation de la console (shell)",
+          "children": [
+            {
+              "title": "Navigation : cd, ls (dir sur Windows), pwd"
+            },
+            {
+              "title": "Manipulation de fichiers/dossiers : mkdir, touch, cp, mv, rm, rmdir"
+            },
+            {
+              "title": "Utilitaires : clear, sudo"
+            }
+          ]
+        },
+        {
+          "title": "Débugger un programme",
+          "children": [
+            {
+              "title": "Identifier les types d'erreurs (NameError, SyntaxError)"
+            },
+            {
+              "title": "Comprendre le message d'erreur (Traceback)"
+            },
+            {
+              "title": "Utiliser les ressources en ligne (documentation, Stack Overflow)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Licence et plans de cours",
+      "children": [
+        {
+          "title": "Licence GNU Free Documentation (FDL)",
+          "children": [
+            {
+              "title": "Autorise la copie, distribution et modification sous conditions"
+            },
+            {
+              "title": "Conditions de modification : préserver l'historique, les copyrights, la licence, etc."
+            }
+          ]
+        },
+        {
+          "title": "Exemples de plans de cours",
+          "children": [
+            {
+              "title": "Cours de Python pour la bio-informatique",
+              "children": [
+                {
+                  "title": "Bases du langage"
+                },
+                {
+                  "title": "Manipulation de données (fichiers, dictionnaires)"
+                },
+                {
+                  "title": "Modules spécialisés (NumPy, Biopython, Matplotlib)"
+                },
+                {
+                  "title": "Programmation Orientée Objet"
+                }
+              ]
+            },
+            {
+              "title": "Cours d'informatique (MPSI)",
+              "children": [
+                {
+                  "title": "Bases de Python"
+                },
+                {
+                  "title": "Matériel et logiciels"
+                },
+                {
+                  "title": "Algorithmique et complexité"
+                },
+                {
+                  "title": "Analyse numérique"
+                },
+                {
+                  "title": "Bases de données"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

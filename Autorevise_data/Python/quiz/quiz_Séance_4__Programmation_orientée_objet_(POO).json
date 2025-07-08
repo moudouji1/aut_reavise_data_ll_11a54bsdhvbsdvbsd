@@ -1,0 +1,93 @@
+{
+  "title": "Séance 4 : Programmation orientée objet (POO)",
+  "questions": [
+    {
+      "question": "En programmation orientée objet, quelle est la relation entre une \"classe\" et une \"instance\" ?",
+      "options": [
+        "Une classe est une copie d'une instance.",
+        "Une classe est le \"moule\" et une instance est l'objet créé à partir de ce moule.",
+        "Une instance est un ensemble de plusieurs classes.",
+        "Classe et instance sont des termes interchangeables pour désigner un objet."
+      ],
+      "answer": "Une classe est le \"moule\" et une instance est l'objet créé à partir de ce moule.",
+      "explanation": "Le texte explique que \"La classe est en quelque sorte le moule, et l'instance est l'objet que vous fabriquez avec le moule.\" Chaque fois que l'on incorpore un objet dans le monde, on crée une instance de classe."
+    },
+    {
+      "question": "Quel est le principal avantage de l'héritage, illustré par la création de la classe `SuperIceSkater` ?",
+      "options": [
+        "Il rend le programme plus sécurisé en cachant le code des classes parentes.",
+        "Il permet de créer une nouvelle classe qui bénéficie des méthodes de sa classe parente, en plus de ses propres nouvelles méthodes.",
+        "Il permet de combiner plusieurs classes en une seule super-classe.",
+        "Il permet de réduire la taille du programme en supprimant du code inutile."
+      ],
+      "answer": "Il permet de créer une nouvelle classe qui bénéficie des méthodes de sa classe parente, en plus de ses propres nouvelles méthodes.",
+      "explanation": "Le texte indique que \"la classe SuperIceSkater hérite des méthodes, des attributs... de la classe IceSkater\" et bénéficie aussi des \"nouvelles méthodes que nous venons de créer (patinage et toupie)\"."
+    },
+    {
+      "question": "Dans le contexte d'Alice, quelle est la différence entre une \"world-level method\" et une \"class-level method\" ?",
+      "options": [
+        "Une \"world-level method\" ne peut pas avoir de paramètres, contrairement à une \"class-level method\".",
+        "Une \"class-level method\" est spécifique à une seule classe, tandis qu'une \"world-level method\" peut concerner plusieurs classes différentes.",
+        "Une \"world-level method\" est toujours plus rapide qu'une \"class-level method\".",
+        "Seules les \"class-level methods\" peuvent être créées par l'utilisateur."
+      ],
+      "answer": "Une \"class-level method\" est spécifique à une seule classe, tandis qu'une \"world-level method\" peut concerner plusieurs classes différentes.",
+      "explanation": "Le texte précise qu'une \"class-level method... ne peut être utilisée que par une seule classe\", alors que les \"world-level methods\" sont créées quand une méthode \"concerne 2 classes différentes\"."
+    },
+    {
+      "question": "Pourquoi est-il utile d'utiliser des paramètres dans une méthode, comme dans l'exemple de la méthode `identification` ?",
+      "options": [
+        "Pour rendre la méthode réutilisable avec différentes instances et valeurs, évitant ainsi de réécrire le même code.",
+        "Pour augmenter la complexité et la sécurité de la méthode.",
+        "Pour limiter le nombre d'instances pouvant utiliser la méthode.",
+        "Pour forcer la méthode à toujours s'exécuter de la même manière."
+      ],
+      "answer": "Pour rendre la méthode réutilisable avec différentes instances et valeurs, évitant ainsi de réécrire le même code.",
+      "explanation": "L'utilisation de paramètres comme \"personnage\" et \"nom\" a permis d'écrire une seule méthode `identification` qui fonctionne pour Robert et Gertrude, au lieu de devoir \"tout réécrire pour si peu\"."
+    },
+    {
+      "question": "Quel est le rôle de la méthode spéciale `__init__()` dans une classe Python ?",
+      "options": [
+        "C'est une méthode qui supprime une instance de la classe.",
+        "C'est le constructeur, appelé lors de la création d'une instance pour initialiser ses attributs.",
+        "C'est une méthode qui affiche les informations de l'objet sous forme de chaîne de caractères.",
+        "C'est une méthode qui doit être appelée manuellement juste après la création d'une instance."
+      ],
+      "answer": "C'est le constructeur, appelé lors de la création d'une instance pour initialiser ses attributs.",
+      "explanation": "Le texte explique que la fonction `__init__()` \"est celle qui va initialiser votre classe lorsque vous créez une instance\"."
+    },
+    {
+      "question": "Dans une méthode de classe en Python, que représente le paramètre `self` ?",
+      "options": [
+        "Il représente la classe elle-même.",
+        "Il représente l'instance courante sur laquelle la méthode est appelée.",
+        "C'est un paramètre optionnel qui peut être omis dans toutes les méthodes.",
+        "Il représente une variable globale accessible par toutes les instances de la classe."
+      ],
+      "answer": "Il représente l'instance courante sur laquelle la méthode est appelée.",
+      "explanation": "Le texte précise que \"chaque méthode dans une classe prend au moins un argument qui est l'instance. C'est pour cela que nous devons au moins mettre self dans une classe\"."
+    },
+    {
+      "question": "Quel risque y a-t-il à utiliser le nom d'une instance spécifique (par exemple, `penguin`) dans le code d'une `class-level-method` ?",
+      "options": [
+        "L'instance `penguin` ne pourra plus être modifiée.",
+        "Le programme s'exécutera beaucoup plus lentement.",
+        "La méthode ne sera pas réutilisable dans un autre contexte où l'instance `penguin` n'existe pas, provoquant une erreur.",
+        "Cela consommera une quantité excessive de mémoire vive."
+      ],
+      "answer": "La méthode ne sera pas réutilisable dans un autre contexte où l'instance `penguin` n'existe pas, provoquant une erreur.",
+      "explanation": "Le texte avertit que si on utilise cette méthode dans un nouveau programme, Alice renverra une erreur : \"'penguin, connaît pas !'\". La solution est d'utiliser un paramètre de type objet."
+    },
+    {
+      "question": "Lequel de ces concepts N'EST PAS l'un des quatre principes fondamentaux de la Programmation Orientée Objet (POO) mentionnés dans le texte ?",
+      "options": [
+        "Encapsulation",
+        "Héritage",
+        "Instanciation",
+        "Polymorphisme"
+      ],
+      "answer": "Instanciation",
+      "explanation": "Le texte liste explicitement les quatre principes fondamentaux de la POO : Encapsulation, Abstraction, Héritage et Polymorphisme. L'instanciation est le processus de création d'un objet à partir d'une classe, mais n'est pas considéré comme l'un des quatre piliers."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Séance 4 : Base de données avec Node.js, Connexion à une base via Mongoose",
+  "questions": [
+    {
+      "question": "Quelle est la principale caractéristique de MongoDB mentionnée dans le document ?",
+      "options": [
+        "C'est une base de données relationnelle écrite en Java.",
+        "C'est un système de gestion de bases de données orienté documents.",
+        "C'est un serveur de dictionnaire distant basé sur le principe clef-valeur.",
+        "C'est une base de données légère stockée dans un simple fichier."
+      ],
+      "answer": "C'est un système de gestion de bases de données orienté documents.",
+      "explanation": "Le document précise que MongoDB est un système de gestion de bases de données orienté documents, faisant partie du mouvement NoSQL."
+    },
+    {
+      "question": "Quel est le rôle principal de Mongoose lorsqu'il est utilisé avec Node.js et MongoDB ?",
+      "options": [
+        "Gérer les processus Node.js en production.",
+        "Servir de serveur web pour l'application.",
+        "Fournir une solution basée sur des schémas pour modéliser les données de l'application.",
+        "Optimiser les requêtes SQL pour une meilleure performance."
+      ],
+      "answer": "Fournir une solution basée sur des schémas pour modéliser les données de l'application.",
+      "explanation": "Le contenu indique que Mongoose est utilisé avec MongoDB pour réaliser les opérations CRUD (Create, Read, Update, Delete) et les associations, ce qui correspond à un outil de modélisation de données (ODM)."
+    },
+    {
+      "question": "Qu'est-ce que Redis et sur quel type de stockage de données repose-t-il ?",
+      "options": [
+        "REmote DIsc Server / Orienté document",
+        "REmote DIctionary Server / Clef-valeur",
+        "REliable DIstributed System / Relationnel",
+        "REstful DIctionary Service / Orienté colonne"
+      ],
+      "answer": "REmote DIctionary Server / Clef-valeur",
+      "explanation": "Le texte définit Redis comme 'REmote DIctionary Server' et précise que c'est un système de gestion de bases de données 'clef-valeur' à très hautes performances."
+    },
+    {
+      "question": "Quelle est la fonction principale de PM2 dans un environnement Node.js ?",
+      "options": [
+        "C'est un framework pour construire des interfaces utilisateur.",
+        "C'est un gestionnaire de processus pour garder les applications vivantes et les recharger sans interruption.",
+        "C'est une bibliothèque pour la communication temps réel via WebSockets.",
+        "C'est un outil pour interroger les bases de données SQL."
+      ],
+      "answer": "C'est un gestionnaire de processus pour garder les applications vivantes et les recharger sans interruption.",
+      "explanation": "PM2 est décrit comme un gestionnaire de processus de production pour Node.js qui permet de garder les applications vivantes, de les redémarrer en cas de problème et de les recharger à chaud."
+    },
+    {
+      "question": "Dans le projet 'ChatWithMe', que se passe-t-il immédiatement après qu'un utilisateur rejoint une 'room' ?",
+      "options": [
+        "Le serveur demande à l'utilisateur de changer de nom.",
+        "La 'room' envoie toutes ses informations au nouvel utilisateur et avertit les autres de son arrivée.",
+        "L'utilisateur reçoit la liste de toutes les 'rooms' disponibles sur le serveur.",
+        "Le serveur déconnecte l'utilisateur pour vérifier son identité."
+      ],
+      "answer": "La 'room' envoie toutes ses informations au nouvel utilisateur et avertit les autres de son arrivée.",
+      "explanation": "Le document indique que lorsqu'un utilisateur rejoint une 'room', celle-ci avertit tous ses utilisateurs et transmet toutes ses informations au nouvel arrivant."
+    },
+    {
+      "question": "Selon le document, quelle est une limitation de PM2 lorsqu'il est utilisé en 'cluster mode' ?",
+      "options": [
+        "Il ne peut pas gérer les requêtes HTTP POST.",
+        "Il est incompatible avec les bases de données MongoDB.",
+        "Il ne supporte pas nativement socket.io car il utilise le module cluster natif.",
+        "Il ne peut pas gérer plus de deux processus simultanément."
+      ],
+      "answer": "Il ne supporte pas nativement socket.io car il utilise le module cluster natif.",
+      "explanation": "Le texte mentionne explicitement que PM2 utilise le module natif pour les clusters et, par conséquent, ne supporte pas socket.io dans ce mode sans configuration additionnelle."
+    },
+    {
+      "question": "Quel est l'objectif principal de la règle d' 'indépendance à la localisation' pour un SGBD réparti ?",
+      "options": [
+        "S'assurer que tous les serveurs de la base de données sont dans le même pays.",
+        "Permettre de changer la localisation physique des données sans avoir à modifier les programmes applicatifs.",
+        "Forcer les applications à spécifier l'emplacement exact de chaque donnée.",
+        "Rendre la base de données accessible uniquement depuis le réseau local."
+      ],
+      "answer": "Permettre de changer la localisation physique des données sans avoir à modifier les programmes applicatifs.",
+      "explanation": "Le texte définit cet objectif comme le plus important, permettant une évolution des règles de localisation sans impact sur l'application qui accède aux données."
+    },
+    {
+      "question": "Comment le framework ASP.NET MVC, via le routage conventionnel, interprète-t-il l'URL '/Products/List' ?",
+      "options": [
+        "Il recherche un fichier nommé 'Products/List.html'.",
+        "Il appelle la méthode 'Products' du contrôleur 'ListController'.",
+        "Il appelle la méthode 'List' du contrôleur 'ProductsController'.",
+        "Il recherche une page nommée 'List' dans un dossier nommé 'Products'."
+      ],
+      "answer": "Il appelle la méthode 'List' du contrôleur 'ProductsController'.",
+      "explanation": "Le modèle de routage par défaut est '{controller}/{action}/{id?}'. Pour l'URL '/Products/List', 'Products' est le contrôleur et 'List' est l'action (la méthode à appeler)."
+    }
+  ]
+}

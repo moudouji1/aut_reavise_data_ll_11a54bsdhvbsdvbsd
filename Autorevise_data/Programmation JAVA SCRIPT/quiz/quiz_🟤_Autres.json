@@ -1,0 +1,93 @@
+{
+  "title": "Autres",
+  "questions": [
+    {
+      "question": "Quelle est la principale différence entre un langage de script interprété et un langage compilé ?",
+      "options": [
+        "Un langage interprété est toujours plus rapide qu'un langage compilé.",
+        "Un langage compilé est traduit en code machine ligne par ligne pendant l'exécution.",
+        "Un langage interprété est traduit en code machine ligne par ligne pendant l'exécution.",
+        "Seuls les langages compilés peuvent être utilisés pour le développement web."
+      ],
+      "answer": "Un langage interprété est traduit en code machine ligne par ligne pendant l'exécution.",
+      "explanation": "Un interpréteur convertit le code source en code machine instruction par instruction au moment de l'exécution, tandis qu'un compilateur traduit l'ensemble du programme avant son exécution."
+    },
+    {
+      "question": "Dans l'architecture client/serveur, quel est le rôle du DNS ?",
+      "options": [
+        "Afficher la page HTML dans le navigateur.",
+        "Envoyer une requête HTTP au serveur web.",
+        "Stocker les cookies de l'utilisateur.",
+        "Traduire un nom de domaine en adresse IP."
+      ],
+      "answer": "Traduire un nom de domaine en adresse IP.",
+      "explanation": "Le DNS (Domain Name System) agit comme un annuaire pour Internet, en associant les noms de domaine lisibles par l'homme (ex: www.google.com) aux adresses IP des serveurs correspondants."
+    },
+    {
+      "question": "Pourquoi la bibliothèque React utilise-t-elle l'attribut `className` au lieu de `class` en JSX ?",
+      "options": [
+        "Pour des raisons de performance.",
+        "C'est une convention pour mieux se distinguer des classes CSS.",
+        "`class` est un mot-clé réservé en JavaScript.",
+        "Pour améliorer l'accessibilité des composants."
+      ],
+      "answer": "`class` est un mot-clé réservé en JavaScript.",
+      "explanation": "JSX est une extension de JavaScript. Comme `class` est un mot-clé utilisé pour définir des classes en JavaScript, React utilise `className` pour éviter les conflits de syntaxe."
+    },
+    {
+      "question": "Quel framework, géré par Google, utilise TypeScript comme langage principal pour construire des applications client ?",
+      "options": [
+        "React",
+        "Angular",
+        "Vue.js",
+        "jQuery"
+      ],
+      "answer": "Angular",
+      "explanation": "Le document mentionne qu'Angular est géré par Google et permet de construire des applications en HTML, CSS et TypeScript, qui est un sur-ensemble de JavaScript."
+    },
+    {
+      "question": "Quel outil de monitoring pour les applications Node.js est mentionné dans la section 'Bonus' de la formation ?",
+      "options": [
+        "Docker",
+        "Webpack",
+        "PM2",
+        "Nginx"
+      ],
+      "answer": "PM2",
+      "explanation": "Le plan de la formation NodeJS, avancé liste explicitement dans la section Bonus : 'PM2, le monitoring'."
+    },
+    {
+      "question": "Quelle méthode HTTP est généralement utilisée pour créer une nouvelle ressource sur le serveur, comme l'envoi des données d'un formulaire d'inscription ?",
+      "options": [
+        "GET",
+        "HEAD",
+        "POST",
+        "DELETE"
+      ],
+      "answer": "POST",
+      "explanation": "La méthode POST est utilisée pour envoyer une entité vers une ressource spécifique, entraînant souvent un changement d'état ou la création d'une nouvelle ressource sur le serveur."
+    },
+    {
+      "question": "Qui est le créateur du framework JavaScript Vue.js ?",
+      "options": [
+        "Brendan Eich",
+        "Evan You",
+        "Rasmus Lerdorf",
+        "Lachlan Miller"
+      ],
+      "answer": "Evan You",
+      "explanation": "Le texte d'introduction sur Vue.js indique clairement que le framework a été créé par Evan You après avoir travaillé chez Google avec Angular."
+    },
+    {
+      "question": "Dans un composant de classe React, à quel moment du cycle de vie est-il recommandé d'effectuer des appels AJAX pour récupérer des données ?",
+      "options": [
+        "render()",
+        "constructor()",
+        "componentWillUnmount()",
+        "componentDidMount()"
+      ],
+      "answer": "componentDidMount()",
+      "explanation": "Il est conseillé d'effectuer les appels réseau dans `componentDidMount()`. Cela garantit que le composant est déjà monté dans le DOM avant de tenter de mettre à jour son état avec les données reçues."
+    }
+  ]
+}

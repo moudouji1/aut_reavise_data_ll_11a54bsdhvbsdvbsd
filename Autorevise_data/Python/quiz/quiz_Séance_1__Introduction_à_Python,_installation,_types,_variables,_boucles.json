@@ -1,0 +1,93 @@
+{
+  "title": "Séance 1 : Introduction à Python, installation, types, variables, boucles",
+  "questions": [
+    {
+      "question": "Qui est le créateur du langage de programmation Python ?",
+      "options": [
+        "Linus Torvalds",
+        "Guido van Rossum",
+        "James Gosling",
+        "Dennis Ritchie"
+      ],
+      "answer": "Guido van Rossum",
+      "explanation": "Le document mentionne à plusieurs reprises que Python a été créé par Guido van Rossum en 1989."
+    },
+    {
+      "question": "Quelle est une caractéristique fondamentale du langage Python ?",
+      "options": [
+        "C'est un langage principalement compilé",
+        "C'est un langage interprété",
+        "Il requiert une déclaration de type explicite pour chaque variable",
+        "Il est uniquement utilisé pour le développement web"
+      ],
+      "answer": "C'est un langage interprété",
+      "explanation": "Python est un langage interprété, ce qui signifie que le code est exécuté ligne par ligne par un interpréteur, sans étape de compilation préalable."
+    },
+    {
+      "question": "En Python, comment sont délimités les blocs de code (par exemple, le corps d'une boucle ou d'une condition) ?",
+      "options": [
+        "Par des accolades {}",
+        "Par des mots-clés `begin` et `end`",
+        "Par l'indentation (le décalage vers la droite)",
+        "Par des parenthèses ()"
+      ],
+      "answer": "Par l'indentation (le décalage vers la droite)",
+      "explanation": "Python utilise l'indentation (espaces ou tabulations) pour définir la structure et les blocs de code, ce qui est une caractéristique distinctive du langage."
+    },
+    {
+      "question": "Comment déclare-t-on correctement une variable `age` avec la valeur `25` en Python ?",
+      "options": [
+        "int age = 25;",
+        "variable age = 25",
+        "age = 25",
+        "age: 25"
+      ],
+      "answer": "age = 25",
+      "explanation": "En Python, l'affectation d'une valeur à une variable se fait simplement avec le signe égal (=). Le type de la variable est déduit automatiquement."
+    },
+    {
+      "question": "Lequel de ces noms de variable est INVALIDE en Python ?",
+      "options": [
+        "mon_age",
+        "age25",
+        "_age",
+        "25age"
+      ],
+      "answer": "25age",
+      "explanation": "Les noms de variables en Python ne peuvent pas commencer par un chiffre. Ils peuvent commencer par une lettre ou un tiret bas (_)."
+    },
+    {
+      "question": "Quel est le résultat de l'exécution du code suivant : `for i in range(3): print(i)` ?",
+      "options": [
+        "1 2 3",
+        "0 1 2",
+        "0 1 2 3",
+        "1 2"
+      ],
+      "answer": "0 1 2",
+      "explanation": "La fonction `range(3)` génère une séquence de nombres de 0 jusqu'à 3 (exclu). La boucle `for` parcourt donc les valeurs 0, 1 et 2."
+    },
+    {
+      "question": "Quel type de boucle continue de s'exécuter tant qu'une condition spécifiée reste vraie ?",
+      "options": [
+        "La boucle `for`",
+        "La boucle `while`",
+        "La boucle `repeat`",
+        "La boucle `each`"
+      ],
+      "answer": "La boucle `while`",
+      "explanation": "La boucle `while` est conçue pour répéter un bloc d'instructions tant que sa condition d'évaluation est `True`."
+    },
+    {
+      "question": "Quel est le type de données de la variable `x` après l'instruction `x = 5.0` ?",
+      "options": [
+        "int",
+        "str",
+        "float",
+        "bool"
+      ],
+      "answer": "float",
+      "explanation": "Un nombre avec une partie décimale (même si c'est .0) est considéré comme un nombre à virgule flottante, ou `float` en Python."
+    }
+  ]
+}

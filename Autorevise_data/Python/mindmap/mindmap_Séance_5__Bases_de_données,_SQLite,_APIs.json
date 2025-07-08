@@ -1,0 +1,172 @@
+{
+  "title": "Séance 5 : Bases de données, SQLite, APIs",
+  "nodes": [
+    {
+      "title": "Python et la persistance de données",
+      "children": [
+        {
+          "title": "Numpy",
+          "children": [
+            {
+              "title": "Calcul matriciel",
+              "children": [
+                {
+                  "title": "Opérations de base (Somme, Produit par scalaire, Produit de Schur)"
+                },
+                {
+                  "title": "Produit matriciel: np.dot(A,B)"
+                },
+                {
+                  "title": "Fonctions: det, trace, transpose, power, inv, eig, solve"
+                }
+              ]
+            },
+            {
+              "title": "Génération aléatoire (numpy.random)",
+              "children": [
+                {
+                  "title": "npr.randint()"
+                },
+                {
+                  "title": "npr.random()"
+                },
+                {
+                  "title": "npr.sample()"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Scipy",
+          "children": [
+            {
+              "title": "Intégration: scipy.integrate.quad()"
+            },
+            {
+              "title": "Optimisation: scipy.optimize.newton()"
+            },
+            {
+              "title": "Équations différentielles: scipy.integrate.odeint()"
+            }
+          ]
+        },
+        {
+          "title": "Matplotlib (pyplot)",
+          "children": [
+            {
+              "title": "Tracé: plt.plot(), plt.matshow()"
+            },
+            {
+              "title": "Mise en forme: plt.title(), plt.grid(), plt.legend()"
+            },
+            {
+              "title": "Sauvegarde et affichage: plt.savefig(), plt.show()"
+            }
+          ]
+        },
+        {
+          "title": "Module random",
+          "children": [
+            {
+              "title": "random.randint(a,b) (bornes incluses)"
+            },
+            {
+              "title": "sample(l,k)"
+            }
+          ]
+        },
+        {
+          "title": "Module time",
+          "children": [
+            {
+              "title": "Mesurer le temps d'exécution avec time.perf_counter()"
+            }
+          ]
+        },
+        {
+          "title": "Module sqlite3",
+          "children": [
+            {
+              "title": "Connexion à une base de données"
+            },
+            {
+              "title": "Processus: connect -> cursor -> execute -> commit -> close"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bases de données relationnelles",
+      "children": [
+        {
+          "title": "Définition : structurer et ordonner un grand nombre de données"
+        },
+        {
+          "title": "Objectif : extraire facilement des informations (requêtes)"
+        },
+        {
+          "title": "Formalisation via l'algèbre relationnelle et le langage SQL"
+        }
+      ]
+    },
+    {
+      "title": "SQL : Création d'une BDD et requêtes",
+      "children": [
+        {
+          "title": "Langage : SQL (Structured Query Language)"
+        },
+        {
+          "title": "Instructions principales",
+          "children": [
+            {
+              "title": "CREATE : créer une table"
+            },
+            {
+              "title": "INSERT : ajouter des données"
+            },
+            {
+              "title": "SELECT ... FROM ... WHERE ... : interroger la base"
+            },
+            {
+              "title": "ALTER / UPDATE : modifier la structure ou les données"
+            }
+          ]
+        },
+        {
+          "title": "Utilisation avec Python (bibliothèque sqlite3)",
+          "children": [
+            {
+              "title": "1. Créer une connexion : sqlite3.connect()"
+            },
+            {
+              "title": "2. Créer un curseur : connection.cursor()"
+            },
+            {
+              "title": "3. Exécuter une requête SQL : cur.execute()"
+            },
+            {
+              "title": "4. Récupérer les résultats (itérable de tuples)"
+            },
+            {
+              "title": "5. Valider et fermer : connection.commit(), connection.close()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pour en savoir plus",
+      "children": []
+    },
+    {
+      "title": "Annexe A",
+      "children": []
+    },
+    {
+      "title": "Quelques formats de données rencontrés en biologie",
+      "children": []
+    }
+  ]
+}

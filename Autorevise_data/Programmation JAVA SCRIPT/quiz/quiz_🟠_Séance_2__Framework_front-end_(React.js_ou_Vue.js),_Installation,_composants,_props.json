@@ -1,0 +1,93 @@
+{
+  "title": "Séance 2 : Framework front-end (React.js ou Vue.js), Installation, composants, props",
+  "questions": [
+    {
+      "question": "Quelle est la principale caractéristique d'une Single Page Application (SPA) ?",
+      "options": [
+        "Elle nécessite un rechargement complet de la page pour chaque interaction utilisateur.",
+        "Elle est exclusivement construite avec du PHP côté serveur.",
+        "Elle charge le contenu de manière dynamique sans avoir à recharger la page entière.",
+        "Elle ne peut pas communiquer avec une base de données."
+      ],
+      "answer": "Elle charge le contenu de manière dynamique sans avoir à recharger la page entière.",
+      "explanation": "Une SPA charge une seule page HTML, puis met à jour le contenu dynamiquement via JavaScript (souvent avec AJAX), ce qui offre une expérience utilisateur plus fluide et réactive, similaire à une application native."
+    },
+    {
+      "question": "Quel outil est recommandé par Facebook pour démarrer un nouveau projet React avec une configuration minimale (\"zéro configuration\") ?",
+      "options": [
+        "Babel",
+        "Webpack",
+        "npm init",
+        "create-react-app"
+      ],
+      "answer": "create-react-app",
+      "explanation": "L'outil 'create-react-app' génère un squelette d'application React avec un environnement de développement préconfiguré (Babel, Webpack, etc.), permettant aux développeurs de se concentrer sur le code plutôt que sur la configuration."
+    },
+    {
+      "question": "Qu'est-ce que le JSX dans l'écosystème React ?",
+      "options": [
+        "Une bibliothèque de gestion d'état, alternative à Redux.",
+        "Un framework CSS spécifique pour les composants React.",
+        "Une extension de la syntaxe JavaScript qui permet d'écrire du code ressemblant à du HTML.",
+        "Un nouveau standard de langage qui remplace JavaScript."
+      ],
+      "answer": "Une extension de la syntaxe JavaScript qui permet d'écrire du code ressemblant à du HTML.",
+      "explanation": "JSX (JavaScript XML) est une extension syntaxique qui permet de décrire l'interface utilisateur dans le code JavaScript de manière déclarative et familière, en utilisant une syntaxe proche du HTML."
+    },
+    {
+      "question": "Comment les données sont-elles généralement transmises d'un composant parent à un composant enfant en React ?",
+      "options": [
+        "Via l'objet 'state' du parent.",
+        "Via des appels directs de fonctions.",
+        "Via les 'props' (propriétés).",
+        "Via des variables globales."
+      ],
+      "answer": "Via les 'props' (propriétés).",
+      "explanation": "Les 'props' sont le mécanisme principal en React pour passer des données (valeurs, objets, fonctions) d'un composant parent à ses enfants. Ces données sont en lecture seule pour le composant enfant."
+    },
+    {
+      "question": "Quel est le principal avantage du DOM Virtuel utilisé par des frameworks comme React ou Vue.js ?",
+      "options": [
+        "Il garantit une meilleure sécurité contre les attaques XSS.",
+        "Il améliore les performances en minimisant les manipulations directes et coûteuses du DOM réel.",
+        "Il permet de stocker les données de l'application de façon permanente.",
+        "Il simplifie l'écriture du code CSS."
+      ],
+      "answer": "Il améliore les performances en minimisant les manipulations directes et coûteuses du DOM réel.",
+      "explanation": "Le DOM Virtuel est une copie en mémoire du DOM. Au lieu de manipuler directement le DOM du navigateur à chaque changement, le framework met à jour son DOM Virtuel, calcule les différences, et applique uniquement les changements nécessaires au DOM réel, ce qui est beaucoup plus performant."
+    },
+    {
+      "question": "Dans une architecture orientée composant (React, Vue), quel est le bloc de construction fondamental de l'interface utilisateur ?",
+      "options": [
+        "Le module",
+        "Le service",
+        "Le composant",
+        "Le contrôleur"
+      ],
+      "answer": "Le composant",
+      "explanation": "Une application React ou Vue est une arborescence de composants. Chaque composant est une pièce de l'interface réutilisable et autonome, encapsulant sa propre logique, sa structure (HTML/JSX) et son style."
+    },
+    {
+      "question": "En React, comment doit-on mettre à jour l'état (`state`) d'un composant de classe pour déclencher un nouveau rendu de l'interface ?",
+      "options": [
+        "En modifiant directement la propriété : `this.state.valeur = nouvelleValeur`",
+        "En utilisant la méthode `this.setState({ valeur: nouvelleValeur })`",
+        "En appelant la méthode `this.render()` manuellement",
+        "L'état ne peut pas être modifié dans un composant de classe."
+      ],
+      "answer": "En utilisant la méthode `this.setState({ valeur: nouvelleValeur })`",
+      "explanation": "La modification directe de `this.state` est un anti-pattern car React ne sera pas notifié du changement. `this.setState()` est la méthode à utiliser pour mettre à jour l'état et indiquer à React de planifier un nouveau rendu du composant."
+    },
+    {
+      "question": "Quelle est la principale différence entre la directive `v-if` et la directive `v-show` en Vue.js ?",
+      "options": [
+        "`v-if` ne fonctionne que sur les balises `<div>` alors que `v-show` fonctionne sur toutes.",
+        "`v-if` supprime réellement l'élément du DOM, tandis que `v-show` le masque simplement avec du CSS.",
+        "`v-show` est plus performant pour les conditions qui changent rarement.",
+        "Il n'y a aucune différence, ce sont deux alias pour la même fonctionnalité."
+      ],
+      "answer": "`v-if` supprime réellement l'élément du DOM, tandis que `v-show` le masque simplement avec du CSS.",
+      "explanation": "Avec `v-if`, si la condition est fausse, l'élément et ses composants enfants sont détruits et retirés du DOM. Avec `v-show`, l'élément reste dans le DOM mais sa propriété CSS `display` est basculée sur `none`."
+    }
+  ]
+}

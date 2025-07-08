@@ -1,0 +1,216 @@
+{
+  "title": "Séance 2 : Fonctions et manipulation des données",
+  "nodes": [
+    {
+      "title": "Bases de Python",
+      "children": [
+        {
+          "title": "Variables et types"
+        },
+        {
+          "title": "Opérateurs"
+        },
+        {
+          "title": "Structures de contrôle"
+        },
+        {
+          "title": "Entrées/Sorties (input, print)"
+        },
+        {
+          "title": "Commentaires et docstrings"
+        }
+      ]
+    },
+    {
+      "title": "Fonctions",
+      "children": [
+        {
+          "title": "Définition (def)"
+        },
+        {
+          "title": "Paramètres (positionnels, par défaut)"
+        },
+        {
+          "title": "Valeur de retour (return)"
+        },
+        {
+          "title": "Fonctions anonymes (lambda)"
+        },
+        {
+          "title": "Portée des variables (locale/globale)"
+        }
+      ]
+    },
+    {
+      "title": "Structures de Données",
+      "children": [
+        {
+          "title": "Chaînes de caractères (str)",
+          "children": [
+            {
+              "title": "Indexation et Slicing"
+            },
+            {
+              "title": "Méthodes (.upper, .lower, .split)"
+            },
+            {
+              "title": "Formatage (.format, f-string)"
+            }
+          ]
+        },
+        {
+          "title": "Listes (list)",
+          "children": [
+            {
+              "title": "Création et modification (mutable)"
+            },
+            {
+              "title": "Méthodes (.append, .extend, .pop, .sort)"
+            },
+            {
+              "title": "Listes par compréhension"
+            }
+          ]
+        },
+        {
+          "title": "Tuples (tuple)",
+          "children": [
+            {
+              "title": "Création"
+            },
+            {
+              "title": "Immuabilité"
+            }
+          ]
+        },
+        {
+          "title": "Dictionnaires (dict)",
+          "children": [
+            {
+              "title": "Paires clé-valeur"
+            },
+            {
+              "title": "Accès et modification"
+            },
+            {
+              "title": "Méthodes (.keys, .values, .items)"
+            }
+          ]
+        },
+        {
+          "title": "Ensembles (set)",
+          "children": [
+            {
+              "title": "Unicité des éléments"
+            },
+            {
+              "title": "Opérations (union, intersection)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Manipulation de Fichiers",
+      "children": [
+        {
+          "title": "Ouverture (open, with)"
+        },
+        {
+          "title": "Modes ('r', 'w', 'a')"
+        },
+        {
+          "title": "Lecture (.read, .readlines)"
+        },
+        {
+          "title": "Écriture (.write)"
+        },
+        {
+          "title": "Formats spécifiques (JSON, CSV)"
+        }
+      ]
+    },
+    {
+      "title": "Modules et Librairies",
+      "children": [
+        {
+          "title": "Importation (import, from, as)"
+        },
+        {
+          "title": "Module `re` (Expressions Régulières)",
+          "children": [
+            {
+              "title": "Recherche (match, search, findall)"
+            },
+            {
+              "title": "Substitution (sub)"
+            },
+            {
+              "title": "Découpage (split)"
+            },
+            {
+              "title": "Compilation (compile)"
+            }
+          ]
+        },
+        {
+          "title": "Module `os`",
+          "children": [
+            {
+              "title": "Manipulation de chemins (os.path)"
+            },
+            {
+              "title": "Recherche de fichiers (glob)"
+            }
+          ]
+        },
+        {
+          "title": "Module `math`"
+        },
+        {
+          "title": "Module `datetime`"
+        },
+        {
+          "title": "Module `string`"
+        }
+      ]
+    },
+    {
+      "title": "Programmation Orientée Objet (POO)",
+      "children": [
+        {
+          "title": "Classes et Objets"
+        },
+        {
+          "title": "Attributs et Méthodes"
+        },
+        {
+          "title": "Constructeur (__init__)"
+        },
+        {
+          "title": "Héritage"
+        },
+        {
+          "title": "Polymorphisme"
+        }
+      ]
+    },
+    {
+      "title": "Programmation Visuelle (Alice)",
+      "children": [
+        {
+          "title": "Fonctions (renvoient une valeur)"
+        },
+        {
+          "title": "Structures de contrôle (if/else)"
+        },
+        {
+          "title": "Booléens (vrai/faux)"
+        },
+        {
+          "title": "Boucles (Loop)"
+        }
+      ]
+    }
+  ]
+}

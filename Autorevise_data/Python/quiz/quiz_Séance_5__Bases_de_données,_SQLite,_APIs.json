@@ -1,0 +1,93 @@
+{
+  "title": "Séance 5 : Bases de données, SQLite, APIs",
+  "questions": [
+    {
+      "question": "Quelle fonction du module `sqlite3` est utilisée pour établir une connexion avec un fichier de base de données ?",
+      "options": [
+        "sqlite3.cursor()",
+        "sqlite3.open()",
+        "sqlite3.connect()",
+        "sqlite3.execute()"
+      ],
+      "answer": "sqlite3.connect()",
+      "explanation": "La fonction `sqlite3.connect('nom_base.db')` crée et retourne un objet de connexion à la base de données spécifiée."
+    },
+    {
+      "question": "Une fois la connexion et le curseur (`cur`) établis, quelle méthode est utilisée pour exécuter une commande SQL ?",
+      "options": [
+        "cur.run(\"...\")",
+        "cur.execute(\"...\")",
+        "connection.execute(\"...\")",
+        "connection.run(\"...\")"
+      ],
+      "answer": "cur.execute(\"...\")",
+      "explanation": "La méthode `execute()` de l'objet curseur est utilisée pour envoyer et exécuter des instructions SQL sur la base de données."
+    },
+    {
+      "question": "Quelle instruction SQL est utilisée pour interroger une base de données et en extraire des informations ?",
+      "options": [
+        "INSERT",
+        "CREATE",
+        "UPDATE",
+        "SELECT"
+      ],
+      "answer": "SELECT",
+      "explanation": "L'instruction `SELECT ... FROM ... WHERE ...` est la commande principale pour effectuer des requêtes et récupérer des données d'une ou plusieurs tables."
+    },
+    {
+      "question": "Après avoir exécuté des instructions qui modifient la base de données (comme `INSERT` ou `CREATE`), quelle méthode de l'objet connexion doit être appelée pour sauvegarder les changements ?",
+      "options": [
+        "connection.commit()",
+        "connection.save()",
+        "cur.commit()",
+        "connection.close()"
+      ],
+      "answer": "connection.commit()",
+      "explanation": "La méthode `connection.commit()` valide la transaction en cours, rendant les modifications permanentes dans le fichier de la base de données."
+    },
+    {
+      "question": "Quelle commande SQL permet de définir la structure d'une nouvelle table ?",
+      "options": [
+        "NEW TABLE",
+        "INSERT TABLE",
+        "CREATE TABLE",
+        "ALTER TABLE"
+      ],
+      "answer": "CREATE TABLE",
+      "explanation": "La commande `CREATE TABLE` est utilisée pour créer une nouvelle table en spécifiant son nom, ses colonnes et leurs types de données."
+    },
+    {
+      "question": "Dans la bibliothèque NumPy, comment effectuer le produit matriciel de deux tableaux `A` et `B` ?",
+      "options": [
+        "A * B",
+        "np.dot(A, B)",
+        "np.schur(A, B)",
+        "A.multiply(B)"
+      ],
+      "answer": "np.dot(A, B)",
+      "explanation": "L'opérateur `*` effectue un produit coefficient par coefficient (produit de Schur). Pour le produit matriciel, il faut utiliser `np.dot(A, B)` ou la méthode `A.dot(B)`."
+    },
+    {
+      "question": "Avec `matplotlib.pyplot` importé sous l'alias `plt`, quelle fonction finale faut-il appeler pour afficher un graphique à l'écran ?",
+      "options": [
+        "plt.render()",
+        "plt.savefig()",
+        "plt.display()",
+        "plt.show()"
+      ],
+      "answer": "plt.show()",
+      "explanation": "La fonction `plt.show()` affiche la figure qui a été préparée avec les commandes précédentes comme `plt.plot()` ou `plt.title()`."
+    },
+    {
+      "question": "Comment mesurer le temps d'exécution d'un bloc d'instructions en Python avec le module `time` ?",
+      "options": [
+        "En utilisant time.sleep() avant et après les instructions.",
+        "En appelant time.clock() une seule fois.",
+        "En enregistrant la valeur de time.perf_counter() avant et après les instructions et en calculant la différence.",
+        "En utilisant la fonction time.measure()."
+      ],
+      "answer": "En enregistrant la valeur de time.perf_counter() avant et après les instructions et en calculant la différence.",
+      "explanation": "On capture le temps avec `debut = time.perf_counter()`, on exécute le code, puis on capture le temps de fin avec `fin = time.perf_counter()`. La durée est `fin - debut`."
+    }
+  ]
+}

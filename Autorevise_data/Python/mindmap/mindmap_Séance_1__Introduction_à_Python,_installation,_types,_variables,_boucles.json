@@ -1,0 +1,288 @@
+{
+  "title": "Séance 1 : Introduction à Python, installation, types, variables, boucles",
+  "nodes": [
+    {
+      "title": "1. Introduction à Python",
+      "children": [
+        {
+          "title": "Histoire et Philosophie",
+          "children": [
+            {
+              "title": "Créateur : Guido van Rossum (1989)"
+            },
+            {
+              "title": "Langage open source, géré par la Python Software Foundation"
+            },
+            {
+              "title": "Philosophie : Le Zen de Python (`import this`)"
+            }
+          ]
+        },
+        {
+          "title": "Caractéristiques Principales",
+          "children": [
+            {
+              "title": "Langage interprété (pas de compilation explicite)"
+            },
+            {
+              "title": "Typage dynamique (pas de déclaration de type)"
+            },
+            {
+              "title": "Gestion automatique de la mémoire"
+            },
+            {
+              "title": "Multi-paradigme : Impératif, Orienté Objet, Fonctionnel"
+            },
+            {
+              "title": "Syntaxe claire et lisible (indentation)"
+            }
+          ]
+        },
+        {
+          "title": "Points Forts",
+          "children": [
+            {
+              "title": "Qualité : code évolutif et maintenable"
+            },
+            {
+              "title": "Productivité : développement rapide"
+            },
+            {
+              "title": "Portabilité : multiplateforme (Windows, macOS, Linux)"
+            },
+            {
+              "title": "Intégration : s'interface avec C, C++, Java"
+            }
+          ]
+        },
+        {
+          "title": "Domaines d'application",
+          "children": [
+            {
+              "title": "Développement web (Django, Flask)"
+            },
+            {
+              "title": "Science des données (Pandas, Numpy, Sklearn)"
+            },
+            {
+              "title": "Automatisation de tâches (scripts système)"
+            },
+            {
+              "title": "Jeux vidéo, applications de bureau, etc."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Installation et Environnement",
+      "children": [
+        {
+          "title": "Installer Python",
+          "children": [
+            {
+              "title": "Via le site officiel : python.org"
+            },
+            {
+              "title": "Via des distributions : Anaconda (populaire pour la science des données)"
+            },
+            {
+              "title": "Coexistence Python 2 et Python 3 (`python3`, `pip3`)"
+            }
+          ]
+        },
+        {
+          "title": "Environnements de Développement (IDE)",
+          "children": [
+            {
+              "title": "IDLE (fourni avec Python)"
+            },
+            {
+              "title": "PyCharm, VS Code, Spyder, Pyzo"
+            },
+            {
+              "title": "Éditeurs de texte (Atom, Sublime Text) + Terminal"
+            }
+          ]
+        },
+        {
+          "title": "Modes d'Exécution",
+          "children": [
+            {
+              "title": "Exécuter un script : `python mon_fichier.py`"
+            },
+            {
+              "title": "Mode interactif (REPL) : lancer `python` dans le terminal"
+            },
+            {
+              "title": "Notebooks : Jupyter (via Anaconda)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Variables et Types de Données",
+      "children": [
+        {
+          "title": "Variables",
+          "children": [
+            {
+              "title": "Déclaration par affectation : `ma_variable = valeur`"
+            },
+            {
+              "title": "Nommage : lettres, chiffres, underscore (_), ne commence pas par un chiffre"
+            },
+            {
+              "title": "Sensible à la casse (`age` != `Age`)"
+            },
+            {
+              "title": "Mots-clés réservés interdits (`if`, `for`, etc.)"
+            }
+          ]
+        },
+        {
+          "title": "Typage Dynamique",
+          "children": [
+            {
+              "title": "Le type est associé à la valeur, pas à la variable"
+            },
+            {
+              "title": "Une variable peut changer de type : `x = 10` (int) puis `x = 'hello'` (str)"
+            }
+          ]
+        },
+        {
+          "title": "Types Fondamentaux",
+          "children": [
+            {
+              "title": "Numériques : `int` (entier), `float` (décimal), `complex` (complexe)"
+            },
+            {
+              "title": "Texte : `str` (chaîne de caractères)"
+            },
+            {
+              "title": "Booléen : `bool` (True / False)"
+            },
+            {
+              "title": "Type Nul : `None`"
+            }
+          ]
+        },
+        {
+          "title": "Opérateurs",
+          "children": [
+            {
+              "title": "Arithmétiques : `+`, `-`, `*`, `/`, `//` (division entière), `%` (modulo), `**` (puissance)"
+            },
+            {
+              "title": "De comparaison : `==`, `!=`, `<`, `>`, `<=`, `>=`"
+            },
+            {
+              "title": "Logiques : `and`, `or`, `not`"
+            },
+            {
+              "title": "D'affectation : `=`, `+=`, `-=` etc."
+            },
+            {
+              "title": "D'identité (`is`) et d'appartenance (`in`)"
+            }
+          ]
+        },
+        {
+          "title": "Entrées et Sorties",
+          "children": [
+            {
+              "title": "Affichage : `print()`"
+            },
+            {
+              "title": "Saisie utilisateur : `input()` (renvoie toujours un `str`)"
+            }
+          ]
+        },
+        {
+          "title": "Conversion de Type (Casting)",
+          "children": [
+            {
+              "title": "`int()`: Convertit en entier"
+            },
+            {
+              "title": "`float()`: Convertit en flottant"
+            },
+            {
+              "title": "`str()`: Convertit en chaîne de caractères"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Structures de Contrôle",
+      "children": [
+        {
+          "title": "Indentation",
+          "children": [
+            {
+              "title": "Définit les blocs de code (essentiel)"
+            },
+            {
+              "title": "Convention : 4 espaces par niveau"
+            }
+          ]
+        },
+        {
+          "title": "Conditions",
+          "children": [
+            {
+              "title": "Syntaxe `if ...:`"
+            },
+            {
+              "title": "Alternative : `else:`"
+            },
+            {
+              "title": "Conditions multiples : `elif ...:`"
+            }
+          ]
+        },
+        {
+          "title": "Boucles",
+          "children": [
+            {
+              "title": "Boucle `for` (itérative)",
+              "children": [
+                {
+                  "title": "Parcourt les éléments d'une séquence : `for item in ma_liste:`"
+                },
+                {
+                  "title": "Avec `range()` pour un nombre défini d'itérations"
+                },
+                {
+                  "title": "Avec `enumerate()` pour avoir l'index et la valeur"
+                }
+              ]
+            },
+            {
+              "title": "Boucle `while` (conditionnelle)",
+              "children": [
+                {
+                  "title": "S'exécute tant qu'une condition est vraie : `while condition:`"
+                }
+              ]
+            },
+            {
+              "title": "Contrôle de boucles",
+              "children": [
+                {
+                  "title": "`break` : sort de la boucle"
+                },
+                {
+                  "title": "`continue` : passe à l'itération suivante"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

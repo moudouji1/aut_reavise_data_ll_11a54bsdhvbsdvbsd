@@ -1,0 +1,376 @@
+{
+  "title": "🟠 Séance 1 : Bases de JavaScript moderne, Syntaxe ES6, manipulation du DOM",
+  "nodes": [
+    {
+      "title": "Fondamentaux JavaScript (ES6+)",
+      "children": [
+        {
+          "title": "Syntaxe et Variables",
+          "children": [
+            {
+              "title": "Déclaration (let, const, var)"
+            },
+            {
+              "title": "Types de données (primitifs et objets)"
+            },
+            {
+              "title": "Portée (Scope) des variables : globale, locale, bloc"
+            },
+            {
+              "title": "Opérateurs (arithmétiques, affectation, comparaison, logiques)"
+            },
+            {
+              "title": "Template literals (`...`)"
+            }
+          ]
+        },
+        {
+          "title": "Structures de Contrôle",
+          "children": [
+            {
+              "title": "Conditions (if, else, switch)"
+            },
+            {
+              "title": "Boucles (for, while, for...in, for...of, forEach)"
+            }
+          ]
+        },
+        {
+          "title": "Fonctions",
+          "children": [
+            {
+              "title": "Déclaration et expression de fonction"
+            },
+            {
+              "title": "Fonctions fléchées (Arrow Functions)"
+            },
+            {
+              "title": "Paramètres et valeur de retour (return)"
+            },
+            {
+              "title": "Fonctions de première classe"
+            },
+            {
+              "title": "Closures (fermetures)"
+            }
+          ]
+        },
+        {
+          "title": "Objets",
+          "children": [
+            {
+              "title": "Création (littéraux, constructeur)"
+            },
+            {
+              "title": "Manipulation (propriétés, méthodes)"
+            },
+            {
+              "title": "Le mot-clé 'this'"
+            },
+            {
+              "title": "Prototypes et héritage"
+            },
+            {
+              "title": "Classes (syntaxe ES6)"
+            }
+          ]
+        },
+        {
+          "title": "Modules ES6",
+          "children": [
+            {
+              "title": "Export (nommé, par défaut)"
+            },
+            {
+              "title": "Import"
+            }
+          ]
+        },
+        {
+          "title": "JSON",
+          "children": [
+            {
+              "title": "Syntaxe JSON"
+            },
+            {
+              "title": "JSON.parse() (texte vers objet)"
+            },
+            {
+              "title": "JSON.stringify() (objet vers texte)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "JavaScript Asynchrone",
+      "children": [
+        {
+          "title": "Callbacks",
+          "children": [
+            {
+              "title": "Fonction de rappel"
+            },
+            {
+              "title": "Callback Hell (pyramide de l'enfer)"
+            }
+          ]
+        },
+        {
+          "title": "Promesses (Promises)",
+          "children": [
+            {
+              "title": "Concept : pending, fulfilled, rejected"
+            },
+            {
+              "title": "Création : new Promise()"
+            },
+            {
+              "title": "Consommation : .then(), .catch(), .finally()"
+            },
+            {
+              "title": "Chaînage de promesses"
+            },
+            {
+              "title": "Méthodes statiques : Promise.all(), Promise.race()"
+            }
+          ]
+        },
+        {
+          "title": "Async / Await",
+          "children": [
+            {
+              "title": "Syntaxe pour simplifier les promesses"
+            }
+          ]
+        },
+        {
+          "title": "Librairie externe : Async.js",
+          "children": [
+            {
+              "title": "Contrôle de flux : parallel, series, waterfall"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Manipulation du DOM",
+      "children": [
+        {
+          "title": "Concept du DOM",
+          "children": [
+            {
+              "title": "Structure en arbre"
+            },
+            {
+              "title": "Nœuds, parents, enfants"
+            },
+            {
+              "title": "Navigation dans le DOM"
+            }
+          ]
+        },
+        {
+          "title": "Sélection des éléments",
+          "children": [
+            {
+              "title": "getElementById()"
+            },
+            {
+              "title": "getElementsByTagName(), getElementsByClassName()"
+            },
+            {
+              "title": "querySelector(), querySelectorAll()"
+            }
+          ]
+        },
+        {
+          "title": "Modification des éléments",
+          "children": [
+            {
+              "title": "Contenu : innerHTML, textContent"
+            },
+            {
+              "title": "Attributs : setAttribute(), .src, .href"
+            },
+            {
+              "title": "Styles : element.style"
+            },
+            {
+              "title": "Classes : className, classList"
+            },
+            {
+              "title": "Création et suppression d'éléments"
+            }
+          ]
+        },
+        {
+          "title": "Gestion des Événements",
+          "children": [
+            {
+              "title": "Écouteurs d'événements : addEventListener(), onclick"
+            },
+            {
+              "title": "Types d'événements : souris, clavier, formulaire"
+            },
+            {
+              "title": "Objet Event"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "jQuery (Bibliothèque)",
+      "children": [
+        {
+          "title": "Introduction et Utilisation",
+          "children": [
+            {
+              "title": "Raccourci $()"
+            },
+            {
+              "title": "Attendre le chargement du DOM : $(document).ready()"
+            }
+          ]
+        },
+        {
+          "title": "Sélecteurs",
+          "children": [
+            {
+              "title": "Sélecteurs CSS de base (balise, #id, .classe)"
+            },
+            {
+              "title": "Sélecteurs hiérarchiques et d'attributs"
+            },
+            {
+              "title": "Filtres (:first, :last, :even, :odd, :contains)"
+            }
+          ]
+        },
+        {
+          "title": "Manipulation du DOM avec jQuery",
+          "children": [
+            {
+              "title": "Contenu : .html(), .text(), .val()"
+            },
+            {
+              "title": "Attributs : .attr()"
+            },
+            {
+              "title": "Classes : .addClass(), .removeClass(), .toggleClass()"
+            },
+            {
+              "title": "Insertion et déplacement : .append(), .prepend(), .before(), .after()"
+            }
+          ]
+        },
+        {
+          "title": "Événements et Effets",
+          "children": [
+            {
+              "title": "Gestion des événements : .on(), .click(), .hover()"
+            },
+            {
+              "title": "Animations : .hide(), .show(), .fadeIn(), .fadeOut(), .slideUp(), .slideDown(), .animate()"
+            }
+          ]
+        },
+        {
+          "title": "AJAX avec jQuery",
+          "children": [
+            {
+              "title": ".load()"
+            },
+            {
+              "title": "$.ajax(), $.get(), $.post()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Écosystème et Outils",
+      "children": [
+        {
+          "title": "Node.js et Express",
+          "children": [
+            {
+              "title": "Middleware (req, res, next)"
+            }
+          ]
+        },
+        {
+          "title": "TypeScript",
+          "children": [
+            {
+              "title": "Typage statique optionnel"
+            },
+            {
+              "title": "Interfaces, Enums, Génériques"
+            }
+          ]
+        },
+        {
+          "title": "Web Components",
+          "children": [
+            {
+              "title": "Custom Elements"
+            },
+            {
+              "title": "Shadow DOM"
+            }
+          ]
+        },
+        {
+          "title": "AJAX et API Fetch",
+          "children": [
+            {
+              "title": "Concept d'AJAX"
+            },
+            {
+              "title": "Utilisation de l'API fetch()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Bases HTML & CSS",
+      "children": [
+        {
+          "title": "HTML",
+          "children": [
+            {
+              "title": "Structure d'une page"
+            },
+            {
+              "title": "Balises principales (texte, listes, liens, images)"
+            },
+            {
+              "title": "Formulaires"
+            }
+          ]
+        },
+        {
+          "title": "CSS",
+          "children": [
+            {
+              "title": "Sélecteurs de base"
+            },
+            {
+              "title": "Box Model (marge, bordure, padding)"
+            },
+            {
+              "title": "Propriétés de style (couleur, police, alignement)"
+            },
+            {
+              "title": "Framework Bootstrap"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

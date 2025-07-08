@@ -1,0 +1,93 @@
+{
+  "title": "Séance 3 : Structures de données et algorithmes fondamentaux",
+  "questions": [
+    {
+      "question": "Quelle est la principale différence entre une liste et un tuple en Python ?",
+      "options": [
+        "Un tuple ne peut contenir que des nombres, une liste peut contenir tous les types.",
+        "Une liste est mutable (modifiable) tandis qu'un tuple est immuable (non modifiable).",
+        "L'accès aux éléments d'un tuple est plus lent que pour une liste.",
+        "Les listes utilisent des parenthèses () et les tuples des crochets []."
+      ],
+      "answer": "Une liste est mutable (modifiable) tandis qu'un tuple est immuable (non modifiable).",
+      "explanation": "La distinction fondamentale est que les listes peuvent être modifiées après leur création (ajout, suppression, modification d'éléments), alors que les tuples ne le peuvent pas, ce qui les rend 'immuables'."
+    },
+    {
+      "question": "Que se passe-t-il si on essaie d'accéder à une clé qui n'existe pas dans un dictionnaire en utilisant la notation `d[key]` ?",
+      "options": [
+        "La valeur `None` est retournée.",
+        "Une exception `KeyError` est levée.",
+        "La clé est automatiquement créée avec une valeur nulle.",
+        "Le programme retourne `False`."
+      ],
+      "answer": "Une exception `KeyError` est levée.",
+      "explanation": "L'accès direct par `d[key]` à une clé inexistante provoque une erreur `KeyError`. Pour éviter cela, on peut utiliser la méthode `d.get(key, default_value)` qui retourne une valeur par défaut si la clé n'est pas trouvée."
+    },
+    {
+      "question": "Quelle fonction est la plus idiomatique en Python pour parcourir une séquence tout en ayant accès à la fois à l'index et à la valeur de chaque élément ?",
+      "options": [
+        "range(len(sequence))",
+        "enumerate(sequence)",
+        "zip(indices, sequence)",
+        "une boucle while avec un compteur"
+      ],
+      "answer": "enumerate(sequence)",
+      "explanation": "La fonction `enumerate` est spécifiquement conçue pour cet usage. Elle retourne un itérateur de paires (index, valeur), ce qui rend le code plus lisible et 'pythonesque' que la gestion manuelle d'un index."
+    },
+    {
+      "question": "Dans la bibliothèque NumPy, quelle est la différence entre l'opérateur `*` et la fonction `np.dot()` appliqués à deux matrices A et B de mêmes dimensions ?",
+      "options": [
+        "Ils sont synonymes et effectuent tous deux le produit matriciel.",
+        "`*` effectue un produit élément par élément (produit de Schur), tandis que `np.dot()` effectue le produit matriciel.",
+        "`*` est utilisé pour la multiplication par un scalaire, `np.dot()` pour le produit matriciel.",
+        "`np.dot()` est une ancienne fonction, il faut toujours utiliser `*`."
+      ],
+      "answer": "`*` effectue un produit élément par élément (produit de Schur), tandis que `np.dot()` effectue le produit matriciel.",
+      "explanation": "C'est un point important à retenir avec NumPy : `A * B` multiplie les éléments correspondants de A et B, alors que `np.dot(A, B)` (ou `A.dot(B)`) calcule le produit matriciel standard."
+    },
+    {
+      "question": "Quelle est la principale condition pour pouvoir utiliser efficacement l'algorithme de recherche dichotomique sur un tableau ?",
+      "options": [
+        "Le tableau doit être de grande taille.",
+        "Le tableau ne doit contenir que des entiers.",
+        "Le tableau doit être trié.",
+        "Le tableau ne doit pas contenir de doublons."
+      ],
+      "answer": "Le tableau doit être trié.",
+      "explanation": "La recherche dichotomique fonctionne en divisant répétitivement l'intervalle de recherche en deux. Ce principe ne peut s'appliquer que si les éléments sont ordonnés, ce qui permet de savoir dans quelle moitié continuer la recherche."
+    },
+    {
+      "question": "Quelle est la syntaxe correcte pour créer un tuple contenant un seul élément (l'entier 1) ?",
+      "options": [
+        "(1)",
+        "[1,]",
+        "{1}",
+        "(1,)"
+      ],
+      "answer": "(1,)",
+      "explanation": "La virgule finale est essentielle. Sans elle, `(1)` est simplement interprété comme l'entier 1 entre parenthèses. La virgule indique à Python qu'il s'agit bien d'une structure de type tuple."
+    },
+    {
+      "question": "Que fait la méthode `d.items()` sur un dictionnaire `d` ?",
+      "options": [
+        "Elle retourne une liste de toutes les clés du dictionnaire.",
+        "Elle retourne une liste de toutes les valeurs du dictionnaire.",
+        "Elle retourne un objet itérable contenant des paires (clé, valeur).",
+        "Elle supprime tous les éléments du dictionnaire."
+      ],
+      "answer": "Elle retourne un objet itérable contenant des paires (clé, valeur).",
+      "explanation": "La méthode `.items()` est très utile pour itérer simultanément sur les clés et les valeurs d'un dictionnaire, car elle fournit des tuples `(clé, valeur)` pour chaque entrée."
+    },
+    {
+      "question": "Quelle est la différence entre une copie simple (`copy.copy()`) et une copie profonde (`copy.deepcopy()`) d'une liste contenant des objets mutables (comme d'autres listes) ?",
+      "options": [
+        "Il n'y a aucune différence, les deux créent une copie identique.",
+        "La copie simple duplique tous les objets, tandis que la copie profonde ne duplique que la liste de premier niveau.",
+        "La copie simple crée des références aux objets imbriqués, tandis que la copie profonde les duplique récursivement.",
+        "`copy.copy()` est plus rapide mais utilise plus de mémoire."
+      ],
+      "answer": "La copie simple crée des références aux objets imbriqués, tandis que la copie profonde les duplique récursivement.",
+      "explanation": "Une copie simple (shallow) copie la structure de premier niveau, mais les objets qu'elle contient sont des références. Modifier un objet mutable dans la copie modifiera aussi l'original. Une copie profonde (deep) crée de nouvelles instances pour tous les objets, y compris ceux imbriqués, garantissant une indépendance totale entre l'original et la copie."
+    }
+  ]
+}

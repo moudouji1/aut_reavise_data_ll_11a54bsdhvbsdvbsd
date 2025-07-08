@@ -1,0 +1,93 @@
+{
+  "title": "Séance 2 : Fonctions et manipulation des données",
+  "questions": [
+    {
+      "question": "En Python, que retourne une fonction qui ne contient pas d'instruction `return` explicite ?",
+      "options": [
+        "Elle génère une erreur.",
+        "Elle retourne 0.",
+        "Elle retourne la valeur `None`.",
+        "Elle retourne la dernière variable modifiée."
+      ],
+      "answer": "Elle retourne la valeur `None`.",
+      "explanation": "Si une fonction ne contient pas de clause `return`, la valeur `None` est retournée par défaut. Toute fonction en Python renvoie une valeur."
+    },
+    {
+      "question": "Quelle est la principale utilité de la fonction `range(start, stop, step)` en Python ?",
+      "options": [
+        "Créer une liste de nombres flottants.",
+        "Générer une séquence d'entiers pour une boucle `for`.",
+        "Choisir un nombre aléatoire dans un intervalle.",
+        "Mesurer la longueur d'une séquence."
+      ],
+      "answer": "Générer une séquence d'entiers pour une boucle `for`.",
+      "explanation": "La fonction `range` est très utilisée pour générer des séquences d'entiers, ce qui est particulièrement utile pour itérer un nombre de fois défini dans une boucle `for`."
+    },
+    {
+      "question": "Quelle méthode de chaîne de caractères permet de découper une chaîne en une liste de mots ?",
+      "options": [
+        ".join()",
+        ".strip()",
+        ".find()",
+        ".split()"
+      ],
+      "answer": ".split()",
+      "explanation": "La méthode `.split()` permet de découper une chaîne en une liste de sous-chaînes. Par défaut, le découpage se fait sur les espaces pour séparer les mots."
+    },
+    {
+      "question": "Lors de l'ouverture d'un fichier avec `open()`, que signifie le mode `'a'` ?",
+      "options": [
+        "Lecture seule (read).",
+        "Écriture en écrasant le contenu (write).",
+        "Ajout à la fin du fichier (append).",
+        "Création d'un nouveau fichier (exclusive creation)."
+      ],
+      "answer": "Ajout à la fin du fichier (append).",
+      "explanation": "Le mode `'a'` (append) ouvre un fichier pour y écrire des données à la suite du contenu existant, sans l'effacer. Si le fichier n'existe pas, il est créé."
+    },
+    {
+      "question": "Dans le module `re` de Python, quelle fonction vérifie si le *début* d'une chaîne correspond à un pattern ?",
+      "options": [
+        "re.search()",
+        "re.match()",
+        "re.findall()",
+        "re.sub()"
+      ],
+      "answer": "re.match()",
+      "explanation": "La fonction `re.match()` teste si la chaîne commence par le pattern, tandis que `re.search()` cherche une correspondance n'importe où dans la chaîne."
+    },
+    {
+      "question": "À quoi sert principalement le mot-clé `lambda` en Python ?",
+      "options": [
+        "À définir une fonction anonyme et concise.",
+        "À déclarer une variable globale.",
+        "À créer une boucle infinie.",
+        "À gérer les erreurs de type."
+      ],
+      "answer": "À définir une fonction anonyme et concise.",
+      "explanation": "Le mot-clé `lambda` permet de créer de petites fonctions anonymes sur une seule ligne. Elles sont souvent utilisées pour passer une fonction simple en argument à une autre fonction."
+    },
+    {
+      "question": "Quelle est la différence fondamentale entre une liste et un tuple en Python ?",
+      "options": [
+        "Une liste peut contenir des chaînes de caractères, mais pas un tuple.",
+        "Une liste est mutable (modifiable), alors qu'un tuple est immuable (non modifiable).",
+        "Un tuple est plus rapide pour les opérations d'ajout et de suppression.",
+        "Il n'y a aucune différence fondamentale, c'est juste une question de syntaxe."
+      ],
+      "answer": "Une liste est mutable (modifiable), alors qu'un tuple est immuable (non modifiable).",
+      "explanation": "La principale différence est la mutabilité. On peut ajouter, supprimer ou modifier des éléments dans une liste, mais une fois un tuple créé, il ne peut plus être changé."
+    },
+    {
+      "question": "Quelle fonction du module `os.path` est la plus recommandée pour assembler des chemins de fichiers de manière portable ?",
+      "options": [
+        "os.path.split()",
+        "os.path.join()",
+        "os.path.dirname()",
+        "os.path.abspath()"
+      ],
+      "answer": "os.path.join()",
+      "explanation": "La fonction `os.path.join()` assemble des chemins en utilisant le séparateur correct pour le système d'exploitation courant ('/' pour Linux/macOS, '\\' pour Windows), garantissant ainsi la portabilité du code."
+    }
+  ]
+}

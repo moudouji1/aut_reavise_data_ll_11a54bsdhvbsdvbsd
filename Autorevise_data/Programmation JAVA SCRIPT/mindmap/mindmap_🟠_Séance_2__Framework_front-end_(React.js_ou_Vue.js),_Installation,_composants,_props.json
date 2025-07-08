@@ -1,0 +1,385 @@
+{
+  "title": "🟠 Séance 2 : Framework front-end (React.js ou Vue.js), Installation, composants, props",
+  "nodes": [
+    {
+      "title": "Projet Pratique : ChatWithMe",
+      "children": [
+        {
+          "title": "Technologie : socket.io"
+        },
+        {
+          "title": "Architecture",
+          "children": [
+            {
+              "title": "Arborescence des objets et des Managers"
+            }
+          ]
+        },
+        {
+          "title": "Backend",
+          "children": [
+            {
+              "title": "Requêtes",
+              "children": [
+                {
+                  "title": "JoinRoom"
+                },
+                {
+                  "title": "QuitRoom"
+                },
+                {
+                  "title": "SetName"
+                },
+                {
+                  "title": "NewMessage"
+                }
+              ]
+            },
+            {
+              "title": "Logique de communication temps réel"
+            }
+          ]
+        },
+        {
+          "title": "Frontend"
+        }
+      ]
+    },
+    {
+      "title": "AngularJS (v1.x)",
+      "children": [
+        {
+          "title": "Démarrage et Concepts Fondamentaux",
+          "children": [
+            {
+              "title": "Initialisation (ng-app, ng-init)"
+            },
+            {
+              "title": "Data Binding ({{ }}, ng-model, ng-bind)"
+            },
+            {
+              "title": "Architecture MVC"
+            },
+            {
+              "title": "Portée ($scope, $rootScope)"
+            },
+            {
+              "title": "Modules"
+            },
+            {
+              "title": "Problèmes de Minification et Solutions"
+            }
+          ]
+        },
+        {
+          "title": "Composants & Directives",
+          "children": [
+            {
+              "title": "Composants (Angular 1.5+)"
+            },
+            {
+              "title": "Directives intégrées (ng-if, ng-for, ng-class...)"
+            },
+            {
+              "title": "Directives personnalisées"
+            }
+          ]
+        },
+        {
+          "title": "Services et Logique Asynchrone",
+          "children": [
+            {
+              "title": "Contrôleurs"
+            },
+            {
+              "title": "Services, Usines, Fournisseurs"
+            },
+            {
+              "title": "Requêtes HTTP ($http, Intercepteurs)"
+            },
+            {
+              "title": "Promesses ($q)"
+            },
+            {
+              "title": "Boucle de digestion ($digest, $watch)"
+            }
+          ]
+        },
+        {
+          "title": "Routage",
+          "children": [
+            {
+              "title": "ngRoute"
+            },
+            {
+              "title": "ui-router"
+            }
+          ]
+        },
+        {
+          "title": "Tests et Débogage",
+          "children": [
+            {
+              "title": "Tests unitaires (Jasmine, ngMock)"
+            },
+            {
+              "title": "Débogage et pièges courants"
+            }
+          ]
+        },
+        {
+          "title": "Migration vers Angular 2+"
+        }
+      ]
+    },
+    {
+      "title": "Angular (v2+)",
+      "children": [
+        {
+          "title": "Philosophie",
+          "children": [
+            {
+              "title": "Orienté composant"
+            },
+            {
+              "title": "Basé sur TypeScript et ES6"
+            }
+          ]
+        },
+        {
+          "title": "Environnement",
+          "children": [
+            {
+              "title": "Node.js + npm"
+            },
+            {
+              "title": "Angular CLI (ng new, ng generate)"
+            }
+          ]
+        },
+        {
+          "title": "Concepts de base",
+          "children": [
+            {
+              "title": "Composants (HTML, CSS, TS)"
+            },
+            {
+              "title": "Modules (@NgModule)"
+            },
+            {
+              "title": "Templates et Data Binding (Interpolation, Property/Event Binding)"
+            },
+            {
+              "title": "Directives (ngIf, ngFor, ngStyle)"
+            }
+          ]
+        },
+        {
+          "title": "Concepts avancés",
+          "children": [
+            {
+              "title": "Injection de dépendances"
+            },
+            {
+              "title": "Services"
+            },
+            {
+              "title": "Pipes"
+            },
+            {
+              "title": "Formulaires"
+            },
+            {
+              "title": "Requêtes HTTP"
+            },
+            {
+              "title": "Routage"
+            },
+            {
+              "title": "Programmation réactive (RxJS)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "React.js",
+      "children": [
+        {
+          "title": "Installation et Environnement",
+          "children": [
+            {
+              "title": "create-react-app"
+            },
+            {
+              "title": "Structure du projet"
+            },
+            {
+              "title": "React Developer Tools"
+            }
+          ]
+        },
+        {
+          "title": "JSX",
+          "children": [
+            {
+              "title": "Syntaxe (mélange HTML/JS)"
+            },
+            {
+              "title": "Expressions JavaScript avec {}"
+            },
+            {
+              "title": "Rendu conditionnel (if, ternaire, &&)"
+            }
+          ]
+        },
+        {
+          "title": "Composants",
+          "children": [
+            {
+              "title": "Composants fonctionnels vs. Classes"
+            },
+            {
+              "title": "Props (Données Parent -> Enfant)"
+            },
+            {
+              "title": "State (État local du composant)"
+            },
+            {
+              "title": "Cycle de vie"
+            }
+          ]
+        },
+        {
+          "title": "Hooks",
+          "children": [
+            {
+              "title": "useState (gestion de l'état)"
+            },
+            {
+              "title": "useEffect (effets de bord, API calls)"
+            },
+            {
+              "title": "Hooks personnalisés"
+            }
+          ]
+        },
+        {
+          "title": "Interactivité",
+          "children": [
+            {
+              "title": "Gestion des événements (onClick, onSubmit)"
+            },
+            {
+              "title": "Formulaires (champs contrôlés)"
+            },
+            {
+              "title": "Communication Enfant -> Parent (callbacks)"
+            }
+          ]
+        },
+        {
+          "title": "Concepts Avancés",
+          "children": [
+            {
+              "title": "Refs (accès au DOM)"
+            },
+            {
+              "title": "Composants d'ordre supérieur (HOC)"
+            },
+            {
+              "title": "PropTypes (validation des props)"
+            },
+            {
+              "title": "Gestion d'état avancée (Lifting State, Redux)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vue.js",
+      "children": [
+        {
+          "title": "Fondamentaux",
+          "children": [
+            {
+              "title": "Framework progressif"
+            },
+            {
+              "title": "Virtual DOM"
+            },
+            {
+              "title": "Directives (v-if, v-for, v-model, v-bind)"
+            },
+            {
+              "title": "Data Binding"
+            }
+          ]
+        },
+        {
+          "title": "Composants",
+          "children": [
+            {
+              "title": "Props (déclaration et validation)"
+            },
+            {
+              "title": "Événements personnalisés ($emit)"
+            },
+            {
+              "title": "Slots"
+            }
+          ]
+        },
+        {
+          "title": "Composition API (Vue 3)",
+          "children": [
+            {
+              "title": "setup()"
+            },
+            {
+              "title": "Reactivity API (ref, reactive, computed)"
+            },
+            {
+              "title": "Composables (logique réutilisable)"
+            }
+          ]
+        },
+        {
+          "title": "Patterns de Conception",
+          "children": [
+            {
+              "title": "Séparation des préoccupations (UI vs Logique)"
+            },
+            {
+              "title": "Renderless Components"
+            },
+            {
+              "title": "Injection de dépendances (provide/inject)"
+            },
+            {
+              "title": "Functional Core, Imperative Shell"
+            },
+            {
+              "title": "Pattern Strategy"
+            }
+          ]
+        },
+        {
+          "title": "Interactivité et Tests",
+          "children": [
+            {
+              "title": "Formulaires et validation"
+            },
+            {
+              "title": "Requêtes HTTP (axios, msw)"
+            },
+            {
+              "title": "Tests (Testing Library, Jest)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

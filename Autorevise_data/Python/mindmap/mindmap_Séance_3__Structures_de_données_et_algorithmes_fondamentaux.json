@@ -1,0 +1,397 @@
+{
+  "title": "Séance 3 : Structures de données et algorithmes fondamentaux",
+  "nodes": [
+    {
+      "title": "1. Les bases de la programmation en Python",
+      "children": [
+        {
+          "title": "Boucles",
+          "children": [
+            {
+              "title": "Boucle for (énumérée)",
+              "children": [
+                {
+                  "title": "Parcours de séquences (listes, tuples, chaînes)"
+                },
+                {
+                  "title": "Utilisation de range()"
+                },
+                {
+                  "title": "Utilisation de enumerate() pour index et valeur"
+                }
+              ]
+            },
+            {
+              "title": "Boucle while (conditionnelle)",
+              "children": [
+                {
+                  "title": "Exécution tant qu'une condition est vraie"
+                }
+              ]
+            },
+            {
+              "title": "Clauses communes : else, break, continue"
+            }
+          ]
+        },
+        {
+          "title": "Fonctions",
+          "children": [
+            {
+              "title": "Définition avec 'def'"
+            },
+            {
+              "title": "Valeur de retour (return), None par défaut"
+            },
+            {
+              "title": "Paramètres avec valeurs par défaut (optionnels)"
+            },
+            {
+              "title": "Fonctions anonymes (lambda)"
+            }
+          ]
+        },
+        {
+          "title": "Documentation du code",
+          "children": [
+            {
+              "title": "Commentaires avec '#''"
+            },
+            {
+              "title": "Docstrings avec '\"\"\"' pour l'auto-documentation (help(), __doc__)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Concepts Fondamentaux",
+      "children": [
+        {
+          "title": "Type de Données Abstrait (TDA)",
+          "children": [
+            {
+              "title": "Définition : Ensemble de données + Opérations"
+            },
+            {
+              "title": "Indépendant de l'implémentation"
+            }
+          ]
+        },
+        {
+          "title": "Objets Mutables vs. Immuables",
+          "children": [
+            {
+              "title": "Immuables : int, float, str, tuple, frozenset"
+            },
+            {
+              "title": "Mutables : list, dict, set"
+            }
+          ]
+        },
+        {
+          "title": "Copies d'objets (module 'copy')",
+          "children": [
+            {
+              "title": "Copie superficielle (shallow copy)"
+            },
+            {
+              "title": "Copie profonde (deep copy)"
+            }
+          ]
+        },
+        {
+          "title": "Algorithmes Récursifs",
+          "children": [
+            {
+              "title": "Principe : cas de base + appel récursif sur un problème réduit"
+            },
+            {
+              "title": "Exemples : factorielle, tri fusion"
+            }
+          ]
+        },
+        {
+          "title": "Sequence Unpacking (Dépaquetage)"
+        }
+      ]
+    },
+    {
+      "title": "3. Structures de Données Linéaires",
+      "children": [
+        {
+          "title": "Listes (list)",
+          "children": [
+            {
+              "title": "Caractéristiques : mutable, ordonnée"
+            },
+            {
+              "title": "Opérations : accès par index, slicing, del"
+            }
+          ]
+        },
+        {
+          "title": "Tuples (tuple)",
+          "children": [
+            {
+              "title": "Caractéristiques : immuable, ordonné"
+            },
+            {
+              "title": "Syntaxe : la virgule est essentielle pour un seul élément (1,)"
+            }
+          ]
+        },
+        {
+          "title": "Piles (Stack)",
+          "children": [
+            {
+              "title": "Principe : LIFO (Dernier Entré, Premier Sorti)"
+            },
+            {
+              "title": "Opérations : push (empiler), pop (dépiler)"
+            }
+          ]
+        },
+        {
+          "title": "Files (Queue)",
+          "children": [
+            {
+              "title": "Principe : FIFO (Premier Entré, Premier Sorti)"
+            },
+            {
+              "title": "Opérations : enqueue (enfiler), dequeue (défiler)"
+            }
+          ]
+        },
+        {
+          "title": "Listes Chaînées",
+          "children": [
+            {
+              "title": "Principe : Nœuds liés par des pointeurs"
+            },
+            {
+              "title": "Types : Simplement ou doublement chaînée"
+            },
+            {
+              "title": "Avantages : taille dynamique, insertion/suppression efficaces"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Structures de Données Associatives",
+      "children": [
+        {
+          "title": "Dictionnaires (dict)",
+          "children": [
+            {
+              "title": "Principe : Paires clé-valeur"
+            },
+            {
+              "title": "Clés : doivent être immuables (hashables)"
+            },
+            {
+              "title": "Opérations",
+              "children": [
+                {
+                  "title": "Accès : d[key] ou d.get(key)"
+                },
+                {
+                  "title": "Ajout/Modification : d[key] = value, .update()"
+                },
+                {
+                  "title": "Suppression : del d[key], .pop()"
+                },
+                {
+                  "title": "Itération : .keys(), .values(), .items()"
+                }
+              ]
+            },
+            {
+              "title": "collections.defaultdict"
+            }
+          ]
+        },
+        {
+          "title": "Ensembles (set)",
+          "children": [
+            {
+              "title": "Principe : Collection d'éléments uniques et non ordonnés"
+            },
+            {
+              "title": "Éléments : doivent être immuables (hashables)"
+            },
+            {
+              "title": "Opérations ensemblistes",
+              "children": [
+                {
+                  "title": "Union (|), Intersection (&)"
+                },
+                {
+                  "title": "Différence (-), Différence symétrique (^)"
+                }
+              ]
+            },
+            {
+              "title": "frozenset : version immuable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Structures de Données Arborescentes",
+      "children": [
+        {
+          "title": "Arbres",
+          "children": [
+            {
+              "title": "Terminologie : racine, nœud, feuille, père, fils, hauteur, profondeur"
+            },
+            {
+              "title": "Arbres Binaires",
+              "children": [
+                {
+                  "title": "Arbre Binaire de Recherche (ABR)"
+                },
+                {
+                  "title": "Arbre Binaire Équilibré"
+                }
+              ]
+            },
+            {
+              "title": "Parcours",
+              "children": [
+                {
+                  "title": "Profondeur : Pré-ordre (NGD), In-ordre (GND), Post-ordre (GDN)"
+                },
+                {
+                  "title": "Largeur (BFS)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "6. Graphes",
+      "children": [
+        {
+          "title": "Définition : Ensemble de sommets et d'arêtes (ou arcs)"
+        },
+        {
+          "title": "Types : Orienté/Non-orienté, Pondéré/Non-pondéré"
+        },
+        {
+          "title": "Représentation : Matrice d'adjacence"
+        },
+        {
+          "title": "Algorithmes de parcours",
+          "children": [
+            {
+              "title": "Parcours en Profondeur (DFS)"
+            },
+            {
+              "title": "Parcours en Largeur (BFS)"
+            }
+          ]
+        },
+        {
+          "title": "Problème du plus court chemin (Dijkstra)"
+        }
+      ]
+    },
+    {
+      "title": "7. Algorithmique",
+      "children": [
+        {
+          "title": "Analyse d'algorithmes",
+          "children": [
+            {
+              "title": "Critères : Correction, Terminaison, Efficacité"
+            },
+            {
+              "title": "Complexité (Notation Grand-O) : temps et espace"
+            }
+          ]
+        },
+        {
+          "title": "Algorithmes de Tri",
+          "children": [
+            {
+              "title": "Tri par insertion (O(n²))"
+            },
+            {
+              "title": "Tri à bulles, par sélection"
+            },
+            {
+              "title": "Tri par fusion (O(n log n)) - Diviser pour régner"
+            }
+          ]
+        },
+        {
+          "title": "Algorithmes de Recherche",
+          "children": [
+            {
+              "title": "Recherche séquentielle (O(n))"
+            },
+            {
+              "title": "Recherche dichotomique (O(log n)) - sur données triées"
+            }
+          ]
+        },
+        {
+          "title": "Hachage (Hashing)",
+          "children": [
+            {
+              "title": "Principe : fonction de hachage, table de hachage"
+            },
+            {
+              "title": "Objectif : recherche en O(1) en moyenne"
+            },
+            {
+              "title": "Gestion des collisions (ex: chaînage)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "8. Modules et Applications",
+      "children": [
+        {
+          "title": "NumPy",
+          "children": [
+            {
+              "title": "Création de tableaux (arrays) : np.array, np.zeros, np.ones, etc."
+            },
+            {
+              "title": "Opérations matricielles : np.dot"
+            }
+          ]
+        },
+        {
+          "title": "Turtle",
+          "children": [
+            {
+              "title": "Module de dessin graphique simple"
+            }
+          ]
+        },
+        {
+          "title": "Introduction au Machine Learning",
+          "children": [
+            {
+              "title": "Apprentissage Supervisé (Régression, Classification)"
+            },
+            {
+              "title": "Apprentissage Non-Supervisé"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

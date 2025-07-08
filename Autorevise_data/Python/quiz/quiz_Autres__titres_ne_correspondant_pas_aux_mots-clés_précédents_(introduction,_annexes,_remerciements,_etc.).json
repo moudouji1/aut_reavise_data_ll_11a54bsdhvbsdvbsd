@@ -1,0 +1,93 @@
+{
+  "title": "Autres : titres ne correspondant pas aux mots-clés précédents (introduction, annexes, remerciements, etc.)",
+  "questions": [
+    {
+      "question": "Quel est le public cible du support de cours de Raphael MARVIE sur Python ?",
+      "options": [
+        "Les débutants complets sans aucune connaissance en programmation.",
+        "Les personnes familières avec au moins un langage de programmation orienté objet.",
+        "Les experts en programmation réseau avec Python.",
+        "Les étudiants apprenant XML pour la première fois."
+      ],
+      "answer": "Les personnes familières avec au moins un langage de programmation orienté objet.",
+      "explanation": "L'avant-propos précise que le support est destiné à un public 'étant familier avec au moins un langage de programmation, si possible orienté objet'."
+    },
+    {
+      "question": "Selon la section 'Historique' du document de R. MARVIE, quel outil a été utilisé pour sa réalisation à partir d'avril 2010 ?",
+      "options": [
+        "Microsoft Word",
+        "Jupyter Notebook",
+        "Sphinx",
+        "Adobe InDesign"
+      ],
+      "answer": "Sphinx",
+      "explanation": "La note pour la version 1.4.2 (avril 2010) indique : 'Le document est maintenant réalisé avec Sphinx...'"
+    },
+    {
+      "question": "Quelle est l'une des exigences de la licence 'GNU Free Documentation License' lors de la création d'une version modifiée d'un document ?",
+      "options": [
+        "La version modifiée doit avoir exactement le même titre que l'original.",
+        "Tous les avis de copyright du document original doivent être supprimés.",
+        "La version modifiée doit être publiée sous la même licence GNU.",
+        "Il faut obligatoirement ajouter une section 'Endorsements' (Avenants)."
+      ],
+      "answer": "La version modifiée doit être publiée sous la même licence GNU.",
+      "explanation": "La section 11.5 'Modifications' stipule que la version modifiée doit être publiée 'sous les termes de cette Licence', garantissant ainsi que les libertés sont préservées."
+    },
+    {
+      "question": "Dans le document 'Adieu Excel, bonjour Python', quel logiciel est recommandé pour installer l'ensemble des outils nécessaires au Machine Learning ?",
+      "options": [
+        "PyCharm",
+        "Jupyter Notebook",
+        "Anaconda",
+        "Sklearn"
+      ],
+      "answer": "Anaconda",
+      "explanation": "Le texte indique qu'Anaconda 'contient tous les outils et librairies dont vous avez besoin pour faire du Machine Learning' et permet de s'épargner une installation manuelle complexe."
+    },
+    {
+      "question": "Quel est le message principal transmis dans la conclusion du premier tutoriel Python ?",
+      "options": [
+        "Tous les sujets essentiels de Python ont été couverts de manière exhaustive.",
+        "La pratique est l'élément le plus important pour devenir développeur.",
+        "Le document est suffisant et remplace la documentation officielle.",
+        "Python est principalement destiné à la programmation réseau."
+      ],
+      "answer": "La pratique est l'élément le plus important pour devenir développeur.",
+      "explanation": "La conclusion insiste sur le fait que 'rien ne remplacera jamais la pratique, c'est donc en développant que l'on devient développeur'."
+    },
+    {
+      "question": "D'après les annexes sur les commandes de la console, à quoi sert la commande 'mkdir' ?",
+      "options": [
+        "À créer un nouveau fichier.",
+        "À déplacer ou renommer un fichier.",
+        "À créer un nouveau dossier.",
+        "À supprimer un dossier."
+      ],
+      "answer": "À créer un nouveau dossier.",
+      "explanation": "Le texte explicatif pour '$ mkdir' précise : 'Cette commande vous permet de créer un nouveau dossier sur votre ordinateur.'"
+    },
+    {
+      "question": "Selon la section sur le débogage, que signifie l'acronyme 'EOL' dans un message d'erreur de syntaxe ?",
+      "options": [
+        "Error On Line (Erreur sur la ligne)",
+        "End Of Logic (Fin de la logique)",
+        "External Object Link (Lien d'objet externe)",
+        "End of Line (Fin de la ligne)"
+      ],
+      "answer": "End of Line (Fin de la ligne)",
+      "explanation": "Le texte explique clairement : 'NB : EOL veut dire End of Line. Cela veut dire que Python est arrivé à la fin de la ligne alors qu'il essayait de lire une chaîne de caractère.'"
+    },
+    {
+      "question": "D'après la section 'Conclusion' du manuel de Jedha, quel phénomène est décrit comme étant ressenti par beaucoup de personnes qui se forment par des chemins de traverse ?",
+      "options": [
+        "Le syndrome de l'expert",
+        "L'effet Dunning-Kruger",
+        "Le syndrome de l'imposteur",
+        "La surcharge cognitive"
+      ],
+      "answer": "Le syndrome de l'imposteur",
+      "explanation": "La conclusion mentionne explicitement : 'Ceci s'appelle le syndrôme de l'imposteur et il est ressenti chez beaucoup de personnes qui prennent des chemins de traverse pour se former.'"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "title": "🟠 Séance 5 : Application complète",
+  "questions": [
+    {
+      "question": "Quel est le rôle principal de Keymetrics dans un projet NodeJS supervisé par PM2 ?",
+      "options": [
+        "Déployer l'application sur un serveur.",
+        "Gérer les dépendances du projet.",
+        "Afficher des statistiques et des métriques remontées par PM2.",
+        "Écrire des tests unitaires pour l'application."
+      ],
+      "answer": "Afficher des statistiques et des métriques remontées par PM2.",
+      "explanation": "Keymetrics est une plateforme de supervision qui permet de visualiser sous forme de statistiques les informations collectées par le gestionnaire de processus PM2."
+    },
+    {
+      "question": "Quelle commande permet de lier une instance PM2 à un compte Keymetrics ?",
+      "options": [
+        "pm2 start keymetrics",
+        "pm2 monitor --connect",
+        "pm2 link [public_key] [secret_key]",
+        "pm2 upload --keymetrics"
+      ],
+      "answer": "pm2 link [public_key] [secret_key]",
+      "explanation": "La commande `pm2 link` suivie des clés publique et secrète fournies par Keymetrics permet d'établir la connexion entre PM2 et la plateforme de supervision."
+    },
+    {
+      "question": "Quel module NPM est utilisé pour ajouter des sondes personnalisées (probes) qui envoient des données métiers à Keymetrics ?",
+      "options": [
+        "pm2-api",
+        "keymetrics-connector",
+        "node-monitor",
+        "pmx"
+      ],
+      "answer": "pmx",
+      "explanation": "Le module `pmx` est spécifiquement conçu pour créer des sondes (Simple metrics, Counter, Meter, Histogram) afin de remonter des informations personnalisées de l'application vers Keymetrics."
+    },
+    {
+      "question": "Parmi les types de sondes Keymetrics, lequel est utilisé pour mesurer une valeur sur une période, comme le nombre de requêtes par seconde ?",
+      "options": [
+        "Counter",
+        "Meter",
+        "Histogram",
+        "Simple metics"
+      ],
+      "answer": "Meter",
+      "explanation": "Le type de sonde « Meter » est idéal pour remonter une information en fonction du temps, par exemple un débit ou une fréquence comme le nombre de requêtes par seconde."
+    },
+    {
+      "question": "Selon le contenu, quelle est la définition d'un test unitaire ?",
+      "options": [
+        "Un test qui simule une interaction utilisateur complète avec l'application.",
+        "Un test qui vérifie que les dépendances sont correctement installées.",
+        "Un test qui vérifie qu'une petite portion de code fonctionne correctement en isolation.",
+        "Un test qui prend un 'instantané' (snapshot) du rendu d'un composant."
+      ],
+      "answer": "Un test qui vérifie qu'une petite portion de code fonctionne correctement en isolation.",
+      "explanation": "Les tests unitaires ont pour but de valider le bon fonctionnement d'une petite unité de code (composant, service, fonction) indépendamment de ses dépendances."
+    },
+    {
+      "question": "Quelle est la particularité des 'tests d'instantanés' (snapshot tests) popularisés par Jest ?",
+      "options": [
+        "Ils sont exécutés manuellement par les développeurs.",
+        "Ils comparent le rendu d'un composant à un 'instantané' précédent pour détecter des changements inattendus.",
+        "Ils ne fonctionnent que pour les bases de données.",
+        "Ils mesurent la vitesse d'exécution du code."
+      ],
+      "answer": "Ils comparent le rendu d'un composant à un 'instantané' précédent pour détecter des changements inattendus.",
+      "explanation": "Un test d'instantané (snapshot test) crée une 'photographie' du rendu d'un composant. Lors des tests suivants, il compare le nouveau rendu à l'instantané enregistré et signale toute différence."
+    },
+    {
+      "question": "Quelle technologie est mentionnée dans le résumé de la formation pour gérer la communication en temps réel avec les clients ?",
+      "options": [
+        "AJAX",
+        "REST API",
+        "GraphQL",
+        "Socket.io"
+      ],
+      "answer": "Socket.io",
+      "explanation": "La conclusion de la formation indique que Socket.io a été utilisé pour mettre en place la communication en temps réel (comme pour un chat) entre le serveur NodeJS et les clients."
+    },
+    {
+      "question": "Quel patron de conception (design pattern) est mentionné comme ayant été utilisé pour structurer un projet NodeJS ?",
+      "options": [
+        "Singleton",
+        "Factory",
+        "MVC (Modèle-Vue-Contrôleur)",
+        "Observer"
+      ],
+      "answer": "MVC (Modèle-Vue-Contrôleur)",
+      "explanation": "Le résumé de la formation précise que le développement d'un projet NodeJS en utilisant l'architecture MVC a été abordé."
+    }
+  ]
+}

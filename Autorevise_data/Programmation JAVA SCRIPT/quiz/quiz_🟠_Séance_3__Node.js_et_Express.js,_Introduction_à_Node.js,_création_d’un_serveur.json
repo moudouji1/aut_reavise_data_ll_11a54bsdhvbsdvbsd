@@ -1,0 +1,93 @@
+{
+  "title": "🟠 Séance 3 : Node.js et Express.js, Introduction à Node.js, création d’un serveur",
+  "questions": [
+    {
+      "question": "Selon le contenu, qu'est-ce qu'Express.js ?",
+      "options": [
+        "Un langage de programmation qui remplace JavaScript.",
+        "Une base de données optimisée pour Node.js.",
+        "Une infrastructure web minimaliste, souple et rapide pour Node.js.",
+        "Un outil pour installer Node.js sur un serveur."
+      ],
+      "answer": "Une infrastructure web minimaliste, souple et rapide pour Node.js.",
+      "explanation": "Le document décrit Express comme une 'infrastructure web minimaliste, souple et rapide pour Node.JS' qui fournit un ensemble de fonctionnalités pour les applications web et mobiles."
+    },
+    {
+      "question": "Quelle commande est utilisée pour créer rapidement un squelette de projet Express avec le 'Generator' ?",
+      "options": [
+        "npm init express-app",
+        "node new myapp",
+        "express myapp",
+        "npm start myapp"
+      ],
+      "answer": "express myapp",
+      "explanation": "Après avoir installé le générateur globalement (`npm install express-generator -g`), la commande `express myapp` est utilisée pour générer un nouveau projet."
+    },
+    {
+      "question": "Qu'est-ce qu'un 'middleware' dans le contexte d'Express ?",
+      "options": [
+        "Une base de données stockée au milieu du serveur.",
+        "Un fichier de configuration pour les routes.",
+        "Une fonction qui a accès aux objets de requête (req), de réponse (res) et à la fonction suivante (next).",
+        "Un type de route spécifique pour les API."
+      ],
+      "answer": "Une fonction qui a accès aux objets de requête (req), de réponse (res) et à la fonction suivante (next).",
+      "explanation": "Un middleware est une fonction qui s'exécute durant le cycle de vie d'une requête. Elle peut modifier les objets req et res, terminer le cycle ou passer le contrôle au middleware suivant avec la fonction `next()`."
+    },
+    {
+      "question": "Que se passe-t-il si une fonction middleware n'appelle pas `next()` et ne termine pas le cycle de réponse ?",
+      "options": [
+        "Le serveur renvoie automatiquement une erreur 500.",
+        "La requête reste bloquée et le client n'obtient jamais de réponse.",
+        "Le middleware suivant est appelé par défaut.",
+        "Express passe à la route suivante."
+      ],
+      "answer": "La requête reste bloquée et le client n'obtient jamais de réponse.",
+      "explanation": "Le document précise : 'Une fonction middleware doit appeler la fonction next() pour transmettre le contrôle à la fonction middleware suivante. Sinon, la demande restera bloquée.'"
+    },
+    {
+      "question": "Comment définir une route basique pour une requête GET sur le chemin '/users' en Express ?",
+      "options": [
+        "app.get('/users', handlerFunction);",
+        "app.route('/users', 'GET', handlerFunction);",
+        "app.on('GET', '/users', handlerFunction);",
+        "app.listen('/users', handlerFunction);"
+      ],
+      "answer": "app.get('/users', handlerFunction);",
+      "explanation": "La syntaxe de base pour définir une route dans Express est `app.METHOD(PATH, HANDLER)`, où METHOD est la méthode HTTP (comme `get`, `post`, etc.)."
+    },
+    {
+      "question": "Quelle méthode est utilisée pour servir des fichiers statiques (images, CSS, JavaScript) depuis un dossier 'public' ?",
+      "options": [
+        "app.files('public');",
+        "app.use(express.static('public'));",
+        "app.serveStatic('public');",
+        "app.load('public');"
+      ],
+      "answer": "app.use(express.static('public'));",
+      "explanation": "Pour servir des fichiers statiques, il faut utiliser le middleware intégré `express.static`. La syntaxe correcte est `app.use(express.static('nom_du_dossier'));`."
+    },
+    {
+      "question": "Quelle est la principale caractéristique de l'architecture de Node.js mentionnée dans le cours ?",
+      "options": [
+        "Multi-thread et synchrone.",
+        "Basée sur les événements et non-bloquante.",
+        "Exécution parallèle de plusieurs processus lourds.",
+        "Compilée en code machine avant exécution."
+      ],
+      "answer": "Basée sur les événements et non-bloquante.",
+      "explanation": "Le texte indique que 'Node.js est un environnement de développement JavaScript basé sur les évènements' et que 'aucune opération n'est bloquante', ce qui est la définition d'une architecture non-bloquante et événementielle."
+    },
+    {
+      "question": "Quelle bibliothèque est mentionnée pour la communication en temps réel, se présentant comme une amélioration du 'long polling' ?",
+      "options": [
+        "HTTP.js",
+        "Request",
+        "Axios",
+        "Socket.io"
+      ],
+      "answer": "Socket.io",
+      "explanation": "Le document présente l'historique de la communication web (polling, long polling) et introduit `Socket.io` comme la solution moderne pour la communication en temps réel s'appuyant sur les WebSockets."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "title": "🟠 Séance 1 : Bases de JavaScript moderne, Syntaxe ES6, manipulation du DOM",
+  "questions": [
+    {
+      "question": "Quel est le rôle de la fonction `next()` dans un middleware Express ?",
+      "options": [
+        "Envoyer la réponse finale au client.",
+        "Passer le contrôle à la fonction middleware suivante dans la pile.",
+        "Lire les données de la requête entrante.",
+        "Terminer l'exécution de l'application."
+      ],
+      "answer": "Passer le contrôle à la fonction middleware suivante dans la pile.",
+      "explanation": "La fonction `next()` doit être appelée pour passer le contrôle au middleware suivant. Si elle n'est pas appelée, la requête restera bloquée."
+    },
+    {
+      "question": "Qu'est-ce que le 'Callback Hell' en JavaScript ?",
+      "options": [
+        "Une situation où trop de callbacks s'exécutent en même temps, provoquant un crash.",
+        "Une structure de code avec de multiples niveaux de callbacks imbriqués, rendant le code difficile à lire et à maintenir.",
+        "Une erreur qui se produit lorsqu'une fonction de rappel n'est pas définie.",
+        "Une vulnérabilité de sécurité liée aux fonctions de rappel."
+      ],
+      "answer": "Une structure de code avec de multiples niveaux de callbacks imbriqués, rendant le code difficile à lire et à maintenir.",
+      "explanation": "Le 'Callback Hell' (ou 'Pyramid of Doom') fait référence à la structure en pyramide qui apparaît lorsque plusieurs opérations asynchrones sont enchaînées via des callbacks imbriqués, ce qui nuit à la lisibilité du code."
+    },
+    {
+      "question": "Dans le contexte des Promesses (Promises) en JavaScript, quel est l'objectif principal de la méthode `.then()` ?",
+      "options": [
+        "Définir le code qui s'exécute lors de la création d'une promesse.",
+        "Rejeter immédiatement une promesse.",
+        "Planifier l'exécution d'une fonction lorsque la promesse est résolue avec succès.",
+        "Mettre en pause l'exécution du script entier jusqu'à ce que la promesse soit résolue."
+      ],
+      "answer": "Planifier l'exécution d'une fonction lorsque la promesse est résolue avec succès.",
+      "explanation": "La méthode `.then()` est utilisée pour gérer la résolution réussie d'une promesse. Elle prend en argument une fonction qui sera exécutée avec la valeur de résolution de la promesse."
+    },
+    {
+      "question": "Comment sélectionneriez-vous un élément HTML avec l'identifiant unique `main-content` en utilisant un sélecteur CSS ?",
+      "options": [
+        ".main-content",
+        "#main-content",
+        "*main-content",
+        "element(main-content)"
+      ],
+      "answer": "#main-content",
+      "explanation": "En CSS, le symbole `#` est utilisé pour sélectionner un élément par son attribut `id`. Le symbole `.` est utilisé pour sélectionner les éléments par leur `class`."
+    },
+    {
+      "question": "Quelle méthode JavaScript est principalement utilisée pour manipuler le DOM en obtenant un élément HTML via son attribut `id` ?",
+      "options": [
+        "document.getElementsByClassName(\"elementId\")",
+        "document.querySelector(\"#elementId\")",
+        "document.getElementById(\"elementId\")",
+        "document.getElementsByTagName(\"elementId\")"
+      ],
+      "answer": "document.getElementById(\"elementId\")",
+      "explanation": "`document.getElementById(\"elementId\")` est la méthode la plus directe et classique pour sélectionner un élément unique en se basant sur son ID."
+    },
+    {
+      "question": "Quel est le but de la fonction `$(document).ready()` en jQuery ?",
+      "options": [
+        "Charger toutes les images et ressources externes de la page.",
+        "Démarrer l'exécution de la bibliothèque jQuery elle-même.",
+        "S'assurer que le code qu'elle contient ne s'exécute qu'une fois que le DOM du document est entièrement chargé.",
+        "Vérifier les erreurs de syntaxe dans le code jQuery."
+      ],
+      "answer": "S'assurer que le code qu'elle contient ne s'exécute qu'une fois que le DOM du document est entièrement chargé.",
+      "explanation": "`$(document).ready()` est un événement jQuery crucial qui attend que le DOM soit complètement chargé avant d'exécuter le code, évitant ainsi les erreurs liées à la manipulation d'éléments non encore créés."
+    },
+    {
+      "question": "Quelle est la principale différence entre la déclaration d'une variable avec `let` et `const` en ES6 ?",
+      "options": [
+        "`let` est pour les nombres et `const` pour les chaînes de caractères.",
+        "Une variable déclarée avec `let` peut être réaffectée, tandis qu'une variable `const` ne le peut pas.",
+        "`let` a une portée globale, tandis que `const` a une portée locale.",
+        "Il n'y a pas de différence fonctionnelle, elles sont interchangeables."
+      ],
+      "answer": "Une variable déclarée avec `let` peut être réaffectée, tandis qu'une variable `const` ne le peut pas.",
+      "explanation": "`const` déclare une constante, ce qui signifie que sa référence ne peut pas être réaffectée après sa déclaration initiale. `let` déclare une variable dont la valeur peut être modifiée. Toutes deux ont une portée de bloc (block scope)."
+    },
+    {
+      "question": "Quelle est la fonctionnalité principale que TypeScript ajoute à JavaScript ?",
+      "options": [
+        "Une nouvelle façon de manipuler le DOM.",
+        "Le typage statique optionnel.",
+        "Un serveur web intégré.",
+        "La capacité d'exécuter du JavaScript côté serveur."
+      ],
+      "answer": "Le typage statique optionnel.",
+      "explanation": "TypeScript est un surensemble de JavaScript, et sa contribution majeure est l'ajout de types statiques optionnels, ce qui aide à détecter les erreurs pendant le développement et à améliorer la maintenabilité du code."
+    }
+  ]
+}

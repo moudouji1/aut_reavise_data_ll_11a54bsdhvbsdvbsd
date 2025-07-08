@@ -1,0 +1,257 @@
+{
+  "title": "🟠 Séance 5 : Application complète",
+  "nodes": [
+    {
+      "title": "Keymetrics, la supervision",
+      "children": [
+        {
+          "title": "Définition",
+          "children": [
+            {
+              "title": "Affiche les statistiques remontées par PM2"
+            }
+          ]
+        },
+        {
+          "title": "Inscription"
+        },
+        {
+          "title": "Lien avec PM2"
+        },
+        {
+          "title": "Ajout de sondes"
+        }
+      ]
+    },
+    {
+      "title": "Lien avec PM2",
+      "children": [
+        {
+          "title": "Commande de liaison",
+          "children": [
+            {
+              "title": "$ pm2 link"
+            }
+          ]
+        },
+        {
+          "title": "Ajout de sondes (module pmx)",
+          "children": [
+            {
+              "title": "4 types de sondes",
+              "children": [
+                {
+                  "title": "Simple metics : remonte un nombre"
+                },
+                {
+                  "title": "Counter : incrémente/décrémente"
+                },
+                {
+                  "title": "Meter : nombre sur le temps (ex: req/s)"
+                },
+                {
+                  "title": "Histogram : réservoir de valeurs récentes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapitre 15. Tester ton application",
+      "children": [
+        {
+          "title": "Types de tests",
+          "children": [
+            {
+              "title": "Tests unitaires",
+              "children": [
+                {
+                  "title": "Teste une petite portion de code en isolation"
+                }
+              ]
+            },
+            {
+              "title": "Tests end-to-end (E2E)",
+              "children": [
+                {
+                  "title": "Émule une interaction utilisateur réelle"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tests instantanés avec Jest",
+      "children": [
+        {
+          "title": "Pyramide de tests",
+          "children": [
+            {
+              "title": "Tests unitaires (base)"
+            },
+            {
+              "title": "Tests d'intégration (milieu)"
+            },
+            {
+              "title": "Tests end-to-end (sommet)"
+            }
+          ]
+        },
+        {
+          "title": "Jest",
+          "children": [
+            {
+              "title": "Framework de test JavaScript par Facebook"
+            },
+            {
+              "title": "Intégré dans create-react-app"
+            }
+          ]
+        },
+        {
+          "title": "Tests d'instantanés (Snapshots)",
+          "children": [
+            {
+              "title": "Principe : compare le rendu actuel à un instantané sauvegardé"
+            },
+            {
+              "title": "Détecte les régressions visuelles ou structurelles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Eject (create-react-app)",
+      "children": [
+        {
+          "title": "Fonctionnalité pour exposer la configuration"
+        },
+        {
+          "title": "Principe : copie les dépendances et scripts (Webpack, Babel)"
+        },
+        {
+          "title": "Conséquence : donne un contrôle total sur l'outillage"
+        },
+        {
+          "title": "Avertissement : opération à sens unique et irréversible"
+        }
+      ]
+    },
+    {
+      "title": "Projet Vue.js : Application de suivi de documents",
+      "children": [
+        {
+          "title": "Chapter 1: Setup",
+          "children": [
+            {
+              "title": "Prérequis : Node.js & NPM"
+            },
+            {
+              "title": "Installation et utilisation de Vue CLI"
+            }
+          ]
+        },
+        {
+          "title": "Chapter 2: App Basics",
+          "children": [
+            {
+              "title": "Structure d'un projet Vue"
+            },
+            {
+              "title": "Concepts clés : Composants (.vue), props, data(), directives (v-bind, v-for)"
+            }
+          ]
+        },
+        {
+          "title": "Chapter 3: Expanding the App UI",
+          "children": [
+            {
+              "title": "Intégration de Vuetify (Material Design)"
+            },
+            {
+              "title": "Construction de l'interface avec des composants UI"
+            }
+          ]
+        },
+        {
+          "title": "Chapter 4: Finalizing the App Database",
+          "children": [
+            {
+              "title": "Utilisation de Sheetsu (Google Sheets comme BDD)"
+            },
+            {
+              "title": "Implémentation des opérations CRUD (Create, Read, Update, Delete)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Travaux Pratiques (TP)",
+      "children": [
+        {
+          "title": "TP : la todo list (Node.js)",
+          "children": [
+            {
+              "title": "Objectif : Créer une liste de tâches (ajout/suppression)"
+            }
+          ]
+        },
+        {
+          "title": "TP : le super Chat (Node.js + Socket.io)",
+          "children": [
+            {
+              "title": "Objectif : Application de chat en temps réel avec Socket.io"
+            }
+          ]
+        },
+        {
+          "title": "TP : Mise en forme d'une page Web (jQuery)",
+          "children": [
+            {
+              "title": "Objectif : Modifier dynamiquement le style d'une page via un formulaire"
+            }
+          ]
+        },
+        {
+          "title": "Un jeu en jQuery",
+          "children": [
+            {
+              "title": "Concept : Jeu de voiture (éviter les obstacles)"
+            },
+            {
+              "title": "Techniques : Animation, gestion clavier, détection de collision, son"
+            }
+          ]
+        },
+        {
+          "title": "TP : Un jeu de collecte spatiale (jQuery)",
+          "children": [
+            {
+              "title": "Concept : Diriger un vaisseau et collecter des objets"
+            },
+            {
+              "title": "Techniques : Déplacement (pavé numérique), affichage aléatoire, musique de fond"
+            }
+          ]
+        },
+        {
+          "title": "TP : Un chat en jQuery",
+          "children": [
+            {
+              "title": "Architecture : Client jQuery, Backend PHP, fichier de log"
+            },
+            {
+              "title": "Technique : Rafraîchissement périodique pour charger les messages"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

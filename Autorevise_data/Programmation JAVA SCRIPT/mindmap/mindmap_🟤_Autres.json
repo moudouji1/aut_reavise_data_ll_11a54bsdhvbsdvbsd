@@ -1,0 +1,395 @@
+{
+  "title": "🟤 Autres",
+  "nodes": [
+    {
+      "title": "Formation NodeJS Avancé",
+      "children": [
+        {
+          "title": "Présentation du formateur",
+          "children": [
+            {
+              "title": "Contact: contact@ferrari.wf"
+            },
+            {
+              "title": "Développeur full stack chez Summview"
+            },
+            {
+              "title": "Références (LinkedIn, Alphorm, Github)"
+            }
+          ]
+        },
+        {
+          "title": "Objectifs",
+          "children": [
+            {
+              "title": "Maîtriser les méthodes asynchrones"
+            },
+            {
+              "title": "Concevoir un projet important"
+            },
+            {
+              "title": "Comprendre les frameworks (Express)"
+            },
+            {
+              "title": "Mettre en place MVC et abstraction BDD"
+            },
+            {
+              "title": "Savoir développer une application de niveau professionnel"
+            }
+          ]
+        },
+        {
+          "title": "Public concerné",
+          "children": [
+            {
+              "title": "Étudiants, Développeurs, Chefs de projet"
+            },
+            {
+              "title": "Intéressés par l'event coding et l'asynchrone"
+            }
+          ]
+        },
+        {
+          "title": "Plan de la formation",
+          "children": [
+            {
+              "title": "Node et le Web",
+              "children": [
+                {
+                  "title": "HTTP, Request & Express"
+                },
+                {
+                  "title": "Router, Middlewares, Moteurs de template"
+                }
+              ]
+            },
+            {
+              "title": "L'asynchrone en détail",
+              "children": [
+                {
+                  "title": "Callback Hell & Pyramid of Doom"
+                },
+                {
+                  "title": "Async.js"
+                },
+                {
+                  "title": "Les Promesses (Q)"
+                }
+              ]
+            },
+            {
+              "title": "Communication temps réel",
+              "children": [
+                {
+                  "title": "Socket.io"
+                },
+                {
+                  "title": "Projet: ChatWithMe"
+                }
+              ]
+            },
+            {
+              "title": "Liaison avec la persistance des données",
+              "children": [
+                {
+                  "title": "Relationnel (MySQL, Sequelize)"
+                },
+                {
+                  "title": "NoSQL (Redis, MongoDB)"
+                }
+              ]
+            },
+            {
+              "title": "Bonus",
+              "children": [
+                {
+                  "title": "PM2 (monitoring)"
+                },
+                {
+                  "title": "Keymetric (supervision)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formation React.js",
+      "children": [
+        {
+          "title": "Introduction ('The Road to learn React')",
+          "children": [
+            {
+              "title": "Auteurs: Robin Wieruch, Guillaume Borg"
+            },
+            {
+              "title": "Apprendre les fondamentaux de React"
+            },
+            {
+              "title": "Construire une application concrète (Hacker News)"
+            },
+            {
+              "title": "Transition de JavaScript ES5 vers ES6"
+            }
+          ]
+        },
+        {
+          "title": "Plan de la formation",
+          "children": [
+            {
+              "title": "Introduction à React (JSX, ReactDOM, ES6)"
+            },
+            {
+              "title": "Les bases (État, Props, Événements)"
+            },
+            {
+              "title": "Interactions avec les API (Cycle de vie, Fetch/Axios)"
+            },
+            {
+              "title": "Organisation et tests (Jest, Enzyme, PropTypes)"
+            },
+            {
+              "title": "Composants avancés (HOC, Refs)"
+            },
+            {
+              "title": "Gestion de l'état (setState, élévation de l'état)"
+            },
+            {
+              "title": "Déploiement"
+            }
+          ]
+        },
+        {
+          "title": "Pistes d'amélioration post-formation",
+          "children": [
+            {
+              "title": "Gestion d'état avancée (Redux, MobX)"
+            },
+            {
+              "title": "Base de données & Authentification (Firebase)"
+            },
+            {
+              "title": "Outillage (Webpack, Babel)"
+            },
+            {
+              "title": "Routage (React Router)"
+            },
+            {
+              "title": "Typage statique (TypeScript, Flow)"
+            },
+            {
+              "title": "Mobile (React Native)"
+            }
+          ]
+        },
+        {
+          "title": "Questions / Réponses",
+          "children": [
+            {
+              "title": "Shadow DOM vs. Virtual DOM"
+            },
+            {
+              "title": "React Fiber"
+            },
+            {
+              "title": "Appels AJAX (componentDidMount)"
+            },
+            {
+              "title": "Render Props"
+            },
+            {
+              "title": "Redux vs. MobX"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formation Angular",
+      "children": [
+        {
+          "title": "Introduction",
+          "children": [
+            {
+              "title": "Framework par Google (HTML, CSS, TypeScript)"
+            },
+            {
+              "title": "Comparaison AngularJS / Angular 2+"
+            },
+            {
+              "title": "Conçu pour le web moderne (ES6, Web Components, Mobile)"
+            }
+          ]
+        },
+        {
+          "title": "Projet fil rouge : PonyRacer"
+        },
+        {
+          "title": "Structure du livre/cours",
+          "children": [
+            {
+              "title": "Chapitres conceptuels"
+            },
+            {
+              "title": "Construction progressive (composants, templates, formulaires)"
+            },
+            {
+              "title": "Sujets avancés"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formation Vue.js",
+      "children": [
+        {
+          "title": "Introduction ('Design Patterns for Vue.js')",
+          "children": [
+            {
+              "title": "Focus: Design Patterns, Testabilité, Séparation des concepts"
+            },
+            {
+              "title": "Technologies: Vue 3 (Options & Composition API), Vue Testing Library"
+            }
+          ]
+        },
+        {
+          "title": "Plan de la formation",
+          "children": [
+            {
+              "title": "Tester les Props et émettre des événements"
+            },
+            {
+              "title": "Formulaires testables"
+            },
+            {
+              "title": "Requêtes HTTP et API"
+            },
+            {
+              "title": "Renderless Components & Render Functions"
+            },
+            {
+              "title": "Injection de dépendances (Provide/Inject)"
+            },
+            {
+              "title": "Logique immuable (Functional Core, Imperative Shell)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formation JavaScript & Web Général",
+      "children": [
+        {
+          "title": "Fondamentaux JavaScript",
+          "children": [
+            {
+              "title": "Syntaxe, structures de contrôle, fonctions, objets"
+            },
+            {
+              "title": "Manipulation du DOM"
+            },
+            {
+              "title": "Gestion des événements"
+            },
+            {
+              "title": "jQuery & AJAX"
+            }
+          ]
+        },
+        {
+          "title": "Langages de script vs. compilés",
+          "children": [
+            {
+              "title": "Interprète vs. Compilateur"
+            },
+            {
+              "title": "Côté client vs. Côté serveur"
+            }
+          ]
+        },
+        {
+          "title": "Architecture Client/Serveur",
+          "children": [
+            {
+              "title": "Fonctionnement (Requête DNS, Requête HTTP, Rendu DOM)"
+            },
+            {
+              "title": "Méthodes HTTP (GET, POST, PUT, DELETE...)"
+            }
+          ]
+        },
+        {
+          "title": "Écosystème de développement",
+          "children": [
+            {
+              "title": "Front-end vs. Back-end"
+            },
+            {
+              "title": "IDE (Visual Studio Code)"
+            },
+            {
+              "title": "Outils de débogage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Formation ASP.NET",
+      "children": [
+        {
+          "title": "Introduction et historique",
+          "children": [
+            {
+              "title": "ASP (Active Server Pages)"
+            },
+            {
+              "title": "ASP.NET (Framework .NET, Web Forms, MVC)"
+            },
+            {
+              "title": "ASP.NET Core (Open source, Multiplateforme)"
+            }
+          ]
+        },
+        {
+          "title": "Modèles de programmation",
+          "children": [
+            {
+              "title": "Web Forms"
+            },
+            {
+              "title": "ASP.NET MVC"
+            },
+            {
+              "title": "Razor Pages"
+            },
+            {
+              "title": "Web API (REST)"
+            },
+            {
+              "title": "SignalR (Temps réel)"
+            },
+            {
+              "title": "Blazor (WebAssembly)"
+            }
+          ]
+        },
+        {
+          "title": "Avantages et Inconvénients",
+          "children": [
+            {
+              "title": "Avantages: Écosystème Microsoft, .NET, Performance"
+            },
+            {
+              "title": "Inconvénients: Courbe d'apprentissage, Historique 'vendor lock-in'"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

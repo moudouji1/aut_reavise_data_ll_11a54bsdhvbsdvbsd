@@ -1,0 +1,301 @@
+{
+  "title": "Séance 2 : Modélisation, Diagrammes E/A, normalisation",
+  "nodes": [
+    {
+      "title": "Chapitre 1 : Introduction aux bases de données",
+      "children": [
+        {
+          "title": "Historique des modèles",
+          "children": [
+            {
+              "title": "Modèle hiérarchique (années 60)"
+            },
+            {
+              "title": "Modèle réseau"
+            },
+            {
+              "title": "Modèle relationnel (Codd, 1970)"
+            },
+            {
+              "title": "SGBD actuels (Oracle, Access, DB2...)"
+            }
+          ]
+        },
+        {
+          "title": "Concepts de Base",
+          "children": [
+            {
+              "title": "Définition : Base de Données (BD)"
+            },
+            {
+              "title": "Définition : Système de Gestion de Base de Données (SGBD)"
+            }
+          ]
+        },
+        {
+          "title": "Avantages de l'approche SGBD",
+          "children": [
+            {
+              "title": "Comparaison SGBD vs. SGF (Système de Gestion de Fichiers)"
+            },
+            {
+              "title": "Apports : Partage, réduction de redondance, intégrité, sécurité"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapitre 2 : Architecture des SGBD",
+      "children": [
+        {
+          "title": "Architecture ANSI/SPARC à 3 niveaux",
+          "children": [
+            {
+              "title": "Niveau Interne (Physique)"
+            },
+            {
+              "title": "Niveau Conceptuel (Logique)"
+            },
+            {
+              "title": "Niveau Externe (Vues utilisateur)"
+            }
+          ]
+        },
+        {
+          "title": "Indépendances entre les niveaux",
+          "children": [
+            {
+              "title": "Indépendance physique"
+            },
+            {
+              "title": "Indépendance logique"
+            }
+          ]
+        },
+        {
+          "title": "Conception d'une base de données",
+          "children": [
+            {
+              "title": "Étapes de conception"
+            },
+            {
+              "title": "Équipe de conception et rôles"
+            },
+            {
+              "title": "Outils de conception (CASE / AGL)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapitre 3 : Modèle Entités/Associations (E/A)",
+      "children": [
+        {
+          "title": "Concepts de base du modèle E/A",
+          "children": [
+            {
+              "title": "Entité (objet concret ou abstrait)"
+            },
+            {
+              "title": "Association (lien entre entités)"
+            },
+            {
+              "title": "Attribut (propriété)"
+            },
+            {
+              "title": "Identifiant (clé)"
+            },
+            {
+              "title": "Cardinalités (min/max)"
+            }
+          ]
+        },
+        {
+          "title": "Diagramme et validation",
+          "children": [
+            {
+              "title": "Diagramme Entité-Association (formalismes graphiques)"
+            },
+            {
+              "title": "Dictionnaire des données"
+            },
+            {
+              "title": "Règles de validation du modèle"
+            }
+          ]
+        },
+        {
+          "title": "Généralisation et hiérarchie (Héritage)",
+          "children": [
+            {
+              "title": "Relation 'EST-UN' (IS-A)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapitre 4 : Le modèle relationnel",
+      "children": [
+        {
+          "title": "Structure du modèle relationnel",
+          "children": [
+            {
+              "title": "Relation (Table), Attribut (Colonne), Tuple (Ligne)"
+            },
+            {
+              "title": "Clé primaire et clé étrangère"
+            },
+            {
+              "title": "Schéma de base de données relationnelle"
+            }
+          ]
+        },
+        {
+          "title": "Traduction du modèle E/A en relationnel",
+          "children": [
+            {
+              "title": "Règle pour les entités"
+            },
+            {
+              "title": "Règles pour les associations (1-1, 1-N, N-N)"
+            },
+            {
+              "title": "Règle pour le lien 'is-a' (héritage)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapitre 5 : Algèbre relationnelle",
+      "children": [
+        {
+          "title": "Opérateurs ensemblistes",
+          "children": [
+            {
+              "title": "Union (∪)"
+            },
+            {
+              "title": "Intersection (∩)"
+            },
+            {
+              "title": "Différence (−)"
+            },
+            {
+              "title": "Produit cartésien (×)"
+            }
+          ]
+        },
+        {
+          "title": "Opérateurs relationnels spécifiques",
+          "children": [
+            {
+              "title": "Sélection (σ)"
+            },
+            {
+              "title": "Projection (π)"
+            },
+            {
+              "title": "Jointure (⋈)"
+            },
+            {
+              "title": "Division (/)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapitre 6 : Normalisation",
+      "children": [
+        {
+          "title": "Objectifs et concepts",
+          "children": [
+            {
+              "title": "But : réduire la redondance et éviter les anomalies"
+            },
+            {
+              "title": "Dépendance Fonctionnelle (DF)"
+            }
+          ]
+        },
+        {
+          "title": "Les Formes Normales (FN)",
+          "children": [
+            {
+              "title": "1ère Forme Normale (1FN) : attributs atomiques"
+            },
+            {
+              "title": "2ème Forme Normale (2FN) : pas de dépendance partielle à la clé"
+            },
+            {
+              "title": "3ème Forme Normale (3FN) : pas de dépendance transitive"
+            },
+            {
+              "title": "Forme Normale de Boyce-Codd (BCNF)"
+            }
+          ]
+        },
+        {
+          "title": "Algorithme de normalisation par synthèse",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "Chapitre 7 : Le Langage SQL",
+      "children": [
+        {
+          "title": "Les 4 sous-langages SQL",
+          "children": [
+            {
+              "title": "LID (Interrogation) : SELECT"
+            },
+            {
+              "title": "LMD (Manipulation) : INSERT, UPDATE, DELETE"
+            },
+            {
+              "title": "LDD (Définition) : CREATE, ALTER, DROP"
+            },
+            {
+              "title": "LCD (Contrôle) : GRANT, REVOKE"
+            }
+          ]
+        },
+        {
+          "title": "Interrogation de données (SELECT)",
+          "children": [
+            {
+              "title": "Clauses : FROM, WHERE, GROUP BY, HAVING, ORDER BY"
+            },
+            {
+              "title": "Jointures, sous-requêtes, opérateurs ensemblistes"
+            }
+          ]
+        },
+        {
+          "title": "Définition de données (LDD)",
+          "children": [
+            {
+              "title": "Types de données (VARCHAR, NUMBER, DATE...)"
+            },
+            {
+              "title": "Contraintes d'intégrité (PRIMARY KEY, FOREIGN KEY, CHECK...)"
+            }
+          ]
+        },
+        {
+          "title": "Gestion des transactions",
+          "children": [
+            {
+              "title": "COMMIT, ROLLBACK, SAVEPOINT"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

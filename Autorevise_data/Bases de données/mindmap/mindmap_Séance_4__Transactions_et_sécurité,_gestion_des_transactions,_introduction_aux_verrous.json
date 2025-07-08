@@ -1,0 +1,380 @@
+{
+  "title": "Séance 4 : Transactions et sécurité, gestion des transactions, introduction aux verrous",
+  "nodes": [
+    {
+      "title": "Nouvelles architectures",
+      "children": [
+        {
+          "title": "Architecture 3/3 pour le Web"
+        },
+        {
+          "title": "Entrepôt de données"
+        },
+        {
+          "title": "Médiateur"
+        },
+        {
+          "title": "Architecture pair à pair (P2P)"
+        }
+      ]
+    },
+    {
+      "title": "Du relationnel à l'objet relationnel",
+      "children": [
+        {
+          "title": "Atouts du modèle relationnel",
+          "children": [
+            {
+              "title": "Modèle simple et formel"
+            },
+            {
+              "title": "Méthode de conception (normalisation)"
+            },
+            {
+              "title": "Langage universel (SQL)"
+            },
+            {
+              "title": "Modèle de transactions sûr"
+            }
+          ]
+        },
+        {
+          "title": "Limites du modèle relationnel"
+        },
+        {
+          "title": "Solution : l'approche objet",
+          "children": [
+            {
+              "title": "Concepts (objet, classe, persistance)"
+            },
+            {
+              "title": "Héritage",
+              "children": [
+                {
+                  "title": "Sémantique (spécialisation, restriction, inclusion)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "SGBD objets purs",
+          "children": [
+            {
+              "title": "Standard ODMG (ODL, OQL)"
+            },
+            {
+              "title": "Inconvénients (complexité, incompatibilité)"
+            }
+          ]
+        },
+        {
+          "title": "Compromis : l'objet-relationnel (SQL:1999)",
+          "children": [
+            {
+              "title": "Types distincts"
+            },
+            {
+              "title": "Types définis par l'utilisateur (UDT)"
+            },
+            {
+              "title": "Tables typées"
+            },
+            {
+              "title": "Héritage"
+            }
+          ]
+        },
+        {
+          "title": "Étude de cas : PostgreSQL",
+          "children": [
+            {
+              "title": "Types composites (définition, accès, modification)"
+            },
+            {
+              "title": "Fonctions"
+            },
+            {
+              "title": "Héritage de tables"
+            },
+            {
+              "title": "Règles"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concept de transaction",
+      "children": [
+        {
+          "title": "Définition : Unité de travail cohérente"
+        },
+        {
+          "title": "Événements",
+          "children": [
+            {
+              "title": "start"
+            },
+            {
+              "title": "read / write"
+            },
+            {
+              "title": "commit / rollback"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Propriétés d'une transaction (ACID)",
+      "children": [
+        {
+          "title": "Atomicité (tout ou rien)"
+        },
+        {
+          "title": "Cohérence (respect des contraintes)"
+        },
+        {
+          "title": "Isolation (transactions indépendantes)"
+        },
+        {
+          "title": "Durabilité (modifications permanentes)"
+        }
+      ]
+    },
+    {
+      "title": "Problèmes dus à la concurrence",
+      "children": [
+        {
+          "title": "Perte de mise à jour (lost update)"
+        },
+        {
+          "title": "Lecture impropre (dirty read)"
+        },
+        {
+          "title": "Lecture non reproductible (non-repeatable read)"
+        },
+        {
+          "title": "Objets fantômes (phantom reads)"
+        }
+      ]
+    },
+    {
+      "title": "Exécution sérialisable",
+      "children": [
+        {
+          "title": "Principe : équivalent à une exécution en série"
+        },
+        {
+          "title": "Condition de sérialisabilité (conflits)"
+        },
+        {
+          "title": "Test de sérialisabilité (graphe de précédence)"
+        }
+      ]
+    },
+    {
+      "title": "Verrouillage (Locking)",
+      "children": [
+        {
+          "title": "Principe : interdire l'accès concurrent"
+        },
+        {
+          "title": "Granularité (BD, table, ligne, ...)"
+        },
+        {
+          "title": "Modes de verrouillage",
+          "children": [
+            {
+              "title": "Partagé (S - Shared)"
+            },
+            {
+              "title": "Exclusif (X - Exclusive)"
+            },
+            {
+              "title": "Matrice de compatibilité"
+            }
+          ]
+        },
+        {
+          "title": "Opérations (lock, unlock)"
+        }
+      ]
+    },
+    {
+      "title": "Verrouillage à deux phases (2PL)",
+      "children": [
+        {
+          "title": "Définition",
+          "children": [
+            {
+              "title": "Phase d'acquisition"
+            },
+            {
+              "title": "Phase de libération"
+            }
+          ]
+        },
+        {
+          "title": "Conséquence : garantit la sérialisabilité"
+        }
+      ]
+    },
+    {
+      "title": "Interblocage (Deadlock)",
+      "children": [
+        {
+          "title": "Situation de blocage mutuel"
+        },
+        {
+          "title": "Résolution",
+          "children": [
+            {
+              "title": "Prévention (ordonner les ressources)"
+            },
+            {
+              "title": "Détection (graphe d'attente) et correction (rollback)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Verrouillage à granularité multiple",
+      "children": [
+        {
+          "title": "Hiérarchie de granularité"
+        },
+        {
+          "title": "Modes de verrouillage intentionnels",
+          "children": [
+            {
+              "title": "IS (Intention Share)"
+            },
+            {
+              "title": "IX (Intention Exclusive)"
+            },
+            {
+              "title": "SIX (Share with Intention Exclusive)"
+            }
+          ]
+        },
+        {
+          "title": "Règles de verrouillage intentionnel"
+        }
+      ]
+    },
+    {
+      "title": "Transactions en SQL",
+      "children": [
+        {
+          "title": "Connexion et session"
+        },
+        {
+          "title": "Commandes (BEGIN, COMMIT, ROLLBACK)"
+        },
+        {
+          "title": "Niveaux d'isolation",
+          "children": [
+            {
+              "title": "READ UNCOMMITTED"
+            },
+            {
+              "title": "READ COMMITTED"
+            },
+            {
+              "title": "REPEATABLE READ"
+            },
+            {
+              "title": "SERIALIZABLE"
+            }
+          ]
+        },
+        {
+          "title": "Points de reprise (SAVEPOINT)"
+        }
+      ]
+    },
+    {
+      "title": "Contrôle de concurrence multiversions (MVCC)",
+      "children": [
+        {
+          "title": "Principe : Les lecteurs ne bloquent pas les écrivains"
+        },
+        {
+          "title": "Mécanisme : Création de versions des données"
+        }
+      ]
+    },
+    {
+      "title": "Verrous explicites en SQL",
+      "children": [
+        {
+          "title": "Verrouillage de table (LOCK TABLE)"
+        },
+        {
+          "title": "Verrouillage de lignes (SELECT FOR UPDATE / SHARE)"
+        }
+      ]
+    },
+    {
+      "title": "Transactions distribuées",
+      "children": [
+        {
+          "title": "Définition : transaction sur plusieurs sites"
+        },
+        {
+          "title": "Protocole de confirmation à deux phases (2PC)"
+        },
+        {
+          "title": "Gestion des pannes"
+        }
+      ]
+    },
+    {
+      "title": "Indexation avancée",
+      "children": [
+        {
+          "title": "Index multidimensionnels",
+          "children": [
+            {
+              "title": "Arbres k-dimensionnels (kd-trees)"
+            },
+            {
+              "title": "Arbres R (R-trees)"
+            }
+          ]
+        },
+        {
+          "title": "Index textuels",
+          "children": [
+            {
+              "title": "Tries (arbres préfixe)"
+            },
+            {
+              "title": "Arbres des suffixes"
+            },
+            {
+              "title": "Fichiers inversés"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Règles d'association",
+      "children": [
+        {
+          "title": "Définition (support, confiance)"
+        },
+        {
+          "title": "Découverte de règles (ensembles fréquents)"
+        },
+        {
+          "title": "Algorithme a priori"
+        }
+      ]
+    }
+  ]
+}

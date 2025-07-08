@@ -1,0 +1,385 @@
+{
+  "title": "Autres (Synthèse des cours PHP, Laravel & Web)",
+  "nodes": [
+    {
+      "title": "PHP & MySQL Avancé (Formation Zend)",
+      "children": [
+        {
+          "title": "Introduction à PHP Avancé",
+          "children": [
+            {
+              "title": "Objectifs de la formation"
+            },
+            {
+              "title": "Plan de la formation"
+            }
+          ]
+        },
+        {
+          "title": "Rappel MySQL",
+          "children": [
+            {
+              "title": "Concepts de base (table, champ, enregistrement)"
+            },
+            {
+              "title": "Extension mysqli",
+              "children": [
+                {
+                  "title": "Connexion (mysqli_connect)"
+                },
+                {
+                  "title": "Envoi de requête (mysqli_query)"
+                },
+                {
+                  "title": "Récupération des résultats (mysqli_fetch_*)"
+                },
+                {
+                  "title": "Fermeture (mysqli_close)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Gestion des Index MySQL",
+          "children": [
+            {
+              "title": "Principes (accélération des lectures)"
+            },
+            {
+              "title": "Création (CREATE INDEX, ALTER TABLE)"
+            },
+            {
+              "title": "Types d'index (PRIMARY, UNIQUE, KEY, FULLTEXT)"
+            }
+          ]
+        },
+        {
+          "title": "Bases de la POO en PHP",
+          "children": [
+            {
+              "title": "Classe et Objet"
+            },
+            {
+              "title": "Composition (propriétés, méthodes)"
+            },
+            {
+              "title": "Constructeur et Destructeur"
+            },
+            {
+              "title": "Visibilité (public, protected, private)"
+            }
+          ]
+        },
+        {
+          "title": "POO Avancée",
+          "children": [
+            {
+              "title": "Types d'objets UML (Entité, Contrôle, Dialogue)"
+            },
+            {
+              "title": "Interfaces et Classes abstraites"
+            },
+            {
+              "title": "Méthodes et constantes magiques"
+            },
+            {
+              "title": "Design Patterns (Singleton, Fabrique, MVC...)"
+            }
+          ]
+        },
+        {
+          "title": "Gestion des Exceptions",
+          "children": [
+            {
+              "title": "Principe (try, catch)"
+            },
+            {
+              "title": "Exceptions personnalisées"
+            }
+          ]
+        },
+        {
+          "title": "Moteurs de BDD & Transactions",
+          "children": [
+            {
+              "title": "Moteur InnoDB"
+            },
+            {
+              "title": "Transactions (ACID, COMMIT, ROLLBACK)"
+            }
+          ]
+        },
+        {
+          "title": "Flux XML",
+          "children": [
+            {
+              "title": "Principe (organiser et stocker des données)"
+            },
+            {
+              "title": "Manipulation en PHP (SimpleXML, DOM, SAX)"
+            }
+          ]
+        },
+        {
+          "title": "Optimisation SQL & Architecture",
+          "children": [
+            {
+              "title": "Optimisation des requêtes (EXPLAIN)"
+            },
+            {
+              "title": "Optimisation du schéma (types, normalisation)"
+            },
+            {
+              "title": "Choix des moteurs de stockage"
+            }
+          ]
+        },
+        {
+          "title": "Services Web",
+          "children": [
+            {
+              "title": "REST"
+            },
+            {
+              "title": "SOAP & WSDL"
+            },
+            {
+              "title": "XMLRPC"
+            }
+          ]
+        },
+        {
+          "title": "Introduction à la SPL",
+          "children": [
+            {
+              "title": "Principe (Standard PHP Library)"
+            },
+            {
+              "title": "Itérateurs (parcourir des objets)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Framework Laravel",
+      "children": [
+        {
+          "title": "Principes et Architecture",
+          "children": [
+            {
+              "title": "Avantages d'un framework"
+            },
+            {
+              "title": "Conventions (MVC, Nommage, DRY...)"
+            },
+            {
+              "title": "Cycle de vie d'une requête (Front Controller, Routing)"
+            }
+          ]
+        },
+        {
+          "title": "Installation et Organisation",
+          "children": [
+            {
+              "title": "Prérequis (Composer)"
+            },
+            {
+              "title": "Création d'un projet"
+            },
+            {
+              "title": "Structure des dossiers (app, public, routes...)"
+            }
+          ]
+        },
+        {
+          "title": "Composants Clés",
+          "children": [
+            {
+              "title": "Routage",
+              "children": [
+                {
+                  "title": "Routes de base"
+                },
+                {
+                  "title": "Paramètres"
+                },
+                {
+                  "title": "Routes nommées"
+                }
+              ]
+            },
+            {
+              "title": "Contrôleurs",
+              "children": [
+                {
+                  "title": "Rôle et création"
+                },
+                {
+                  "title": "Liaison avec les routes"
+                }
+              ]
+            },
+            {
+              "title": "Vues (Blade)",
+              "children": [
+                {
+                  "title": "Templates (@extends, @yield)"
+                },
+                {
+                  "title": "Syntaxe Blade"
+                },
+                {
+                  "title": "Passage de données"
+                }
+              ]
+            },
+            {
+              "title": "Modèles (Eloquent ORM)",
+              "children": [
+                {
+                  "title": "Principe de l'ORM"
+                },
+                {
+                  "title": "Migrations de base de données"
+                },
+                {
+                  "title": "Définition des modèles et relations (1-n, n-n)"
+                }
+              ]
+            },
+            {
+              "title": "Validation",
+              "children": [
+                {
+                  "title": "Validation des requêtes (FormRequest)"
+                },
+                {
+                  "title": "Affichage des erreurs"
+                }
+              ]
+            },
+            {
+              "title": "Authentification",
+              "children": [
+                {
+                  "title": "Scaffolding (php artisan make:auth)"
+                },
+                {
+                  "title": "Routes et contrôleurs d'authentification"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Concepts Avancés",
+          "children": [
+            {
+              "title": "Injection de Dépendances & Conteneur de Services"
+            },
+            {
+              "title": "Façades"
+            },
+            {
+              "title": "Middlewares"
+            },
+            {
+              "title": "Ressources API"
+            },
+            {
+              "title": "Tests unitaires (PHPUnit)"
+            },
+            {
+              "title": "Déploiement (CI/CD)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Technologies Web & Protocoles",
+      "children": [
+        {
+          "title": "HTML 5 & PWA",
+          "children": [
+            {
+              "title": "Nouvelles API"
+            },
+            {
+              "title": "Progressive Web Apps (PWA)"
+            }
+          ]
+        },
+        {
+          "title": "JavaScript et DOM",
+          "children": [
+            {
+              "title": "Principes du langage"
+            },
+            {
+              "title": "Manipulation du DOM"
+            },
+            {
+              "title": "ECMAScript & Variantes (Typescript)"
+            }
+          ]
+        },
+        {
+          "title": "HTTP et AJAX",
+          "children": [
+            {
+              "title": "Protocole HTTP (verbes, codes)"
+            },
+            {
+              "title": "AJAX et Fetch API"
+            }
+          ]
+        },
+        {
+          "title": "jQuery",
+          "children": [
+            {
+              "title": "Sélection et manipulation du DOM"
+            },
+            {
+              "title": "Gestion des événements et AJAX"
+            }
+          ]
+        },
+        {
+          "title": "Responsive Web Design",
+          "children": [
+            {
+              "title": "Media Queries CSS3"
+            },
+            {
+              "title": "Unités relatives"
+            },
+            {
+              "title": "Viewport"
+            }
+          ]
+        },
+        {
+          "title": "Sécurité Web",
+          "children": [
+            {
+              "title": "HTTPS (SSL/TLS, Certificats)"
+            },
+            {
+              "title": "Top 10 OWASP (Injections SQL, XSS, CSRF)"
+            },
+            {
+              "title": "Gestion des mots de passe"
+            },
+            {
+              "title": "Authentification (2FA, WebAuthn)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Séance 2 : Modélisation, Diagrammes E/A, normalisation",
+  "questions": [
+    {
+      "question": "Quelle est la principale caractéristique du modèle relationnel proposé par Codd, qui le différencie des modèles hiérarchique et réseau ?",
+      "options": [
+        "Il représente les données sous forme d'une arborescence.",
+        "Il permet à une classe 'fille' d'avoir plusieurs classes 'mères'.",
+        "Il repose sur une représentation unifiée de l'information sous forme de tables.",
+        "Il est un système propriétaire appartenant à une marque d'ordinateur."
+      ],
+      "answer": "Il repose sur une représentation unifiée de l'information sous forme de tables.",
+      "explanation": "Le texte indique que le modèle relationnel 'repose sur une représentation unifiée de l'information sous forme de tables', ce qui constitue un progrès majeur par rapport aux modèles hiérarchique (arborescence) et réseau."
+    },
+    {
+      "question": "Dans l'architecture ANSI/SPARC, que permet l'indépendance physique des données ?",
+      "options": [
+        "De modifier le schéma conceptuel sans modifier les schémas externes.",
+        "De modifier les programmes d'application sans modifier les données.",
+        "De modifier le schéma interne (stockage physique) sans avoir à modifier le schéma conceptuel.",
+        "De modifier un schéma externe sans avoir à modifier le schéma conceptuel."
+      ],
+      "answer": "De modifier le schéma interne (stockage physique) sans avoir à modifier le schéma conceptuel.",
+      "explanation": "L'indépendance physique permet de changer la façon dont les données sont stockées (schéma interne) sans impacter la vision logique globale de la base (schéma conceptuel). Le texte précise : 'L'indépendance physique permet donc de modifier le schéma interne sans avoir à modifier le schéma conceptuel'."
+    },
+    {
+      "question": "Comment une association de type 'plusieurs-à-plusieurs' (n:n) dans un modèle Entité-Association est-elle généralement traduite en modèle relationnel ?",
+      "options": [
+        "En fusionnant les deux entités en une seule table.",
+        "En ajoutant la clé primaire d'une entité comme clé étrangère dans l'autre.",
+        "En créant une nouvelle table (relation) dont la clé primaire est la concaténation des clés des deux entités.",
+        "En ignorant l'association car elle ne peut pas être représentée."
+      ],
+      "answer": "En créant une nouvelle table (relation) dont la clé primaire est la concaténation des clés des deux entités.",
+      "explanation": "Pour une association n:n, la règle de traduction est de créer une table d'association. Le cours stipule : 'L'association sera transformée aussi en une relation ayant comme clé la concaténation des deux clés issues des entités'."
+    },
+    {
+      "question": "Selon la théorie de la normalisation, quand une relation est-elle en Deuxième Forme Normale (2FN) ?",
+      "options": [
+        "Quand tous ses attributs non-clé ne dépendent pas d'un autre attribut non-clé.",
+        "Quand tous ses attributs sont atomiques et monovalués.",
+        "Quand elle est en 1FN et que tout attribut non-clé dépend pleinement de la totalité de la clé primaire.",
+        "Quand chaque dépendance fonctionnelle a pour origine une clé de la relation."
+      ],
+      "answer": "Quand elle est en 1FN et que tout attribut non-clé dépend pleinement de la totalité de la clé primaire.",
+      "explanation": "La définition de la 2FN exige que la relation soit en 1FN et que tous les attributs qui ne font pas partie de la clé primaire dépendent fonctionnellement de l'intégralité de la clé, et non d'une partie de celle-ci."
+    },
+    {
+      "question": "Quelle est la fonction principale d'un SGBD (Système de Gestion de Base de Données) ?",
+      "options": [
+        "Uniquement de stocker de grands volumes de fichiers sans structure.",
+        "D'assurer le traitement de texte et la mise en page de documents.",
+        "De servir de système d'exploitation pour les serveurs.",
+        "De permettre de décrire, stocker, interroger et assurer la sécurité et l'intégrité d'un ensemble de données structurées."
+      ],
+      "answer": "De permettre de décrire, stocker, interroger et assurer la sécurité et l'intégrité d'un ensemble de données structurées.",
+      "explanation": "Un SGBD est un ensemble de logiciels qui gère une base de données en assurant des fonctions clés comme la description, la manipulation, la sûreté, la sécurité, l'intégrité et la concurrence d'accès, comme détaillé dans le chapitre 1."
+    },
+    {
+      "question": "En langage SQL, à quel sous-ensemble appartient la commande `CREATE TABLE` ?",
+      "options": [
+        "Langage de Manipulation de Données (LMD / DML)",
+        "Langage de Définition de Données (LDD / DDL)",
+        "Langage de Contrôle de Données (LCD / DCL)",
+        "Langage d'Interrogation de Données (LID)"
+      ],
+      "answer": "Langage de Définition de Données (LDD / DDL)",
+      "explanation": "Le Langage de Définition de Données (LDD) est utilisé pour définir et gérer la structure de la base de données. `CREATE TABLE` est la commande fondamentale pour créer une nouvelle table, elle appartient donc au LDD."
+    },
+    {
+      "question": "Dans un diagramme Entité-Association, qu'est-ce qu'un identifiant ?",
+      "options": [
+        "Une association entre une entité et elle-même.",
+        "Le nombre d'entités qui participent à une association.",
+        "Une propriété qui dépend de toutes les entités d'une association.",
+        "Un attribut ou un groupe d'attributs qui permet d'identifier de manière unique chaque occurrence d'une entité."
+      ],
+      "answer": "Un attribut ou un groupe d'attributs qui permet d'identifier de manière unique chaque occurrence d'une entité.",
+      "explanation": "L'identifiant (ou clé primaire) est un attribut spécial dont la valeur garantit l'unicité de chaque enregistrement (occurrence) au sein d'une entité. Le texte le définit comme 'un attribut particulier de l'entité tel qu'à chaque valeur de la propriété corresponde une et une seule occurrence de l'entité'."
+    },
+    {
+      "question": "Quelle clause SQL est utilisée pour filtrer les résultats d'une agrégation (après un GROUP BY) ?",
+      "options": [
+        "WHERE",
+        "FILTER",
+        "HAVING",
+        "ORDER BY"
+      ],
+      "answer": "HAVING",
+      "explanation": "La clause WHERE filtre les lignes avant toute agrégation. La clause HAVING est spécifiquement conçue pour filtrer les groupes créés par la clause GROUP BY, en se basant sur le résultat d'une fonction d'agrégat (comme SUM, COUNT, etc.)."
+    }
+  ]
+}

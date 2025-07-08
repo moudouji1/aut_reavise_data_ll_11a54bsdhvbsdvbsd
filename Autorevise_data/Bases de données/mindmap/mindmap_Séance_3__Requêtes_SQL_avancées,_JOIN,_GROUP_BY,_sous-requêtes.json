@@ -1,0 +1,282 @@
+{
+  "title": "Séance 3 : Requêtes SQL avancées, JOIN, GROUP BY, sous-requêtes",
+  "nodes": [
+    {
+      "title": "Présentation de la base de données \"pubs\"",
+      "children": [
+        {
+          "title": "Table éditeurs"
+        },
+        {
+          "title": "Table pub\\info"
+        },
+        {
+          "title": "Table employé"
+        },
+        {
+          "title": "Table emplois"
+        },
+        {
+          "title": "Table auteurs"
+        },
+        {
+          "title": "Table titreauteur"
+        },
+        {
+          "title": "Table titres"
+        },
+        {
+          "title": "Table droits\\prévus"
+        },
+        {
+          "title": "Table ventes"
+        },
+        {
+          "title": "Table magasins"
+        },
+        {
+          "title": "Table remises"
+        }
+      ]
+    },
+    {
+      "title": "Requêtes sur les groupes : GROUP BY, HAVING, COMPUTE",
+      "children": [
+        {
+          "title": "Clause GROUP BY",
+          "children": [
+            {
+              "title": "Principe : Diviser une table en groupes de lignes"
+            }
+          ]
+        },
+        {
+          "title": "Fonctions de groupe (agrégation)",
+          "children": [
+            {
+              "title": "COUNT : Compter les occurrences"
+            },
+            {
+              "title": "SUM : Sommer les valeurs"
+            },
+            {
+              "title": "AVG : Calculer la moyenne"
+            },
+            {
+              "title": "MAX / MIN : Trouver la valeur maximale / minimale"
+            }
+          ]
+        },
+        {
+          "title": "Clause HAVING",
+          "children": [
+            {
+              "title": "Principe : Filtrer les groupes (équivalent de WHERE pour les groupes)"
+            }
+          ]
+        },
+        {
+          "title": "Clause COMPUTE",
+          "children": [
+            {
+              "title": "Principe : Générer des valeurs statistiques en plus des lignes de détail"
+            }
+          ]
+        },
+        {
+          "title": "Exercices d'application",
+          "children": [
+            {
+              "title": "Exercice 5 : GROUP BY, COUNT, MIN, MAX"
+            },
+            {
+              "title": "Exercice 6 : GROUP BY, MAX"
+            },
+            {
+              "title": "Exercice 7 : GROUP BY, HAVING"
+            },
+            {
+              "title": "Exercice 8 : COMPUTE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Travail sur plusieurs tables : Les Jointures (JOIN)",
+      "children": [
+        {
+          "title": "Principe : Extraire des données de plusieurs tables en une seule opération"
+        },
+        {
+          "title": "Syntaxes",
+          "children": [
+            {
+              "title": "Syntaxe implicite (WHERE) : FROM auteurs, éditeurs WHERE auteurs.ville = éditeurs.ville"
+            },
+            {
+              "title": "Syntaxe SQL2 explicite (JOIN) : FROM auteurs JOIN éditeurs ON auteurs.ville = éditeurs.ville"
+            }
+          ]
+        },
+        {
+          "title": "Exercices d'application",
+          "children": [
+            {
+              "title": "Exercice 9 : Jointure sur trois tables"
+            },
+            {
+              "title": "Exercice 10 : Jointure sur quatre tables"
+            },
+            {
+              "title": "Exercice 11 : Jointure, GROUP BY, HAVING"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les Sous-requêtes",
+      "children": [
+        {
+          "title": "Définition : Une instruction SELECT imbriquée dans une autre"
+        },
+        {
+          "title": "Catégories de sous-requêtes",
+          "children": [
+            {
+              "title": "Sous-requête renvoyant une seule valeur (scalaire)"
+            },
+            {
+              "title": "Sous-requête renvoyant une liste (ensembliste)"
+            }
+          ]
+        },
+        {
+          "title": "Opérateurs pour sous-requêtes ensemblistes",
+          "children": [
+            {
+              "title": "IN : Appartenance à une liste"
+            },
+            {
+              "title": "EXISTS : Teste si la sous-requête renvoie des lignes"
+            },
+            {
+              "title": "ANY / ALL : Comparaison avec les valeurs d'une liste"
+            }
+          ]
+        },
+        {
+          "title": "Exercices d'application",
+          "children": [
+            {
+              "title": "Exercice 12 : Sous-requêtes avec EXIST, ALL"
+            },
+            {
+              "title": "Exercice 13 : Sous-requête avec MAX"
+            },
+            {
+              "title": "Exercice 14 : Sous-requête dans la clause SELECT"
+            },
+            {
+              "title": "Exercice 15 & 15 bis : Cas pratiques"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mise à jour d'une base de données",
+      "children": [
+        {
+          "title": "INSERT",
+          "children": [
+            {
+              "title": "Ajouter une nouvelle ligne à une table"
+            },
+            {
+              "title": "Syntaxe : INSERT ... VALUES"
+            },
+            {
+              "title": "Syntaxe : INSERT ... SELECT"
+            }
+          ]
+        },
+        {
+          "title": "UPDATE",
+          "children": [
+            {
+              "title": "Modifier des lignes existantes"
+            }
+          ]
+        },
+        {
+          "title": "DELETE",
+          "children": [
+            {
+              "title": "Supprimer une ou plusieurs lignes (mentionné)"
+            }
+          ]
+        },
+        {
+          "title": "Exercices d'application",
+          "children": [
+            {
+              "title": "Exercice 16 : INSERT"
+            },
+            {
+              "title": "Exercice 17 : INSERT ... SELECT"
+            },
+            {
+              "title": "Exercice 18 : UPDATE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concepts Complémentaires",
+      "children": [
+        {
+          "title": "Opérateur ensembliste UNION"
+        },
+        {
+          "title": "Architecture Client/Serveur"
+        },
+        {
+          "title": "Connexion via ODBC"
+        }
+      ]
+    },
+    {
+      "title": "Annexe : Focus sur Oracle",
+      "children": [
+        {
+          "title": "Oracle SQL 2 & SQL*Plus",
+          "children": [
+            {
+              "title": "Outils d'accès : iSQLPlus, SQLPlus"
+            },
+            {
+              "title": "Langage SQL : Jointures ANSI (INNER, OUTER), Fonctions, Vues"
+            }
+          ]
+        },
+        {
+          "title": "Oracle et le Modèle Objet Relationnel",
+          "children": [
+            {
+              "title": "Types étendus : REF, VARRAY, Nested Tables"
+            },
+            {
+              "title": "Objets Volumineux (LOBs) : BLOB, CLOB, BFILE"
+            },
+            {
+              "title": "Import/Export d'objets"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

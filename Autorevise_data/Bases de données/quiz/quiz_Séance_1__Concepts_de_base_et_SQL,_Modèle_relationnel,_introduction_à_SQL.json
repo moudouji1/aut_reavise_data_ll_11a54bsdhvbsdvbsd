@@ -1,0 +1,93 @@
+{
+  "title": "Séance 1 : Concepts de base et SQL, Modèle relationnel, introduction à SQL",
+  "questions": [
+    {
+      "question": "Quelle est la principale fonction du langage SQL (Structured Query Language) ?",
+      "options": [
+        "Créer des interfaces graphiques pour les bases de données.",
+        "Interroger et manipuler des données dans une base de données relationnelle.",
+        "Modéliser physiquement les données sur un disque dur.",
+        "Assurer la sécurité des réseaux informatiques."
+      ],
+      "answer": "Interroger et manipuler des données dans une base de données relationnelle.",
+      "explanation": "SQL est le langage standard pour interagir avec les Systèmes de Gestion de Bases de Données Relationnelles (SGBDR). Il permet de définir (LDD), manipuler (LMD) et contrôler (LCD) les données."
+    },
+    {
+      "question": "En algèbre relationnelle, quelle opération permet de sélectionner des colonnes spécifiques d'une table ?",
+      "options": [
+        "La Restriction (σ)",
+        "La Projection (π)",
+        "La Jointure (⋈)",
+        "Le Produit Cartésien (X)"
+      ],
+      "answer": "La Projection (π)",
+      "explanation": "L'opération de Projection (π) en algèbre relationnelle permet d'extraire des colonnes (attributs) d'une relation. L'opération de Restriction (σ) permet de sélectionner des lignes (tuples)."
+    },
+    {
+      "question": "Parmi les commandes suivantes, laquelle ne fait pas partie du Langage de Manipulation de Données (LMD) en SQL ?",
+      "options": [
+        "INSERT",
+        "UPDATE",
+        "DELETE",
+        "CREATE TABLE"
+      ],
+      "answer": "CREATE TABLE",
+      "explanation": "CREATE TABLE est une commande du Langage de Définition de Données (LDD) qui sert à créer la structure d'une nouvelle table. INSERT, UPDATE et DELETE sont des commandes du LMD utilisées pour gérer les enregistrements."
+    },
+    {
+      "question": "Dans l'architecture à trois niveaux (ANSI-SPARC), quel schéma décrit la structure logique globale de la base de données, indépendamment de son implémentation physique ?",
+      "options": [
+        "Le schéma interne",
+        "Le schéma conceptuel",
+        "Le schéma externe",
+        "Le schéma physique"
+      ],
+      "answer": "Le schéma conceptuel",
+      "explanation": "Le schéma conceptuel offre une vue globale et unifiée des données de l'organisation, décrivant les entités et leurs relations, sans se soucier du stockage physique (schéma interne) ni des vues utilisateurs (schéma externe)."
+    },
+    {
+      "question": "Quelle propriété des transactions (ACID) garantit que les modifications d'une transaction validée sont permanentes, même en cas de panne système ?",
+      "options": [
+        "Atomicité",
+        "Cohérence",
+        "Isolation",
+        "Durabilité"
+      ],
+      "answer": "Durabilité",
+      "explanation": "La durabilité assure qu'une fois qu'une transaction a été validée (COMMIT), ses modifications sont définitivement enregistrées et ne seront pas perdues, même en cas de défaillance du système."
+    },
+    {
+      "question": "Quelle clause SQL est utilisée pour filtrer les résultats d'une requête après un regroupement effectué par GROUP BY ?",
+      "options": [
+        "WHERE",
+        "FILTER",
+        "HAVING",
+        "CONDITION"
+      ],
+      "answer": "HAVING",
+      "explanation": "La clause WHERE filtre les lignes avant toute opération de regroupement. La clause HAVING est utilisée spécifiquement pour filtrer les groupes créés par la clause GROUP BY, souvent en se basant sur des fonctions d'agrégation."
+    },
+    {
+      "question": "Qu'est-ce qu'une vue (VIEW) en SQL ?",
+      "options": [
+        "Une copie physique d'une table pour les sauvegardes.",
+        "Un index spécial pour accélérer les recherches textuelles.",
+        "Une table virtuelle basée sur le résultat d'une requête SQL stockée.",
+        "Une procédure stockée qui retourne une seule valeur."
+      ],
+      "answer": "Une table virtuelle basée sur le résultat d'une requête SQL stockée.",
+      "explanation": "Une vue est un objet qui n'est pas stocké physiquement. Il s'agit d'une requête SQL nommée qui peut être interrogée comme une table, simplifiant l'accès aux données et permettant de gérer finement les droits d'accès."
+    },
+    {
+      "question": "Quel est le rôle d'un trigger (déclencheur) dans une base de données ?",
+      "options": [
+        "Optimiser la vitesse d'exécution des requêtes SELECT.",
+        "Exécuter automatiquement un ensemble d'actions en réponse à un événement (INSERT, UPDATE, DELETE) sur une table.",
+        "Définir le type de données autorisé pour une colonne.",
+        "Gérer les connexions simultanées des utilisateurs."
+      ],
+      "answer": "Exécuter automatiquement un ensemble d'actions en réponse à un événement (INSERT, UPDATE, DELETE) sur une table.",
+      "explanation": "Un trigger est une procédure qui se déclenche automatiquement lorsqu'un événement spécifique se produit sur une table. Il est souvent utilisé pour maintenir la cohérence, auditer des modifications ou appliquer une logique métier complexe."
+    }
+  ]
+}

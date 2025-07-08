@@ -1,0 +1,71 @@
+{
+  "title": "Séance 5 : API RESTful, Création d’une API avec Laravel",
+  "questions": [
+    {
+      "question": "Quelle est la principale utilité d'une commande comme `php bin/console make:crud` ?",
+      "options": [
+        "Installer de nouveaux paquets.",
+        "Générer automatiquement le code pour les opérations CRUD.",
+        "Vérifier les failles de sécurité.",
+        "Démarrer le serveur de développement."
+      ],
+      "answer": "Générer automatiquement le code pour les opérations CRUD.",
+      "explanation": "Les commandes de scaffolding comme `make:crud` permettent de générer le code de base (contrôleur, vues) pour les opérations de Création, Lecture, Mise à jour et Suppression (CRUD), ce qui accélère le développement."
+    },
+    {
+      "question": "D'après la table des routes générées, quelle méthode HTTP est associée à l'action `personne_delete` ?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "answer": "DELETE",
+      "explanation": "La méthode HTTP DELETE est utilisée, conformément aux conventions RESTful, pour demander la suppression d'une ressource spécifique, ici identifiée par son {id} dans le chemin `/personne/{id}`."
+    },
+    {
+      "question": "Quel est le rôle de la barre de 'profiler' mentionnée dans le cours ?",
+      "options": [
+        "Lister les utilisateurs connectés.",
+        "Afficher la version de PHP.",
+        "Fournir des métriques de performance comme le nombre de requêtes à la base de données.",
+        "Uniquement gérer les routes de l'application."
+      ],
+      "answer": "Fournir des métriques de performance comme le nombre de requêtes à la base de données.",
+      "explanation": "Le profiler est un outil de débogage qui donne des informations détaillées sur l'exécution d'une page, incluant le temps d'exécution, l'utilisation de la mémoire et le détail des requêtes SQL effectuées."
+    },
+    {
+      "question": "Quelle est la fonction de la commande `php bin/console debug:router` ?",
+      "options": [
+        "Créer une nouvelle route.",
+        "Déboguer la connexion réseau du serveur.",
+        "Lister toutes les routes définies dans l'application.",
+        "Supprimer une route obsolète."
+      ],
+      "answer": "Lister toutes les routes définies dans l'application.",
+      "explanation": "Cette commande est très utile pour le débogage car elle affiche un tableau complet de toutes les routes de l'application avec leurs noms, méthodes, chemins et contrôleurs associés."
+    },
+    {
+      "question": "Le texte cite deux formats très utilisés pour l'échange et la structuration de données. Lesquels ?",
+      "options": [
+        "HTML et CSS",
+        "SQL et NoSQL",
+        "XML et JSON",
+        "PHP et JavaScript"
+      ],
+      "answer": "XML et JSON",
+      "explanation": "XML (eXtensible Markup Language) et JSON (JavaScript Object Notation) sont des standards pour l'échange de données, particulièrement pertinents dans le contexte des API RESTful."
+    },
+    {
+      "question": "Quel est l'objectif d'un outil comme `sec-checker` ?",
+      "options": [
+        "Vérifier la syntaxe du code PHP.",
+        "Scanner les dépendances du projet pour des vulnérabilités de sécurité connues.",
+        "Optimiser les performances de la base de données.",
+        "Crypter les mots de passe des utilisateurs."
+      ],
+      "answer": "Scanner les dépendances du projet pour des vulnérabilités de sécurité connues.",
+      "explanation": "Un vérificateur de sécurité analyse les paquets installés via Composer et les compare à une base de données de vulnérabilités connues pour s'assurer que le projet n'utilise pas de code tiers faillible."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Séance 4 : Transactions et sécurité, gestion des transactions, introduction aux verrous",
+  "questions": [
+    {
+      "question": "Quelle propriété d'une transaction garantit que toutes ses modifications sont enregistrées dans la base de données, ou qu'aucune ne l'est ?",
+      "options": [
+        "L'Isolation",
+        "La Cohérence",
+        "L'Atomicité",
+        "La Durabilité"
+      ],
+      "answer": "L'Atomicité",
+      "explanation": "L'atomicité assure qu'une transaction est une unité de travail indivisible. Soit elle réussit entièrement (commit), soit elle échoue et est complètement annulée (rollback), ne laissant aucune trace."
+    },
+    {
+      "question": "Quel problème de concurrence se produit lorsque deux transactions lisent la même donnée, la modifient en parallèle, et que la modification de la première transaction est écrasée par la seconde ?",
+      "options": [
+        "Lecture non reproductible",
+        "Perte de mise à jour",
+        "Lecture impropre",
+        "Interblocage"
+      ],
+      "answer": "Perte de mise à jour",
+      "explanation": "La perte de mise à jour (lost update) se produit quand l'effet d'une transaction est perdu car une autre transaction l'écrase sans avoir pris en compte la première modification."
+    },
+    {
+      "question": "Quelle est la principale caractéristique du protocole de verrouillage à deux phases (2PL) ?",
+      "options": [
+        "Une transaction ne peut acquérir que deux verrous au maximum.",
+        "Tous les verrous sont libérés avant le début de la transaction.",
+        "Une transaction ne peut plus acquérir de nouveau verrou après en avoir libéré un.",
+        "Les verrous sont acquis et libérés en deux étapes distinctes et non chevauchantes."
+      ],
+      "answer": "Une transaction ne peut plus acquérir de nouveau verrou après en avoir libéré un.",
+      "explanation": "Le protocole 2PL se compose d'une phase de croissance (acquisition de verrous) et d'une phase de décroissance (libération de verrous). Une fois qu'une transaction libère un verrou, elle ne peut plus en acquérir de nouveaux."
+    },
+    {
+      "question": "Selon les modes de verrouillage standards, quand une transaction peut-elle obtenir un verrou exclusif (X) sur une donnée ?",
+      "options": [
+        "Si un autre verrou partagé (S) est déjà placé sur la donnée.",
+        "Si aucun autre verrou, qu'il soit partagé ou exclusif, n'est déjà placé sur la donnée.",
+        "Uniquement si la transaction a déjà un verrou partagé (S) sur cette donnée.",
+        "Si d'autres transactions ont déjà des verrous exclusifs (X) sur cette donnée."
+      ],
+      "answer": "Si aucun autre verrou, qu'il soit partagé ou exclusif, n'est déjà placé sur la donnée.",
+      "explanation": "Un verrou exclusif (X) est incompatible avec tout autre verrou, y compris un verrou partagé (S). Il ne peut être acquis que si la ressource est totalement libre pour garantir un accès exclusif en écriture."
+    },
+    {
+      "question": "Qu'est-ce qu'une exécution sérialisable de transactions concurrentes ?",
+      "options": [
+        "Une exécution où les transactions s'exécutent strictement les unes après les autres.",
+        "Une exécution dont le résultat est équivalent à celui d'une certaine exécution en série de ces mêmes transactions.",
+        "Une exécution qui utilise obligatoirement le niveau d'isolation SERIALIZABLE de SQL.",
+        "Une exécution où aucune transaction ne doit attendre pour acquérir un verrou."
+      ],
+      "answer": "Une exécution dont le résultat est équivalent à celui d'une certaine exécution en série de ces mêmes transactions.",
+      "explanation": "La sérialisabilité est le principe fondamental du contrôle de concurrence. Il garantit l'isolation en s'assurant que le résultat final d'une exécution entrelacée est le même que si les transactions avaient été exécutées séquentiellement."
+    },
+    {
+      "question": "Qu'est-ce qu'un interblocage (deadlock) dans le contexte des transactions ?",
+      "options": [
+        "Une transaction qui attend indéfiniment une ressource sans qu'aucune autre transaction ne soit impliquée.",
+        "Une situation où deux ou plusieurs transactions s'attendent mutuellement en bloquant des ressources dont les autres ont besoin.",
+        "Une erreur système qui annule toutes les transactions en cours d'exécution.",
+        "Le fait qu'une transaction lise une donnée non confirmée par une autre transaction."
+      ],
+      "answer": "Une situation où deux ou plusieurs transactions s'attendent mutuellement en bloquant des ressources dont les autres ont besoin.",
+      "explanation": "L'interblocage est une attente circulaire où la transaction T1 attend une ressource détenue par T2, et T2 attend une ressource détenue par T1, créant un blocage mutuel."
+    },
+    {
+      "question": "Quel problème se produit lorsqu'une transaction répète une lecture et trouve des lignes supplémentaires qui ont été insérées par une autre transaction validée entre-temps ?",
+      "options": [
+        "Lecture non reproductible",
+        "Perte de mise à jour",
+        "Objets fantômes",
+        "Lecture impropre"
+      ],
+      "answer": "Objets fantômes",
+      "explanation": "Le problème des objets fantômes (phantom read) survient quand une transaction, en répétant une requête, obtient un ensemble de lignes différent à cause d'insertions ou de suppressions effectuées par une autre transaction concurrente."
+    },
+    {
+      "question": "Selon le document, quel mécanisme PostgreSQL utilise-t-il pour permettre aux lecteurs de ne pas bloquer les écrivains, et vice-versa ?",
+      "options": [
+        "Le protocole de verrouillage à deux phases strict.",
+        "Le contrôle de concurrence multiversions (MVCC).",
+        "Le verrouillage exclusif de toutes les tables lues.",
+        "L'exécution en série de toutes les transactions."
+      ],
+      "answer": "Le contrôle de concurrence multiversions (MVCC).",
+      "explanation": "Le MVCC permet à chaque transaction de voir un 'instantané' (snapshot) cohérent de la base de données. Les lecteurs consultent une version des données qui n'est pas affectée par les modifications en cours des écrivains, améliorant ainsi la concurrence."
+    }
+  ]
+}

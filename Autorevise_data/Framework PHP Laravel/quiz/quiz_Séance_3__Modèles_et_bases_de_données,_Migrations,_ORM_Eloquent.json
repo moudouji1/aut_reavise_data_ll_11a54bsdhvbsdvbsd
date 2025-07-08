@@ -1,0 +1,93 @@
+{
+  "title": "Séance 3 : Modèles et bases de données, Migrations, ORM Eloquent",
+  "questions": [
+    {
+      "question": "Quelle est la fonction de la méthode `up()` dans un fichier de migration Laravel ?",
+      "options": [
+        "Elle contient le code pour annuler les modifications de la migration.",
+        "Elle contient le code pour créer ou modifier le schéma de la base de données.",
+        "Elle sert à insérer des données de test (seeding) dans les tables.",
+        "Elle configure la connexion à la base de données pour la migration."
+      ],
+      "answer": "Elle contient le code pour créer ou modifier le schéma de la base de données.",
+      "explanation": "La méthode `up()` est exécutée lors de la commande `php artisan migrate` et contient les instructions pour construire le schéma de la base de données, comme la création de tables et de colonnes."
+    },
+    {
+      "question": "Dans un modèle Eloquent, quel est le rôle de la propriété protégée `$fillable` ?",
+      "options": [
+        "Définir les relations du modèle avec d'autres modèles.",
+        "Spécifier le nom de la table associée au modèle.",
+        "Protéger contre les vulnérabilités d'assignation de masse en autorisant certains champs.",
+        "Masquer certains attributs lors de la sérialisation du modèle en JSON."
+      ],
+      "answer": "Protéger contre les vulnérabilités d'assignation de masse en autorisant certains champs.",
+      "explanation": "La propriété `$fillable` est une mesure de sécurité qui définit une 'liste blanche' des attributs pouvant être assignés en masse via des méthodes comme `create()` ou `update()`."
+    },
+    {
+      "question": "À quoi servent les 'Seeders' (classes de population) dans Laravel ?",
+      "options": [
+        "À créer la structure des tables de la base de données.",
+        "À peupler la base de données avec des données initiales ou de test.",
+        "À définir les routes de l'application pour l'accès aux données.",
+        "À optimiser les performances des requêtes SQL."
+      ],
+      "answer": "À peupler la base de données avec des données initiales ou de test.",
+      "explanation": "Les seeders sont utilisés pour insérer des données dans la base de données. C'est très utile pour mettre en place une application avec des valeurs par défaut ou pour la remplir de fausses données pour le développement et les tests."
+    },
+    {
+      "question": "Quelle commande Artisan faut-il utiliser pour exécuter toutes les migrations en attente ?",
+      "options": [
+        "php artisan make:migration",
+        "php artisan migrate:rollback",
+        "php artisan db:seed",
+        "php artisan migrate"
+      ],
+      "answer": "php artisan migrate",
+      "explanation": "La commande `php artisan migrate` exécute la méthode `up()` de tous les fichiers de migration qui n'ont pas encore été exécutés, mettant ainsi à jour le schéma de la base de données."
+    },
+    {
+      "question": "Comment définir une relation 'un-à-plusieurs' (one-to-many) dans un modèle Eloquent, par exemple un `Article` qui a plusieurs `Commentaire` ?",
+      "options": [
+        "Dans le modèle Article, on définit une méthode `commentaires()` qui retourne `$this->belongsTo(Commentaire::class)`.`",
+        "Dans le modèle Article, on définit une méthode `commentaires()` qui retourne `$this->hasMany(Commentaire::class)`.`",
+        "Dans le modèle Commentaire, on définit une méthode `article()` qui retourne `$this->hasMany(Article::class)`.`",
+        "Dans le modèle Article, on définit une méthode `commentaires()` qui retourne `$this->belongsToMany(Commentaire::class)`.`"
+      ],
+      "answer": "Dans le modèle Article, on définit une méthode `commentaires()` qui retourne `$this->hasMany(Commentaire::class)`.`",
+      "explanation": "Pour une relation 'un-à-plusieurs', le modèle 'parent' (Article) utilise la méthode `hasMany` pour déclarer qu'il peut avoir plusieurs modèles 'enfants' (Commentaire)."
+    },
+    {
+      "question": "Quel est le principe de l'injection de dépendances dans un contrôleur Laravel ?",
+      "options": [
+        "Lier directement le contrôleur au modèle, en instanciant le modèle avec `new`.",
+        "Faire en sorte que le contrôleur délègue les tâches de traitement à une autre classe (ex: un Repository) qui lui est fournie automatiquement par le conteneur de services.",
+        "Écrire tout le code de traitement directement dans les fichiers de routes.",
+        "Utiliser des variables globales pour partager des données entre le contrôleur et les vues."
+      ],
+      "answer": "Faire en sorte que le contrôleur délègue les tâches de traitement à une autre classe (ex: un Repository) qui lui est fournie automatiquement par le conteneur de services.",
+      "explanation": "L'injection de dépendances permet de découpler le code. Au lieu que le contrôleur crée ses propres dépendances, il les déclare (souvent via une interface) et le conteneur de services de Laravel se charge de les créer et de les 'injecter', ce qui rend le code plus modulaire et testable."
+    },
+    {
+      "question": "Comment peut-on commencer une requête avec le Query Builder de Laravel pour accéder à la table 'users' ?",
+      "options": [
+        "User::query()",
+        "Schema::table('users')",
+        "DB::table('users')",
+        "DB::select('users')"
+      ],
+      "answer": "DB::table('users')",
+      "explanation": "La façade `DB` avec la méthode `table('nom_de_la_table')` est le point de départ standard pour utiliser le Query Builder, qui offre une interface fluide pour construire des requêtes SQL."
+    },
+    {
+      "question": "Quel est l'avantage principal de l'ORM Eloquent par rapport à l'écriture de requêtes SQL brutes ?",
+      "options": [
+        "Il est toujours plus rapide que le SQL brut.",
+        "Il permet de manipuler les données de la base sous forme d'objets et de relations, ce qui simplifie et sécurise les interactions.",
+        "Il ne fonctionne qu'avec les bases de données MySQL.",
+        "Il oblige à écrire des procédures stockées pour toutes les opérations."
+      ],
+      "answer": "Il permet de manipuler les données de la base sous forme d'objets et de relations, ce qui simplifie et sécurise les interactions.",
+      "explanation": "Eloquent est un ORM (Object-Relational Mapper) qui fait correspondre les tables de la base de données à des classes PHP (Modèles). Cela permet d'interagir avec la base de manière intuitive et orientée objet, en abstrayant la complexité du SQL."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "title": "Quiz : Les fondamentaux des réseaux",
+  "questions": [
+    {
+      "question": "Quelle est la principale caractéristique d'un réseau en topologie en étoile ?",
+      "options": [
+        "Tous les postes sont connectés à un seul et même câble principal.",
+        "Les postes sont connectés en boucle, et un jeton circule pour donner le droit de parole.",
+        "Chaque poste est relié à un concentrateur central (hub ou switch).",
+        "Le signal électrique n'est pas régénéré lorsqu'il passe d'une station à l'autre."
+      ],
+      "answer": "Chaque poste est relié à un concentrateur central (hub ou switch).",
+      "explanation": "Dans une topologie en étoile, chaque ordinateur est connecté via son propre câble à un point central, comme un concentrateur (hub) ou un commutateur (switch). Si un câble ou un poste tombe en panne, le reste du réseau n'est pas affecté."
+    },
+    {
+      "question": "Quelle est la fonction principale de la couche RÉSEAU (couche 3) du modèle OSI ?",
+      "options": [
+        "Gérer le transfert des trames et le contrôle d'erreur CRC.",
+        "Assurer la transmission des flux de bits bruts sur le support de communication.",
+        "Traduire les adresses logiques (ex: IP) en adresses physiques (ex: MAC) et gérer le routage des paquets.",
+        "Gérer l'ouverture et la fermeture d'une connexion (session) entre deux ordinateurs."
+      ],
+      "answer": "Traduire les adresses logiques (ex: IP) en adresses physiques (ex: MAC) et gérer le routage des paquets.",
+      "explanation": "La couche Réseau (Network Layer) se charge de l'adressage des messages, en traduisant les adresses logiques en adresses physiques et en déterminant le meilleur chemin (routage) pour les paquets à travers le réseau."
+    },
+    {
+      "question": "Parmi les protocoles suivants, lequel est considéré comme non routable, limitant ainsi sa communication à un seul segment de réseau ?",
+      "options": [
+        "TCP/IP",
+        "IPX/SPX",
+        "NetBEUI",
+        "DDP (AppleTalk)"
+      ],
+      "answer": "NetBEUI",
+      "explanation": "Le texte spécifie clairement dans un tableau comparatif que NetBEUI est un protocole non routable. Cela signifie qu'il ne peut pas franchir les routeurs pour communiquer avec d'autres sous-réseaux, le rendant adapté aux petits réseaux locaux."
+    },
+    {
+      "question": "Quelle est la différence fondamentale entre une organisation réseau \"postes à postes\" (Peer to Peer) et une organisation \"Client/Serveur\" ?",
+      "options": [
+        "Les réseaux Client/Serveur sont toujours plus lents que les réseaux postes à postes.",
+        "Dans un réseau postes à postes, il n'y a pas de hiérarchie et chaque poste peut être à la fois client et serveur, tandis qu'en Client/Serveur, les rôles sont spécialisés.",
+        "Seuls les réseaux Client/Serveur peuvent utiliser le protocole TCP/IP.",
+        "Les réseaux postes à postes nécessitent obligatoirement une topologie en bus."
+      ],
+      "answer": "Dans un réseau postes à postes, il n'y a pas de hiérarchie et chaque poste peut être à la fois client et serveur, tandis qu'en Client/Serveur, les rôles sont spécialisés.",
+      "explanation": "Les réseaux 'postes à postes' (peer to peer) n'ont pas de hiérarchie centrale ; chaque utilisateur est administrateur de sa machine. En revanche, les réseaux 'Client/Serveur' disposent de serveurs dédiés à des tâches spécifiques et de postes clients qui utilisent ces services."
+    },
+    {
+      "question": "À quelle norme de l'IEEE correspond l'architecture réseau ETHERNET qui utilise la méthode d'accès CSMA/CD ?",
+      "options": [
+        "IEEE 802.5",
+        "IEEE 802.11",
+        "IEEE 802.3",
+        "IEEE 802.12"
+      ],
+      "answer": "IEEE 802.3",
+      "explanation": "La norme IEEE 802.3 décrit la méthode d'accès au réseau CSMA/CD et a été élaborée sur la base des premiers réseaux ETHERNET. C'est aujourd'hui la norme standard pour les réseaux Ethernet câblés."
+    },
+    {
+      "question": "Dans le modèle client-serveur, comment sont aussi désignés le client et le serveur ?",
+      "options": [
+        "Le client est le dorsal (BACK END) et le serveur est le frontal (FRONT END).",
+        "Le client est le frontal (FRONT END) et le serveur est le dorsal (BACK END).",
+        "Le client est la source et le serveur la destination.",
+        "Le client est l'émetteur et le serveur le récepteur."
+      ],
+      "answer": "Le client est le frontal (FRONT END) et le serveur est le dorsal (BACK END).",
+      "explanation": "Le document précise que les composants d'un modèle client-serveur sont le client (aussi appelé le frontal, le FRONT END) qui gère l'interface utilisateur, et le serveur (aussi appelé le dorsal ou le BACK END) qui gère le traitement des données."
+    },
+    {
+      "question": "Quel niveau de RAID, décrit dans le document, augmente les performances en répartissant les données sur plusieurs disques mais n'offre AUCUNE tolérance de panne ?",
+      "options": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 10"
+      ],
+      "answer": "RAID 0",
+      "explanation": "Le RAID 0, ou agrégat par bandes sans parité, augmente le débit en lecture/écriture mais ne fournit aucune tolérance de panne. Si un des disques de l'agrégat tombe en panne, toutes les données sont perdues."
+    },
+    {
+      "question": "Qu'est-ce qu'un protocole routable ?",
+      "options": [
+        "Un protocole qui ne fonctionne qu'avec des câbles en fibre optique.",
+        "Un protocole qui permet de franchir les routeurs pour communiquer avec d'autres sous-réseaux.",
+        "Un protocole qui ne nécessite pas d'adresse IP pour fonctionner.",
+        "Un protocole utilisé exclusivement pour la messagerie électronique."
+      ],
+      "answer": "Un protocole qui permet de franchir les routeurs pour communiquer avec d'autres sous-réseaux.",
+      "explanation": "Les protocoles routables, comme TCP/IP ou IPX/SPX, contiennent des informations d'adressage qui permettent aux routeurs d'acheminer les paquets entre différents réseaux ou sous-réseaux."
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "title": "Séance 3 : Modèles et bases de données, Migrations, ORM Eloquent",
+  "nodes": [
+    {
+      "title": "Migrations",
+      "children": [
+        {
+          "title": "Définition",
+          "children": [
+            {
+              "title": "Gestion de versions pour le schéma de la base de données"
+            },
+            {
+              "title": "Fichiers situés dans `database/migrations`"
+            }
+          ]
+        },
+        {
+          "title": "Commandes Artisan",
+          "children": [
+            {
+              "title": "Créer une migration",
+              "children": [
+                {
+                  "title": "php artisan make:migration nom_de_la_migration"
+                }
+              ]
+            },
+            {
+              "title": "Exécuter les migrations",
+              "children": [
+                {
+                  "title": "php artisan migrate"
+                }
+              ]
+            },
+            {
+              "title": "Annuler les migrations",
+              "children": [
+                {
+                  "title": "Annuler la dernière : `migrate:rollback`"
+                },
+                {
+                  "title": "Annuler toutes et relancer : `migrate:refresh`"
+                },
+                {
+                  "title": "Supprimer les tables et relancer : `migrate:fresh`"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Structure d'un fichier de migration",
+          "children": [
+            {
+              "title": "Méthode `up()`",
+              "children": [
+                {
+                  "title": "Code pour créer ou modifier les tables/colonnes"
+                }
+              ]
+            },
+            {
+              "title": "Méthode `down()`",
+              "children": [
+                {
+                  "title": "Code pour annuler les changements de la méthode `up()`"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Schema Builder (Façade `Schema`)",
+          "children": [
+            {
+              "title": "Gestion des tables",
+              "children": [
+                {
+                  "title": "Créer : `Schema::create('nom_table', ...)`"
+                },
+                {
+                  "title": "Modifier : `Schema::table('nom_table', ...)`"
+                },
+                {
+                  "title": "Supprimer : `Schema::dropIfExists('nom_table')`"
+                },
+                {
+                  "title": "Renommer : `Schema::rename($from, $to)`"
+                }
+              ]
+            },
+            {
+              "title": "Gestion des colonnes",
+              "children": [
+                {
+                  "title": "Types de colonnes : `increments`, `string`, `text`, `integer`, `boolean`, `timestamps`, `foreignId`"
+                },
+                {
+                  "title": "Modificateurs : `nullable()`, `default()`, `unique()`, `unsigned()`"
+                }
+              ]
+            },
+            {
+              "title": "Gestion des index et clés",
+              "children": [
+                {
+                  "title": "Clé primaire : `primary()`"
+                },
+                {
+                  "title": "Index unique : `unique()`"
+                },
+                {
+                  "title": "Clé étrangère : `foreign('user_id')->references('id')->on('users')`"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ORM Eloquent",
+      "children": [
+        {
+          "title": "Modèles (Models)",
+          "children": [
+            {
+              "title": "Définition : Représentation d'une table sous forme d'objet"
+            },
+            {
+              "title": "Création : `php artisan make:model NomModele`"
+            },
+            {
+              "title": "Création avec migration : `make:model NomModele -m`"
+            },
+            {
+              "title": "Conventions : `User` -> table `users`"
+            },
+            {
+              "title": "Configuration",
+              "children": [
+                {
+                  "title": "Nom de la table : `protected $table = 'ma_table';`"
+                },
+                {
+                  "title": "Horodatage : `public $timestamps = false;`"
+                },
+                {
+                  "title": "Assignation de masse : `protected $fillable = ['col1', 'col2'];`"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Opérations CRUD",
+          "children": [
+            {
+              "title": "Créer (Create)",
+              "children": [
+                {
+                  "title": "new Model() + save()"
+                },
+                {
+                  "title": "Model::create([...])"
+                }
+              ]
+            },
+            {
+              "title": "Lire (Read)",
+              "children": [
+                {
+                  "title": "Tous : `Model::all()`"
+                },
+                {
+                  "title": "Par ID : `Model::find($id)`"
+                },
+                {
+                  "title": "Avec conditions : `Model::where(...)->get()`"
+                },
+                {
+                  "title": "Premier résultat : `Model::where(...)->first()`"
+                }
+              ]
+            },
+            {
+              "title": "Mettre à jour (Update)",
+              "children": [
+                {
+                  "title": "find() + modification + save()"
+                },
+                {
+                  "title": "Mise à jour de masse : `Model::where(...)->update([...])`"
+                }
+              ]
+            },
+            {
+              "title": "Supprimer (Delete)",
+              "children": [
+                {
+                  "title": "Sur une instance : `$model->delete()`"
+                },
+                {
+                  "title": "Par ID : `Model::destroy($id)`"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Query Builder d'Eloquent",
+          "children": [
+            {
+              "title": "Clauses : `select`, `where`, `orWhere`, `whereIn`, `whereBetween`, `orderBy`, `groupBy`"
+            },
+            {
+              "title": "Pagination, Limites : `take`, `skip`, `limit`, `offset`"
+            },
+            {
+              "title": "Agrégats : `count`, `max`, `min`, `sum`, `avg`"
+            },
+            {
+              "title": "Requêtes brutes : `DB::raw()`"
+            }
+          ]
+        },
+        {
+          "title": "Relations",
+          "children": [
+            {
+              "title": "Relation 1-n (One to Many)",
+              "children": [
+                {
+                  "title": "Parent : `hasMany(ModeleEnfant::class)`"
+                },
+                {
+                  "title": "Enfant : `belongsTo(ModeleParent::class)`"
+                }
+              ]
+            },
+            {
+              "title": "Relation n-n (Many to Many)",
+              "children": [
+                {
+                  "title": "Nécessite une table pivot"
+                },
+                {
+                  "title": "Déclaration : `belongsToMany(AutreModele::class)`"
+                },
+                {
+                  "title": "Manipulation : `attach()`, `detach()`, `sync()`"
+                }
+              ]
+            },
+            {
+              "title": "Chargement Eager (Eager Loading)",
+              "children": [
+                {
+                  "title": "Problème N+1 requêtes"
+                },
+                {
+                  "title": "Solution : `Model::with('relation')->get()`"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Seeding (Remplissage de la BDD)",
+          "children": [
+            {
+              "title": "Création d'un seeder : `php artisan make:seeder NomSeeder`"
+            },
+            {
+              "title": "Utilisation des Model Factories & Faker"
+            },
+            {
+              "title": "Lancement : `php artisan db:seed`"
+            },
+            {
+              "title": "Lancement d'un seeder spécifique : `--class=NomSeeder`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Architecture et Concepts Avancés",
+      "children": [
+        {
+          "title": "Injection de Dépendances",
+          "children": [
+            {
+              "title": "Principe : déléguer la logique métier à des classes de service"
+            },
+            {
+              "title": "Bénéfices : code testable, maintenable (principe DRY)"
+            },
+            {
+              "title": "Mise en oeuvre",
+              "children": [
+                {
+                  "title": "Injecter une classe via le type-hinting dans un contrôleur"
+                },
+                {
+                  "title": "Utiliser une interface pour le découplage"
+                },
+                {
+                  "title": "Lier l'interface à l'implémentation dans un `ServiceProvider` (`AppServiceProvider.php`)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Connexions Multiples à la BDD",
+          "children": [
+            {
+              "title": "Configuration dans `config/database.php`"
+            },
+            {
+              "title": "Utilisation",
+              "children": [
+                {
+                  "title": "Eloquent : `protected $connection = '...';` ou `$model->setConnection('...')`"
+                },
+                {
+                  "title": "Query Builder : `DB::connection('...')->select(...)`"
+                },
+                {
+                  "title": "Schema Builder : `Schema::connection('...')->create(...)`"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fondamentaux PHP & BDD",
+      "children": [
+        {
+          "title": "API d'accès aux BDD",
+          "children": [
+            {
+              "title": "MySQLi : spécifique à MySQL, approche procédurale ou objet"
+            },
+            {
+              "title": "PDO (PHP Data Objects) : interface objet unifiée pour plusieurs SGBD (recommandé)"
+            }
+          ]
+        },
+        {
+          "title": "Utilisation de PDO",
+          "children": [
+            {
+              "title": "Connexion : `new PDO(...)` dans un bloc `try...catch`"
+            },
+            {
+              "title": "Exécution de requêtes",
+              "children": [
+                {
+                  "title": "`query()` : pour les requêtes sans paramètres (SELECT)"
+                },
+                {
+                  "title": "`exec()` : pour les requêtes de modification (INSERT, UPDATE, DELETE)"
+                },
+                {
+                  "title": "Requêtes préparées (pour la sécurité) : `prepare()` puis `execute()`"
+                }
+              ]
+            },
+            {
+              "title": "Récupération des résultats",
+              "children": [
+                {
+                  "title": "`fetch()` : ligne par ligne"
+                },
+                {
+                  "title": "`fetchAll()` : toutes les lignes dans un tableau"
+                },
+                {
+                  "title": "Modes : `PDO::FETCH_ASSOC`, `PDO::FETCH_OBJ`, etc."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

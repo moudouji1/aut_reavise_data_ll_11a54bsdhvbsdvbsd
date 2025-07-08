@@ -1,0 +1,93 @@
+{
+  "title": "Séance 2 : Routage et contrôleurs, Gestion des routes, création de contrôleurs",
+  "questions": [
+    {
+      "question": "Quelle commande Artisan est utilisée pour créer un nouveau contrôleur nommé 'ArticleController' ?",
+      "options": [
+        "php artisan new:controller ArticleController",
+        "php artisan create:controller ArticleController",
+        "php artisan make:controller ArticleController",
+        "composer make:controller ArticleController"
+      ],
+      "answer": "php artisan make:controller ArticleController",
+      "explanation": "Artisan est l'outil en ligne de commande de Laravel. La commande `make:controller` est utilisée pour générer un nouveau fichier de contrôleur dans le dossier `app/Http/Controllers`."
+    },
+    {
+      "question": "Dans quel fichier d'un projet Laravel les routes pour l'interface web sont-elles généralement définies ?",
+      "options": [
+        "routes/api.php",
+        "routes/web.php",
+        "app/Http/routes.php",
+        "config/routes.php"
+      ],
+      "answer": "routes/web.php",
+      "explanation": "Le fichier `routes/web.php` est l'endroit où sont définies les routes pour l'interface utilisateur web. Le fichier `routes/api.php` est destiné aux routes de l'API."
+    },
+    {
+      "question": "Quelle est la syntaxe correcte pour lier une route à la méthode `show` d'un `ArticleController` ?",
+      "options": [
+        "Route::get('article/{id}', 'ArticleController->show');",
+        "Route::get('article/{id}', 'show@ArticleController');",
+        "Route::get('article/{id}', [ArticleController::class, 'show']);",
+        "Route::link('article/{id}', [ArticleController::class, 'show']);"
+      ],
+      "answer": "Route::get('article/{id}', [ArticleController::class, 'show']);",
+      "explanation": "La syntaxe moderne et recommandée dans Laravel pour lier une route à une action de contrôleur est d'utiliser un tableau contenant le nom de la classe du contrôleur et le nom de la méthode sous forme de chaîne."
+    },
+    {
+      "question": "Comment définir un paramètre de route optionnel nommé 'category' ?",
+      "options": [
+        "Route::get('/posts/{category?}', ...);",
+        "Route::get('/posts/[category]', ...);",
+        "Route::get('/posts/{category*}}', ...);",
+        "Route::get('/posts/(category)', ...);"
+      ],
+      "answer": "Route::get('/posts/{category?}', ...);",
+      "explanation": "En ajoutant un point d'interrogation `?` après le nom du paramètre dans l'URI, on le rend optionnel. Il faut également fournir une valeur par défaut pour la variable correspondante dans la fonction de rappel ou la méthode du contrôleur."
+    },
+    {
+      "question": "Quel est le rôle principal d'un contrôleur dans l'architecture Laravel ?",
+      "options": [
+        "Gérer les dépendances du projet avec Composer.",
+        "Définir la structure HTML des pages avec Blade.",
+        "Aiguiller les requêtes HTTP vers le bon code à exécuter.",
+        "Réceptionner une requête, traiter la logique métier et renvoyer une réponse."
+      ],
+      "answer": "Réceptionner une requête, traiter la logique métier et renvoyer une réponse.",
+      "explanation": "Le contrôleur agit comme un intermédiaire : il est appelé par une route pour gérer la logique d'une requête spécifique et retourner une réponse, qui est souvent une vue ou des données JSON."
+    },
+    {
+      "question": "Quelle syntaxe Blade est utilisée pour afficher le contenu de la variable `$title` en échappant les caractères HTML ?",
+      "options": [
+        "({ $title })",
+        "{{{ $title }}}",
+        "{!! $title !!}",
+        "{{ $title }}"
+      ],
+      "answer": "{{ $title }}",
+      "explanation": "La syntaxe `{{ }}` de Blade affiche les données après les avoir passées dans la fonction `htmlspecialchars` de PHP pour se prémunir des attaques XSS. `{!! !!}` est utilisé pour afficher des données brutes."
+    },
+    {
+      "question": "Quelle fonction helper permet de retourner une vue depuis une route ou un contrôleur ?",
+      "options": [
+        "return new View('welcome');",
+        "return view('welcome');",
+        "return blade('welcome');",
+        "return response()->view('welcome');"
+      ],
+      "answer": "return view('welcome');",
+      "explanation": "La fonction `view()` est un helper global de Laravel qui permet de créer une instance de réponse de vue de manière simple et concise. Elle prend le nom du fichier de la vue comme argument."
+    },
+    {
+      "question": "Comment nommer une route 'profile' pour pouvoir y faire référence facilement plus tard ?",
+      "options": [
+        "Route::get('/user/profile')->label('profile');",
+        "Route::get('/user/profile')->name('profile');",
+        "Route::name('profile')->get('/user/profile');",
+        "Route::get('/user/profile', ['name' => 'profile']);"
+      ],
+      "answer": "Route::get('/user/profile')->name('profile');",
+      "explanation": "La méthode `name()` peut être chaînée à la fin d'une définition de route pour lui assigner un nom unique. Ce nom peut ensuite être utilisé pour générer des URLs ou des redirections via la fonction `route()`."
+    }
+  ]
+}

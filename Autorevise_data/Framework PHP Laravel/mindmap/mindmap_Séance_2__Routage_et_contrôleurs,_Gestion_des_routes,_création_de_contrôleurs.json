@@ -1,0 +1,172 @@
+{
+  "title": "Séance 2 : Routage et contrôleurs",
+  "nodes": [
+    {
+      "title": "1. Gestion des Routes (Routage)",
+      "children": [
+        {
+          "title": "Principe",
+          "children": [
+            {
+              "title": "Lier une URI (URL) à une action (code)"
+            },
+            {
+              "title": "Fichier principal : routes/web.php"
+            }
+          ]
+        },
+        {
+          "title": "Méthodes HTTP",
+          "children": [
+            {
+              "title": "GET : Afficher une ressource"
+            },
+            {
+              "title": "POST : Créer une ressource (ex: formulaire)"
+            },
+            {
+              "title": "PUT : Mettre à jour une ressource"
+            },
+            {
+              "title": "DELETE : Supprimer une ressource"
+            },
+            {
+              "title": "MATCH / ANY : Gérer plusieurs/tous les verbes HTTP"
+            }
+          ]
+        },
+        {
+          "title": "Paramètres de route",
+          "children": [
+            {
+              "title": "Obligatoires : /posts/{id}"
+            },
+            {
+              "title": "Optionnels : /posts/{id?}"
+            },
+            {
+              "title": "Contraintes (Regex) : ->where('id', '[0-9]+')"
+            }
+          ]
+        },
+        {
+          "title": "Routes nommées",
+          "children": [
+            {
+              "title": "Déclaration : ->name('posts.show')"
+            },
+            {
+              "title": "Utilisation : route('posts.show') ou redirect()->route(...)"
+            }
+          ]
+        },
+        {
+          "title": "Groupes de routes : Route::prefix('admin')->group(...)"
+        },
+        {
+          "title": "Commandes Artisan utiles",
+          "children": [
+            {
+              "title": "php artisan route:list"
+            },
+            {
+              "title": "php artisan route:cache"
+            },
+            {
+              "title": "php artisan route:clear"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Création des Contrôleurs",
+      "children": [
+        {
+          "title": "Rôle : Organiser la logique, séparer le routage du traitement"
+        },
+        {
+          "title": "Création via Artisan : php artisan make:controller NomController"
+        },
+        {
+          "title": "Emplacement : app/Http/Controllers"
+        },
+        {
+          "title": "Structure : Une classe avec des méthodes publiques (actions)"
+        },
+        {
+          "title": "Liaison avec une route",
+          "children": [
+            {
+              "title": "Syntaxe : Route::get('/', [NomController::class, 'methode']);"
+            }
+          ]
+        },
+        {
+          "title": "Retourner une réponse (vue, JSON, redirection...)"
+        }
+      ]
+    },
+    {
+      "title": "3. Réponses & Vues (Moteur Blade)",
+      "children": [
+        {
+          "title": "Types de réponses",
+          "children": [
+            {
+              "title": "Simple : chaîne, tableau (JSON auto)"
+            },
+            {
+              "title": "Complète : response('Contenu', 200)"
+            },
+            {
+              "title": "JSON : response()->json([...])"
+            },
+            {
+              "title": "Redirections : redirect('/uri'), redirect()->route(...)"
+            }
+          ]
+        },
+        {
+          "title": "Vues",
+          "children": [
+            {
+              "title": "Définition : Fichiers HTML pour l'affichage"
+            },
+            {
+              "title": "Emplacement : resources/views"
+            },
+            {
+              "title": "Retourner une vue : view('nom.de.la.vue')"
+            }
+          ]
+        },
+        {
+          "title": "Moteur de template Blade (.blade.php)",
+          "children": [
+            {
+              "title": "Afficher des variables : {{ $var }} (protégé), {!! $var !!} (non protégé)"
+            },
+            {
+              "title": "Passer des données : view('vue', ['cle' => 'valeur'])"
+            },
+            {
+              "title": "Structures de contrôle : @if, @foreach, @for..."
+            },
+            {
+              "title": "Héritage de templates (Layouts)",
+              "children": [
+                {
+                  "title": "Layout maître : @yield('content')"
+                },
+                {
+                  "title": "Vue enfant : @extends('layout') et @section('content')"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

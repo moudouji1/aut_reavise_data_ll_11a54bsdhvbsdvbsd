@@ -1,0 +1,82 @@
+{
+  "title": "Séance 3 : Requêtes SQL avancées, JOIN, GROUP BY, sous-requêtes",
+  "questions": [
+    {
+      "question": "Quelle est la principale différence entre les clauses `WHERE` et `HAVING` en SQL ?",
+      "options": [
+        "Il n'y a aucune différence, `HAVING` est une ancienne syntaxe pour `WHERE`.",
+        "La clause `WHERE` filtre les lignes avant l'agrégation, tandis que `HAVING` filtre les groupes après l'agrégation.",
+        "`WHERE` s'applique aux colonnes de type texte et `HAVING` aux colonnes numériques.",
+        "`HAVING` ne peut être utilisé qu'avec la fonction `COUNT()` tandis que `WHERE` est plus général."
+      ],
+      "answer": "La clause `WHERE` filtre les lignes avant l'agrégation, tandis que `HAVING` filtre les groupes après l'agrégation.",
+      "explanation": "La clause `WHERE` agit sur les lignes individuelles avant qu'elles ne soient regroupées par `GROUP BY`. La clause `HAVING` est utilisée pour filtrer les résultats des groupes créés par `GROUP BY`, souvent en utilisant une fonction d'agrégation."
+    },
+    {
+      "question": "À quoi sert une jointure (JOIN) en SQL ?",
+      "options": [
+        "À trier les résultats d'une requête par ordre alphabétique.",
+        "À combiner des lignes de deux ou plusieurs tables en se basant sur une colonne commune.",
+        "À regrouper des lignes qui ont les mêmes valeurs dans des colonnes récapitulatives.",
+        "À supprimer des données dans plusieurs tables en une seule commande."
+      ],
+      "answer": "À combiner des lignes de deux ou plusieurs tables en se basant sur une colonne commune.",
+      "explanation": "Une jointure est une opération qui permet de lier des données provenant de différentes tables. Elle crée une nouvelle table virtuelle en combinant les lignes des tables sources lorsque les valeurs des colonnes de jointure correspondantes sont égales."
+    },
+    {
+      "question": "Qu'est-ce qu'une sous-requête (subquery) en SQL ?",
+      "options": [
+        "Un alias temporaire donné à une table pour simplifier l'écriture de la requête.",
+        "Une instruction `SELECT` imbriquée à l'intérieur d'une autre instruction SQL (SELECT, INSERT, UPDATE, ou DELETE).",
+        "Une fonction qui calcule une valeur unique à partir d'un ensemble de lignes, comme `SUM()`.",
+        "Une vue matérialisée qui stocke le résultat d'une requête complexe."
+      ],
+      "answer": "Une instruction `SELECT` imbriquée à l'intérieur d'une autre instruction SQL (SELECT, INSERT, UPDATE, ou DELETE).",
+      "explanation": "Une sous-requête, ou requête imbriquée, est une requête `SELECT` placée à l'intérieur d'une autre requête. Elle peut être utilisée pour retourner une seule valeur ou une liste de valeurs qui sera utilisée par la requête externe comme critère de sélection."
+    },
+    {
+      "question": "Quelle clause est utilisée avec l'opérateur `JOIN` pour spécifier la condition de jointure entre les tables ?",
+      "options": [
+        "WHERE",
+        "USING",
+        "ON",
+        "WITH"
+      ],
+      "answer": "ON",
+      "explanation": "Dans la syntaxe SQL standard, la clause `ON` suit l'opérateur `JOIN` et est utilisée pour définir la condition de correspondance entre les colonnes des tables que l'on souhaite joindre (par exemple, `auteurs.ville = éditeurs.ville`)."
+    },
+    {
+      "question": "Parmi les fonctions suivantes, laquelle n'est PAS une fonction d'agrégation (ou de groupe) ?",
+      "options": [
+        "AVG()",
+        "SUM()",
+        "DATEDIFF()",
+        "MAX()"
+      ],
+      "answer": "DATEDIFF()",
+      "explanation": "Les fonctions d'agrégation comme `AVG()`, `SUM()`, `MAX()`, `MIN()` et `COUNT()` effectuent un calcul sur un ensemble de lignes et retournent une seule valeur. `DATEDIFF()` est une fonction scalaire qui opère sur les dates pour calculer une différence, mais pas sur un groupe de lignes."
+    },
+    {
+      "question": "Quel opérateur est utilisé pour combiner les ensembles de résultats de deux ou plusieurs instructions `SELECT` en un seul ensemble de résultats ?",
+      "options": [
+        "JOIN",
+        "MERGE",
+        "UNION",
+        "COMBINE"
+      ],
+      "answer": "UNION",
+      "explanation": "L'opérateur `UNION` est utilisé pour fusionner les résultats de deux requêtes `SELECT` ou plus. Par défaut, `UNION` élimine les lignes en double des résultats combinés."
+    },
+    {
+      "question": "Dans quel cas est-il plus pertinent d'utiliser une sous-requête plutôt qu'une jointure ?",
+      "options": [
+        "Pour afficher des colonnes provenant de plusieurs tables dans le résultat final.",
+        "Lorsque la sélection de données d'une table dépend d'un calcul (comme une moyenne ou un maximum) effectué sur une autre table.",
+        "Pour trier les résultats en fonction d'une colonne calculée.",
+        "Il n'y a jamais de cas où une sous-requête est préférable à une jointure."
+      ],
+      "answer": "Lorsque la sélection de données d'une table dépend d'un calcul (comme une moyenne ou un maximum) effectué sur une autre table.",
+      "explanation": "Bien que de nombreuses sous-requêtes puissent être réécrites en jointures, elles sont particulièrement utiles lorsque la condition de la requête principale (`WHERE`) dépend du résultat d'une fonction d'agrégation (ex: trouver les livres dont le prix est supérieur à la moyenne de tous les prix)."
+    }
+  ]
+}

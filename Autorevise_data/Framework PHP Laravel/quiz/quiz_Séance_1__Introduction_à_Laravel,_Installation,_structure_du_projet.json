@@ -1,0 +1,93 @@
+{
+  "title": "Séance 1 : Introduction à Laravel, Installation, structure du projet",
+  "questions": [
+    {
+      "question": "Quel est le rôle principal de Composer dans un projet Laravel ?",
+      "options": [
+        "Lancer le serveur de développement local.",
+        "Gérer les dépendances et les bibliothèques PHP.",
+        "Compiler les fichiers CSS et JavaScript.",
+        "Exécuter les migrations de la base de données."
+      ],
+      "answer": "Gérer les dépendances et les bibliothèques PHP.",
+      "explanation": "Composer est un gestionnaire de dépendances pour PHP. Il installe et met à jour les bibliothèques dont le projet Laravel a besoin pour fonctionner."
+    },
+    {
+      "question": "Quelle commande Artisan est utilisée pour démarrer le serveur de développement intégré de Laravel ?",
+      "options": [
+        "php artisan start",
+        "php artisan run",
+        "php artisan up",
+        "php artisan serve"
+      ],
+      "answer": "php artisan serve",
+      "explanation": "La commande `php artisan serve` lance un serveur de développement local, rendant l'application accessible, par défaut, à l'adresse http://localhost:8000."
+    },
+    {
+      "question": "Dans quel fichier sont stockées les informations de configuration sensibles comme les identifiants de la base de données ?",
+      "options": [
+        "config/database.php",
+        ".env",
+        "composer.json",
+        "artisan"
+      ],
+      "answer": ".env",
+      "explanation": "Le fichier `.env` est utilisé pour stocker les variables d'environnement spécifiques à l'instance de l'application, y compris les données sensibles. Ce fichier n'est généralement pas versionné."
+    },
+    {
+      "question": "Selon l'architecture MVC de Laravel, quel est le rôle du Contrôleur (Controller) ?",
+      "options": [
+        "Gérer les interactions avec la base de données.",
+        "Représenter l'interface utilisateur (pages HTML).",
+        "Faire l'interface entre le Modèle et la Vue pour traiter les requêtes.",
+        "Définir les URL de l'application."
+      ],
+      "answer": "Faire l'interface entre le Modèle et la Vue pour traiter les requêtes.",
+      "explanation": "Le contrôleur reçoit les requêtes, interagit avec le Modèle pour récupérer les données, puis transmet ces données à la Vue qui se charge de l'affichage."
+    },
+    {
+      "question": "Quel répertoire contient le point d'entrée de l'application (index.php) et les fichiers statiques (CSS, JS, images) ?",
+      "options": [
+        "app",
+        "resources",
+        "public",
+        "storage"
+      ],
+      "answer": "public",
+      "explanation": "Le répertoire `public` est le seul dossier accessible publiquement. Il contient le fichier `index.php` qui initialise le framework et les ressources statiques."
+    },
+    {
+      "question": "Quelle commande Composer permet de créer un nouveau projet Laravel nommé 'mon-projet' ?",
+      "options": [
+        "composer new laravel mon-projet",
+        "composer install laravel/laravel mon-projet",
+        "composer create-project laravel/laravel mon-projet",
+        "php artisan new-project mon-projet"
+      ],
+      "answer": "composer create-project laravel/laravel mon-projet",
+      "explanation": "La commande `composer create-project` est la méthode standard pour télécharger et installer une nouvelle copie de Laravel avec toutes ses dépendances."
+    },
+    {
+      "question": "Dans quel répertoire se trouvent les fichiers de vue, comme les templates Blade (.blade.php) ?",
+      "options": [
+        "app/Views",
+        "public/assets/views",
+        "resources/views",
+        "storage/views"
+      ],
+      "answer": "resources/views",
+      "explanation": "Le répertoire `resources` contient les fichiers bruts non compilés, y compris les vues de l'application dans le sous-dossier `resources/views`."
+    },
+    {
+      "question": "À quoi sert l'outil en ligne de commande 'Artisan' de Laravel ?",
+      "options": [
+        "À déboguer le code PHP en temps réel.",
+        "À gérer les paquets JavaScript.",
+        "À automatiser des tâches récurrentes et générer des fichiers (contrôleurs, modèles, etc.).",
+        "À configurer le serveur web Apache ou Nginx."
+      ],
+      "answer": "À automatiser des tâches récurrentes et générer des fichiers (contrôleurs, modèles, etc.).",
+      "explanation": "Artisan est l'interface en ligne de commande de Laravel qui fournit une multitude de commandes pour aider au développement, comme la création de contrôleurs (`make:controller`), la gestion des migrations ou le vidage du cache."
+    }
+  ]
+}

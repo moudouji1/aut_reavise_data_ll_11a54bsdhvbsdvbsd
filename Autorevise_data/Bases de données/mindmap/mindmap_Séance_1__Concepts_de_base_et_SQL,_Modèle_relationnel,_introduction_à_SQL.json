@@ -1,0 +1,301 @@
+{
+  "title": "Séance 1 : Concepts de base et SQL, Modèle relationnel, introduction à SQL",
+  "nodes": [
+    {
+      "title": "Problématiques des Systèmes de Fichiers Classiques",
+      "children": [
+        {
+          "title": "Caractéristiques",
+          "children": [
+            {
+              "title": "Multiples applications, formats, langages"
+            },
+            {
+              "title": "Redondance de données et de code"
+            },
+            {
+              "title": "Pas de facilité d'interrogation"
+            }
+          ]
+        },
+        {
+          "title": "Problèmes",
+          "children": [
+            {
+              "title": "Difficultés de gestion"
+            },
+            {
+              "title": "Incohérence des données"
+            },
+            {
+              "title": "Coûts élevés et maintenance difficile"
+            },
+            {
+              "title": "Problèmes de partage, pannes, confidentialité"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L'approche 'Base de Données'",
+      "children": [
+        {
+          "title": "Principes",
+          "children": [
+            {
+              "title": "Modélisation des données"
+            },
+            {
+              "title": "Élimination de la redondance"
+            },
+            {
+              "title": "Centralisation et organisation"
+            }
+          ]
+        },
+        {
+          "title": "Outils",
+          "children": [
+            {
+              "title": "SGBD (Système de Gestion de Bases de Données)"
+            },
+            {
+              "title": "Langage déclaratif (SQL)"
+            }
+          ]
+        },
+        {
+          "title": "Bénéfices",
+          "children": [
+            {
+              "title": "Factorisation des contrôles (cohérence, partage, pannes)"
+            },
+            {
+              "title": "Administration facilitée"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modélisation Relationnelle",
+      "children": [
+        {
+          "title": "Architecture à 3 niveaux (ANSI-SPARC)",
+          "children": [
+            {
+              "title": "Schéma Conceptuel (vue globale, ex: Entité-Association)"
+            },
+            {
+              "title": "Schéma Interne (stockage physique, ex: INDEX)"
+            },
+            {
+              "title": "Schéma Externe (vue utilisateur, ex: VUES)"
+            }
+          ]
+        },
+        {
+          "title": "Étapes de conception",
+          "children": [
+            {
+              "title": "1. Capture des besoins (vues externes)"
+            },
+            {
+              "title": "2. Schéma conceptuel (schéma global)"
+            },
+            {
+              "title": "3. Schéma logique (tables)"
+            },
+            {
+              "title": "4. Affinement du schéma logique"
+            },
+            {
+              "title": "5. Schéma physique (index)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Algèbre Relationnelle (Fondements de SQL)",
+      "children": [
+        {
+          "title": "Opérations ensemblistes (schémas identiques)",
+          "children": [
+            {
+              "title": "Union (∪)"
+            },
+            {
+              "title": "Intersection (∩)"
+            },
+            {
+              "title": "Différence (-)"
+            }
+          ]
+        },
+        {
+          "title": "Opérations algébriques",
+          "children": [
+            {
+              "title": "Projection (π): Sélectionne des colonnes"
+            },
+            {
+              "title": "Restriction/Sélection (σ): Sélectionne des lignes (tuples)"
+            },
+            {
+              "title": "Produit Cartésien (X): Combine deux relations"
+            },
+            {
+              "title": "Jointure (|X|): Combinaison de produit cartésien et sélection"
+            },
+            {
+              "title": "Division (/)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Langage SQL (Structured Query Language)",
+      "children": [
+        {
+          "title": "Origines et Évolutions",
+          "children": [
+            {
+              "title": "Dérivé de l'algèbre relationnelle"
+            },
+            {
+              "title": "Normes: SQL1 (86, 89), SQL2 (92), SQL3 (99)"
+            }
+          ]
+        },
+        {
+          "title": "Catégories de commandes",
+          "children": [
+            {
+              "title": "LDD (Définition): CREATE, ALTER, DROP"
+            },
+            {
+              "title": "LMD (Manipulation): SELECT, INSERT, UPDATE, DELETE"
+            },
+            {
+              "title": "LCD (Contrôle): GRANT, REVOKE, COMMIT, ROLLBACK"
+            }
+          ]
+        },
+        {
+          "title": "Commande SELECT",
+          "children": [
+            {
+              "title": "Structure: SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY"
+            },
+            {
+              "title": "Fonctions et agrégats: COUNT, SUM, AVG, MIN, MAX"
+            },
+            {
+              "title": "Jointures: INNER, OUTER (LEFT, RIGHT, FULL)"
+            },
+            {
+              "title": "Requêtes imbriquées (sous-requêtes)"
+            }
+          ]
+        },
+        {
+          "title": "Commandes de mise à jour",
+          "children": [
+            {
+              "title": "INSERT INTO"
+            },
+            {
+              "title": "UPDATE ... SET"
+            },
+            {
+              "title": "DELETE FROM"
+            }
+          ]
+        },
+        {
+          "title": "Définition de la structure",
+          "children": [
+            {
+              "title": "CREATE TABLE"
+            },
+            {
+              "title": "CREATE VIEW"
+            },
+            {
+              "title": "CREATE INDEX"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Concepts Clés des SGBD",
+      "children": [
+        {
+          "title": "Indépendance",
+          "children": [
+            {
+              "title": "Physique (stockage transparent pour les programmes)"
+            },
+            {
+              "title": "Logique (évolution de la base sans modifier les applications)"
+            }
+          ]
+        },
+        {
+          "title": "Vues (Indépendance Logique)",
+          "children": [
+            {
+              "title": "Relation virtuelle (question SQL stockée)"
+            },
+            {
+              "title": "Fenêtre dynamique sur les données"
+            },
+            {
+              "title": "Vues modifiables et vues concrètes"
+            }
+          ]
+        },
+        {
+          "title": "Intégrité des données",
+          "children": [
+            {
+              "title": "Intégrité Logique (Contraintes CHECK, FOREIGN KEY, PRIMARY KEY)"
+            },
+            {
+              "title": "Intégrité Physique (Transactions)"
+            }
+          ]
+        },
+        {
+          "title": "Transactions",
+          "children": [
+            {
+              "title": "Propriétés ACID (Atomicité, Cohérence, Isolation, Durabilité)"
+            },
+            {
+              "title": "Commandes: COMMIT, ROLLBACK"
+            },
+            {
+              "title": "Déclencheurs (Triggers): règles ECA (Événement, Condition, Action)"
+            }
+          ]
+        },
+        {
+          "title": "Partage et Sécurité",
+          "children": [
+            {
+              "title": "Gestion des accès concurrents (verrouillage)"
+            },
+            {
+              "title": "Confidentialité et contrôle d'accès (GRANT, REVOKE)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "title": "Séance 5 : Connexion à une base via un langage, Connexion avec JDBC, PHP PDO",
+  "nodes": [
+    {
+      "title": "PHP & MySQL",
+      "children": [
+        {
+          "title": "Introduction",
+          "children": [
+            {
+              "title": "Définition de PHP (Hypertext Preprocessor)"
+            },
+            {
+              "title": "Langage côté serveur (Server Side)"
+            },
+            {
+              "title": "Principaux atouts (Gratuit, Open Source, simple, multi-SGBD)"
+            },
+            {
+              "title": "Couple PHP/MySQL : Environnement (Serveur Web, SGBDR, PHP)"
+            }
+          ]
+        },
+        {
+          "title": "Partie A : Syntaxe de base",
+          "children": [
+            {
+              "title": "1. Bases (HTML vers PHP)",
+              "children": [
+                {
+                  "title": "Balises PHP (<?php ... ?>)"
+                },
+                {
+                  "title": "Envoi de données (echo, print)"
+                },
+                {
+                  "title": "Commentaires (//, /* */, #)"
+                },
+                {
+                  "title": "Échappement de caractères (\\)"
+                }
+              ]
+            },
+            {
+              "title": "2. Variables",
+              "children": [
+                {
+                  "title": "Types (Scalaires, Non scalaires)"
+                },
+                {
+                  "title": "Règles de nommage ($variable)"
+                },
+                {
+                  "title": "Variables prédéfinies ($_SERVER, etc.)"
+                }
+              ]
+            },
+            {
+              "title": "3. Chaînes de caractères",
+              "children": [
+                {
+                  "title": "Déclaration (' ' ou \" \")"
+                },
+                {
+                  "title": "Concaténation (.)"
+                },
+                {
+                  "title": "Fonctions (strlen)"
+                }
+              ]
+            },
+            {
+              "title": "4. Nombres et Opérateurs",
+              "children": [
+                {
+                  "title": "Types (Entiers, Flottants)"
+                },
+                {
+                  "title": "Opérateurs arithmétiques (+, -, *, /, %)"
+                },
+                {
+                  "title": "Fonctions (round, number_format)"
+                }
+              ]
+            },
+            {
+              "title": "5. Constantes",
+              "children": [
+                {
+                  "title": "Définition (define())"
+                },
+                {
+                  "title": "Constantes prédéfinies (PHP_VERSION, PHP_OS)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Partie B : Programmation PHP",
+          "children": [
+            {
+              "title": "1. Formulaires HTML",
+              "children": [
+                {
+                  "title": "Balise <form>"
+                },
+                {
+                  "title": "Attributs (action, method)"
+                },
+                {
+                  "title": "Méthodes GET vs POST"
+                }
+              ]
+            },
+            {
+              "title": "2. Traitement des formulaires",
+              "children": [
+                {
+                  "title": "Récupération des données"
+                },
+                {
+                  "title": "Tableaux superglobaux ($_GET, $_POST)"
+                },
+                {
+                  "title": "Sécurité (stripslashes)"
+                }
+              ]
+            },
+            {
+              "title": "3. Structures de contrôle",
+              "children": [
+                {
+                  "title": "Conditionnelles (if, else, elseif, switch)"
+                },
+                {
+                  "title": "Opérateurs (Comparaison, Logiques)"
+                },
+                {
+                  "title": "Validation de données (isset, strlen)"
+                }
+              ]
+            },
+            {
+              "title": "4. Tableaux",
+              "children": [
+                {
+                  "title": "Types (Indexés, Associatifs)"
+                },
+                {
+                  "title": "Création (array(), range())"
+                },
+                {
+                  "title": "Parcours (foreach)"
+                },
+                {
+                  "title": "Tableaux à plusieurs dimensions"
+                }
+              ]
+            },
+            {
+              "title": "5. Boucles",
+              "children": [
+                {
+                  "title": "Boucle for"
+                },
+                {
+                  "title": "Boucle while"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Connexion avec JDBC (Java)",
+      "children": [
+        {
+          "title": "1. Introduction",
+          "children": [
+            {
+              "title": "Définition (Java DataBase Connectivity)"
+            },
+            {
+              "title": "Architecture (Application Java -> Driver JDBC -> SGBD)"
+            },
+            {
+              "title": "Étapes clés (Charger driver, Connexion, Requête, Résultat, Fermeture)"
+            }
+          ]
+        },
+        {
+          "title": "2. Pilotes (Drivers)",
+          "children": [
+            {
+              "title": "Définition : Interface java.sql.Driver"
+            },
+            {
+              "title": "4 Types de drivers"
+            },
+            {
+              "title": "Chargement du driver (Class.forName())"
+            }
+          ]
+        },
+        {
+          "title": "3. La Connexion",
+          "children": [
+            {
+              "title": "Obtention via DriverManager.getConnection()"
+            },
+            {
+              "title": "Format de l'URL JDBC (jdbc:sous-protocole:source)"
+            },
+            {
+              "title": "Gestion de la fermeture (try-finally)"
+            }
+          ]
+        },
+        {
+          "title": "4. Sources de données (DataSource)",
+          "children": [
+            {
+              "title": "Interface javax.sql.DataSource"
+            },
+            {
+              "title": "Avantages (Portabilité, Pooling de connexions, Transactions distribuées)"
+            }
+          ]
+        },
+        {
+          "title": "5. Instructions (Statements)",
+          "children": [
+            {
+              "title": "Statement : pour requêtes simples"
+            },
+            {
+              "title": "PreparedStatement : pour requêtes paramétrées (sécurisé)"
+            },
+            {
+              "title": "CallableStatement : pour procédures stockées"
+            }
+          ]
+        },
+        {
+          "title": "6. Résultats (ResultSet)",
+          "children": [
+            {
+              "title": "Parcourir les résultats (next())"
+            },
+            {
+              "title": "Récupérer les données (getString(), getInt(), etc.)"
+            }
+          ]
+        },
+        {
+          "title": "7. Méta-données (MetaData)",
+          "children": [
+            {
+              "title": "DatabaseMetaData : infos sur le SGBD"
+            },
+            {
+              "title": "ResultSetMetaData : infos sur les colonnes du résultat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Développement d'applications BD (JBuilder/DataExpress)",
+      "children": [
+        {
+          "title": "Architecture DataExpress",
+          "children": [
+            {
+              "title": "Acquisition des données (Provider)"
+            },
+            {
+              "title": "Manipulation des données (DataSet)"
+            },
+            {
+              "title": "Résolution des modifications (Resolver)"
+            }
+          ]
+        },
+        {
+          "title": "Composants Clés",
+          "children": [
+            {
+              "title": "Database : Gère la connexion JDBC"
+            },
+            {
+              "title": "DataSet : Stockage des données en mémoire"
+            },
+            {
+              "title": "QueryDataSet : Résultat d'une requête SQL"
+            },
+            {
+              "title": "dbSwing : Composants UI liés aux données"
+            },
+            {
+              "title": "JDataStore : Base de données Java embarquée"
+            }
+          ]
+        },
+        {
+          "title": "Processus de développement",
+          "children": [
+            {
+              "title": "Chapitre 4: Connexion (Composant Database)"
+            },
+            {
+              "title": "Chapitre 5: Extraction des données (QueryDataSet, requêtes paramétrées)"
+            },
+            {
+              "title": "Chapitre 7: Manipulation des colonnes (Propriétés, Métadonnées)"
+            },
+            {
+              "title": "Chapitre 8: Enregistrement des modifications (Resolver)"
+            },
+            {
+              "title": "Chapitre 11: Filtrage, tri et recherche de données"
+            }
+          ]
+        },
+        {
+          "title": "Outils d'administration",
+          "children": [
+            {
+              "title": "Pilote de base de données (Explorateur de schéma)"
+            },
+            {
+              "title": "Moniteur JDBC (Surveillance du trafic SQL)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

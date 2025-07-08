@@ -1,0 +1,93 @@
+{
+  "title": "Séance 4 : Formulaires et validation, Gestion des entrées utilisateur",
+  "questions": [
+    {
+      "question": "Comment Laravel se protège-t-il par défaut contre les attaques de type CSRF (Cross-Site Request Forgery) ?",
+      "options": [
+        "En chiffrant toutes les données du formulaire.",
+        "En exigeant une authentification par cookie à chaque soumission.",
+        "En générant automatiquement un jeton (token) unique et caché pour chaque formulaire.",
+        "En n'acceptant que les requêtes provenant de la même adresse IP."
+      ],
+      "answer": "En générant automatiquement un jeton (token) unique et caché pour chaque formulaire.",
+      "explanation": "Laravel inclut un champ de formulaire caché nommé '_token' contenant une valeur unique pour chaque session utilisateur. Ce jeton est vérifié côté serveur pour s'assurer que la requête provient bien de l'application elle-même, prévenant ainsi les attaques CSRF. On utilise la directive Blade `@csrf` pour le générer."
+    },
+    {
+      "question": "Quelle est la pratique courante pour gérer l'affichage et la soumission d'un formulaire en termes de routes dans Laravel ?",
+      "options": [
+        "Utiliser une seule route avec le verbe `ANY`.",
+        "Utiliser deux routes différentes : une pour l'URL d'affichage et une autre pour l'URL de soumission.",
+        "Utiliser deux routes pointant vers la même URL : une avec le verbe `GET` pour afficher le formulaire, et une avec `POST` pour le traiter.",
+        "Utiliser uniquement une route avec le verbe `POST`."
+      ],
+      "answer": "Utiliser deux routes pointant vers la même URL : une avec le verbe `GET` pour afficher le formulaire, et une avec `POST` pour le traiter.",
+      "explanation": "C'est une convention RESTful. La route `GET /ressource` est utilisée pour afficher le formulaire de création, tandis que la route `POST /ressource` est utilisée pour stocker la nouvelle ressource soumise via le formulaire."
+    },
+    {
+      "question": "Dans un contrôleur Laravel, comment récupère-t-on la valeur d'un champ de formulaire nommé 'email' après sa soumission ?",
+      "options": [
+        "En accédant directement à la superglobale `$POST['email']`.",
+        "En utilisant l'objet Request : `$request->input('email')`.",
+        "En lisant la variable de session `Session::get('email')`.",
+        "En utilisant la méthode `Form::getValue('email')`."
+      ],
+      "answer": "En utilisant l'objet Request : `$request->input('email')`.",
+      "explanation": "Laravel encapsule la requête HTTP dans un objet `Request`. Utiliser la méthode `input()` sur cet objet est la manière standard et sécurisée de récupérer les données envoyées par l'utilisateur, que la méthode soit POST, GET, etc."
+    },
+    {
+      "question": "Les formulaires HTML ne supportent nativement que les méthodes GET et POST. Comment Laravel permet-il de simuler une requête DELETE depuis un formulaire ?",
+      "options": [
+        "En utilisant directement `<form method=\"DELETE\">`.",
+        "En ajoutant un paramètre `?_method=DELETE` à l'URL de l'action.",
+        "En utilisant une requête AJAX obligatoirement.",
+        "En ajoutant un champ caché `_method` avec la valeur `DELETE` dans un formulaire POST."
+      ],
+      "answer": "En ajoutant un champ caché `_method` avec la valeur `DELETE` dans un formulaire POST.",
+      "explanation": "Laravel utilise une technique appelée 'method spoofing'. En soumettant un formulaire avec la méthode POST et en incluant un champ caché `_method` (généré facilement avec la directive Blade `@method('DELETE')`), Laravel interprète la requête comme une requête DELETE."
+    },
+    {
+      "question": "Quelle est la syntaxe pour définir une règle de validation qui rend un champ 'titre' obligatoire et avec une longueur maximale de 255 caractères ?",
+      "options": [
+        "'title' => 'obligatoire ET max(255)'",
+        "'title' => ['required', 'max=255']",
+        "'title' => 'required|max:255'",
+        "'title' -> 'required' && 'title' -> 'max:255'"
+      ],
+      "answer": "'title' => 'required|max:255'",
+      "explanation": "Les règles de validation pour un champ sont définies dans une chaîne de caractères, où chaque règle est séparée par un pipe `|`. Les arguments pour une règle, comme la valeur maximale pour `max`, sont spécifiés après deux-points `:`."
+    },
+    {
+      "question": "Après une redirection suite à un échec de validation, quelle variable est automatiquement disponible dans la vue Blade pour afficher les messages d'erreur ?",
+      "options": [
+        "Un tableau `$validation_errors`",
+        "Un objet `$errors`",
+        "Une chaîne de caractères `$message`",
+        "L'objet `$request`"
+      ],
+      "answer": "Un objet `$errors`",
+      "explanation": "En cas d'échec de la validation, Laravel redirige l'utilisateur vers la page précédente en 'flashant' les erreurs dans la session. Ces erreurs sont alors accessibles dans la vue via la variable `$errors`, qui est un objet `MessageBag` permettant d'utiliser des méthodes comme `$errors->has('nom')` ou `$errors->first('nom')`."
+    },
+    {
+      "question": "Quel attribut est indispensable à la balise `<form>` pour permettre l'envoi de fichiers (upload) ?",
+      "options": [
+        " `upload=\"true\"`",
+        "`action=\"upload.php\"`",
+        "`method=\"FILE\"`",
+        "`enctype=\"multipart/form-data\"`"
+      ],
+      "answer": "`enctype=\"multipart/form-data\"`",
+      "explanation": "L'attribut `enctype` spécifie comment les données du formulaire doivent être encodées. La valeur `multipart/form-data` est nécessaire pour que les fichiers puissent être inclus dans la soumission du formulaire."
+    },
+    {
+      "question": "Selon le texte, si on utilise le paquet `Laravelcollective/Html`, quelle syntaxe Blade génère un champ de saisie de texte pour un attribut 'nom' ?",
+      "options": [
+        "{{ Form::input('text', 'nom') }}",
+        "{!! Form::text('nom') !!}",
+        "@text('nom')",
+        "<input type=\"text\" name=\"nom\">"
+      ],
+      "answer": "{!! Form::text('nom') !!}",
+      "explanation": "Le paquet `Laravelcollective/Html` fournit un `FormBuilder`. La méthode `Form::text('nom')` crée un champ de type texte. La syntaxe `{!! !!}` est utilisée pour afficher le HTML généré sans l'échapper, ce qui est nécessaire pour que la balise soit correctement interprétée par le navigateur."
+    }
+  ]
+}

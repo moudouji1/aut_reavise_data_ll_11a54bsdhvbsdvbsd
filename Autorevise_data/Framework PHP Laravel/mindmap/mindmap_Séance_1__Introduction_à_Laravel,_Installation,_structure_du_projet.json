@@ -1,0 +1,210 @@
+{
+  "title": "Séance 1 : Introduction à Laravel, Installation, structure du projet",
+  "nodes": [
+    {
+      "title": "1. Introduction et Concepts Fondamentaux",
+      "children": [
+        {
+          "title": "Qu'est-ce qu'un framework PHP ?",
+          "children": [
+            {
+              "title": "Plateforme pour créer des applications web"
+            },
+            {
+              "title": "Fournit des bibliothèques pour tâches courantes"
+            },
+            {
+              "title": "Avantages : développement rapide, moins de code, sécurité, bonnes pratiques"
+            }
+          ]
+        },
+        {
+          "title": "Pourquoi choisir Laravel ?",
+          "children": [
+            {
+              "title": "Syntaxe simple et élégante"
+            },
+            {
+              "title": "Utilise les meilleurs composants existants (ex: Symfony, SwiftMailer)"
+            },
+            {
+              "title": "Fonctionnalités riches : routage, ORM Eloquent, moteur de template Blade, authentification, etc."
+            },
+            {
+              "title": "Grande communauté et excellente documentation"
+            }
+          ]
+        },
+        {
+          "title": "Architecture MVC (Modèle-Vue-Contrôleur)",
+          "children": [
+            {
+              "title": "Modèle : Gère les données et la logique métier (interaction BDD)"
+            },
+            {
+              "title": "Vue : Gère l'affichage et l'interface utilisateur (HTML, Blade)"
+            },
+            {
+              "title": "Contrôleur : Fait l'interface entre le Modèle et la Vue, gère les requêtes"
+            }
+          ]
+        },
+        {
+          "title": "Patrons de Conception (Design Patterns)",
+          "children": [
+            {
+              "title": "Solutions à des problèmes de conception récurrents"
+            },
+            {
+              "title": "Exemples : Fabrique (Factory), Singleton, Adaptateur, Observateur"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2. Préparation de l'Environnement",
+      "children": [
+        {
+          "title": "Prérequis Serveur",
+          "children": [
+            {
+              "title": "PHP >= 7.3 (ou 5.5.9 pour anciennes versions)"
+            },
+            {
+              "title": "Extensions PHP requises : PDO, OpenSSL, Mbstring, Tokenizer, XML, Ctype, JSON"
+            }
+          ]
+        },
+        {
+          "title": "Composer : Gestionnaire de dépendances",
+          "children": [
+            {
+              "title": "Installe et met à jour les bibliothèques du projet"
+            },
+            {
+              "title": "Installation via le site getcomposer.org"
+            }
+          ]
+        },
+        {
+          "title": "Configuration de l'environnement",
+          "children": [
+            {
+              "title": "Fichier `.env` à la racine du projet"
+            },
+            {
+              "title": "Contient les variables sensibles (BDD, clés API, etc.)"
+            },
+            {
+              "title": "Exemples : APP_NAME, DB_CONNECTION, DB_HOST..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3. Installation et Lancement",
+      "children": [
+        {
+          "title": "Création d'un projet",
+          "children": [
+            {
+              "title": "Via Composer : `composer create-project laravel/laravel nom-du-projet`"
+            },
+            {
+              "title": "Via Laravel Installer : `laravel new nom-du-projet`"
+            }
+          ]
+        },
+        {
+          "title": "Lancer le serveur de développement",
+          "children": [
+            {
+              "title": "Commande : `php artisan serve`"
+            },
+            {
+              "title": "Application accessible par défaut sur http://localhost:8000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "4. Structure d'un Projet Laravel",
+      "children": [
+        {
+          "title": "Répertoires principaux",
+          "children": [
+            {
+              "title": "app/ : Le cœur de l'application (Contrôleurs, Modèles...)"
+            },
+            {
+              "title": "config/ : Fichiers de configuration de l'application"
+            },
+            {
+              "title": "database/ : Migrations et 'seeds' pour la base de données"
+            },
+            {
+              "title": "public/ : Point d'entrée (index.php) et fichiers publics (CSS, JS, images)"
+            },
+            {
+              "title": "resources/ : Vues (Blade), assets non-compilés (SASS, JS)"
+            },
+            {
+              "title": "routes/ : Définition des URL de l'application (web.php, api.php)"
+            },
+            {
+              "title": "storage/ : Fichiers générés (logs, cache, uploads)"
+            },
+            {
+              "title": "vendor/ : Dépendances installées par Composer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "5. Outils et Concepts Clés",
+      "children": [
+        {
+          "title": "Artisan : L'interface en ligne de commande",
+          "children": [
+            {
+              "title": "Automatise les tâches récurrentes"
+            },
+            {
+              "title": "`php artisan list` : Lister les commandes"
+            },
+            {
+              "title": "`php artisan make:controller` : Créer un contrôleur"
+            },
+            {
+              "title": "`php artisan make:model` : Créer un modèle"
+            },
+            {
+              "title": "`php artisan migrate` : Exécuter les migrations BDD"
+            },
+            {
+              "title": "`php artisan route:list` : Lister les routes"
+            }
+          ]
+        },
+        {
+          "title": "Le Routage",
+          "children": [
+            {
+              "title": "Définit comment l'application répond aux requêtes"
+            },
+            {
+              "title": "Fichier principal : `routes/web.php`"
+            },
+            {
+              "title": "Associe une URL à une action de contrôleur ou une fonction"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

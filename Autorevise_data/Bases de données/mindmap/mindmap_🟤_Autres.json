@@ -1,0 +1,777 @@
+{
+  "title": "La théorie des réseaux locaux et étendus",
+  "nodes": [
+    {
+      "title": "Introduction",
+      "children": [
+        {
+          "title": "Téléchargements"
+        },
+        {
+          "title": "Introduction"
+        }
+      ]
+    },
+    {
+      "title": "Les avantages des réseaux",
+      "children": [
+        {
+          "title": "La chaîne numérique"
+        },
+        {
+          "title": "La communication numérique"
+        },
+        {
+          "title": "La centralisation de l'administration"
+        },
+        {
+          "title": "Les outils de centralisation de l'administration"
+        }
+      ]
+    },
+    {
+      "title": "La classification des réseaux",
+      "children": [
+        {
+          "title": "Les critères de classification d'un réseau"
+        },
+        {
+          "title": "Les protocoles routables"
+        }
+      ]
+    },
+    {
+      "title": "La topologie des réseaux",
+      "children": [
+        {
+          "title": "La représentation d'un réseau"
+        },
+        {
+          "title": "Les réseaux en bus"
+        },
+        {
+          "title": "Les réseaux en étoile"
+        },
+        {
+          "title": "Les réseaux en anneau"
+        },
+        {
+          "title": "Les réseaux mixtes"
+        }
+      ]
+    },
+    {
+      "title": "Les types d'organisation des réseau",
+      "children": [
+        {
+          "title": "L'informatique centralisée"
+        },
+        {
+          "title": "Les réseaux postes à postes (peer to peer)"
+        },
+        {
+          "title": "Les réseaux Client/Serveur"
+        },
+        {
+          "title": "L'avantage des réseaux Client/Serveur"
+        },
+        {
+          "title": "La configuration minimum de WINDOWS NT 4 SERVER"
+        }
+      ]
+    },
+    {
+      "title": "Les réseaux client-serveur",
+      "children": [
+        {
+          "title": "L'apparition du modèle client-serveur"
+        },
+        {
+          "title": "Les avantages du modèle client-serveur"
+        },
+        {
+          "title": "Le processus d'une requête SQL en client-serveur"
+        },
+        {
+          "title": "Le Client et le Serveur"
+        },
+        {
+          "title": "Le client"
+        },
+        {
+          "title": "Le serveur"
+        },
+        {
+          "title": "Les spécifications techniques pour un serveur"
+        }
+      ]
+    },
+    {
+      "title": "Les organismes de normalisation",
+      "children": [
+        {
+          "title": "L'influence des normes"
+        },
+        {
+          "title": "Les principaux organismes de normalisation"
+        }
+      ]
+    },
+    {
+      "title": "Le modèle OSI",
+      "children": [
+        {
+          "title": "La normalisation des communications des réseaux hétérogènes"
+        },
+        {
+          "title": "L'activité d'un réseau"
+        },
+        {
+          "title": "La préparation des données"
+        },
+        {
+          "title": "L'architecture en 7 couches du modèle OSI"
+        },
+        {
+          "title": "La couche APPLICATION"
+        },
+        {
+          "title": "La couche PRESENTATION"
+        },
+        {
+          "title": "La couche SESSION"
+        },
+        {
+          "title": "La couche TRANSPORT"
+        },
+        {
+          "title": "La couche RESEAU"
+        },
+        {
+          "title": "La couche LIAISON"
+        },
+        {
+          "title": "La couche PHYSIQUE"
+        },
+        {
+          "title": "Le modèle IEEE-802"
+        },
+        {
+          "title": "Les douze catégories du modèle IEEE 802"
+        },
+        {
+          "title": "Les sous-couches LLC et MAC du modèle IEEE 802"
+        },
+        {
+          "title": "La segmentation des données en paquets"
+        },
+        {
+          "title": "La structure d'un paquet"
+        },
+        {
+          "title": "L'adressage d'un paquet"
+        },
+        {
+          "title": "Le routage d'un paquet"
+        },
+        {
+          "title": "Les types de trame avec le protocole IPX"
+        }
+      ]
+    },
+    {
+      "title": "Les réseaux APPLETALK",
+      "children": [
+        {
+          "title": "L'architecture des réseaux APPLETALK"
+        },
+        {
+          "title": "Les caractéristiques des réseaux APPLETALK"
+        },
+        {
+          "title": "Les composants matériels d'un réseau APPLETALK"
+        },
+        {
+          "title": "L'identification d'une machine sur un réseau APPLETALK"
+        }
+      ]
+    },
+    {
+      "title": "Les réseaux ARCNET",
+      "children": [
+        {
+          "title": "L'architecture ARCNET"
+        },
+        {
+          "title": "Les caractéristiques des réseaux ARCNET"
+        },
+        {
+          "title": "Le format de la trame ARCNET"
+        },
+        {
+          "title": "Les composants matériels d'un réseau ARCNET"
+        }
+      ]
+    },
+    {
+      "title": "Le réseau ARPANET",
+      "children": [
+        {
+          "title": "Un programme de recherche américain"
+        },
+        {
+          "title": "L'origine de la commutation de paquets"
+        }
+      ]
+    },
+    {
+      "title": "Les réseaux ETHERNET",
+      "children": [
+        {
+          "title": "Historique des réseaux ETHERNET"
+        },
+        {
+          "title": "La norme IEEE 802.3"
+        },
+        {
+          "title": "Les caractéristiques générales d'un réseau ETHERNET"
+        },
+        {
+          "title": "Le format de la trame ETHERNET"
+        },
+        {
+          "title": "Les normes du réseau ETHERNET"
+        },
+        {
+          "title": "Les systèmes d'exploitation sur un réseau ETHERNET"
+        },
+        {
+          "title": "Le tableau récapitulatif des réseaux ETHERNET à 10 Mb/S"
+        },
+        {
+          "title": "Le 10BaseT"
+        },
+        {
+          "title": "Le 10Base2"
+        },
+        {
+          "title": "Le 10Base5"
+        },
+        {
+          "title": "Le 10BaseFL"
+        },
+        {
+          "title": "Le 100VG-AnyLAN"
+        },
+        {
+          "title": "Le 100BaseX"
+        }
+      ]
+    },
+    {
+      "title": "Les réseaux TOKEN RING",
+      "children": [
+        {
+          "title": "La version IBM des réseaux TOKEN RING"
+        },
+        {
+          "title": "L'architecture des réseaux TOKEN RING"
+        },
+        {
+          "title": "Les caractéristiques des réseaux TOKEN RING"
+        },
+        {
+          "title": "Le format de la trame TOKEN RING"
+        },
+        {
+          "title": "Les conditions de fonctionnement d'un réseau TOKEN RING"
+        },
+        {
+          "title": "Le contrôleur du réseau TOKEN RING"
+        },
+        {
+          "title": "La circulation du jeton dans un réseau TOKEN RING"
+        },
+        {
+          "title": "Les composants matériels d'un réseau TOKEN RING"
+        },
+        {
+          "title": "Le Token Bus"
+        }
+      ]
+    },
+    {
+      "title": "Les réseaux étendus",
+      "children": [
+        {
+          "title": "L'accès à distance",
+          "children": [
+            {
+              "title": "L'accès à Internet par un Fournisseur d'Accès à Internet"
+            },
+            {
+              "title": "L'accès à Internet par un opérateur téléphonique"
+            },
+            {
+              "title": "Les ressources d'Internet"
+            },
+            {
+              "title": "Les qualifications d'une connexion à Internet"
+            },
+            {
+              "title": "La retransmission des adresses IP"
+            },
+            {
+              "title": "Les adresses IP internationales"
+            },
+            {
+              "title": "La protection contre les intrusions d'Internet"
+            },
+            {
+              "title": "Le réseau DMZ"
+            },
+            {
+              "title": "L'envergure des réseaux étendus"
+            },
+            {
+              "title": "Les débits des réseaux étendus"
+            }
+          ]
+        },
+        {
+          "title": "Les caractéristiques des réseaux étendus",
+          "children": [
+            {
+              "title": "La gestion des coûts des réseaux étendus"
+            },
+            {
+              "title": "Les modes de transmission des réseaux étendus"
+            },
+            {
+              "title": "Les protocoles d'accès à distance des réseaux étendus"
+            },
+            {
+              "title": "Le mode de transmission analogique"
+            },
+            {
+              "title": "Le mode de transmission numérique"
+            },
+            {
+              "title": "Les lignes analogiques"
+            },
+            {
+              "title": "Les lignes numériques"
+            },
+            {
+              "title": "Le mode de transmission par commutation de paquets"
+            }
+          ]
+        },
+        {
+          "title": "Les technologies des réseaux étendus",
+          "children": [
+            {
+              "title": "Les caractéristiques des réseaux étendus Relais de trames"
+            },
+            {
+              "title": "Les caractéristiques des réseaux étendus X.25"
+            },
+            {
+              "title": "Les caractéristiques des réseaux étendus ATM"
+            },
+            {
+              "title": "Les caractéristiques des réseaux étendus RNIS"
+            },
+            {
+              "title": "Les caractéristiques des réseaux étendus FDDI"
+            },
+            {
+              "title": "Les caractéristiques des réseaux étendus SONET"
+            },
+            {
+              "title": "Les caractéristiques des réseaux étendus SMDS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Les réseaux hétérogènes",
+      "children": [
+        {
+          "title": "Les environnements réseaux hétérogènes"
+        },
+        {
+          "title": "Les conditions de fonctionnement d'un réseau hétérogène"
+        },
+        {
+          "title": "La solution WINDOWS NT pour les réseaux hétérogènes"
+        },
+        {
+          "title": "Le dépannage des réseaux hétérogènes"
+        }
+      ]
+    },
+    {
+      "title": "Les protocoles réseaux",
+      "children": [
+        {
+          "title": "Les protocoles de communication"
+        },
+        {
+          "title": "Le modèle OSI et la pile de protocoles"
+        },
+        {
+          "title": "Les liaisons de protocoles"
+        },
+        {
+          "title": "Les avantages des liaisons de protocoles"
+        },
+        {
+          "title": "Les piles standards"
+        },
+        {
+          "title": "Les protocoles en trois catégories"
+        },
+        {
+          "title": "Les protocoles de la catégorie APPLICATION"
+        },
+        {
+          "title": "Les protocoles de la catégorie TRANSPORT"
+        },
+        {
+          "title": "Les protocoles de la catégorie RESEAU"
+        },
+        {
+          "title": "Les protocoles routables"
+        },
+        {
+          "title": "Le protocole SPX/IPX"
+        },
+        {
+          "title": "Le protocole TCP/IP"
+        },
+        {
+          "title": "Les caractéristiques du protocole TCP/IP"
+        },
+        {
+          "title": "Le protocole NetBEUI"
+        },
+        {
+          "title": "Les caractéristiques de NetBEUI"
+        },
+        {
+          "title": "L'installation des protocoles"
+        }
+      ]
+    },
+    {
+      "title": "Les adresses IP",
+      "children": [
+        {
+          "title": "L'espace d'adressage"
+        },
+        {
+          "title": "L'espace d'adressage 32 bits"
+        },
+        {
+          "title": "Le masque de sous réseau"
+        },
+        {
+          "title": "Le sous adressage"
+        },
+        {
+          "title": "Les classes d'adresse IP"
+        },
+        {
+          "title": "Les adresses IP conventionnelles"
+        },
+        {
+          "title": "Le routage inter domaine sans classe"
+        },
+        {
+          "title": "L'adresse de broadcast d'un réseau local"
+        },
+        {
+          "title": "Ipv6"
+        },
+        {
+          "title": "Un exemple d'adressage réseau"
+        }
+      ]
+    },
+    {
+      "title": "Les applications réseaux",
+      "children": [
+        {
+          "title": "L'avantage du travail en réseau"
+        },
+        {
+          "title": "Les applications réseaux"
+        },
+        {
+          "title": "La messagerie électronique"
+        },
+        {
+          "title": "Les agendas de groupe"
+        },
+        {
+          "title": "La gestion des contacts"
+        },
+        {
+          "title": "Les logiciels de productivité de groupe (GROUPWARE)"
+        },
+        {
+          "title": "LOTUS NOTES"
+        },
+        {
+          "title": "Le journal de bord de l'administrateur réseau"
+        }
+      ]
+    },
+    {
+      "title": "L'impression en réseau",
+      "children": [
+        {
+          "title": "Le processus d'impression en réseau"
+        },
+        {
+          "title": "La file d'attente du périphérique d'impression"
+        },
+        {
+          "title": "Le partage du périphérique d'impression réseau"
+        },
+        {
+          "title": "La connexion à un périphérique d'impression"
+        },
+        {
+          "title": "L'administration du périphérique d'impression"
+        },
+        {
+          "title": "Les droits et les permissions d'imprimer pour les utilisateurs"
+        },
+        {
+          "title": "Les droits et les permissions de l'administrateur de l'imprimante"
+        },
+        {
+          "title": "Le langage de description de page"
+        }
+      ]
+    },
+    {
+      "title": "La messagerie électronique",
+      "children": [
+        {
+          "title": "L'échange de messages électroniques"
+        },
+        {
+          "title": "Les fonctionnalités de la messagerie électronique"
+        },
+        {
+          "title": "L'administration d'une messagerie électronique"
+        },
+        {
+          "title": "Les normes de messagerie électronique"
+        },
+        {
+          "title": "Les passerelles entre systèmes de messagerie"
+        },
+        {
+          "title": "L'origine de la messagerie électronique"
+        },
+        {
+          "title": "Les applications de messagerie propriétaires"
+        },
+        {
+          "title": "Les standard ouverts d'Internet"
+        }
+      ]
+    },
+    {
+      "title": "Le travail de télécopie en réseau",
+      "children": [
+        {
+          "title": "Les avantages du travail de télécopie en réseau"
+        },
+        {
+          "title": "Le routage des télécopies"
+        },
+        {
+          "title": "Le logiciel FACSys 4.0 pour WINDOWS NT"
+        }
+      ]
+    },
+    {
+      "title": "Les performances des réseaux",
+      "children": [
+        {
+          "title": "Les performances de la carte réseau"
+        },
+        {
+          "title": "Les facteurs d'amélioration d'une carte réseau"
+        }
+      ]
+    },
+    {
+      "title": "La planification et la maintenance d'un réseau",
+      "children": [
+        {
+          "title": "Le processus de décision"
+        },
+        {
+          "title": "Les critères fondamentaux"
+        },
+        {
+          "title": "Les diagrammes réseaux"
+        },
+        {
+          "title": "Un exemple d'un petit réseau standard"
+        },
+        {
+          "title": "Le questionnaire"
+        },
+        {
+          "title": "La vie du réseau"
+        },
+        {
+          "title": "Le dépannage à chaud"
+        },
+        {
+          "title": "Les sources de pannes"
+        },
+        {
+          "title": "La stratégie de sauvegarde"
+        }
+      ]
+    },
+    {
+      "title": "Les systèmes d'exploitation réseaux",
+      "children": [
+        {
+          "title": "Les systèmes d'exploitation"
+        },
+        {
+          "title": "Le système d'exploitation et le logiciel réseau"
+        },
+        {
+          "title": "Le rôle du système d'exploitation"
+        },
+        {
+          "title": "Le système d'exploitation multitâche"
+        },
+        {
+          "title": "Les deux modes de fonctionnement multitâche"
+        },
+        {
+          "title": "Le rôle du système d'exploitation réseau"
+        },
+        {
+          "title": "Les composants d'un système d'exploitation réseau"
+        },
+        {
+          "title": "Le processus d'une requête d'un client vers un serveur"
+        },
+        {
+          "title": "Le redirecteur"
+        },
+        {
+          "title": "Les systèmes d'exploitation réseaux pour les machines INTEL"
+        },
+        {
+          "title": "Les systèmes d'exploitation réseaux",
+          "children": [
+            {
+              "title": "Le système d'exploitation réseau UNIX"
+            },
+            {
+              "title": "Le système d'exploitation réseau NetWare"
+            },
+            {
+              "title": "Le système d'exploitation réseau Windows NT"
+            },
+            {
+              "title": "Le système d'exploitation réseau OS/2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "La stratégie de sécurité",
+      "children": [
+        {
+          "title": "Les sept règles d'or de la sécurité"
+        },
+        {
+          "title": "L'objectif de la stratégie de sécurité"
+        },
+        {
+          "title": "L'environnement de la stratégie de sécurité"
+        },
+        {
+          "title": "Les failles potentielles d'un réseau"
+        },
+        {
+          "title": "La stratégie de sécurité"
+        },
+        {
+          "title": "Le contrôle des utilisateurs",
+          "children": [
+            {
+              "title": "Le contrôle des utilisateurs : les deux modèles de sécurité"
+            },
+            {
+              "title": "Le contrôle des utilisateurs : le modèle de sécurité au niveau des ressources"
+            },
+            {
+              "title": "Le contrôle des utilisateurs : le modèle de sécurité au niveau des utilisateurs"
+            },
+            {
+              "title": "Le contrôle des utilisateurs : les logiciels de configuration"
+            }
+          ]
+        },
+        {
+          "title": "Le contrôle des données",
+          "children": [
+            {
+              "title": "Le contrôle des données : les sauvegardes sur bandes"
+            },
+            {
+              "title": "Le contrôle des données : les systèmes à tolérance de pannes"
+            },
+            {
+              "title": "Le tableau des caractéristiques RAID"
+            },
+            {
+              "title": "La tolérance de panne avec WINDOWS NT SERVER"
+            },
+            {
+              "title": "Le contrôle des données : le cryptage"
+            },
+            {
+              "title": "Le contrôle des données : la protection contre les virus"
+            }
+          ]
+        },
+        {
+          "title": "Le contrôle des matériels",
+          "children": [
+            {
+              "title": "Le contrôle du matériel : l'UPS"
+            },
+            {
+              "title": "Le contrôle du matériel : la protection physique des équipements"
+            },
+            {
+              "title": "La surveillance des performances : les outils d'administration"
+            },
+            {
+              "title": "La surveillance de l'activité des utilisateurs : l'audit"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

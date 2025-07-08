@@ -1,0 +1,181 @@
+{
+  "title": "Séance 4 : Formulaires et validation, Gestion des entrées utilisateur",
+  "nodes": [
+    {
+      "title": "Principes Généraux des Formulaires (PHP/HTML)",
+      "children": [
+        {
+          "title": "Structure HTML",
+          "children": [
+            {
+              "title": "Balise <form>"
+            },
+            {
+              "title": "Attribut 'action': URL de traitement"
+            },
+            {
+              "title": "Attribut 'method': GET ou POST"
+            }
+          ]
+        },
+        {
+          "title": "Méthodes d'envoi HTTP",
+          "children": [
+            {
+              "title": "GET: Données dans l'URL, visible, limité"
+            },
+            {
+              "title": "POST: Données dans le corps de la requête, pour données sensibles/lourdes"
+            }
+          ]
+        },
+        {
+          "title": "Récupération des données en PHP",
+          "children": [
+            {
+              "title": "Superglobales: $_GET, $_POST, $_REQUEST"
+            },
+            {
+              "title": "Vérification de l'existence des données: isset(), empty()"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gestion des Formulaires avec Laravel",
+      "children": [
+        {
+          "title": "Routage",
+          "children": [
+            {
+              "title": "Route GET pour afficher le formulaire"
+            },
+            {
+              "title": "Route POST pour traiter la soumission"
+            },
+            {
+              "title": "Autres verbes HTTP: PUT, PATCH, DELETE"
+            }
+          ]
+        },
+        {
+          "title": "Création du Formulaire (Vues Blade)",
+          "children": [
+            {
+              "title": "Package Laravelcollective/Html (Form::open, Form::text...)"
+            },
+            {
+              "title": "Alternative: HTML natif + directive @csrf"
+            }
+          ]
+        },
+        {
+          "title": "Traitement dans le Contrôleur",
+          "children": [
+            {
+              "title": "Méthode pour l'affichage (ex: getForm)"
+            },
+            {
+              "title": "Méthode pour le traitement (ex: postForm)"
+            },
+            {
+              "title": "Récupération des entrées via l'objet Request ($request->input())"
+            }
+          ]
+        },
+        {
+          "title": "Fonctionnalités Spécifiques",
+          "children": [
+            {
+              "title": "Formulaires PUT/PATCH/DELETE via la directive @method()"
+            },
+            {
+              "title": "Upload de fichiers (enctype='multipart/form-data')"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Validation des Données",
+      "children": [
+        {
+          "title": "Principes Clés",
+          "children": [
+            {
+              "title": "Ne jamais faire confiance aux données client"
+            },
+            {
+              "title": "Validation côté serveur est indispensable"
+            }
+          ]
+        },
+        {
+          "title": "Validation avec Laravel",
+          "children": [
+            {
+              "title": "Utilisation de la méthode $request->validate()"
+            },
+            {
+              "title": "Écriture des règles de validation (ex: 'required|email|max:255')"
+            },
+            {
+              "title": "Exemples de règles: required, string, unique, image, file, dimensions..."
+            }
+          ]
+        },
+        {
+          "title": "Gestion et Affichage des Erreurs",
+          "children": [
+            {
+              "title": "Redirection automatique en cas d'échec"
+            },
+            {
+              "title": "Variable globale $errors disponible dans la vue"
+            },
+            {
+              "title": "Afficher les erreurs: $errors->has('champ'), $errors->first('champ')"
+            },
+            {
+              "title": "Internationalisation des messages (dossier resources/lang)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sécurité des Formulaires",
+      "children": [
+        {
+          "title": "Protection CSRF (Cross-Site Request Forgery)",
+          "children": [
+            {
+              "title": "Principe: Empêcher les requêtes inter-sites falsifiées"
+            },
+            {
+              "title": "Mécanisme Laravel: Jeton (token) de sécurité unique par session"
+            },
+            {
+              "title": "Implémentation automatique: Directive @csrf ou Form::open()"
+            },
+            {
+              "title": "Middleware: VerifyCsrfToken activé par défaut pour le web"
+            }
+          ]
+        },
+        {
+          "title": "Autres Vulnérabilités",
+          "children": [
+            {
+              "title": "Injection SQL (Prévention: ORM Eloquent, requêtes préparées)"
+            },
+            {
+              "title": "XSS - Cross-Site Scripting (Prévention: Échappement Blade {{ ... }})"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

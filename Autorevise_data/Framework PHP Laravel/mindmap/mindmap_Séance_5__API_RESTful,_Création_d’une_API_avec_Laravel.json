@@ -1,0 +1,137 @@
+{
+  "title": "Séance 5 : API RESTful, Création d’une API avec Laravel",
+  "nodes": [
+    {
+      "title": "Cours pour apprendre à utiliser le framework Laravel 5.5",
+      "children": []
+    },
+    {
+      "title": "Laravel",
+      "children": []
+    },
+    {
+      "title": "Cours PHP Accéléré Version 0.9.6",
+      "children": [
+        {
+          "title": "Auteur: Gérard Rozsavolgyi"
+        },
+        {
+          "title": "Formats disponibles",
+          "children": [
+            {
+              "title": "EPUB"
+            },
+            {
+              "title": "PDF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Gestion d'entités et Outils de Développement",
+      "children": [
+        {
+          "title": "Gestion d'entités (Ex: App\\Entity\\Personne)"
+        },
+        {
+          "title": "Générateur de CRUD",
+          "children": [
+            {
+              "title": "Commande: php bin/console make:crud"
+            },
+            {
+              "title": "Alternative (plus visuelle): easy\\admin"
+            }
+          ]
+        },
+        {
+          "title": "Profiler",
+          "children": [
+            {
+              "title": "Installation: composer req profiler"
+            },
+            {
+              "title": "Test: localhost:8000/personne"
+            }
+          ]
+        },
+        {
+          "title": "Debug des routes",
+          "children": [
+            {
+              "title": "Commande: php bin/console debug:router"
+            },
+            {
+              "title": "Exemples de routes générées",
+              "children": [
+                {
+                  "title": "personne_index (GET)"
+                },
+                {
+                  "title": "personne_new (GET/POST)"
+                },
+                {
+                  "title": "personne_show (GET)"
+                },
+                {
+                  "title": "personne_edit (GET/POST)"
+                },
+                {
+                  "title": "personne_delete (DELETE)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sécurité",
+          "children": [
+            {
+              "title": "Outil: security-checker"
+            },
+            {
+              "title": "Installation: composer require sec-checker --dev"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "COURS COMPLET PHP",
+      "children": []
+    },
+    {
+      "title": "Manipulation de fichiers XML et JSON en PHP",
+      "children": [
+        {
+          "title": "Formats de données",
+          "children": [
+            {
+              "title": "XML (eXtensible Markup Language)"
+            },
+            {
+              "title": "JSON (JavaScript Object Notation)"
+            }
+          ]
+        },
+        {
+          "title": "Utilité",
+          "children": [
+            {
+              "title": "Structurer et échanger des données"
+            }
+          ]
+        },
+        {
+          "title": "Support PHP",
+          "children": [
+            {
+              "title": "PHP offre des outils puissants pour leur manipulation"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

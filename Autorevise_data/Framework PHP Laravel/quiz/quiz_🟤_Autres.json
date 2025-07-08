@@ -1,0 +1,104 @@
+{
+  "title": "🟤 Autres",
+  "questions": [
+    {
+      "question": "En programmation orientée objet (POO) en PHP, quel est le rôle principal de la méthode `__construct()` ?",
+      "options": [
+        "Détruire un objet et libérer la mémoire.",
+        "Être appelée automatiquement lors de la création d'un objet pour initialiser ses propriétés.",
+        "Cloner un objet existant.",
+        "Renvoyer une représentation de l'objet sous forme de chaîne de caractères."
+      ],
+      "answer": "Être appelée automatiquement lors de la création d'un objet pour initialiser ses propriétés.",
+      "explanation": "Le constructeur, `__construct()`, est une méthode \"magique\" exécutée automatiquement lors de l'instanciation d'un objet (avec le mot-clé `new`). Il sert principalement à initialiser les propriétés de l'objet."
+    },
+    {
+      "question": "Quel est le principal avantage de l'utilisation des index dans une base de données MySQL ?",
+      "options": [
+        "Accélérer les opérations d'écriture (INSERT, UPDATE).",
+        "Réduire l'espace de stockage de la base de données.",
+        "Accélérer les opérations de lecture (SELECT).",
+        "Garantir l'intégrité référentielle entre les tables."
+      ],
+      "answer": "Accélérer les opérations de lecture (SELECT).",
+      "explanation": "Les index permettent au SGBD de retrouver plus rapidement les données lors d'une requête SELECT. Cependant, ils peuvent ralentir les opérations d'écriture (INSERT, UPDATE, DELETE) car l'index doit aussi être mis à jour."
+    },
+    {
+      "question": "Avec l'extension `mysqli` en PHP, quelle fonction est utilisée pour récupérer une ligne de résultat sous forme de tableau associatif ?",
+      "options": [
+        "mysqli_fetch_row()",
+        "mysqli_fetch_object()",
+        "mysqli_fetch_assoc()",
+        "mysqli_fetch_all()"
+      ],
+      "answer": "mysqli_fetch_assoc()",
+      "explanation": "La fonction `mysqli_fetch_assoc()` récupère une ligne de résultat sous la forme d'un tableau associatif, où les clés du tableau correspondent aux noms des colonnes de la table."
+    },
+    {
+      "question": "Dans l'architecture MVC (Modèle-Vue-Contrôleur), quel est le rôle principal du Contrôleur ?",
+      "options": [
+        "Gérer la présentation et l'affichage des données à l'utilisateur.",
+        "Gérer l'accès à la base de données et la logique métier.",
+        "Gérer les requêtes de l'utilisateur et orchestrer les interactions entre le Modèle et la Vue.",
+        "Définir la structure des tables de la base de données."
+      ],
+      "answer": "Gérer les requêtes de l'utilisateur et orchestrer les interactions entre le Modèle et la Vue.",
+      "explanation": "Le Contrôleur agit comme un intermédiaire. Il reçoit les requêtes de l'utilisateur (par exemple, via une URL), interagit avec le Modèle pour manipuler les données, et choisit la Vue appropriée pour afficher la réponse."
+    },
+    {
+      "question": "En POO PHP, que signifie la visibilité `private` pour une propriété ou une méthode ?",
+      "options": [
+        "Accessible partout, même à l'extérieur de la classe.",
+        "Accessible dans la classe où elle est déclarée et dans ses classes filles.",
+        "Accessible uniquement via une interface.",
+        "Accessible uniquement à l'intérieur de la classe où elle est déclarée."
+      ],
+      "answer": "Accessible uniquement à l'intérieur de la classe où elle est déclarée.",
+      "explanation": "Une propriété ou méthode déclarée `private` n'est accessible qu'au sein de la classe qui la définit. Elle n'est pas accessible par les classes qui en héritent (classes filles) ni depuis l'extérieur de la classe."
+    },
+    {
+      "question": "En PHP, quelle structure de contrôle est utilisée pour intercepter et gérer une erreur qui a été 'lancée' (thrown) ?",
+      "options": [
+        "Le bloc `if-else`",
+        "La fonction `error_get_last()`",
+        "Le bloc `switch`",
+        "Le bloc `try...catch`"
+      ],
+      "answer": "Le bloc `try...catch`",
+      "explanation": "Le code susceptible de lancer une exception est placé dans un bloc `try`. Si une exception est lancée, l'exécution du bloc `try` s'arrête et le bloc `catch` correspondant est exécuté pour gérer l'erreur de manière contrôlée."
+    },
+    {
+      "question": "Quelle est une différence fondamentale entre les services web REST et SOAP ?",
+      "options": [
+        "REST utilise uniquement le format JSON, tandis que SOAP utilise uniquement XML.",
+        "SOAP est un protocole standardisé avec des règles strictes, tandis que REST est un style architectural plus souple.",
+        "REST ne peut utiliser que la méthode HTTP GET.",
+        "SOAP est toujours plus léger et plus rapide que REST."
+      ],
+      "answer": "SOAP est un protocole standardisé avec des règles strictes, tandis que REST est un style architectural plus souple.",
+      "explanation": "SOAP est un protocole avec un format de message et des règles bien définis (souvent via WSDL). REST est un ensemble de principes architecturaux basés sur les standards du web comme HTTP et les URI, offrant plus de flexibilité dans les formats de données (JSON, XML, etc.)."
+    },
+    {
+      "question": "Dans le framework Laravel, quel est le rôle principal d'un 'Fournisseur de Services' (Service Provider) ?",
+      "options": [
+        "Gérer directement les requêtes HTTP entrantes.",
+        "Définir les routes de l'application.",
+        "Créer les templates HTML pour les vues.",
+        "Enregistrer des services dans le conteneur de services et effectuer des initialisations."
+      ],
+      "answer": "Enregistrer des services dans le conteneur de services et effectuer des initialisations.",
+      "explanation": "Les fournisseurs de services sont le point central pour l'initialisation de l'application Laravel. Leur rôle est d'enregistrer des liaisons dans le conteneur de services, ce qui permet ensuite l'injection de dépendances dans les contrôleurs et autres classes."
+    },
+    {
+      "question": "Quelle est la principale caractéristique du moteur de stockage InnoDB par rapport à MyISAM dans MySQL ?",
+      "options": [
+        "Il est optimisé uniquement pour les lectures et ne supporte pas les écritures.",
+        "Il supporte les transactions (ACID) et les clés étrangères.",
+        "Il stocke toutes les données uniquement en mémoire.",
+        "Il est le seul à supporter les index de type FULLTEXT."
+      ],
+      "answer": "Il supporte les transactions (ACID) et les clés étrangères.",
+      "explanation": "InnoDB est un moteur transactionnel, ce qui signifie qu'il garantit l'atomicité, la cohérence, l'isolation et la durabilité (ACID) des opérations. Il gère également l'intégrité référentielle via les clés étrangères, ce que MyISAM ne fait pas."
+    }
+  ]
+}

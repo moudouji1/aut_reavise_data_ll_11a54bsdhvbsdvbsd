@@ -1,0 +1,93 @@
+{
+  "title": "Séance 5 : Connexion à une base via un langage, Connexion avec JDBC, PHP PDO",
+  "questions": [
+    {
+      "question": "Quelle est la principale caractéristique de PHP en tant que langage de programmation web ?",
+      "options": [
+        "C'est un langage compilé exécuté côté client.",
+        "C'est un langage de script interprété exécuté côté serveur.",
+        "Il est utilisé uniquement pour la mise en page HTML et CSS.",
+        "Ses sources sont visibles par le visiteur du site web."
+      ],
+      "answer": "C'est un langage de script interprété exécuté côté serveur.",
+      "explanation": "PHP (Hypertext Preprocessor) est un langage de script interprété qui s'exécute sur le serveur. Le client (navigateur) ne reçoit que le résultat HTML généré, ce qui protège le code source PHP."
+    },
+    {
+      "question": "Quel est l'un des principaux atouts de PHP mentionné dans le cours ?",
+      "options": [
+        "Sa syntaxe est unique et n'emprunte à aucun autre langage.",
+        "Il nécessite l'achat d'une licence coûteuse pour être utilisé.",
+        "Sa simplicité d'interfaçage avec de nombreuses bases de données comme MySQL.",
+        "Il ne peut être intégré qu'avec le serveur web Microsoft IIS."
+      ],
+      "answer": "Sa simplicité d'interfaçage avec de nombreuses bases de données comme MySQL.",
+      "explanation": "Le document souligne que l'un des principaux atouts de PHP est sa facilité d'interfaçage avec de nombreux SGBD, MySQL étant le plus couramment utilisé en couple avec PHP."
+    },
+    {
+      "question": "Comment déclare-t-on une constante en PHP ?",
+      "options": [
+        "const MA_CONSTANTE = \"valeur\";",
+        "$MA_CONSTANTE = \"valeur\";",
+        "define(\"MA_CONSTANTE\", \"valeur\");",
+        "let MA_CONSTANTE = \"valeur\";"
+      ],
+      "answer": "define(\"MA_CONSTANTE\", \"valeur\");",
+      "explanation": "La fonction `define()` est utilisée pour créer des constantes. Contrairement aux variables, leur nom ne commence pas par un `$` et elles sont généralement écrites en majuscules par convention."
+    },
+    {
+      "question": "Quelle est la principale différence entre les méthodes GET et POST pour un formulaire HTML ?",
+      "options": [
+        "GET est plus sécurisé que POST.",
+        "POST envoie les données dans l'URL, tandis que GET les envoie dans le corps de la requête.",
+        "GET envoie les données dans l'URL, les rendant visibles, tandis que POST les envoie dans le corps de la requête HTTP.",
+        "Il n'y a aucune différence fonctionnelle, c'est juste une convention."
+      ],
+      "answer": "GET envoie les données dans l'URL, les rendant visibles, tandis que POST les envoie dans le corps de la requête HTTP.",
+      "explanation": "La méthode GET ajoute les données du formulaire à l'URL, ce qui est visible et limité en taille. La méthode POST envoie les données dans le corps de la requête, ce qui est plus discret et permet d'envoyer de plus grandes quantités de données."
+    },
+    {
+      "question": "Quel est l'opérateur de concaténation de chaînes de caractères en PHP ?",
+      "options": [
+        "+",
+        "&",
+        ".",
+        ","
+      ],
+      "answer": ".",
+      "explanation": "En PHP, l'opérateur point (`.`) est utilisé pour concaténer (joindre) des chaînes de caractères. L'opérateur `+` est réservé aux opérations arithmétiques."
+    },
+    {
+      "question": "Quelle est la fonction principale de l'API JDBC (Java DataBase Connectivity) ?",
+      "options": [
+        "Gérer l'interface utilisateur d'une application Java.",
+        "Permettre à un programme Java d'accéder à des données tabulaires, généralement des bases de données relationnelles.",
+        "Compiler le code Java en bytecode.",
+        "Optimiser les requêtes SQL directement sur le serveur de base de données."
+      ],
+      "answer": "Permettre à un programme Java d'accéder à des données tabulaires, généralement des bases de données relationnelles.",
+      "explanation": "JDBC est une API standard qui fournit un ensemble d'interfaces et de classes pour que les applications Java puissent se connecter et interagir avec diverses sources de données, principalement des SGBD."
+    },
+    {
+      "question": "Quelle est la première étape essentielle pour se connecter à une base de données avec JDBC ?",
+      "options": [
+        "Ouvrir une connexion avec DriverManager.getConnection().",
+        "Exécuter une requête SQL.",
+        "Charger le driver JDBC approprié, souvent avec Class.forName().",
+        "Créer une instance de ResultSet."
+      ],
+      "answer": "Charger le driver JDBC approprié, souvent avec Class.forName().",
+      "explanation": "Avant de pouvoir établir une connexion, il faut charger le pilote (driver) spécifique au SGBD. La méthode `Class.forName()` charge la classe du driver en mémoire et l'enregistre auprès du `DriverManager`."
+    },
+    {
+      "question": "Quel est le rôle de l'interface `DatabaseMetaData` en JDBC ?",
+      "options": [
+        "Exécuter des requêtes SQL paramétrées.",
+        "Obtenir des informations sur la base de données elle-même (nom du SGBD, version, types supportés, etc.).",
+        "Stocker les résultats d'une requête SELECT.",
+        "Gérer les transactions et les pools de connexions."
+      ],
+      "answer": "Obtenir des informations sur la base de données elle-même (nom du SGBD, version, types supportés, etc.).",
+      "explanation": "L'interface `DatabaseMetaData` permet d'obtenir des méta-données, c'est-à-dire des informations sur la structure et les capacités de la base de données, plutôt que sur les données qu'elle contient."
+    }
+  ]
+}

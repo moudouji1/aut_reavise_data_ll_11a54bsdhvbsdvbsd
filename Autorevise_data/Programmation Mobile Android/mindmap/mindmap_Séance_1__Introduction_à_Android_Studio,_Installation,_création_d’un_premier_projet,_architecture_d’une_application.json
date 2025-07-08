@@ -1,0 +1,83 @@
+{
+  "title": "Séance 1 : Introduction à Android Studio, Installation, création d’un premier projet, architecture d’une application",
+  "nodes": [
+    {
+      "title": "Android : 3 étapes pour l'installation",
+      "children": [
+        {
+          "title": "Télécharger le SDK Android",
+          "children": [
+            {
+              "title": "Lien : developer.android.com/sdk/index.html"
+            }
+          ]
+        },
+        {
+          "title": "Exécuter et configurer",
+          "children": [
+            {
+              "title": "Chemin : android-sdk-xxx/tools/android"
+            },
+            {
+              "title": "Action : Sélectionner la version de l'API Android"
+            }
+          ]
+        },
+        {
+          "title": "Installer le plugin ADT pour Eclipse (obsolète)",
+          "children": [
+            {
+              "title": "Alternative pour la formation : adt-bundle.zip"
+            }
+          ]
+        },
+        {
+          "title": "Environnement de développement officiel : Android Studio"
+        }
+      ]
+    },
+    {
+      "title": "Intent : Naviguer entre écrans",
+      "children": [
+        {
+          "title": "Rôle de l'Intent",
+          "children": [
+            {
+              "title": "Démarrer chaque composant de l'application"
+            }
+          ]
+        },
+        {
+          "title": "Deux méthodes pour démarrer une activité",
+          "children": [
+            {
+              "title": "Avec attente d'un résultat en retour"
+            },
+            {
+              "title": "Sans attente de résultat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Intent : Démarrer une activité",
+      "children": [
+        {
+          "title": "Déclaration obligatoire dans le fichier de configuration",
+          "children": [
+            {
+              "title": "Fichier : AndroidManifest.xml"
+            },
+            {
+              "title": "Emplacement : Dans la section <application>"
+            }
+          ]
+        },
+        {
+          "title": "Exemple : Déclaration pour une activité 'MonActivite'"
+        }
+      ]
+    }
+  ]
+}

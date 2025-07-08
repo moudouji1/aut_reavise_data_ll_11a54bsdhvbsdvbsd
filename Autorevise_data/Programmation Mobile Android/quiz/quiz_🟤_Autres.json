@@ -1,0 +1,104 @@
+{
+  "title": "🟤 Autres",
+  "questions": [
+    {
+      "question": "Quel est le rôle principal de la classe R.java dans un projet Android ?",
+      "options": [
+        "Elle contient la logique métier de l'application.",
+        "Elle est écrite manuellement pour définir les ressources.",
+        "Elle est générée automatiquement et fournit des identifiants uniques pour toutes les ressources du projet.",
+        "Elle gère les connexions réseau de l'application."
+      ],
+      "answer": "Elle est générée automatiquement et fournit des identifiants uniques pour toutes les ressources du projet.",
+      "explanation": "La classe R.java est générée automatiquement par le SDK Android. Elle contient des identifiants statiques pour toutes les ressources (layouts, strings, drawables, etc.) du projet, permettant d'y accéder de manière programmatique dans le code Java."
+    },
+    {
+      "question": "Que se passe-t-il par défaut lorsqu'un utilisateur tourne l'écran d'un appareil Android ?",
+      "options": [
+        "L'activité est mise en pause puis redémarrée.",
+        "Seule la méthode onResume() est appelée.",
+        "L'activité est détruite puis recréée.",
+        "Rien, l'affichage s'adapte sans changer l'état de l'activité."
+      ],
+      "answer": "L'activité est détruite puis recréée.",
+      "explanation": "Un changement d'orientation est un changement de configuration. Par défaut, Android détruit l'activité en cours et la recrée pour charger les ressources appropriées (par exemple, un layout différent pour le mode paysage)."
+    },
+    {
+      "question": "Pourquoi est-il crucial de ne pas effectuer d'opérations longues (comme des requêtes réseau) sur le thread principal (UI thread) ?",
+      "options": [
+        "Pour économiser la batterie de l'appareil.",
+        "Pour éviter de bloquer l'interface utilisateur, ce qui peut provoquer une erreur de type \"Application Not Responding\" (ANR).",
+        "Parce que le thread principal n'a pas les permissions nécessaires.",
+        "Pour des raisons de sécurité et d'isolation des données."
+      ],
+      "answer": "Pour éviter de bloquer l'interface utilisateur, ce qui peut provoquer une erreur de type \"Application Not Responding\" (ANR).",
+      "explanation": "Le thread principal est responsable de la gestion de l'interface utilisateur. Toute opération longue le bloquera, rendant l'application non réactive et pouvant entraîner une erreur ANR affichée à l'utilisateur."
+    },
+    {
+      "question": "Quel est l'objectif principal d'un Intent en développement Android ?",
+      "options": [
+        "Stocker des données de manière persistante.",
+        "Définir la mise en page d'une interface graphique.",
+        "Agir comme un objet de messagerie pour demander une action à un autre composant de l'application (comme démarrer une autre activité).",
+        "Compiler le code Java en bytecode Dalvik."
+      ],
+      "answer": "Agir comme un objet de messagerie pour demander une action à un autre composant de l'application (comme démarrer une autre activité).",
+      "explanation": "Un Intent est un objet de messagerie que vous pouvez utiliser pour demander une action à un autre composant d'application. Il facilite la communication entre les activités, services et broadcast receivers."
+    },
+    {
+      "question": "Quelle est la principale différence entre un `LinearLayout` et un `RelativeLayout` ?",
+      "options": [
+        "LinearLayout ne peut contenir que du texte, tandis que RelativeLayout peut contenir des images.",
+        "LinearLayout arrange les vues en une seule direction (horizontale ou verticale), tandis que RelativeLayout positionne les vues les unes par rapport aux autres ou par rapport au parent.",
+        "LinearLayout est utilisé pour les tablettes et RelativeLayout pour les téléphones.",
+        "LinearLayout est défini en Java et RelativeLayout en XML."
+      ],
+      "answer": "LinearLayout arrange les vues en une seule direction (horizontale ou verticale), tandis que RelativeLayout positionne les vues les unes par rapport aux autres ou par rapport au parent.",
+      "explanation": "LinearLayout est utilisé pour des mises en page simples, alignant les éléments enfants en ligne ou en colonne. RelativeLayout offre plus de flexibilité en permettant de positionner les éléments en fonction de relations spatiales complexes."
+    },
+    {
+      "question": "Quel mécanisme est le plus approprié pour sauvegarder des données simples de configuration utilisateur (préférences), comme un réglage \"mode sombre\" ?",
+      "options": [
+        "Une base de données SQLite.",
+        "Un fichier texte brut dans le stockage interne.",
+        "Un `ContentProvider`.",
+        "Les `SharedPreferences`."
+      ],
+      "answer": "Les `SharedPreferences`.",
+      "explanation": "Les SharedPreferences sont spécifiquement conçues pour stocker des paires clé-valeur de types de données primitifs. C'est la solution la plus simple et efficace pour gérer les préférences utilisateur."
+    },
+    {
+      "question": "Quel est le rôle du `ViewHolder` dans l'optimisation d'une `ListView` ?",
+      "options": [
+        "Gérer les clics sur les éléments de la liste.",
+        "Éviter les appels répétés et coûteux à `findViewById()` en mettant en cache les références des vues d'un item.",
+        "Définir le style CSS de chaque ligne de la liste.",
+        "Charger les données depuis une base de données."
+      ],
+      "answer": "Éviter les appels répétés et coûteux à `findViewById()` en mettant en cache les références des vues d'un item.",
+      "explanation": "Le pattern ViewHolder améliore considérablement les performances d'une ListView en stockant les références des sous-vues d'une ligne. Ainsi, lors du recyclage des vues, il n'est pas nécessaire de les rechercher à nouveau avec `findViewById()`."
+    },
+    {
+      "question": "Quel est le format final d'une application Android prête à être installée et quel est le format de son code exécutable ?",
+      "options": [
+        "Un fichier .ZIP contenant des fichiers .JAR",
+        "Un fichier .APK contenant des fichiers .DEX",
+        "Un fichier .APP contenant du code machine ARM",
+        "Un fichier .EXE contenant des fichiers .DLL"
+      ],
+      "answer": "Un fichier .APK contenant des fichiers .DEX",
+      "explanation": "Les outils de build Android compilent le code source en fichiers .dex (Dalvik Executable). Ces fichiers, ainsi que les ressources de l'application, sont ensuite empaquetés dans un fichier .apk (Android Package), qui est l'archive distribuable et installable."
+    },
+    {
+      "question": "Quel est le but de la classe `AsyncTask` en Android ?",
+      "options": [
+        "Exécuter des opérations en arrière-plan et publier les résultats sur le thread UI sans avoir à gérer les threads manuellement.",
+        "Gérer le cycle de vie d'une activité.",
+        "Dessiner des éléments graphiques complexes à l'écran.",
+        "Gérer les permissions de l'application."
+      ],
+      "answer": "Exécuter des opérations en arrière-plan et publier les résultats sur le thread UI sans avoir à gérer les threads manuellement.",
+      "explanation": "AsyncTask est conçue pour simplifier l'exécution de tâches asynchrones. Elle permet d'effectuer des opérations longues en arrière-plan (dans `doInBackground`) et de synchroniser facilement les résultats avec le thread principal (dans `onPostExecute`)."
+    }
+  ]
+}

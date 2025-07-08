@@ -1,0 +1,577 @@
+{
+  "title": "🟤 Autres",
+  "nodes": [
+    {
+      "title": "Développement Android",
+      "children": [
+        {
+          "title": "Principes et Environnement",
+          "children": [
+            {
+              "title": "Introduction au développement Android"
+            },
+            {
+              "title": "Historique et versions d'Android"
+            },
+            {
+              "title": "Le SDK Android et Android Studio"
+            },
+            {
+              "title": "Structure d'un projet Android (Manifest, Java, Ressources)"
+            },
+            {
+              "title": "La classe R et la gestion des ressources"
+            },
+            {
+              "title": "L'émulateur (AVD) et le pont de débogage (ADB)"
+            }
+          ]
+        },
+        {
+          "title": "Composants d'une Application",
+          "children": [
+            {
+              "title": "Activités (Activity)",
+              "children": [
+                {
+                  "title": "Cycle de vie (onCreate, onPause, onStop, etc.)"
+                },
+                {
+                  "title": "Sauvegarde et restauration de l'état"
+                }
+              ]
+            },
+            {
+              "title": "Intents",
+              "children": [
+                {
+                  "title": "Intents explicites et implicites"
+                },
+                {
+                  "title": "Transmettre des données (Extras)"
+                },
+                {
+                  "title": "Retourner un résultat (startActivityForResult)"
+                },
+                {
+                  "title": "Actions et Catégories"
+                }
+              ]
+            },
+            {
+              "title": "Services",
+              "children": [
+                {
+                  "title": "Tâches de fond"
+                },
+                {
+                  "title": "Cycle de vie d'un service"
+                },
+                {
+                  "title": "Communication avec les activités (Binding, AIDL)"
+                }
+              ]
+            },
+            {
+              "title": "Broadcast Receivers",
+              "children": [
+                {
+                  "title": "Écouter les événements système et applicatifs"
+                },
+                {
+                  "title": "Enregistrement statique et dynamique"
+                }
+              ]
+            },
+            {
+              "title": "Content Providers"
+            },
+            {
+              "title": "Permissions"
+            }
+          ]
+        },
+        {
+          "title": "Interfaces Graphiques (UI)",
+          "children": [
+            {
+              "title": "Vues (Views) et Gabarits (Layouts)",
+              "children": [
+                {
+                  "title": "LinearLayout"
+                },
+                {
+                  "title": "RelativeLayout"
+                },
+                {
+                  "title": "ConstraintLayout"
+                },
+                {
+                  "title": "TableLayout"
+                }
+              ]
+            },
+            {
+              "title": "Éléments graphiques de base",
+              "children": [
+                {
+                  "title": "TextView, EditText, Button, ImageView"
+                }
+              ]
+            },
+            {
+              "title": "Listes et Adaptateurs",
+              "children": [
+                {
+                  "title": "ListView et GridView"
+                },
+                {
+                  "title": "ArrayAdapter et BaseAdapter personnalisé"
+                },
+                {
+                  "title": "Optimisation (ViewHolder)"
+                }
+              ]
+            },
+            {
+              "title": "Fragments",
+              "children": [
+                {
+                  "title": "Modulariser l'interface"
+                },
+                {
+                  "title": "Cycle de vie d'un fragment"
+                },
+                {
+                  "title": "Gestionnaire de fragments (FragmentManager)"
+                }
+              ]
+            },
+            {
+              "title": "Menus et Barre d'Action (ActionBar)"
+            },
+            {
+              "title": "Dialogues et Notifications (Toast)"
+            }
+          ]
+        },
+        {
+          "title": "Persistance des Données",
+          "children": [
+            {
+              "title": "Préférences partagées (SharedPreferences)"
+            },
+            {
+              "title": "Système de fichiers interne/externe"
+            },
+            {
+              "title": "Base de données SQLite",
+              "children": [
+                {
+                  "title": "SQLiteOpenHelper"
+                },
+                {
+                  "title": "Curseurs"
+                }
+              ]
+            },
+            {
+              "title": "Parsing de données (XML, JSON)"
+            }
+          ]
+        },
+        {
+          "title": "Programmation Concurrente",
+          "children": [
+            {
+              "title": "Processus et Threads"
+            },
+            {
+              "title": "Tâches asynchrones (AsyncTask)"
+            },
+            {
+              "title": "Services et IntentService"
+            },
+            {
+              "title": "Communication entre threads et UI"
+            }
+          ]
+        },
+        {
+          "title": "Connectivité et Matériel",
+          "children": [
+            {
+              "title": "Réseau (HTTP, Volley)"
+            },
+            {
+              "title": "Téléphonie (Appels, SMS)"
+            },
+            {
+              "title": "Bluetooth"
+            },
+            {
+              "title": "Localisation (GPS, Maps)"
+            },
+            {
+              "title": "Capteurs (Accéléromètre, etc.)"
+            },
+            {
+              "title": "Caméra"
+            }
+          ]
+        },
+        {
+          "title": "Architectures et Techniques Avancées",
+          "children": [
+            {
+              "title": "Client/Serveur et Services Web (REST, SOAP)"
+            },
+            {
+              "title": "Applications natives, web et hybrides"
+            },
+            {
+              "title": "Interface Native Java (JNI) avec C/C++"
+            },
+            {
+              "title": "Assemblage et Rétro-ingénierie (Smali, dex2jar)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Développement Odoo",
+      "children": [
+        {
+          "title": "Architecture et Concepts",
+          "children": [
+            {
+              "title": "Architecture multi-niveau (Présentation, Logique, Données)"
+            },
+            {
+              "title": "Composition d'un module (Objets métier, Vues, Fichiers de données, Contrôleurs)"
+            },
+            {
+              "title": "Structure des modules (manifest, __init__.py)"
+            }
+          ]
+        },
+        {
+          "title": "Modèles et Champs",
+          "children": [
+            {
+              "title": "Mappage Objet-Relationnel (ORM)"
+            },
+            {
+              "title": "Types de champs (Char, Integer, Many2one, One2many, etc.)"
+            },
+            {
+              "title": "Champs calculés et dépendances (@api.depends)"
+            },
+            {
+              "title": "On-changes (@api.onchange)"
+            },
+            {
+              "title": "Contraintes (SQL et Python)"
+            }
+          ]
+        },
+        {
+          "title": "Vues et Interface Utilisateur",
+          "children": [
+            {
+              "title": "Actions et Menus"
+            },
+            {
+              "title": "Types de vues (Liste, Formulaire, Kanban, Recherche)"
+            },
+            {
+              "title": "Héritage de vues (XPath)"
+            },
+            {
+              "title": "Widgets et attributs de vue"
+            },
+            {
+              "title": "Moteur de templates QWeb"
+            }
+          ]
+        },
+        {
+          "title": "Sécurité et Données",
+          "children": [
+            {
+              "title": "Groupes d'utilisateurs et droits d'accès (ACL)"
+            },
+            {
+              "title": "Règles d'enregistrement (Record Rules)"
+            },
+            {
+              "title": "Fichiers de données (CSV, XML)"
+            },
+            {
+              "title": "Gestion multi-sociétés"
+            }
+          ]
+        },
+        {
+          "title": "Développement Avancé",
+          "children": [
+            {
+              "title": "Héritage de modèles Python"
+            },
+            {
+              "title": "Interaction entre modules"
+            },
+            {
+              "title": "Rapports PDF"
+            },
+            {
+              "title": "Tests unitaires"
+            },
+            {
+              "title": "Tableaux de bord (Dashboards)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Développement Flutter",
+      "children": [
+        {
+          "title": "Introduction à Flutter",
+          "children": [
+            {
+              "title": "Framework open source de Google"
+            },
+            {
+              "title": "Développement multiplateforme (Android, iOS, Web, Desktop)"
+            },
+            {
+              "title": "Avantages (base de code unique, performance) et inconvénients"
+            }
+          ]
+        },
+        {
+          "title": "Langage Dart",
+          "children": [
+            {
+              "title": "Programmation orientée objet"
+            },
+            {
+              "title": "Variables, opérateurs, fonctions et classes"
+            },
+            {
+              "title": "Héritage et gestion des exceptions"
+            }
+          ]
+        },
+        {
+          "title": "Principes de Flutter",
+          "children": [
+            {
+              "title": "Tout est un widget"
+            },
+            {
+              "title": "Structure d'une application Flutter (main.dart, pubspec.yaml)"
+            },
+            {
+              "title": "Hot Reload"
+            }
+          ]
+        },
+        {
+          "title": "Widgets de base",
+          "children": [
+            {
+              "title": "Mise en page (Column, Row, Container, Center, Expanded)"
+            },
+            {
+              "title": "Affichage (Text, Icon, Image, Card)"
+            },
+            {
+              "title": "Interaction (ElevatedButton, TextButton, Form, TextFormField)"
+            },
+            {
+              "title": "Navigation (AppBar, BottomNavigationBar, Drawer)"
+            },
+            {
+              "title": "Feedback (AlertDialog, SnackBar)"
+            }
+          ]
+        },
+        {
+          "title": "Persistance et Connectivité",
+          "children": [
+            {
+              "title": "SharedPreferences"
+            },
+            {
+              "title": "Base de données SQLite (sqflite)"
+            },
+            {
+              "title": "Requêtes HTTP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Développement JavaFX",
+      "children": [
+        {
+          "title": "Concepts de base",
+          "children": [
+            {
+              "title": "Métaphore de la salle de spectacle (Stage, Scene, Nodes)"
+            },
+            {
+              "title": "Cycle de vie d'une application"
+            },
+            {
+              "title": "Graphe de scène (Scene Graph)"
+            }
+          ]
+        },
+        {
+          "title": "Mise en page (Layouts)",
+          "children": [
+            {
+              "title": "HBox, VBox"
+            },
+            {
+              "title": "BorderPane"
+            },
+            {
+              "title": "GridPane"
+            },
+            {
+              "title": "StackPane"
+            },
+            {
+              "title": "AnchorPane"
+            }
+          ]
+        },
+        {
+          "title": "Composants (Controls)",
+          "children": [
+            {
+              "title": "Label, Button, Hyperlink"
+            },
+            {
+              "title": "TextField, PasswordField, TextArea"
+            },
+            {
+              "title": "CheckBox, RadioButton, ToggleButton"
+            },
+            {
+              "title": "Tooltip"
+            }
+          ]
+        },
+        {
+          "title": "FXML et CSS",
+          "children": [
+            {
+              "title": "Déclarer l'interface en XML (FXML)"
+            },
+            {
+              "title": "Contrôleurs et injection (@FXML)"
+            },
+            {
+              "title": "Appliquer des styles avec CSS"
+            }
+          ]
+        },
+        {
+          "title": "Fonctionnalités avancées",
+          "children": [
+            {
+              "title": "Propriétés et Liaisons (Bindings)"
+            },
+            {
+              "title": "Graphiques (Charts)"
+            },
+            {
+              "title": "Animation (Timeline)"
+            },
+            {
+              "title": "Internationalisation (ResourceBundle)"
+            },
+            {
+              "title": "Threading et services"
+            },
+            {
+              "title": "WebView et WebEngine"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "API REST avec Python et Flask",
+      "children": [
+        {
+          "title": "Mise en place du projet",
+          "children": [
+            {
+              "title": "Framework Flask"
+            },
+            {
+              "title": "Connexion pour la gestion des API"
+            },
+            {
+              "title": "Swagger UI pour la documentation"
+            }
+          ]
+        },
+        {
+          "title": "Définition de l'API",
+          "children": [
+            {
+              "title": "Spécification OpenAPI (swagger.yml)"
+            },
+            {
+              "title": "Définition des points de terminaison (endpoints)"
+            },
+            {
+              "title": "Verbes HTTP (GET, POST, PUT, DELETE)"
+            }
+          ]
+        },
+        {
+          "title": "Interaction avec la base de données",
+          "children": [
+            {
+              "title": "Configuration de SQLite"
+            },
+            {
+              "title": "ORM avec SQLAlchemy"
+            },
+            {
+              "title": "Modélisation des données"
+            },
+            {
+              "title": "Relations (One-to-many)"
+            }
+          ]
+        },
+        {
+          "title": "Sérialisation des données",
+          "children": [
+            {
+              "title": "Utilisation de Marshmallow"
+            },
+            {
+              "title": "Création de schémas pour les modèles"
+            },
+            {
+              "title": "Conversion des objets Python en JSON"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

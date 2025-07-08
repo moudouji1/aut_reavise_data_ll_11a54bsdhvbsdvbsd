@@ -1,0 +1,93 @@
+{
+  "title": "Séance 2 : Interfaces utilisateur, XML, vues, boutons, champs de texte",
+  "questions": [
+    {
+      "question": "Quel est le noyau sur lequel le système d'exploitation Android est basé ?",
+      "options": [
+        "Noyau Windows",
+        "Noyau Linux",
+        "Noyau macOS",
+        "Un noyau propriétaire de Google"
+      ],
+      "answer": "Noyau Linux",
+      "explanation": "Le contenu indique clairement qu'Android est \"Basé sur le noyau LINUX\" et \"utilise Linux pour ses pilotes de périphériques, la gestion de la mémoire, la gestion des processus et le réseau\"."
+    },
+    {
+      "question": "Quel composant Android représente un écran unique avec une interface utilisateur ?",
+      "options": [
+        "Service",
+        "Activity",
+        "Broadcast Receiver",
+        "Content Provider"
+      ],
+      "answer": "Activity",
+      "explanation": "La définition fournie dans le document est : \"Une activité (Activity) représente un écran unique avec une interface utilisateur.\""
+    },
+    {
+      "question": "Quelle est la méthode la plus courante et recommandée pour déclarer les éléments d'une interface utilisateur (UI) dans une application Android ?",
+      "options": [
+        "Instancier les éléments directement en code Java",
+        "Utiliser uniquement un éditeur visuel \"glisser-déposer\"",
+        "Déclarer les éléments dans un fichier XML",
+        "Utiliser des fichiers de configuration JSON"
+      ],
+      "answer": "Déclarer les éléments dans un fichier XML",
+      "explanation": "Le cours précise que la première méthode, la plus courante et préférée, est de \"Déclarer les éléments de l'interface utilisateur en XML\"."
+    },
+    {
+      "question": "Dans un fichier de layout XML, que signifie la valeur `wrap_content` pour l'attribut `android:layout_height` ?",
+      "options": [
+        "La vue doit être aussi haute que son conteneur parent.",
+        "La vue doit s'adapter en hauteur pour correspondre à la taille de son contenu.",
+        "La vue doit occuper toute la hauteur de l'écran.",
+        "La vue doit avoir une hauteur nulle (être invisible)."
+      ],
+      "answer": "La vue doit s'adapter en hauteur pour correspondre à la taille de son contenu.",
+      "explanation": "Le document définit `wrap_content` comme l'instruction qui \"dit à votre vue de se dimensionner aux dimensions requises par son contenu\"."
+    },
+    {
+      "question": "Quel composant Android est conçu pour effectuer des opérations de longue durée en arrière-plan, sans fournir d'interface utilisateur ?",
+      "options": [
+        "Activity",
+        "Content Provider",
+        "Broadcast Receiver",
+        "Service"
+      ],
+      "answer": "Service",
+      "explanation": "Un Service est décrit comme \"un composant qui s'exécute en arrière-plan pour effectuer des opérations de longue durée... Un service ne fournit pas d'interface utilisateur.\""
+    },
+    {
+      "question": "Dans quel dossier d'un projet Android sont généralement stockés les fichiers de mise en page (layouts), les images (drawables) et les chaînes de caractères (strings) ?",
+      "options": [
+        "Le dossier `src`",
+        "Le dossier `assets`",
+        "Le dossier `res`",
+        "Le dossier `lib`"
+      ],
+      "answer": "Le dossier `res`",
+      "explanation": "Le contenu indique que le dossier `res` \"Contient les ressources de l'application, telles que les fichiers drawable, les fichiers de layout et les valeurs de chaînes de caractères\"."
+    },
+    {
+      "question": "Comment peut-on accéder en code Java à une vue (comme un bouton) qui a été définie dans un fichier de layout XML avec un ID ?",
+      "options": [
+        "En utilisant `new Button()`",
+        "En utilisant la méthode `findViewById(R.id.id_de_la_vue)`",
+        "En lisant directement le fichier XML",
+        "Il n'est pas possible d'y accéder depuis le code Java"
+      ],
+      "answer": "En utilisant la méthode `findViewById(R.id.id_de_la_vue)`",
+      "explanation": "L'exemple montre qu'après avoir défini une vue avec un `android:id`, on peut y faire référence en Java via `findViewById(R.id.id_de_la_vue)` pour en obtenir l'objet."
+    },
+    {
+      "question": "Quel fichier de configuration essentiel décrit la nature de l'application et de chacun de ses composants (activités, services, etc.) ?",
+      "options": [
+        "build.gradle",
+        "main.xml",
+        "R.java",
+        "AndroidManifest.xml"
+      ],
+      "answer": "AndroidManifest.xml",
+      "explanation": "Le document décrit l'AndroidManifest.xml comme \"Le fichier de contrôle qui décrit la nature de l'application et de chacun de ses composants.\""
+    }
+  ]
+}

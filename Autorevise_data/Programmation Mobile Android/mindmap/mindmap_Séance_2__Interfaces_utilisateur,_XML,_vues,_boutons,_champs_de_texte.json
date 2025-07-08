@@ -1,0 +1,189 @@
+{
+  "title": "Séance 2 : Interfaces utilisateur, XML, vues, boutons, champs de texte",
+  "nodes": [
+    {
+      "title": "Introduction et Historique d'Android",
+      "children": [
+        {
+          "title": "Définition",
+          "children": [
+            {
+              "title": "Plateforme logicielle et OS pour mobiles"
+            },
+            {
+              "title": "Basé sur le noyau LINUX"
+            },
+            {
+              "title": "Développé par Google et l'Open Handset Alliance (OHA)"
+            }
+          ]
+        },
+        {
+          "title": "Historique des versions",
+          "children": [
+            {
+              "title": "Android 1.0 (Sept 2008) - HTC Dream"
+            },
+            {
+              "title": "Android 1.5 Cupcake (Avr 2009) - Widgets, auto-rotation"
+            },
+            {
+              "title": "Android 1.6 Donut (Sept 2009) - Quick search, Google Play"
+            },
+            {
+              "title": "Android 2.2 Froyo (Mai 2010) - Actions vocales, hotspot"
+            },
+            {
+              "title": "Android 2.3 Gingerbread (Déc 2010) - Multi-caméras, API de jeu"
+            },
+            {
+              "title": "Android 3.0 Honeycomb (Fév 2011) - Design pour tablettes"
+            },
+            {
+              "title": "Android 4.0 Ice Cream Sandwich (Oct 2011) - Personnalisation"
+            },
+            {
+              "title": "Android 4.1 Jelly Bean (Juil 2012) - Google Now, notifications actionnables"
+            },
+            {
+              "title": "Android 4.4 KitKat (Oct 2013) - \"Ok Google\""
+            },
+            {
+              "title": "Android 5.0 Lollipop (Nov 2014) - Material Design"
+            },
+            {
+              "title": "Android 6.0 Marshmallow (Oct 2015) - Permissions à l'exécution"
+            },
+            {
+              "title": "Android 7.0 Nougat (Août 2016) - Volets de notification"
+            },
+            {
+              "title": "Android 8.0 Oreo (Août 2017) - Autosizing TextView"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Anatomie d'une Application Android",
+      "children": [
+        {
+          "title": "Architecture logicielle",
+          "children": [
+            {
+              "title": "Noyau Linux"
+            },
+            {
+              "title": "Librairies natives (C/C++)"
+            },
+            {
+              "title": "Framework applicatif (Java)"
+            },
+            {
+              "title": "Machine Virtuelle Dalvik (exécute les .dex)"
+            }
+          ]
+        },
+        {
+          "title": "Composants d'application",
+          "children": [
+            {
+              "title": "Activities (un écran, une UI)"
+            },
+            {
+              "title": "Services (tâches de fond)"
+            },
+            {
+              "title": "Content Providers (gestion des données partagées)"
+            },
+            {
+              "title": "Broadcast Receivers (réponse aux événements système)"
+            }
+          ]
+        },
+        {
+          "title": "Environnement de développement",
+          "children": [
+            {
+              "title": "Prérequis : JDK, Android Studio (IDE)"
+            }
+          ]
+        },
+        {
+          "title": "Structure d'un projet",
+          "children": [
+            {
+              "title": "src/ : Fichiers sources .java"
+            },
+            {
+              "title": "gen/ : Fichiers générés (R.java)"
+            },
+            {
+              "title": "res/ : Ressources (images, layouts, textes)"
+            },
+            {
+              "title": "AndroidManifest.xml : Fichier de configuration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Création d'Interfaces Utilisateur (UI)",
+      "children": [
+        {
+          "title": "Layout (Mise en page)",
+          "children": [
+            {
+              "title": "Définition : Architecture de l'UI dans une Activity"
+            },
+            {
+              "title": "Méthodes de déclaration",
+              "children": [
+                {
+                  "title": "1. XML (préféré)"
+                },
+                {
+                  "title": "2. Code Java (à l'exécution)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Vues (Views) et Widgets",
+          "children": [
+            {
+              "title": "Récupération d'une vue : findViewById(R.id.mon_id)"
+            }
+          ]
+        },
+        {
+          "title": "Attributs de dimension",
+          "children": [
+            {
+              "title": "wrap_content : s'adapte au contenu"
+            },
+            {
+              "title": "match_parent : remplit l'espace du parent"
+            }
+          ]
+        },
+        {
+          "title": "Types de Layouts principaux",
+          "children": [
+            {
+              "title": "LinearLayout"
+            },
+            {
+              "title": "RelativeLayout"
+            },
+            {
+              "title": "TableLayout"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

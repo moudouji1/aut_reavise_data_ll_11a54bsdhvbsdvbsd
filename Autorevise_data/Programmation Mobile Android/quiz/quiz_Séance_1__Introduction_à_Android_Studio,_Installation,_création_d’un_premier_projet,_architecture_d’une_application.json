@@ -1,0 +1,71 @@
+{
+  "title": "Séance 1 : Introduction à Android Studio, Installation, création d’un premier projet, architecture d’une application",
+  "questions": [
+    {
+      "question": "Quel est l'environnement de développement officiel mentionné dans le document pour la création d'applications Android ?",
+      "options": [
+        "Eclipse avec le plugin ADT",
+        "Android Studio",
+        "Visual Studio Code",
+        "NetBeans"
+      ],
+      "answer": "Android Studio",
+      "explanation": "Le contenu indique explicitement que 'L'environnement de développement officiel est Android studio'."
+    },
+    {
+      "question": "D'après le texte, quel est le rôle principal d'un 'Intent' dans une application Android ?",
+      "options": [
+        "Définir l'apparence visuelle d'un écran.",
+        "Stocker des données de manière permanente.",
+        "Démarrer les composants de l'application, comme les activités pour naviguer entre les écrans.",
+        "Gérer les permissions de l'application."
+      ],
+      "answer": "Démarrer les composants de l'application, comme les activités pour naviguer entre les écrans.",
+      "explanation": "Le document précise que 'chaque composant de votre application nécessitera l'emploi d'un Intent pour être démarré', notamment pour naviguer entre les écrans."
+    },
+    {
+      "question": "Dans quel fichier de configuration une nouvelle activité doit-elle être déclarée ?",
+      "options": [
+        "build.gradle",
+        "styles.xml",
+        "MainActivity.java",
+        "AndroidManifest.xml"
+      ],
+      "answer": "AndroidManifest.xml",
+      "explanation": "Le texte mentionne qu'une activité doit être déclarée 'à l'intérieur de la section <application> du fichier de configuration de l'application', ce qui correspond au fichier AndroidManifest.xml."
+    },
+    {
+      "question": "Le document décrit deux logiques pour démarrer une activité. Quelle est la principale différence entre elles ?",
+      "options": [
+        "Le démarrage peut être rapide ou lent.",
+        "L'une est pour les téléphones, l'autre pour les tablettes.",
+        "On peut démarrer une activité en attendant un résultat en retour, ou sans attendre de résultat.",
+        "L'une utilise internet, l'autre non."
+      ],
+      "answer": "On peut démarrer une activité en attendant un résultat en retour, ou sans attendre de résultat.",
+      "explanation": "Le texte explique : 'parfois nous aurons besoin de savoir comment s'est déroulée l'activité (et obtenir un retour lors de son arrêt), parfois non'."
+    },
+    {
+      "question": "Quel outil est mentionné pour sélectionner la version de l'API Android après avoir téléchargé le SDK ?",
+      "options": [
+        "Le gestionnaire de paquets d'Android Studio",
+        "Le fichier adt-bundle.zip",
+        "L'exécutable 'android' dans le dossier 'tools' du SDK",
+        "Le site web d'Eclipse"
+      ],
+      "answer": "L'exécutable 'android' dans le dossier 'tools' du SDK",
+      "explanation": "Le guide d'installation indique : 'Exécuter (puis sélectionner la version Android API version): android-sdk-xxx/tools/android'."
+    },
+    {
+      "question": "À quoi sert principalement un 'Intent' dans le contexte de la navigation entre écrans ?",
+      "options": [
+        "À créer une animation de transition.",
+        "À démarrer une nouvelle activité, qui représente un nouvel écran.",
+        "À fermer l'application.",
+        "À sauvegarder l'état de l'écran actuel."
+      ],
+      "answer": "À démarrer une nouvelle activité, qui représente un nouvel écran.",
+      "explanation": "Le titre 'Intent Naviguer entre écrans' et l'explication sur le démarrage d'activités indiquent que les Intents sont le mécanisme pour passer d'un écran (Activité) à un autre."
+    }
+  ]
+}
